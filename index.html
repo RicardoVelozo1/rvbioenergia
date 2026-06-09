@@ -3,351 +3,399 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="RV Bioenergia — Intermediação de biocombustíveis, derivados de petróleo, logística e commodities no Brasil e no mundo.">
-<meta property="og:title" content="RV Bioenergia — Combustíveis & Logística Networks">
-<meta property="og:description" content="Conectamos compradores e vendedores no mercado de biocombustíveis, derivados, commodities e logística.">
+<meta name="description" content="RV Bioenergia — Broker especializado em biocombustíveis, derivados de petróleo, logística e commodities. Otimizando negócios, maximizando resultados.">
+<meta property="og:title" content="RV Bioenergia — Otimizando negócios, maximizando resultados">
 <title>RV Bioenergia — Combustíveis & Logística Networks</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --preto:#080D08;
-  --preto2:#0F1A10;
-  --verde:#5CB800;
-  --verde2:#3B8A00;
-  --verde-dim:rgba(92,184,0,0.12);
-  --verde-border:rgba(92,184,0,0.25);
+  --ink:#0A0A0A;
+  --ink2:#141414;
+  --ink3:#1E1E1E;
+  --verde:#3D8B37;
+  --verde-vivo:#5CB800;
+  --verde-dim:rgba(61,139,55,0.12);
+  --verde-border:rgba(61,139,55,0.3);
   --branco:#FFFFFF;
-  --cinza1:#F0F4EE;
-  --cinza2:#A8B8A0;
-  --cinza3:rgba(255,255,255,0.06);
-  --linha:rgba(255,255,255,0.08);
+  --off:#F7F8F5;
+  --cinza1:#8A9A86;
+  --cinza2:#C5D0C2;
+  --linha:rgba(255,255,255,0.07);
+  --linha2:rgba(255,255,255,0.12);
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:'Inter',sans-serif;background:var(--preto);color:var(--branco);overflow-x:hidden;font-size:15px;line-height:1.6}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'Inter',sans-serif;background:var(--ink);color:var(--branco);overflow-x:hidden;line-height:1.6}
 
 /* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 2.5rem;display:flex;align-items:center;justify-content:space-between;height:72px;border-bottom:1px solid var(--linha);background:rgba(8,13,8,0.92);backdrop-filter:blur(16px)}
-.nav-logo img{height:60px;width:auto;mix-blend-mode:screen}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;height:80px;display:flex;align-items:center;justify-content:space-between;padding:0 3rem;background:var(--ink);border-bottom:1px solid var(--linha2);transition:background 0.3s}
+nav.scrolled{background:rgba(10,10,10,0.98);backdrop-filter:blur(12px)}
+.nav-logo{display:flex;align-items:center}
+.nav-logo img{height:64px;width:auto}
 .nav-links{display:flex;align-items:center;gap:2.5rem;list-style:none}
-.nav-links a{color:var(--cinza2);text-decoration:none;font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;transition:color 0.2s}
+.nav-links a{color:var(--cinza2);text-decoration:none;font-size:12px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;transition:color 0.2s}
 .nav-links a:hover{color:var(--branco)}
-.nav-cta{background:var(--verde)!important;color:var(--preto)!important;padding:9px 20px!important;border-radius:3px;font-weight:600!important;letter-spacing:0.05em!important}
+.nav-cta{background:var(--verde-vivo)!important;color:var(--ink)!important;padding:10px 22px!important;font-weight:600!important;letter-spacing:0.06em!important;border-radius:2px!important}
 .nav-cta:hover{background:#6fd400!important}
 .nav-mobile-btn{display:none;background:none;border:none;color:var(--branco);font-size:22px;cursor:pointer}
 
 /* HERO */
-.hero{min-height:100vh;padding-top:72px;display:flex;align-items:center;position:relative;overflow:hidden}
-.hero-noise{position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");opacity:0.4;z-index:0}
-.hero-line{position:absolute;top:0;right:15%;width:1px;height:100%;background:linear-gradient(to bottom,transparent,var(--verde-border),transparent);z-index:0}
-.hero-line2{position:absolute;top:0;right:30%;width:1px;height:100%;background:linear-gradient(to bottom,transparent,var(--linha),transparent);z-index:0}
-.hero-dot{position:absolute;top:50%;right:15%;width:6px;height:6px;margin:-3px;border-radius:50%;background:var(--verde);box-shadow:0 0 20px rgba(92,184,0,0.6);z-index:1;animation:blink 3s infinite}
-@keyframes blink{0%,100%{opacity:1}50%{opacity:0.3}}
-.hero-inner{max-width:1280px;margin:0 auto;padding:0 2.5rem;position:relative;z-index:2;display:grid;grid-template-columns:1fr 400px;gap:6rem;align-items:center;width:100%}
-.hero-tag{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:var(--verde);margin-bottom:2rem;border:1px solid var(--verde-border);padding:6px 14px;border-radius:2px}
-.hero-tag::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--verde);animation:blink 2s infinite}
-h1{font-family:'Oswald',sans-serif;font-size:clamp(3rem,6vw,5.5rem);font-weight:700;line-height:0.95;letter-spacing:-0.01em;margin-bottom:1.75rem;text-transform:uppercase}
-h1 span{color:var(--verde);display:block}
-.hero-desc{font-size:1rem;color:var(--cinza2);line-height:1.8;max-width:480px;margin-bottom:2.5rem;font-weight:300}
-.hero-btns{display:flex;gap:1rem;flex-wrap:wrap}
-.btn-p{background:var(--verde);color:var(--preto);padding:14px 28px;border-radius:3px;font-weight:600;font-size:13px;text-decoration:none;letter-spacing:0.06em;text-transform:uppercase;transition:all 0.2s;display:inline-flex;align-items:center;gap:8px}
+.hero{min-height:100vh;padding-top:80px;display:grid;grid-template-columns:1fr 480px;gap:0;position:relative;overflow:hidden}
+.hero-left{display:flex;flex-direction:column;justify-content:center;padding:5rem 3rem 5rem 3rem;position:relative;z-index:2}
+.hero-right{position:relative;background:var(--ink2);border-left:1px solid var(--linha2);display:flex;flex-direction:column;justify-content:center;padding:3rem 2.5rem}
+.hero-right::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:linear-gradient(to bottom,transparent,var(--verde-vivo),transparent)}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--verde-vivo);margin-bottom:2rem}
+.hero-eyebrow::before{content:'';width:28px;height:1px;background:var(--verde-vivo)}
+h1{font-family:'Playfair Display',serif;font-size:clamp(2.6rem,4.5vw,4rem);font-weight:700;line-height:1.15;letter-spacing:-0.01em;margin-bottom:1.5rem;color:var(--branco)}
+h1 em{font-style:italic;color:var(--verde-vivo)}
+.hero-tagline{font-size:1rem;color:var(--cinza1);line-height:1.85;max-width:500px;margin-bottom:1rem;font-weight:300}
+.hero-slogan{font-size:13px;font-weight:500;color:var(--cinza2);letter-spacing:0.08em;font-style:italic;margin-bottom:2.5rem;border-left:2px solid var(--verde);padding-left:14px}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn-p{background:var(--verde-vivo);color:var(--ink);padding:13px 26px;font-weight:600;font-size:13px;text-decoration:none;letter-spacing:0.06em;text-transform:uppercase;transition:all 0.2s;border-radius:2px;display:inline-flex;align-items:center;gap:8px}
 .btn-p:hover{background:#6fd400;transform:translateY(-1px)}
-.btn-s{background:transparent;color:var(--branco);padding:14px 28px;border-radius:3px;font-weight:500;font-size:13px;text-decoration:none;letter-spacing:0.06em;text-transform:uppercase;transition:all 0.2s;border:1px solid rgba(255,255,255,0.2)}
-.btn-s:hover{border-color:rgba(255,255,255,0.5);background:rgba(255,255,255,0.05)}
+.btn-s{background:transparent;color:var(--branco);padding:13px 26px;font-weight:500;font-size:13px;text-decoration:none;letter-spacing:0.06em;text-transform:uppercase;transition:all 0.2s;border:1px solid var(--linha2)}
+.btn-s:hover{border-color:var(--cinza2);background:rgba(255,255,255,0.04)}
 
 /* HERO CARD MERCADO */
-.hero-card{background:var(--cinza3);border:1px solid var(--verde-border);border-radius:8px;padding:1.5rem;backdrop-filter:blur(10px)}
-.hc-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.25rem;font-size:10px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--cinza2)}
-.hc-live{color:var(--verde);display:flex;align-items:center;gap:5px}
-.hc-live::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--verde);animation:blink 2s infinite}
-.hc-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px}
-.hc-metric{background:rgba(0,0,0,0.3);border-radius:6px;padding:14px}
-.hc-mlabel{font-size:9px;text-transform:uppercase;letter-spacing:0.1em;color:var(--cinza2);margin-bottom:6px}
-.hc-mval{font-family:'Oswald',sans-serif;font-size:1.8rem;font-weight:600;color:var(--branco);line-height:1}
+.hc-label{font-size:10px;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--cinza1);margin-bottom:1.25rem;display:flex;justify-content:space-between;align-items:center}
+.hc-live{color:var(--verde-vivo);display:flex;align-items:center;gap:5px}
+.hc-live::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--verde-vivo);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
+.hc-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--linha2);border:1px solid var(--linha2);margin-bottom:1px}
+.hc-metric{background:var(--ink2);padding:1rem 1.1rem}
+.hc-mlabel{font-size:9px;text-transform:uppercase;letter-spacing:0.12em;color:var(--cinza1);margin-bottom:5px}
+.hc-mval{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:600;color:var(--branco);line-height:1}
 .hc-msub{font-size:10px;margin-top:4px}
-.up{color:#5CB800}.down{color:#ff6464}
-.hc-parity{background:rgba(0,0,0,0.3);border-radius:6px;padding:14px;margin-bottom:10px}
-.hc-pbar-bg{height:4px;background:rgba(255,255,255,0.1);border-radius:2px;margin:8px 0 4px;position:relative;overflow:hidden}
-.hc-pbar-fill{height:100%;border-radius:2px;transition:width 1s}
-.hc-pmark{position:absolute;top:-3px;left:70%;width:1px;height:10px;background:rgba(255,80,80,0.5)}
-.hc-prow{display:flex;justify-content:space-between;align-items:center;font-size:10px}
-.hc-link{display:flex;align-items:center;justify-content:center;gap:6px;color:var(--verde);text-decoration:none;font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:10px;border:1px solid var(--verde-border);border-radius:5px;transition:all 0.2s}
+.up{color:#5CB800}.down{color:#E05555}
+.hc-parity{background:var(--ink2);border:1px solid var(--linha2);padding:1rem 1.1rem;margin-top:1px;margin-bottom:1px}
+.hc-prow{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.hc-pval{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:600}
+.hc-bar-bg{height:3px;background:rgba(255,255,255,0.08);position:relative;overflow:hidden}
+.hc-bar-fill{height:100%;transition:width 1s}
+.hc-bar-mark{position:absolute;top:-4px;left:70%;width:1px;height:11px;background:rgba(220,80,80,0.5)}
+.hc-verdict{font-size:10px;color:var(--cinza1);margin-top:6px}
+.hc-link{display:flex;align-items:center;justify-content:center;gap:6px;color:var(--verde-vivo);text-decoration:none;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:12px;border:1px solid var(--verde-border);margin-top:1px;transition:all 0.2s}
 .hc-link:hover{background:var(--verde-dim)}
 
 /* STRIP */
-.strip{border-top:1px solid var(--linha);border-bottom:1px solid var(--linha);padding:1rem 2.5rem}
-.strip-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:4rem;flex-wrap:wrap}
-.strip-item{font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--cinza2);display:flex;align-items:center;gap:8px}
-.strip-dot{width:4px;height:4px;border-radius:50%;background:var(--verde);flex-shrink:0}
+.strip{border-top:1px solid var(--linha2);border-bottom:1px solid var(--linha2);padding:14px 3rem;background:var(--ink2)}
+.strip-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:3rem;flex-wrap:wrap}
+.strip-item{font-size:11px;font-weight:400;letter-spacing:0.12em;text-transform:uppercase;color:var(--cinza1);display:flex;align-items:center;gap:8px}
+.strip-item::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--verde-vivo);flex-shrink:0}
 
-/* SECTIONS */
-section{padding:7rem 2.5rem}
+/* SECTION BASE */
+section{padding:7rem 3rem}
 .sec-inner{max-width:1280px;margin:0 auto}
-.sec-tag{font-size:10px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--verde);margin-bottom:1rem;display:flex;align-items:center;gap:10px}
-.sec-tag::before{content:'';width:20px;height:1px;background:var(--verde)}
-h2{font-family:'Oswald',sans-serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:700;text-transform:uppercase;line-height:1.05;letter-spacing:-0.01em;margin-bottom:1rem}
-.sec-desc{font-size:0.95rem;color:var(--cinza2);max-width:520px;line-height:1.85;font-weight:300}
+.sec-eyebrow{font-size:10px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--verde-vivo);margin-bottom:1rem;display:flex;align-items:center;gap:12px}
+.sec-eyebrow::before{content:'';width:24px;height:1px;background:var(--verde-vivo)}
+h2{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,3.5vw,2.9rem);font-weight:700;line-height:1.15;letter-spacing:-0.01em;color:var(--branco);margin-bottom:1rem}
+h2 em{font-style:italic;color:var(--verde-vivo)}
+.sec-desc{font-size:0.95rem;color:var(--cinza1);max-width:540px;line-height:1.9;font-weight:300}
+
+/* MISSÃO VISÃO VALORES */
+.mvv{background:var(--ink2)}
+.mvv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--linha2);margin-top:3.5rem;border:1px solid var(--linha2)}
+.mvv-card{background:var(--ink2);padding:2.5rem 2rem;position:relative;transition:background 0.3s}
+.mvv-card:hover{background:var(--ink3)}
+.mvv-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:transparent;transition:background 0.3s}
+.mvv-card:hover::before{background:var(--verde-vivo)}
+.mvv-num{font-family:'Playfair Display',serif;font-size:3rem;font-weight:700;color:var(--linha2);line-height:1;margin-bottom:1.25rem;transition:color 0.3s}
+.mvv-card:hover .mvv-num{color:var(--verde-border)}
+.mvv-title{font-size:13px;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--verde-vivo);margin-bottom:1rem}
+.mvv-text{font-size:14px;color:var(--cinza1);line-height:1.85;font-weight:300}
 
 /* SOBRE */
-.sobre{background:var(--preto2)}
+.sobre{background:var(--ink)}
 .sobre-grid{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center}
-.sobre-stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:2.5rem}
-.stat-box{border:1px solid var(--linha);border-radius:6px;padding:1.5rem;position:relative;overflow:hidden}
-.stat-box::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(to right,var(--verde),transparent)}
-.stat-num{font-family:'Oswald',sans-serif;font-size:2.5rem;font-weight:700;color:var(--verde);line-height:1}
-.stat-label{font-size:11px;color:var(--cinza2);margin-top:6px;line-height:1.5;letter-spacing:0.02em}
-.sobre-text p{color:var(--cinza2);line-height:1.9;margin-bottom:1.25rem;font-weight:300;font-size:0.95rem}
-.sobre-vals{margin-top:2rem;display:flex;flex-direction:column;gap:10px}
-.val-row{display:flex;align-items:flex-start;gap:12px;font-size:14px;color:var(--cinza2)}
-.val-row::before{content:'→';color:var(--verde);flex-shrink:0;margin-top:1px}
+.sobre-stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--linha2);border:1px solid var(--linha2);margin-top:2.5rem}
+.stat{background:var(--ink2);padding:1.75rem;position:relative}
+.stat::after{content:'';position:absolute;top:0;left:0;width:2px;height:100%;background:var(--verde-border)}
+.stat-num{font-family:'Playfair Display',serif;font-size:2.5rem;font-weight:700;color:var(--verde-vivo);line-height:1}
+.stat-lbl{font-size:11px;color:var(--cinza1);margin-top:6px;line-height:1.5;letter-spacing:0.02em}
+.sobre-text{font-size:0.95rem;color:var(--cinza1);line-height:1.9;font-weight:300;margin-bottom:1.25rem}
+.sobre-vals{margin-top:2rem;display:flex;flex-direction:column;gap:12px}
+.val-row{font-size:14px;color:var(--cinza1);display:flex;align-items:flex-start;gap:12px;line-height:1.7}
+.val-row::before{content:'→';color:var(--verde-vivo);flex-shrink:0}
 .val-row strong{color:var(--branco);font-weight:500}
 
 /* SERVIÇOS */
-.servicos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:4rem;border:1px solid var(--linha);border-radius:8px;overflow:hidden}
-.servico{padding:2rem;background:var(--preto2);transition:background 0.3s;position:relative;cursor:default}
-.servico:hover{background:#141F14}
-.servico::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:var(--linha)}
-.servico:nth-child(n+4)::after{display:none}
-.serv-num{font-family:'Oswald',sans-serif;font-size:2.5rem;font-weight:700;color:var(--linha);line-height:1;margin-bottom:1.25rem;transition:color 0.3s}
-.servico:hover .serv-num{color:var(--verde-border)}
-.serv-title{font-size:15px;font-weight:600;color:var(--branco);margin-bottom:.6rem;letter-spacing:0.01em}
-.serv-desc{font-size:13px;color:var(--cinza2);line-height:1.7;font-weight:300}
-.serv-line{position:absolute;top:0;left:0;width:0;height:2px;background:var(--verde);transition:width 0.4s}
-.servico:hover .serv-line{width:100%}
+.servicos{background:var(--ink2)}
+.servicos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--linha2);border:1px solid var(--linha2);margin-top:3.5rem}
+.servico{background:var(--ink2);padding:2rem 1.75rem;position:relative;transition:background 0.3s;overflow:hidden}
+.servico:hover{background:var(--ink3)}
+.servico-top-line{position:absolute;top:0;left:0;width:0;height:2px;background:var(--verde-vivo);transition:width 0.4s ease}
+.servico:hover .servico-top-line{width:100%}
+.serv-n{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--linha2);line-height:1;margin-bottom:1.25rem;transition:color 0.3s}
+.servico:hover .serv-n{color:var(--verde-border)}
+.serv-t{font-size:14px;font-weight:600;color:var(--branco);margin-bottom:.6rem}
+.serv-d{font-size:13px;color:var(--cinza1);line-height:1.75;font-weight:300}
 
 /* MERCADO PREVIEW */
-.mp{background:var(--preto)}
+.mp{background:var(--ink)}
 .mp-grid{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center}
-.mp-feats{list-style:none;margin:1.75rem 0 2.5rem;display:flex;flex-direction:column;gap:10px}
-.mp-feat{font-size:14px;color:var(--cinza2);display:flex;align-items:center;gap:10px}
-.mp-feat::before{content:'';width:16px;height:1px;background:var(--verde);flex-shrink:0}
-.mp-card{background:var(--cinza3);border:1px solid var(--linha);border-radius:8px;padding:1.75rem}
-.mp-metrics{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:12px}
-.mp-metric{background:rgba(0,0,0,0.3);border-radius:5px;padding:14px;text-align:center}
-.mp-mval{font-family:'Oswald',sans-serif;font-size:1.5rem;font-weight:600;color:var(--branco)}
-.mp-mlbl{font-size:9px;text-transform:uppercase;letter-spacing:0.1em;color:var(--cinza2);margin-top:3px}
-.mp-hint{font-size:12px;color:var(--cinza2);text-align:center;padding:12px;border:1px dashed var(--linha);border-radius:5px}
+.mp-list{list-style:none;margin:1.75rem 0 2.5rem;display:flex;flex-direction:column;gap:10px}
+.mp-item{font-size:14px;color:var(--cinza1);display:flex;align-items:center;gap:12px;font-weight:300}
+.mp-item::before{content:'';width:20px;height:1px;background:var(--verde-vivo);flex-shrink:0}
+.mp-card{border:1px solid var(--linha2);background:var(--ink2)}
+.mp-metrics{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--linha2)}
+.mp-metric{background:var(--ink2);padding:1.25rem;text-align:center}
+.mp-mval{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:600;color:var(--branco)}
+.mp-mlbl{font-size:9px;text-transform:uppercase;letter-spacing:0.12em;color:var(--cinza1);margin-top:3px}
+.mp-hint{font-size:12px;color:var(--cinza1);text-align:center;padding:14px;border-top:1px solid var(--linha2);font-weight:300;font-style:italic}
 
 /* CONTATO */
-.contato{background:var(--preto2)}
+.contato{background:var(--ink2)}
 .contato-grid{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:start}
 .c-infos{display:flex;flex-direction:column;gap:1.5rem;margin-top:2.5rem}
 .c-info{display:flex;align-items:flex-start;gap:14px}
-.c-icon{width:36px;height:36px;border:1px solid var(--verde-border);border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--verde);font-size:16px}
-.c-lbl{font-size:10px;text-transform:uppercase;letter-spacing:0.1em;color:var(--verde);margin-bottom:3px;font-weight:600}
-.c-val{font-size:14px;color:var(--cinza2)}
-.c-val a{color:var(--branco);text-decoration:none;transition:color 0.2s}
-.c-val a:hover{color:var(--verde)}
+.c-icon{width:36px;height:36px;border:1px solid var(--verde-border);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--verde-vivo);font-size:15px;font-style:normal}
+.c-lbl{font-size:10px;text-transform:uppercase;letter-spacing:0.12em;color:var(--verde-vivo);margin-bottom:3px;font-weight:600}
+.c-val{font-size:14px;color:var(--cinza1);font-weight:300}
+.c-val a{color:var(--cinza2);text-decoration:none;transition:color 0.2s}
+.c-val a:hover{color:var(--verde-vivo)}
 form{display:flex;flex-direction:column;gap:14px}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.fg{display:flex;flex-direction:column;gap:6px}
-.fg label{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--cinza2)}
-.fg input,.fg select,.fg textarea{background:rgba(255,255,255,0.04);border:1px solid var(--linha);border-radius:4px;padding:11px 14px;font-family:'Inter',sans-serif;font-size:14px;color:var(--branco);outline:none;transition:border-color 0.2s}
+.fg{display:flex;flex-direction:column;gap:5px}
+.fg label{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:0.12em;color:var(--cinza1)}
+.fg input,.fg select,.fg textarea{background:rgba(255,255,255,0.03);border:1px solid var(--linha2);padding:11px 14px;font-family:'Inter',sans-serif;font-size:14px;color:var(--branco);outline:none;transition:border-color 0.2s;border-radius:0}
 .fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--verde-border)}
-.fg select option{background:#0F1A10;color:var(--branco)}
-.fg textarea{resize:vertical;min-height:110px}
-.btn-submit{background:var(--verde);color:var(--preto);padding:13px 28px;border:none;border-radius:3px;font-family:'Inter',sans-serif;font-weight:700;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;transition:all 0.2s}
+.fg select option{background:var(--ink2)}
+.fg textarea{resize:vertical;min-height:110px;font-weight:300}
+.btn-submit{background:var(--verde-vivo);color:var(--ink);padding:13px 28px;border:none;font-family:'Inter',sans-serif;font-weight:700;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;transition:all 0.2s;border-radius:2px}
 .btn-submit:hover{background:#6fd400}
 
 /* FOOTER */
-footer{background:#040804;border-top:1px solid var(--linha);padding:3rem 2.5rem 2rem}
+footer{background:#050505;border-top:1px solid var(--linha2);padding:3.5rem 3rem 2rem}
 .footer-inner{max-width:1280px;margin:0 auto}
 .footer-top{display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;margin-bottom:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid var(--linha)}
-.footer-brand img{height:52px;width:auto;mix-blend-mode:screen;margin-bottom:1rem}
-.footer-brand p{font-size:13px;color:var(--cinza2);line-height:1.7;max-width:280px;font-weight:300}
-.footer-col h4{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,0.3);margin-bottom:1rem}
+.footer-brand img{height:60px;width:auto;margin-bottom:1rem}
+.footer-brand p{font-size:13px;color:var(--cinza1);line-height:1.75;max-width:280px;font-weight:300}
+.footer-slogan{font-size:12px;color:var(--verde-vivo);font-style:italic;margin-top:.5rem;font-weight:300}
+.footer-col h4{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:0.14em;color:rgba(255,255,255,0.25);margin-bottom:1rem}
 .footer-col ul{list-style:none;display:flex;flex-direction:column;gap:8px}
-.footer-col ul a{color:var(--cinza2);text-decoration:none;font-size:13px;transition:color 0.2s}
-.footer-col ul a:hover{color:var(--verde)}
-.footer-bottom{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.3);flex-wrap:wrap;gap:8px}
-.footer-bottom a{color:rgba(255,255,255,0.3);text-decoration:none}
-.footer-bottom a:hover{color:var(--verde)}
+.footer-col ul a{color:var(--cinza1);text-decoration:none;font-size:13px;transition:color 0.2s;font-weight:300}
+.footer-col ul a:hover{color:var(--verde-vivo)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;font-size:11px;color:rgba(255,255,255,0.2);flex-wrap:wrap;gap:8px}
+.footer-bottom a{color:rgba(255,255,255,0.2);text-decoration:none;transition:color 0.2s}
+.footer-bottom a:hover{color:var(--verde-vivo)}
 
 /* WHATSAPP */
-.wa-btn{position:fixed;bottom:28px;right:28px;width:52px;height:52px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.35);z-index:99;transition:transform 0.2s;text-decoration:none}
+.wa-btn{position:fixed;bottom:28px;right:28px;width:50px;height:50px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.3);z-index:99;transition:transform 0.2s;text-decoration:none}
 .wa-btn:hover{transform:scale(1.1)}
-.wa-btn svg{width:26px;height:26px;color:#fff}
+.wa-btn svg{width:24px;height:24px;fill:#fff}
 
-/* ANIMATIONS */
-.fade-up{opacity:0;transform:translateY(24px);transition:all 0.7s cubic-bezier(0.22,1,0.36,1)}
-.fade-up.visible{opacity:1;transform:none}
+/* FADE IN */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity 0.7s ease,transform 0.7s ease}
+.reveal.visible{opacity:1;transform:none}
 
 /* RESPONSIVE */
-@media(max-width:960px){
-  .hero-inner{grid-template-columns:1fr;gap:3rem}
-  .hero-card{display:none}
+@media(max-width:1024px){
+  .hero{grid-template-columns:1fr}
+  .hero-right{display:none}
   .sobre-grid,.mp-grid,.contato-grid{grid-template-columns:1fr;gap:3rem}
+  .mvv-grid{grid-template-columns:1fr}
   .servicos-grid{grid-template-columns:repeat(2,1fr)}
   .footer-top{grid-template-columns:1fr 1fr}
   .footer-top>:first-child{grid-column:span 2}
+  nav{padding:0 1.5rem}
   .nav-links{display:none}
   .nav-mobile-btn{display:block}
+  section{padding:5rem 1.5rem}
+  .strip{padding:14px 1.5rem}
 }
-@media(max-width:580px){
-  section{padding:5rem 1.25rem}
-  nav{padding:0 1.25rem}
-  .strip{padding:1rem 1.25rem}
-  .strip-inner{gap:2rem}
+@media(max-width:600px){
   .servicos-grid{grid-template-columns:1fr}
   .form-row{grid-template-columns:1fr}
   .footer-top{grid-template-columns:1fr}
   .footer-top>:first-child{grid-column:span 1}
+  .strip-inner{gap:1.5rem}
 }
 </style>
 </head>
 <body>
 
-<nav>
-  <a href="#" class="nav-logo"><img src="logo.png" alt="RV Bioenergia"></a>
+<nav id="navbar">
+  <div class="nav-logo">
+    <a href="#inicio"><img src="logo.png" alt="RV Bioenergia"></a>
+  </div>
   <ul class="nav-links">
-    <li><a href="#sobre">Sobre</a></li>
-    <li><a href="#servicos">Serviços</a></li>
-    <li><a href="mercado.html">Mercado</a></li>
-    <li><a href="#contato" class="nav-cta">Fale conosco</a></li>
+    <li><a href="#mvv" data-pt="Missão" data-en="Mission">Missão</a></li>
+    <li><a href="#sobre" data-pt="Sobre" data-en="About">Sobre</a></li>
+    <li><a href="#servicos" data-pt="Serviços" data-en="Services">Serviços</a></li>
+    <li><a href="mercado.html" data-pt="Mercado" data-en="Market">Mercado</a></li>
+    <li><a href="#contato" class="nav-cta" data-pt="Fale conosco" data-en="Contact us">Fale conosco</a></li>
+    <li><button onclick="toggleLang()" id="lang-btn" style="background:none;border:1px solid var(--linha2);color:var(--cinza2);font-size:11px;font-weight:600;letter-spacing:0.1em;padding:6px 12px;cursor:pointer;font-family:'Inter',sans-serif;transition:all 0.2s" onmouseover="this.style.borderColor='var(--verde-vivo)';this.style.color='var(--verde-vivo)'" onmouseout="this.style.borderColor='var(--linha2)';this.style.color='var(--cinza2)'">EN</button></li>
   </ul>
   <button class="nav-mobile-btn" onclick="toggleMenu()" aria-label="Menu">☰</button>
 </nav>
 
 <section class="hero" id="inicio">
-  <div class="hero-noise"></div>
-  <div class="hero-line"></div>
-  <div class="hero-line2"></div>
-  <div class="hero-dot"></div>
-  <div class="hero-inner">
-    <div class="fade-up">
-      <div class="hero-tag">7 anos conectando o mercado de energia</div>
-      <h1>Inteligência<br>em <span>Biocombustíveis</span><br>& Logística</h1>
-      <p class="hero-desc">Intermediamos negócios de biocombustíveis, derivados de petróleo, commodities e logística — conectando compradores e vendedores no Brasil e no mundo com transparência e segurança.</p>
-      <div class="hero-btns">
-        <a href="#contato" class="btn-p">Fale com a equipe →</a>
-        <a href="mercado.html" class="btn-s">Painel de Mercado</a>
+  <div class="hero-left reveal">
+    <div class="hero-eyebrow" data-pt="Ethanol & Energy Broker · Brasil & Exterior" data-en="Ethanol & Energy Broker · Brazil & International">Ethanol & Energy Broker · Brasil & Exterior</div>
+    <h1 data-pt="Conectamos<br>o mercado de<br><em>energia</em> com<br>precisão" data-en="Connecting<br>the <em>energy</em><br>market with<br>precision">Conectamos<br>o mercado de<br><em>energia</em> com<br>precisão</h1>
+    <p class="hero-tagline" data-pt="Intermediação especializada em biocombustíveis, derivados de petróleo, commodities e logística — estruturando negócios B2B com inteligência, ética e resultados." data-en="Specialized brokerage in biofuels, petroleum derivatives, commodities and logistics — structuring B2B deals with intelligence, ethics and results.">Intermediação especializada em biocombustíveis, derivados de petróleo, commodities e logística — estruturando negócios B2B com inteligência, ética e resultados.</p>
+    <div class="hero-slogan" data-pt='"Otimizando negócios, maximizando resultados"' data-en='"Optimizing business, maximizing results"'>"Otimizando negócios, maximizando resultados"</div>
+    <div class="hero-btns">
+      <a href="#contato" class="btn-p" data-pt="Fale com nossa equipe →" data-en="Talk to our team →">Fale com nossa equipe →</a>
+      <a href="mercado.html" class="btn-s" data-pt="Painel de Mercado" data-en="Market Dashboard">Painel de Mercado</a>
+    </div>
+  </div>
+  <div class="hero-right reveal" style="transition-delay:0.15s">
+    <div class="hc-label">Mercado agora <span class="hc-live">ao vivo</span></div>
+    <div class="hc-grid">
+      <div class="hc-metric">
+        <div class="hc-mlabel">Etanol Hid. Paulínia</div>
+        <div class="hc-mval" id="h-eth">R$ —</div>
+        <div class="hc-msub" id="h-eth-var">—</div>
+      </div>
+      <div class="hc-metric">
+        <div class="hc-mlabel">Brent</div>
+        <div class="hc-mval" id="h-brent">USD —</div>
+        <div class="hc-msub" id="h-brent-var">—</div>
       </div>
     </div>
-    <div class="hero-card fade-up" style="transition-delay:0.2s">
-      <div class="hc-head">Mercado agora<span class="hc-live">Ao vivo</span></div>
-      <div class="hc-grid">
-        <div class="hc-metric">
-          <div class="hc-mlabel">Etanol Hid. SP</div>
-          <div class="hc-mval" id="h-eth">R$ —</div>
-          <div class="hc-msub" id="h-eth-var">—</div>
-        </div>
-        <div class="hc-metric">
-          <div class="hc-mlabel">Brent</div>
-          <div class="hc-mval" id="h-brent">USD —</div>
-          <div class="hc-msub" id="h-brent-var">—</div>
-        </div>
+    <div class="hc-parity">
+      <div class="hc-prow">
+        <span style="font-size:10px;text-transform:uppercase;letter-spacing:0.12em;color:var(--cinza1)">Paridade Nacional</span>
+        <span class="hc-pval" id="h-parity">—%</span>
       </div>
-      <div class="hc-parity">
-        <div class="hc-prow">
-          <span style="font-size:10px;text-transform:uppercase;letter-spacing:0.1em;color:var(--cinza2)">Paridade Nacional</span>
-          <span style="font-family:'Oswald',sans-serif;font-size:1.3rem;font-weight:600" id="h-parity">—%</span>
-        </div>
-        <div class="hc-pbar-bg">
-          <div class="hc-pbar-fill" id="h-bar" style="width:0%"></div>
-          <div class="hc-pmark"></div>
-        </div>
-        <div style="font-size:10px;color:var(--cinza2)" id="h-verdict">Calculando...</div>
+      <div class="hc-bar-bg">
+        <div class="hc-bar-fill" id="h-bar" style="width:0%"></div>
+        <div class="hc-bar-mark"></div>
       </div>
-      <a href="mercado.html" class="hc-link">Ver painel completo →</a>
+      <div class="hc-verdict" id="h-verdict">Calculando...</div>
     </div>
+    <a href="mercado.html" class="hc-link">Ver painel completo →</a>
   </div>
 </section>
 
 <div class="strip">
   <div class="strip-inner">
-    <div class="strip-item"><div class="strip-dot"></div>Brasil & Exterior</div>
-    <div class="strip-item"><div class="strip-dot"></div>Biocombustíveis</div>
-    <div class="strip-item"><div class="strip-dot"></div>Derivados de Petróleo</div>
-    <div class="strip-item"><div class="strip-dot"></div>Logística</div>
-    <div class="strip-item"><div class="strip-dot"></div>Crédito de Carbono</div>
+    <div class="strip-item" data-i18n="strip-1">Biocombustíveis</div>
+    <div class="strip-item" data-i18n="strip-2">Derivados de Petróleo</div>
+    <div class="strip-item" data-i18n="strip-3">Logística</div>
+    <div class="strip-item" data-i18n="strip-4">Commodities</div>
+    <div class="strip-item" data-i18n="strip-5">Crédito de Carbono</div>
+    <div class="strip-item" data-i18n="strip-6">Deals Estruturados</div>
   </div>
 </div>
 
+<!-- MISSÃO VISÃO VALORES -->
+<section class="mvv" id="mvv">
+  <div class="sec-inner">
+    <div class="reveal">
+      <div class="sec-eyebrow" data-i18n="mvv-eye">Nossa essência</div>
+      <h2 data-i18n="mvv-h2">Missão, <em>Visão</em> & Valores</h2>
+    </div>
+    <div class="mvv-grid reveal" style="transition-delay:0.1s">
+      <div class="mvv-card">
+        <div class="mvv-num">01</div>
+        <div class="mvv-title" data-i18n="mvv-t1">Missão</div>
+        <div class="mvv-text">Conectar produtores, fornecedores, distribuidores e consumidores finais de biocombustíveis, derivados, logística e commodities de forma ética, sustentável e inovadora — promovendo a transição para uma economia de baixo carbono e contribuindo para um futuro mais limpo e sustentável para todos.</div>
+      </div>
+      <div class="mvv-card">
+        <div class="mvv-num">02</div>
+        <div class="mvv-title" data-i18n="mvv-t2">Visão</div>
+        <div class="mvv-text">Ser reconhecida como referência em intermediação de negócios no setor energético — contribuindo ativamente na transição para uma economia de baixo carbono e para a criação de um futuro mais sustentável para as gerações presentes e futuras.</div>
+      </div>
+      <div class="mvv-card">
+        <div class="mvv-num">03</div>
+        <div class="mvv-title" data-i18n="mvv-t3">Valores</div>
+        <div class="mvv-text">Excelência e atendimento personalizado na geração de valor para clientes e parceiros. Integridade, transparência e respeito em todas as atividades. Soluções que promovam a preservação ambiental e a transição para uma economia de baixo carbono. Responsabilidade social e contribuição para o bem-estar da sociedade.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
 <section class="sobre" id="sobre">
   <div class="sec-inner">
     <div class="sobre-grid">
-      <div class="fade-up">
-        <div class="sec-tag">Sobre a empresa</div>
-        <h2>Sete anos estruturando negócios de energia</h2>
+      <div class="reveal">
+        <div class="sec-eyebrow" data-i18n="sobre-eye">Quem somos</div>
+        <h2 data-i18n="sobre-h2">Broker especializado<br>no mercado <em>energético</em></h2>
         <div class="sobre-stats">
-          <div class="stat-box"><div class="stat-num">7+</div><div class="stat-label">Anos de atuação no mercado de energia</div></div>
-          <div class="stat-box"><div class="stat-num">5</div><div class="stat-label">Segmentos de atuação integrados</div></div>
-          <div class="stat-box"><div class="stat-num">B2B</div><div class="stat-label">Foco em negócios entre empresas</div></div>
-          <div class="stat-box"><div class="stat-num">360°</div><div class="stat-label">Cobertura em todas as etapas</div></div>
+          <div class="stat"><div class="stat-num">B2B</div><div class="stat-lbl">Foco exclusivo em negócios entre empresas</div></div>
+          <div class="stat"><div class="stat-num">360°</div><div class="stat-lbl">Cobertura em todas as etapas da negociação</div></div>
+          <div class="stat"><div class="stat-num">5</div><div class="stat-lbl">Segmentos integrados de atuação</div></div>
+          <div class="stat"><div class="stat-num">BR+</div><div class="stat-lbl">Brasil e mercado internacional</div></div>
         </div>
       </div>
-      <div class="fade-up" style="transition-delay:0.15s">
-        <p class="sobre-text">A RV Bioenergia é uma empresa intermediadora de negócios especializada em biocombustíveis, derivados de petróleo, commodities e logística. Nossa missão é conectar compradores e vendedores no Brasil e no mundo, oferecendo serviços de alta qualidade em todas as etapas do processo de negociação.</p>
-        <p class="sobre-text">Com profundo conhecimento do mercado sucroenergético e de derivados, atuamos como ponte entre produtores, distribuidores e compradores — garantindo que cada transação seja conduzida com transparência, segurança e eficiência.</p>
+      <div class="reveal" style="transition-delay:0.15s">
+        <p class="sobre-text">A RV Bioenergia é uma empresa intermediadora especializada em biocombustíveis, derivados de petróleo, commodities e logística. Com profundo conhecimento do mercado sucroenergético, atuamos como ponte estratégica entre produtores, distribuidores e compradores no Brasil e no exterior.</p>
+        <p class="sobre-text">Nossa expertise em deals estruturados e nossa rede de relacionamentos no Brasil e no exterior nos posiciona como parceiro de confiança para operações de alto valor no setor energético.</p>
         <div class="sobre-vals">
-          <div class="val-row"><strong>Transparência total</strong> — transações com clareza e segurança jurídica</div>
-          <div class="val-row"><strong>Inteligência de mercado</strong> — monitoramento contínuo de preços e tendências</div>
-          <div class="val-row"><strong>Agilidade e precisão</strong> — equipe especializada em todas as etapas</div>
+          <div class="val-row"><strong>Transparência total</strong> — cada transação conduzida com clareza e segurança jurídica</div>
+          <div class="val-row"><strong>Inteligência de mercado</strong> — monitoramento contínuo de preços, tendências e oportunidades</div>
+          <div class="val-row"><strong>Presença internacional</strong> — rede de contatos no Brasil e no mercado global</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="servicos">
+<!-- SERVIÇOS -->
+<section class="servicos" id="servicos">
   <div class="sec-inner">
-    <div class="fade-up">
-      <div class="sec-tag">O que fazemos</div>
-      <h2>Nossos serviços</h2>
-      <p class="sec-desc">Portfólio completo para o mercado de energia — do biocombustível ao crédito de carbono.</p>
+    <div class="reveal">
+      <div class="sec-eyebrow" data-i18n="serv-eye">Portfólio</div>
+      <h2 data-i18n="serv-h2">Nossos <em>serviços</em></h2>
+      <p class="sec-desc" data-i18n="serv-desc">Do biocombustível ao crédito de carbono — soluções completas para o mercado de energia.</p>
     </div>
-    <div class="servicos-grid fade-up" style="transition-delay:0.1s">
-      <div class="servico"><div class="serv-line"></div><div class="serv-num">01</div><div class="serv-title">Biocombustíveis</div><div class="serv-desc">Intermediação na compra e venda de etanol hidratado, etanol anidro e biodiesel. Operações spot e contratos de longo prazo.</div></div>
-      <div class="servico"><div class="serv-line"></div><div class="serv-num">02</div><div class="serv-title">Derivados de Petróleo</div><div class="serv-desc">Comercialização de gasolina, diesel, querosene e outros derivados. Conexão entre distribuidoras e consumidores industriais.</div></div>
-      <div class="servico"><div class="serv-line"></div><div class="serv-num">03</div><div class="serv-title">Logística</div><div class="serv-desc">Estruturação de soluções para transporte e armazenagem de combustíveis e derivados em todo o território nacional.</div></div>
-      <div class="servico"><div class="serv-line"></div><div class="serv-num">04</div><div class="serv-title">Commodities</div><div class="serv-desc">Operações em açúcar, milho, soja e outros insumos do agronegócio integrados à cadeia de biocombustíveis.</div></div>
-      <div class="servico"><div class="serv-line"></div><div class="serv-num">05</div><div class="serv-title">Crédito de Carbono</div><div class="serv-desc">Assessoria e intermediação em CBios (RenovaBio) e outros instrumentos de descarbonização para indústria e transporte.</div></div>
-      <div class="servico"><div class="serv-line"></div><div class="serv-num">06</div><div class="serv-title">Consultoria em Bioenergia</div><div class="serv-desc">Análise de mercado, inteligência competitiva e estruturação de negócios para o setor sucroenergético e de energia renovável.</div></div>
+    <div class="servicos-grid reveal" style="transition-delay:0.1s">
+      <div class="servico"><div class="servico-top-line"></div><div class="serv-n">01</div><div class="serv-t" data-i18n="serv-t1">Biocombustíveis</div><div class="serv-d">Intermediação na compra e venda de etanol hidratado, anidro e biodiesel. Operações spot e contratos de longo prazo com produtores e distribuidoras.</div></div>
+      <div class="servico"><div class="servico-top-line"></div><div class="serv-n">02</div><div class="serv-t" data-i18n="serv-t2">Derivados de Petróleo</div><div class="serv-d">Comercialização de gasolina, diesel, querosene e outros derivados. Conexão direta entre distribuidoras e consumidores industriais.</div></div>
+      <div class="servico"><div class="servico-top-line"></div><div class="serv-n">03</div><div class="serv-t" data-i18n="serv-t3">Logística</div><div class="serv-d">Estruturação de soluções logísticas para transporte e armazenagem de combustíveis e derivados em todo o território nacional.</div></div>
+      <div class="servico"><div class="servico-top-line"></div><div class="serv-n">04</div><div class="serv-t" data-i18n="serv-t4">Commodities</div><div class="serv-d">Operações em açúcar, milho, soja e outros insumos do agronegócio integrados à cadeia de biocombustíveis e energia.</div></div>
+      <div class="servico"><div class="servico-top-line"></div><div class="serv-n">05</div><div class="serv-t" data-i18n="serv-t5">Crédito de Carbono</div><div class="serv-d">Assessoria e intermediação em CBios (RenovaBio) e outros instrumentos de descarbonização para indústria e transporte.</div></div>
+      <div class="servico"><div class="servico-top-line"></div><div class="serv-n">06</div><div class="serv-t" data-i18n="serv-t6">Deals Estruturados</div><div class="serv-d">Estruturação de negócios complexos e de alto valor com análise de mercado, inteligência competitiva e gestão de risco para o setor energético.</div></div>
     </div>
   </div>
 </section>
 
-<section class="mp">
+<!-- MERCADO PREVIEW -->
+<section class="mp" id="mercado-preview">
   <div class="sec-inner">
     <div class="mp-grid">
-      <div class="fade-up">
-        <div class="sec-tag">Inteligência de mercado</div>
-        <h2>Dados em tempo real para decisões mais rápidas</h2>
-        <ul class="mp-feats">
-          <li class="mp-feat">Paridade etanol/gasolina por todos os estados</li>
-          <li class="mp-feat">Cotações CEPEA Paulínia — hidratado e anidro</li>
-          <li class="mp-feat">Preço do Brent com variação diária</li>
-          <li class="mp-feat">Notícias e análises do setor</li>
-          <li class="mp-feat">Atualização automática semanal</li>
+      <div class="reveal">
+        <div class="sec-eyebrow" data-i18n="mp-eye">Inteligência de mercado</div>
+        <h2 data-i18n="mp-h2">Dados em tempo real<br>para decisões <em>precisas</em></h2>
+        <ul class="mp-list">
+          <li class="mp-item">Paridade etanol/gasolina por todos os estados</li>
+          <li class="mp-item">Cotações CEPEA Paulínia — hidratado e anidro</li>
+          <li class="mp-item">Preço do Brent com variação diária</li>
+          <li class="mp-item">Notícias e análises do setor sucroenergético</li>
+          <li class="mp-item">Atualização automática semanal</li>
         </ul>
-        <a href="mercado.html" class="btn-p">Acessar painel de mercado →</a>
+        <a href="mercado.html" class="btn-p" data-i18n="mp-btn">Acessar painel completo →</a>
       </div>
-      <div class="mp-card fade-up" style="transition-delay:0.15s">
+      <div class="mp-card reveal" style="transition-delay:0.15s">
         <div class="mp-metrics">
           <div class="mp-metric"><div class="mp-mval" id="mp-eth">R$ —</div><div class="mp-mlbl">Etanol Hid. SP</div></div>
-          <div class="mp-metric"><div class="mp-mval" id="mp-brent">USD —</div><div class="mp-mlbl">Brent</div></div>
-          <div class="mp-metric"><div class="mp-mval" id="mp-parity">—%</div><div class="mp-mlbl">Paridade Nac.</div></div>
+          <div class="mp-metric"><div class="mp-mval" id="mp-brent">USD —</div><div class="mp-mlbl">Brent USD/bbl</div></div>
+          <div class="mp-metric"><div class="mp-mval" id="mp-parity">—%</div><div class="mp-mlbl">Paridade Nacional</div></div>
           <div class="mp-metric"><div class="mp-mval" id="mp-states">—</div><div class="mp-mlbl">Estados vantajosos</div></div>
         </div>
-        <div class="mp-hint">Mapa interativo de paridade por estado disponível no painel completo</div>
+        <div class="mp-hint">Mapa interativo de paridade por estado disponível no painel</div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- CONTATO -->
 <section class="contato" id="contato">
   <div class="sec-inner">
     <div class="contato-grid">
-      <div class="fade-up">
-        <div class="sec-tag">Entre em contato</div>
-        <h2>Vamos estruturar seu próximo negócio</h2>
+      <div class="reveal">
+        <div class="sec-eyebrow" data-i18n="c-eye">Contato</div>
+        <h2 data-i18n="c-h2">Vamos estruturar seu<br>próximo <em>negócio</em></h2>
         <p class="sec-desc">Nossa equipe está pronta para apresentar as melhores oportunidades do mercado para sua empresa.</p>
         <div class="c-infos">
           <div class="c-info">
             <div class="c-icon">📱</div>
-            <div><div class="c-lbl">WhatsApp</div><div class="c-val"><a href="https://wa.me/5521999999999">+55 (21) 9 9999-9999</a></div></div>
+            <div><div class="c-lbl">WhatsApp</div><div class="c-val"><a href="https://wa.me/5521966304990">+55 (21) 9 6630-4990</a></div></div>
           </div>
           <div class="c-info">
             <div class="c-icon">✉</div>
@@ -359,7 +407,7 @@ footer{background:#040804;border-top:1px solid var(--linha);padding:3rem 2.5rem 
           </div>
         </div>
       </div>
-      <div class="fade-up" style="transition-delay:0.15s">
+      <div class="reveal" style="transition-delay:0.15s">
         <form onsubmit="submitForm(event)">
           <div class="form-row">
             <div class="fg"><label>Nome</label><input type="text" placeholder="Seu nome" required></div>
@@ -374,11 +422,11 @@ footer{background:#040804;border-top:1px solid var(--linha);padding:3rem 2.5rem 
               <option>Logística</option>
               <option>Commodities</option>
               <option>Crédito de Carbono</option>
-              <option>Consultoria</option>
+              <option>Deal Estruturado</option>
             </select>
           </div>
           <div class="fg"><label>Mensagem</label><textarea placeholder="Descreva brevemente sua necessidade..."></textarea></div>
-          <button type="submit" class="btn-submit">Enviar mensagem →</button>
+          <button type="submit" class="btn-submit" data-i18n="c-btn">Enviar mensagem →</button>
         </form>
       </div>
     </div>
@@ -390,11 +438,13 @@ footer{background:#040804;border-top:1px solid var(--linha);padding:3rem 2.5rem 
     <div class="footer-top">
       <div class="footer-brand">
         <img src="logo.png" alt="RV Bioenergia">
-        <p>Intermediação de biocombustíveis, derivados de petróleo, logística e commodities. Conectamos compradores e vendedores no Brasil e no mundo.</p>
+        <p>Broker especializado em biocombustíveis, derivados de petróleo, logística e commodities — conectando o mercado de energia no Brasil e no mundo.</p>
+        <p class="footer-slogan">"Otimizando negócios, maximizando resultados"</p>
       </div>
       <div class="footer-col">
         <h4>Navegação</h4>
         <ul>
+          <li><a href="#mvv">Missão & Valores</a></li>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#servicos">Serviços</a></li>
           <li><a href="mercado.html">Painel de Mercado</a></li>
@@ -407,19 +457,21 @@ footer{background:#040804;border-top:1px solid var(--linha);padding:3rem 2.5rem 
           <li><a href="#servicos">Biocombustíveis</a></li>
           <li><a href="#servicos">Derivados de Petróleo</a></li>
           <li><a href="#servicos">Logística</a></li>
+          <li><a href="#servicos">Commodities</a></li>
           <li><a href="#servicos">Crédito de Carbono</a></li>
+          <li><a href="#servicos">Deals Estruturados</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 RV Bioenergia. Todos os direitos reservados.</span>
+      <span>© 2026 RV Bioenergia — Combustíveis & Logística Networks. Todos os direitos reservados.</span>
       <a href="https://www.linkedin.com/company/40921017/" target="_blank">LinkedIn</a>
     </div>
   </div>
 </footer>
 
-<a href="https://wa.me/5521999999999" target="_blank" class="wa-btn" aria-label="WhatsApp">
-  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+<a href="https://wa.me/5521966304990" target="_blank" class="wa-btn" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
 </a>
 
 <script>
@@ -431,57 +483,161 @@ async function loadDados(){
     const ethP=d.etanol_paulinia.hidratado_anterior;
     const brent=d.brent.valor;
     const brentVar=d.brent.variacao;
-    const parity=d.nacional.paridade;
-    const ethVar=((eth-ethP)/ethP*100).toFixed(2);
+    const p=d.nacional.paridade;
+    const ev=((eth-ethP)/ethP*100).toFixed(2);
     document.getElementById('h-eth').textContent='R$ '+eth.toFixed(2);
     document.getElementById('mp-eth').textContent='R$ '+eth.toFixed(2);
     document.getElementById('h-brent').textContent='USD '+brent.toFixed(2);
     document.getElementById('mp-brent').textContent='USD '+brent.toFixed(2);
-    const pc=parity.toFixed(1)+'%';
-    document.getElementById('h-parity').textContent=pc;
-    document.getElementById('mp-parity').textContent=pc;
-    document.getElementById('h-parity').style.color=parity<=70?'#5CB800':'#ff6464';
-    document.getElementById('h-eth-var').innerHTML='<span class="'+(eth<ethP?'down':'up')+'">'+(eth<ethP?'▼':'▲')+' '+Math.abs(ethVar)+'%</span>';
+    document.getElementById('h-parity').textContent=p.toFixed(1)+'%';
+    document.getElementById('h-parity').style.color=p<=70?'#5CB800':'#E05555';
+    document.getElementById('mp-parity').textContent=p.toFixed(1)+'%';
+    document.getElementById('h-eth-var').innerHTML='<span class="'+(eth<ethP?'down':'up')+'">'+(eth<ethP?'▼':'▲')+' '+Math.abs(ev)+'%</span>';
     document.getElementById('h-brent-var').innerHTML='<span class="'+(brentVar>=0?'up':'down')+'">'+(brentVar>=0?'▲':'▼')+' '+Math.abs(brentVar).toFixed(2)+'%</span>';
     const bar=document.getElementById('h-bar');
-    bar.style.width=Math.min(parity,100)+'%';
-    bar.style.background=parity<=70?'#5CB800':'#E24B4A';
-    document.getElementById('h-verdict').textContent=parity<=70?'✓ Etanol compensa na média nacional':'✗ Gasolina mais vantajosa na média';
+    bar.style.width=Math.min(p,100)+'%';
+    bar.style.background=p<=70?'#5CB800':'#E05555';
+    document.getElementById('h-verdict').textContent=p<=70?'✓ Etanol compensa na média nacional':'✗ Gasolina mais vantajosa na média';
     const stOk=d.estados.filter(e=>e.etanol&&e.gasolina&&(e.etanol/e.gasolina*100)<=70).length;
     document.getElementById('mp-states').textContent=stOk;
-  }catch(e){console.log(e)}
+  }catch(e){}
 }
 
 function submitForm(e){
   e.preventDefault();
   const btn=e.target.querySelector('button');
-  btn.textContent='Mensagem enviada! ✓';
-  btn.style.background='#3B8A00';
+  btn.textContent='Mensagem enviada ✓';
+  btn.style.background='#3D8B37';
   setTimeout(()=>{btn.textContent='Enviar mensagem →';btn.style.background='';e.target.reset();},3000);
 }
 
 function toggleMenu(){
   const ul=document.querySelector('.nav-links');
   const open=ul.style.display==='flex';
-  ul.style.display=open?'':'flex';
-  if(!open){
-    ul.style.flexDirection='column';
-    ul.style.position='absolute';
-    ul.style.top='72px';
-    ul.style.left='0';ul.style.right='0';
-    ul.style.background='rgba(8,13,8,0.98)';
-    ul.style.padding='1rem 1.5rem 1.5rem';
-    ul.style.gap='1rem';
-    ul.style.borderBottom='1px solid rgba(255,255,255,0.08)';
-  }
+  ul.style.cssText=open?'':'display:flex;flex-direction:column;position:absolute;top:80px;left:0;right:0;background:rgba(10,10,10,0.98);padding:1rem 1.5rem 1.5rem;gap:1rem;border-bottom:1px solid rgba(255,255,255,0.12)';
 }
+
+window.addEventListener('scroll',()=>{
+  document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>50);
+});
 
 const obs=new IntersectionObserver(entries=>{
   entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')});
-},{threshold:0.1});
-document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
+},{threshold:0.08});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 
 loadDados();
+
+// TRADUÇÕES
+const translations = {
+  pt: {
+    // Nav
+    'nav-mvv': 'Missão', 'nav-sobre': 'Sobre', 'nav-servicos': 'Serviços',
+    'nav-mercado': 'Mercado', 'nav-cta': 'Fale conosco',
+    // Strip
+    'strip-1':'Biocombustíveis','strip-2':'Derivados de Petróleo','strip-3':'Logística',
+    'strip-4':'Commodities','strip-5':'Crédito de Carbono','strip-6':'Deals Estruturados',
+    // MVV
+    'mvv-eye':'Nossa essência','mvv-h2':'Missão, <em>Visão</em> & Valores',
+    'mvv-t1':'Missão','mvv-t2':'Visão','mvv-t3':'Valores',
+    'mvv-d1':'Conectar produtores, fornecedores, distribuidores e consumidores finais de biocombustíveis, derivados, logística e commodities de forma ética, sustentável e inovadora — promovendo a transição para uma economia de baixo carbono e contribuindo para um futuro mais limpo e sustentável para todos.',
+    'mvv-d2':'Ser reconhecida como referência em intermediação de negócios no setor energético — contribuindo ativamente na transição para uma economia de baixo carbono e para a criação de um futuro mais sustentável para as gerações presentes e futuras.',
+    'mvv-d3':'Excelência e atendimento personalizado na geração de valor para clientes e parceiros. Integridade, transparência e respeito em todas as atividades. Soluções que promovam a preservação ambiental e a transição para uma economia de baixo carbono. Responsabilidade social e contribuição para o bem-estar da sociedade.',
+    // Sobre
+    'sobre-eye':'Quem somos','sobre-h2':'Broker especializado<br>no mercado <em>energético</em>',
+    'sobre-p1':'A RV Bioenergia é uma empresa intermediadora especializada em biocombustíveis, derivados de petróleo, commodities e logística. Com profundo conhecimento do mercado sucroenergético, atuamos como ponte estratégica entre produtores, distribuidores e compradores no Brasil e no exterior.',
+    'sobre-p2':'Nossa expertise em deals estruturados e nossa rede de relacionamentos no Brasil e no exterior nos posiciona como parceiro de confiança para operações de alto valor no setor energético.',
+    'sobre-v1':'<strong>Transparência total</strong> — cada transação conduzida com clareza e segurança jurídica',
+    'sobre-v2':'<strong>Inteligência de mercado</strong> — monitoramento contínuo de preços, tendências e oportunidades',
+    'sobre-v3':'<strong>Presença internacional</strong> — rede de contatos no Brasil e no mercado global',
+    // Serviços
+    'serv-eye':'Portfólio','serv-h2':'Nossos <em>serviços</em>',
+    'serv-desc':'Do biocombustível ao crédito de carbono — soluções completas para o mercado de energia.',
+    'serv-t1':'Biocombustíveis','serv-t2':'Derivados de Petróleo','serv-t3':'Logística',
+    'serv-t4':'Commodities','serv-t5':'Crédito de Carbono','serv-t6':'Deals Estruturados',
+    'serv-d1':'Intermediação na compra e venda de etanol hidratado, anidro e biodiesel. Operações spot e contratos de longo prazo com produtores e distribuidoras.',
+    'serv-d2':'Comercialização de gasolina, diesel, querosene e outros derivados. Conexão direta entre distribuidoras e consumidores industriais.',
+    'serv-d3':'Estruturação de soluções logísticas para transporte e armazenagem de combustíveis e derivados em todo o território nacional.',
+    'serv-d4':'Operações em açúcar, milho, soja e outros insumos do agronegócio integrados à cadeia de biocombustíveis e energia.',
+    'serv-d5':'Assessoria e intermediação em CBios (RenovaBio) e outros instrumentos de descarbonização para indústria e transporte.',
+    'serv-d6':'Estruturação de negócios complexos e de alto valor com análise de mercado, inteligência competitiva e gestão de risco para o setor energético.',
+    // Mercado
+    'mp-eye':'Inteligência de mercado','mp-h2':'Dados em tempo real<br>para decisões <em>precisas</em>',
+    'mp-i1':'Paridade etanol/gasolina por todos os estados',
+    'mp-i2':'Cotações CEPEA Paulínia — hidratado e anidro',
+    'mp-i3':'Preço do Brent com variação diária',
+    'mp-i4':'Notícias e análises do setor sucroenergético',
+    'mp-i5':'Atualização automática semanal',
+    'mp-btn':'Acessar painel completo →',
+    // Contato
+    'c-eye':'Contato','c-h2':'Vamos estruturar seu<br>próximo <em>negócio</em>',
+    'c-desc':'Nossa equipe está pronta para apresentar as melhores oportunidades do mercado para sua empresa.',
+    'c-btn':'Enviar mensagem →',
+    // Footer
+    'footer-p':'Broker especializado em biocombustíveis, derivados de petróleo, logística e commodities — conectando o mercado de energia no Brasil e no mundo.',
+    'footer-slogan':'"Otimizando negócios, maximizando resultados"',
+  },
+  en: {
+    'nav-mvv':'Mission','nav-sobre':'About','nav-servicos':'Services',
+    'nav-mercado':'Market','nav-cta':'Contact us',
+    'strip-1':'Biofuels','strip-2':'Petroleum Derivatives','strip-3':'Logistics',
+    'strip-4':'Commodities','strip-5':'Carbon Credits','strip-6':'Structured Deals',
+    'mvv-eye':'Our essence','mvv-h2':'Mission, <em>Vision</em> & Values',
+    'mvv-t1':'Mission','mvv-t2':'Vision','mvv-t3':'Values',
+    'mvv-d1':'To connect producers, suppliers, distributors and end consumers of biofuels, derivatives, logistics and commodities in an ethical, sustainable and innovative manner — promoting the transition to a low-carbon economy and contributing to a cleaner and more sustainable future for all.',
+    'mvv-d2':'To be recognized as a reference in business intermediation in the energy sector — actively contributing to the transition to a low-carbon economy and to the creation of a more sustainable future for present and future generations.',
+    'mvv-d3':'Excellence and personalized service in value generation for clients and partners. Integrity, transparency and respect in all activities. Solutions that promote environmental preservation and the transition to a low-carbon economy. Social responsibility and contribution to society.',
+    'sobre-eye':'Who we are','sobre-h2':'Specialized broker<br>in the <em>energy</em> market',
+    'sobre-p1':'RV Bioenergia is a specialized brokerage firm in biofuels, petroleum derivatives, commodities and logistics. With deep knowledge of the sugarcane energy market, we act as a strategic bridge between producers, distributors and buyers in Brazil and abroad.',
+    'sobre-p2':'Our expertise in structured deals and our network of relationships in Brazil and abroad positions us as a trusted partner for high-value operations in the energy sector.',
+    'sobre-v1':'<strong>Full transparency</strong> — every transaction conducted with clarity and legal security',
+    'sobre-v2':'<strong>Market intelligence</strong> — continuous monitoring of prices, trends and opportunities',
+    'sobre-v3':'<strong>International presence</strong> — network of contacts in Brazil and the global market',
+    'serv-eye':'Portfolio','serv-h2':'Our <em>services</em>',
+    'serv-desc':'From biofuels to carbon credits — complete solutions for the energy market.',
+    'serv-t1':'Biofuels','serv-t2':'Petroleum Derivatives','serv-t3':'Logistics',
+    'serv-t4':'Commodities','serv-t5':'Carbon Credits','serv-t6':'Structured Deals',
+    'serv-d1':'Intermediation in the purchase and sale of hydrated ethanol, anhydrous ethanol and biodiesel. Spot operations and long-term contracts with producers and distributors.',
+    'serv-d2':'Trading of gasoline, diesel, kerosene and other derivatives. Direct connection between distributors and industrial consumers.',
+    'serv-d3':'Structuring logistics solutions for transportation and storage of fuels and derivatives throughout the national territory.',
+    'serv-d4':'Operations in sugar, corn, soybeans and other agribusiness inputs integrated into the biofuels and energy chain.',
+    'serv-d5':'Advisory and intermediation in CBios (RenovaBio) and other decarbonization instruments for industry and transportation.',
+    'serv-d6':'Structuring complex, high-value deals with market analysis, competitive intelligence and risk management for the energy sector.',
+    'mp-eye':'Market intelligence','mp-h2':'Real-time data<br>for <em>precise</em> decisions',
+    'mp-i1':'Ethanol/gasoline parity for all Brazilian states',
+    'mp-i2':'CEPEA Paulínia quotes — hydrated and anhydrous',
+    'mp-i3':'Brent price with daily variation',
+    'mp-i4':'News and analysis from the sugar-energy sector',
+    'mp-i5':'Automatic weekly update',
+    'mp-btn':'Access full dashboard →',
+    'c-eye':'Contact','c-h2':'Let\'s structure your<br>next <em>deal</em>',
+    'c-desc':'Our team is ready to present the best market opportunities for your company.',
+    'c-btn':'Send message →',
+    'footer-p':'Specialized broker in biofuels, petroleum derivatives, logistics and commodities — connecting the energy market in Brazil and worldwide.',
+    'footer-slogan':'"Optimizing business, maximizing results"',
+  }
+};
+
+let currentLang = 'pt';
+
+function toggleLang(){
+  currentLang = currentLang === 'pt' ? 'en' : 'pt';
+  document.getElementById('lang-btn').textContent = currentLang === 'pt' ? 'EN' : 'PT';
+  applyTranslations();
+}
+
+function applyTranslations(){
+  const t = translations[currentLang];
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if(t[key] !== undefined) el.innerHTML = t[key];
+  });
+  // Hero especial
+  const hEye = document.querySelector('.hero-eyebrow');
+  if(hEye) hEye.textContent = currentLang==='pt' ? 'Ethanol & Energy Broker · Brasil & Exterior' : 'Ethanol & Energy Broker · Brazil & International';
+  const hSlogan = document.querySelector('.hero-slogan');
+  if(hSlogan) hSlogan.textContent = currentLang==='pt' ? '"Otimizando negócios, maximizando resultados"' : '"Optimizing business, maximizing results"';
+}
 </script>
 </body>
 </html>
