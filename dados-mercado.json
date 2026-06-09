@@ -1,0 +1,267 @@
+{
+  "atualizado": "2026-06-09T16:22:12.960485",
+  "semana": "08/06 – 14/06/2026",
+  "nacional": {
+    "paridade": 69.1,
+    "etanol_medio": 4.42,
+    "gasolina_media": 6.4,
+    "municipios_vantajosos": 232,
+    "municipios_pesquisados": 387
+  },
+  "brent": {
+    "valor": 98.29,
+    "variacao": 5.82,
+    "data": "2026-06-01"
+  },
+  "etanol_paulinia": {
+    "hidratado": 3.42,
+    "hidratado_anterior": 3.51,
+    "anidro": 3.18,
+    "anidro_anterior": 3.22
+  },
+  "historico_hidratado": [
+    {
+      "data": "12/05",
+      "valor": 3.65
+    },
+    {
+      "data": "19/05",
+      "valor": 3.6
+    },
+    {
+      "data": "26/05",
+      "valor": 3.55
+    },
+    {
+      "data": "02/06",
+      "valor": 3.51
+    },
+    {
+      "data": "09/06",
+      "valor": 3.42
+    }
+  ],
+  "historico_brent": [
+    {
+      "data": "04-01",
+      "valor": 119.56
+    },
+    {
+      "data": "04-15",
+      "valor": 114.93
+    },
+    {
+      "data": "04-27",
+      "valor": 113.89
+    },
+    {
+      "data": "05-08",
+      "valor": 103.48
+    },
+    {
+      "data": "05-20",
+      "valor": 108.93
+    }
+  ],
+  "estados": [
+    {
+      "uf": "AC",
+      "nome": "Acre",
+      "etanol": 4.12,
+      "gasolina": 6.48
+    },
+    {
+      "uf": "AL",
+      "nome": "Alagoas",
+      "etanol": 4.72,
+      "gasolina": 6.55
+    },
+    {
+      "uf": "AM",
+      "nome": "Amazonas",
+      "etanol": 4.89,
+      "gasolina": 6.72
+    },
+    {
+      "uf": "AP",
+      "nome": "Amapá",
+      "etanol": null,
+      "gasolina": null
+    },
+    {
+      "uf": "BA",
+      "nome": "Bahia",
+      "etanol": 4.65,
+      "gasolina": 6.6
+    },
+    {
+      "uf": "CE",
+      "nome": "Ceará",
+      "etanol": 4.68,
+      "gasolina": 6.62
+    },
+    {
+      "uf": "DF",
+      "nome": "Distrito Federal",
+      "etanol": 4.22,
+      "gasolina": 6.15
+    },
+    {
+      "uf": "ES",
+      "nome": "Espírito Santo",
+      "etanol": 4.38,
+      "gasolina": 6.32
+    },
+    {
+      "uf": "GO",
+      "nome": "Goiás",
+      "etanol": 3.85,
+      "gasolina": 6.1
+    },
+    {
+      "uf": "MA",
+      "nome": "Maranhão",
+      "etanol": 4.75,
+      "gasolina": 6.58
+    },
+    {
+      "uf": "MG",
+      "nome": "Minas Gerais",
+      "etanol": 4.15,
+      "gasolina": 6.1
+    },
+    {
+      "uf": "MS",
+      "nome": "Mato Grosso do Sul",
+      "etanol": 3.82,
+      "gasolina": 6.08
+    },
+    {
+      "uf": "MT",
+      "nome": "Mato Grosso",
+      "etanol": 3.88,
+      "gasolina": 6.05
+    },
+    {
+      "uf": "PA",
+      "nome": "Pará",
+      "etanol": 4.72,
+      "gasolina": 6.65
+    },
+    {
+      "uf": "PB",
+      "nome": "Paraíba",
+      "etanol": 4.88,
+      "gasolina": 6.6
+    },
+    {
+      "uf": "PE",
+      "nome": "Pernambuco",
+      "etanol": 4.62,
+      "gasolina": 6.58
+    },
+    {
+      "uf": "PI",
+      "nome": "Piauí",
+      "etanol": 4.82,
+      "gasolina": 6.62
+    },
+    {
+      "uf": "PR",
+      "nome": "Paraná",
+      "etanol": 3.92,
+      "gasolina": 6.05
+    },
+    {
+      "uf": "RJ",
+      "nome": "Rio de Janeiro",
+      "etanol": 4.42,
+      "gasolina": 6.38
+    },
+    {
+      "uf": "RN",
+      "nome": "Rio Grande do Norte",
+      "etanol": 4.92,
+      "gasolina": 6.6
+    },
+    {
+      "uf": "RO",
+      "nome": "Rondônia",
+      "etanol": 3.95,
+      "gasolina": 6.12
+    },
+    {
+      "uf": "RR",
+      "nome": "Roraima",
+      "etanol": 5.1,
+      "gasolina": 7.05
+    },
+    {
+      "uf": "RS",
+      "nome": "Rio Grande do Sul",
+      "etanol": 4.78,
+      "gasolina": 6.55
+    },
+    {
+      "uf": "SC",
+      "nome": "Santa Catarina",
+      "etanol": 4.35,
+      "gasolina": 6.28
+    },
+    {
+      "uf": "SE",
+      "nome": "Sergipe",
+      "etanol": 4.68,
+      "gasolina": 6.58
+    },
+    {
+      "uf": "SP",
+      "nome": "São Paulo",
+      "etanol": 3.72,
+      "gasolina": 6.02
+    },
+    {
+      "uf": "TO",
+      "nome": "Tocantins",
+      "etanol": 4.02,
+      "gasolina": 6.08
+    }
+  ],
+  "noticias": [
+    {
+      "titulo": "Acompanhe as cotações semanais do etanol hidratado e anidro",
+      "fonte": "CEPEA/ESALQ",
+      "url": "https://www.cepea.org.br/br/indicador/etanol.aspx",
+      "tag": "Etanol",
+      "data": "09/06/2026"
+    },
+    {
+      "titulo": "ANP publica levantamento semanal de preços de combustíveis",
+      "fonte": "ANP",
+      "url": "https://www.gov.br/anp/pt-br",
+      "tag": "ANP",
+      "data": "09/06/2026"
+    },
+    {
+      "titulo": "UNICA divulga dados de produção e comercialização do setor sucroenergético",
+      "fonte": "UNICA",
+      "url": "https://unica.com.br",
+      "tag": "Produção",
+      "data": "09/06/2026"
+    },
+    {
+      "titulo": "Brent e combustíveis: acompanhe variações do mercado internacional",
+      "fonte": "Reuters Brasil",
+      "url": "https://www.reuters.com/brasil",
+      "tag": "Brent",
+      "data": "09/06/2026"
+    },
+    {
+      "titulo": "CBios RenovaBio: acompanhe as negociações de créditos de carbono",
+      "fonte": "MAPA",
+      "url": "https://www.gov.br/agricultura",
+      "tag": "RenovaBio",
+      "data": "09/06/2026"
+    }
+  ]
+}

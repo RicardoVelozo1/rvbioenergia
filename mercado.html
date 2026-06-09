@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Painel de mercado RV Bioenergia — cotações de etanol, paridade por estado, preço do Brent e notícias do setor em tempo real.">
+<title>Painel de Mercado — RV Bioenergia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --vd:#1A3D1F;--vm:#2D6A2D;--vl:#5CB800;--vc:#EAF3DE;
+  --bg:#F7F8F5;--branco:#fff;--preto:#0F1A10;
+  --ct:#4A5568;--cl:#E8EDE6;--borda:#D1D8CC;
+  --up:#3B6D11;--dn:#A32D2D;--warn:#854F0B;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Barlow',sans-serif;background:var(--bg);color:var(--preto);font-size:15px}
+
+nav{background:rgba(26,61,31,0.97);backdrop-filter:blur(8px);position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(92,184,0,0.2)}
+.nav-inner{max-width:1320px;margin:0 auto;padding:0 1.5rem;display:flex;align-items:center;justify-content:space-between;height:60px}
+.nav-logo{display:flex;align-items:center;gap:8px;text-decoration:none}
+.nav-logo svg{width:28px;height:28px}
+.nav-logo-text strong{font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:700;color:#fff}
+.nav-logo-text span{font-size:9px;color:rgba(255,255,255,0.5);display:block;letter-spacing:0.08em;text-transform:uppercase}
+.nav-back{color:rgba(255,255,255,0.7);text-decoration:none;font-size:12px;display:flex;align-items:center;gap:5px;transition:color 0.2s}
+.nav-back:hover{color:var(--vl)}
+.nav-right{display:flex;align-items:center;gap:1rem}
+.update-badge{font-size:11px;color:rgba(255,255,255,0.5);display:flex;align-items:center;gap:5px}
+.live-dot{width:6px;height:6px;border-radius:50%;background:var(--vl);animation:pulse 2s infinite;flex-shrink:0}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
+.btn-refresh{background:rgba(92,184,0,0.15);border:1px solid rgba(92,184,0,0.3);color:var(--vl);padding:5px 12px;border-radius:4px;font-size:11px;font-weight:600;cursor:pointer;font-family:'Barlow',sans-serif;letter-spacing:0.04em;text-transform:uppercase;transition:all 0.2s}
+.btn-refresh:hover{background:rgba(92,184,0,0.25)}
+
+.page{max-width:1320px;margin:0 auto;padding:1.5rem}
+
+/* HEADER */
+.page-header{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:1.5rem}
+.page-title{font-family:'Barlow Condensed',sans-serif;font-size:1.6rem;font-weight:700;color:var(--vd)}
+.page-meta{font-size:12px;color:var(--ct);margin-top:3px}
+.fonte-tag{font-size:10px;padding:2px 8px;border-radius:10px;background:var(--vc);color:var(--vd);font-weight:600;margin-left:4px}
+
+/* METRICS TOP */
+.metrics-top{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:1.25rem}
+.metric-card{background:var(--branco);border-radius:10px;padding:1.1rem 1.25rem;border:1px solid var(--cl)}
+.mc-label{font-size:10px;text-transform:uppercase;letter-spacing:0.1em;color:var(--ct);margin-bottom:6px;font-weight:600}
+.mc-value{font-family:'Barlow Condensed',sans-serif;font-size:1.9rem;font-weight:700;color:var(--preto);line-height:1}
+.mc-sub{font-size:11px;margin-top:5px;display:flex;align-items:center;gap:4px}
+.mc-source{font-size:10px;color:var(--ct);margin-top:4px}
+.up-txt{color:var(--up)}.dn-txt{color:var(--dn)}.nt-txt{color:var(--ct)}
+
+/* NATIONAL PARITY */
+.national-parity{background:var(--vd);border-radius:10px;padding:1.25rem 1.5rem;margin-bottom:1.25rem;display:flex;align-items:center;flex-wrap:wrap;gap:1.5rem}
+.np-main{display:flex;flex-direction:column}
+.np-label{font-size:10px;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.5);margin-bottom:4px}
+.np-value{font-family:'Barlow Condensed',sans-serif;font-size:2.2rem;font-weight:700;color:#fff;line-height:1}
+.np-verdict{display:inline-block;margin-top:6px;font-size:12px;padding:3px 10px;border-radius:10px;font-weight:600}
+.np-good{background:rgba(92,184,0,0.2);color:#9FE1CB}
+.np-bad{background:rgba(226,75,74,0.2);color:#F0959  5}
+.np-bar-wrap{flex:1;min-width:200px}
+.np-bar-label{display:flex;justify-content:space-between;font-size:10px;color:rgba(255,255,255,0.4);margin-bottom:6px}
+.np-bar-bg{height:8px;background:rgba(255,255,255,0.1);border-radius:4px;position:relative;overflow:hidden}
+.np-bar-fill{height:100%;border-radius:4px;transition:width 1s}
+.np-bar-mark{position:absolute;top:-3px;left:70%;width:2px;height:14px;background:rgba(255,100,100,0.6)}
+.np-stats{display:flex;gap:1.5rem;flex-wrap:wrap}
+.np-stat{text-align:center}
+.np-stat-val{font-family:'Barlow Condensed',sans-serif;font-size:1.4rem;font-weight:700;color:#fff}
+.np-stat-lbl{font-size:10px;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.06em}
+
+/* MAIN GRID */
+.main-grid{display:grid;grid-template-columns:1fr 340px;gap:14px;margin-bottom:1.25rem}
+
+/* MAP */
+.map-card{background:var(--branco);border-radius:10px;border:1px solid var(--cl);padding:1.25rem}
+.card-title{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--ct);margin-bottom:14px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.legend-row{display:flex;gap:12px;flex-wrap:wrap}
+.legend-item{display:flex;align-items:center;gap:4px;font-size:11px;color:var(--ct)}
+.legend-dot{width:10px;height:10px;border-radius:2px}
+
+/* TABLE CARD */
+.table-card{background:var(--branco);border-radius:10px;border:1px solid var(--cl);padding:1.25rem;overflow:hidden}
+.filter-tabs{display:flex;gap:6px;margin-bottom:10px}
+.ftab{font-size:10px;padding:4px 10px;border-radius:12px;cursor:pointer;border:1px solid var(--cl);background:transparent;color:var(--ct);font-family:'Barlow',sans-serif;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;transition:all 0.2s}
+.ftab.active,.ftab:hover{background:var(--vd);color:#fff;border-color:var(--vd)}
+.state-list{max-height:380px;overflow-y:auto}
+table{width:100%;border-collapse:collapse}
+thead th{font-size:10px;text-transform:uppercase;letter-spacing:0.08em;color:var(--ct);padding:6px 8px;text-align:left;border-bottom:1px solid var(--cl);position:sticky;top:0;background:var(--branco);font-weight:600}
+tbody tr{border-bottom:0.5px solid var(--cl);cursor:pointer;transition:background 0.15s}
+tbody tr:hover{background:var(--bg)}
+tbody td{padding:6px 8px;font-size:12px}
+.pct-pill{padding:2px 8px;border-radius:8px;font-size:11px;font-weight:700}
+.pg{background:#EAF3DE;color:#27500A}
+.pw{background:#FAEEDA;color:#633806}
+.pb{background:#FCEBEB;color:#791F1F}
+
+/* BOTTOM GRID */
+.bottom-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-bottom:1.25rem}
+
+/* CHARTS */
+.chart-card{background:var(--branco);border-radius:10px;border:1px solid var(--cl);padding:1.25rem}
+.chart-wrap{position:relative;height:150px;margin-top:10px}
+
+/* NEWS */
+.news-card{background:var(--branco);border-radius:10px;border:1px solid var(--cl);padding:1.25rem}
+.news-list{list-style:none}
+.news-item{padding:10px 0;border-bottom:0.5px solid var(--cl)}
+.news-item:last-child{border-bottom:none}
+.news-tag{font-size:10px;padding:2px 8px;border-radius:8px;background:var(--vc);color:var(--vd);font-weight:600;margin-right:6px}
+.news-title{font-size:13px;color:var(--preto);text-decoration:none;line-height:1.45;display:inline}
+.news-title:hover{color:var(--vl)}
+.news-meta{font-size:11px;color:var(--ct);margin-top:3px}
+
+.semana-badge{background:var(--vc);color:var(--vd);font-size:11px;padding:3px 10px;border-radius:8px;font-weight:600}
+.spinner{display:inline-block;width:12px;height:12px;border:2px solid rgba(92,184,0,0.3);border-top-color:var(--vl);border-radius:50%;animation:spin 0.8s linear infinite;margin-right:4px}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+@media(max-width:1000px){.metrics-top{grid-template-columns:repeat(2,1fr)}.main-grid{grid-template-columns:1fr}.bottom-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.metrics-top{grid-template-columns:1fr 1fr}.bottom-grid{grid-template-columns:1fr}.page{padding:1rem}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <svg viewBox="0 0 36 36" fill="none"><path d="M18 4L26 14H21V32H15V14H10L18 4Z" fill="#5CB800"/><path d="M18 10L24 18H20.5V32H15.5V18H12L18 10Z" fill="#5CB800" opacity="0.5"/></svg>
+      <div class="nav-logo-text"><strong>RV Bioenergia</strong><span>Combustíveis & Logística</span></div>
+    </a>
+    <div class="nav-right">
+      <div class="update-badge"><div class="live-dot"></div><span id="update-time">Carregando...</span></div>
+      <button class="btn-refresh" onclick="loadAll(true)">↻ Atualizar</button>
+      <a href="index.html" class="nav-back">← Site</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page">
+
+  <div class="page-header">
+    <div>
+      <div class="page-title">Painel de Mercado</div>
+      <div class="page-meta">Biocombustíveis · Derivados · Logística
+        <span class="fonte-tag">ANP</span>
+        <span class="fonte-tag">CEPEA</span>
+        <span class="fonte-tag">UNICA</span>
+      </div>
+    </div>
+    <span class="semana-badge" id="semana-badge">—</span>
+  </div>
+
+  <!-- METRICS -->
+  <div class="metrics-top">
+    <div class="metric-card">
+      <div class="mc-label">Etanol Hidratado</div>
+      <div class="mc-value" id="m-eth">—</div>
+      <div class="mc-sub" id="m-eth-var"><span class="nt-txt">—</span></div>
+      <div class="mc-source">R$/litro · CEPEA Paulínia</div>
+    </div>
+    <div class="metric-card">
+      <div class="mc-label">Etanol Anidro</div>
+      <div class="mc-value" id="m-ani">—</div>
+      <div class="mc-sub" id="m-ani-var"><span class="nt-txt">—</span></div>
+      <div class="mc-source">R$/litro · CEPEA Paulínia</div>
+    </div>
+    <div class="metric-card">
+      <div class="mc-label">Petróleo Brent</div>
+      <div class="mc-value" id="m-brent">—</div>
+      <div class="mc-sub" id="m-brent-var"><span class="nt-txt">—</span></div>
+      <div class="mc-source">USD/barril · ICE</div>
+    </div>
+    <div class="metric-card">
+      <div class="mc-label">Gasolina Comum SP</div>
+      <div class="mc-value" id="m-gas">—</div>
+      <div class="mc-sub"><span class="nt-txt">Referência semanal</span></div>
+      <div class="mc-source">R$/litro · ANP</div>
+    </div>
+  </div>
+
+  <!-- NATIONAL PARITY -->
+  <div class="national-parity">
+    <div class="np-main">
+      <div class="np-label">Paridade Nacional Etanol / Gasolina</div>
+      <div class="np-value" id="np-val">—%</div>
+      <span class="np-verdict" id="np-verdict">Calculando...</span>
+    </div>
+    <div class="np-bar-wrap">
+      <div class="np-bar-label"><span>0%</span><span style="color:rgba(255,100,100,0.7)">70% (limite)</span><span>100%</span></div>
+      <div class="np-bar-bg">
+        <div id="np-bar" class="np-bar-fill" style="width:0%"></div>
+        <div class="np-bar-mark"></div>
+      </div>
+    </div>
+    <div class="np-stats">
+      <div class="np-stat"><div class="np-stat-val" id="np-muni">—</div><div class="np-stat-lbl">Municípios vantajosos</div></div>
+      <div class="np-stat"><div class="np-stat-val" id="np-total">—</div><div class="np-stat-lbl">Municípios pesquisados</div></div>
+      <div class="np-stat"><div class="np-stat-val" id="np-states-ok">—</div><div class="np-stat-lbl">Estados vantajosos</div></div>
+    </div>
+  </div>
+
+  <!-- MAP + TABLE -->
+  <div class="main-grid">
+    <div class="map-card">
+      <div class="card-title">
+        Paridade por Estado
+        <div class="legend-row">
+          <div class="legend-item"><div class="legend-dot" style="background:#1A3D1F"></div>Ótimo &lt;65%</div>
+          <div class="legend-item"><div class="legend-dot" style="background:#5CB800"></div>Vantajoso 65-70%</div>
+          <div class="legend-item"><div class="legend-dot" style="background:#EF9F27"></div>Neutro 70-73%</div>
+          <div class="legend-item"><div class="legend-dot" style="background:#E24B4A"></div>Desfavorável &gt;73%</div>
+        </div>
+      </div>
+      <svg viewBox="0 0 500 520" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto" id="brazil-svg">
+        <defs><style>
+          .st2{stroke:#fff;stroke-width:0.8;cursor:pointer;transition:opacity 0.15s}
+          .st2:hover{opacity:0.75}
+          .stl{font-size:8px;fill:#fff;font-weight:600;text-anchor:middle;pointer-events:none;font-family:'Barlow',sans-serif}
+        </style></defs>
+        <path class="st2" id="s-AM" d="M70,80 L160,75 L175,100 L180,150 L160,170 L140,165 L100,175 L65,160 L50,130 L55,95 Z"/><text class="stl" x="115" y="130">AM</text>
+        <path class="st2" id="s-PA" d="M175,75 L260,70 L275,90 L270,130 L255,150 L230,160 L200,155 L180,150 L175,100 Z"/><text class="stl" x="222" y="115">PA</text>
+        <path class="st2" id="s-RR" d="M100,45 L140,40 L155,55 L160,75 L100,80 L80,65 Z"/><text class="stl" x="120" y="62">RR</text>
+        <path class="st2" id="s-AP" d="M260,45 L295,42 L300,65 L285,80 L265,75 L260,55 Z"/><text class="stl" x="278" y="63">AP</text>
+        <path class="st2" id="s-MA" d="M260,70 L305,68 L318,85 L315,110 L295,125 L270,130 L255,110 L260,90 Z"/><text class="stl" x="287" y="97">MA</text>
+        <path class="st2" id="s-PI" d="M305,68 L335,70 L345,88 L340,115 L318,115 L315,88 Z"/><text class="stl" x="325" y="95">PI</text>
+        <path class="st2" id="s-CE" d="M335,60 L370,65 L378,82 L365,98 L345,98 L335,82 Z"/><text class="stl" x="355" y="82">CE</text>
+        <path class="st2" id="s-RN" d="M370,60 L400,62 L408,78 L390,88 L372,82 Z"/><text class="stl" x="388" y="75">RN</text>
+        <path class="st2" id="s-PB" d="M372,88 L405,85 L412,98 L395,108 L372,105 Z"/><text class="stl" x="391" y="99">PB</text>
+        <path class="st2" id="s-PE" d="M345,100 L395,110 L400,125 L360,128 L340,120 Z"/><text class="stl" x="370" y="118">PE</text>
+        <path class="st2" id="s-AL" d="M390,125 L415,122 L420,138 L400,142 L385,138 Z"/><text class="stl" x="402" y="134">AL</text>
+        <path class="st2" id="s-SE" d="M390,142 L415,140 L418,155 L398,158 L385,152 Z"/><text class="stl" x="400" y="151">SE</text>
+        <path class="st2" id="s-BA" d="M295,125 L360,128 L400,142 L415,175 L400,220 L370,235 L330,230 L300,210 L280,185 L278,155 L285,135 Z"/><text class="stl" x="345" y="180">BA</text>
+        <path class="st2" id="s-TO" d="M255,150 L295,148 L300,175 L295,215 L270,220 L250,200 L245,175 Z"/><text class="stl" x="272" y="185">TO</text>
+        <path class="st2" id="s-RO" d="M100,175 L140,170 L155,195 L148,225 L118,228 L95,210 L90,190 Z"/><text class="stl" x="122" y="200">RO</text>
+        <path class="st2" id="s-AC" d="M50,185 L95,178 L95,210 L75,220 L45,210 L42,195 Z"/><text class="stl" x="67" y="200">AC</text>
+        <path class="st2" id="s-MT" d="M148,170 L245,165 L250,200 L245,250 L210,265 L170,258 L148,240 L140,205 Z"/><text class="stl" x="195" y="215">MT</text>
+        <path class="st2" id="s-GO" d="M250,200 L295,215 L300,255 L280,275 L250,270 L240,250 Z"/><text class="stl" x="270" y="242">GO</text>
+        <path class="st2" id="s-DF" d="M278,255 L292,252 L293,263 L280,265 Z"/><text class="stl" x="286" y="261" style="font-size:6px">DF</text>
+        <path class="st2" id="s-MG" d="M280,255 L330,235 L370,240 L385,265 L375,305 L345,320 L305,315 L278,295 L270,275 Z"/><text class="stl" x="325" y="280">MG</text>
+        <path class="st2" id="s-ES" d="M375,265 L400,262 L408,285 L390,300 L372,295 Z"/><text class="stl" x="388" y="282">ES</text>
+        <path class="st2" id="s-RJ" d="M345,315 L390,305 L398,325 L368,338 L340,330 Z"/><text class="stl" x="368" y="322">RJ</text>
+        <path class="st2" id="s-SP" d="M280,295 L345,320 L350,360 L315,375 L278,360 L265,335 L268,310 Z"/><text class="stl" x="308" y="338">SP</text>
+        <path class="st2" id="s-MS" d="M180,265 L250,268 L265,305 L250,345 L218,355 L185,340 L170,308 L172,280 Z"/><text class="stl" x="215" y="308">MS</text>
+        <path class="st2" id="s-PR" d="M245,355 L315,355 L318,385 L290,400 L250,393 L238,375 Z"/><text class="stl" x="278" y="378">PR</text>
+        <path class="st2" id="s-SC" d="M248,395 L315,388 L318,408 L285,420 L248,415 Z"/><text class="stl" x="280" y="408">SC</text>
+        <path class="st2" id="s-RS" d="M245,415 L318,410 L322,445 L300,470 L265,475 L240,455 L238,430 Z"/><text class="stl" x="280" y="445">RS</text>
+        <!-- tooltip -->
+        <rect id="tip-bg" rx="5" fill="#1A3D1F" opacity="0" pointer-events="none" width="120" height="52"/>
+        <text id="tip-name" fill="#fff" font-size="9" font-weight="600" font-family="Barlow,sans-serif" opacity="0" pointer-events="none"/>
+        <text id="tip-pct" fill="#9FE1CB" font-size="11" font-weight="700" font-family="Barlow Condensed,sans-serif" opacity="0" pointer-events="none"/>
+        <text id="tip-eth" fill="#C0DD97" font-size="8" font-family="Barlow,sans-serif" opacity="0" pointer-events="none"/>
+        <text id="tip-verd" fill="#fff" font-size="8" font-family="Barlow,sans-serif" opacity="0" pointer-events="none"/>
+      </svg>
+    </div>
+
+    <div class="table-card">
+      <div class="card-title">Ranking por estado</div>
+      <div class="filter-tabs">
+        <button class="ftab active" onclick="filterStates('all',this)">Todos</button>
+        <button class="ftab" onclick="filterStates('good',this)">✓ Vantajoso</button>
+        <button class="ftab" onclick="filterStates('bad',this)">✗ Desfavorável</button>
+      </div>
+      <div class="state-list">
+        <table>
+          <thead><tr><th>Estado</th><th>Etanol</th><th>Gas.</th><th>Paridade</th></tr></thead>
+          <tbody id="states-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHARTS + NEWS -->
+  <div class="bottom-grid">
+    <div class="chart-card">
+      <div class="card-title">Etanol Hidratado — histórico</div>
+      <div class="chart-wrap"><canvas id="chart-eth" role="img" aria-label="Histórico do preço do etanol hidratado">Gráfico histórico etanol hidratado.</canvas></div>
+    </div>
+    <div class="chart-card">
+      <div class="card-title">Brent — histórico</div>
+      <div class="chart-wrap"><canvas id="chart-brent" role="img" aria-label="Histórico do preço do Brent">Gráfico histórico Brent.</canvas></div>
+    </div>
+    <div class="news-card">
+      <div class="card-title">Notícias do setor</div>
+      <ul class="news-list" id="news-ul"><li style="padding:10px 0;font-size:13px;color:var(--ct)"><span class="spinner"></span>Carregando...</li></ul>
+    </div>
+  </div>
+
+  <div style="text-align:center;font-size:11px;color:var(--ct);padding:1rem 0 2rem">
+    Fontes: CEPEA/ESALQ · ANP · UNICA · ICE Brent · RV Bioenergia
+    &nbsp;·&nbsp; <a href="index.html" style="color:var(--vl);text-decoration:none">← Voltar ao site</a>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+let DADOS = null;
+let chartEth = null;
+let chartBrent = null;
+
+function par(e,g){ return e&&g?(e/g*100):null; }
+function colorPar(p){ if(!p) return '#B4B2A9'; if(p<65) return '#1A3D1F'; if(p<=70) return '#5CB800'; if(p<=73) return '#EF9F27'; return '#E24B4A'; }
+function pillCls(p){ if(!p) return ''; if(p<=70) return 'pg'; if(p<=73) return 'pw'; return 'pb'; }
+function varHtml(cur,prev,prefix='R$',dec=2){
+  if(!prev) return '<span class="nt-txt">—</span>';
+  const d=cur-prev; const pct=((d/prev)*100).toFixed(2);
+  const cls=d<0?'dn-txt':'up-txt'; const arr=d<0?'▼':'▲';
+  return `<span class="${cls}">${arr} ${Math.abs(pct)}% (${prefix}${Math.abs(d).toFixed(dec)})</span>`;
+}
+
+async function loadAll(force=false){
+  const t=document.getElementById('update-time');
+  t.innerHTML='<span class="spinner"></span>Atualizando...';
+  try {
+    const url='dados-mercado.json'+(force?'?t='+Date.now():'');
+    const r=await fetch(url);
+    DADOS=await r.json();
+    render();
+    t.textContent='Atualizado: '+new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
+  } catch(e){
+    t.textContent='Erro ao carregar dados';
+    console.error(e);
+  }
+}
+
+function render(){
+  const d=DADOS;
+  document.getElementById('semana-badge').textContent='Semana: '+d.semana;
+
+  // metrics
+  const eth=d.etanol_paulinia.hidratado;
+  const ethP=d.etanol_paulinia.hidratado_anterior;
+  const ani=d.etanol_paulinia.anidro;
+  const aniP=d.etanol_paulinia.anidro_anterior;
+  const brent=d.brent.valor;
+  const brentVar=d.brent.variacao;
+  const gas=d.nacional.gasolina_media;
+
+  document.getElementById('m-eth').textContent='R$ '+eth.toFixed(2);
+  document.getElementById('m-eth-var').innerHTML=varHtml(eth,ethP);
+  document.getElementById('m-ani').textContent='R$ '+ani.toFixed(2);
+  document.getElementById('m-ani-var').innerHTML=varHtml(ani,aniP);
+  document.getElementById('m-brent').textContent='USD '+brent.toFixed(2);
+  document.getElementById('m-brent-var').innerHTML=`<span class="${brentVar>=0?'up-txt':'dn-txt'}">${brentVar>=0?'▲':'▼'} ${Math.abs(brentVar).toFixed(2)}%</span>`;
+  document.getElementById('m-gas').textContent='R$ '+gas.toFixed(2);
+
+  // national parity
+  const p=d.nacional.paridade;
+  document.getElementById('np-val').textContent=p.toFixed(1)+'%';
+  const bar=document.getElementById('np-bar');
+  bar.style.width=Math.min(p,100)+'%';
+  bar.style.background=p<=70?'#5CB800':'#E24B4A';
+  const verd=document.getElementById('np-verdict');
+  if(p<=65){verd.textContent='Ótimo — etanol muito vantajoso';verd.className='np-verdict np-good';}
+  else if(p<=70){verd.textContent='Etanol compensa na média nacional';verd.className='np-verdict np-good';}
+  else{verd.textContent='Gasolina mais vantajosa na média';verd.className='np-verdict np-bad';}
+  document.getElementById('np-muni').textContent=d.nacional.municipios_vantajosos;
+  document.getElementById('np-total').textContent=d.nacional.municipios_pesquisados;
+  const stOk=d.estados.filter(e=>e.etanol&&e.gasolina&&par(e.etanol,e.gasolina)<=70).length;
+  document.getElementById('np-states-ok').textContent=stOk;
+
+  // map colors
+  d.estados.forEach(e=>{
+    const el=document.getElementById('s-'+e.uf);
+    if(el) el.style.fill=colorPar(par(e.etanol,e.gasolina));
+  });
+
+  // map tooltips
+  d.estados.forEach(e=>{
+    const el=document.getElementById('s-'+e.uf);
+    if(!el) return;
+    const p2=par(e.etanol,e.gasolina);
+    el.addEventListener('mouseenter',()=>{
+      const box=el.getBBox();
+      const tx=Math.min(box.x+box.width/2-60,375);
+      const ty=Math.max(box.y-58,5);
+      document.getElementById('tip-bg').setAttribute('x',tx);
+      document.getElementById('tip-bg').setAttribute('y',ty);
+      document.getElementById('tip-bg').setAttribute('opacity',0.95);
+      const tn=document.getElementById('tip-name');
+      tn.setAttribute('x',tx+8);tn.setAttribute('y',ty+14);tn.setAttribute('opacity',1);
+      tn.textContent=e.nome;
+      const tp=document.getElementById('tip-pct');
+      tp.setAttribute('x',tx+8);tp.setAttribute('y',ty+28);tp.setAttribute('opacity',1);
+      tp.textContent=p2?p2.toFixed(1)+'% paridade':'Sem dados';
+      const te=document.getElementById('tip-eth');
+      te.setAttribute('x',tx+8);te.setAttribute('y',ty+40);te.setAttribute('opacity',1);
+      te.textContent=e.etanol?'Etanol R$'+e.etanol.toFixed(2)+' · Gas R$'+e.gasolina.toFixed(2):'';
+      const tv=document.getElementById('tip-verd');
+      tv.setAttribute('x',tx+8);tv.setAttribute('y',ty+51);tv.setAttribute('opacity',1);
+      tv.textContent=!p2?'Sem dados':p2<65?'Ótimo':p2<=70?'Vantajoso':p2<=73?'Neutro':'Desfavorável';
+    });
+    el.addEventListener('mouseleave',()=>{
+      ['tip-bg','tip-name','tip-pct','tip-eth','tip-verd'].forEach(id=>document.getElementById(id).setAttribute('opacity',0));
+    });
+  });
+
+  // table
+  buildTable('all');
+
+  // charts
+  buildCharts();
+
+  // news
+  buildNews();
+}
+
+let currentFilter='all';
+function filterStates(f,btn){
+  currentFilter=f;
+  document.querySelectorAll('.ftab').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  buildTable(f);
+}
+
+function buildTable(f){
+  if(!DADOS) return;
+  let rows=DADOS.estados.map(e=>({...e,p:par(e.etanol,e.gasolina)}));
+  if(f==='good') rows=rows.filter(r=>r.p&&r.p<=70);
+  if(f==='bad') rows=rows.filter(r=>!r.p||r.p>70);
+  rows.sort((a,b)=>(a.p||99)-(b.p||99));
+  document.getElementById('states-tbody').innerHTML=rows.map(r=>`
+    <tr>
+      <td><strong>${r.uf}</strong> <span style="font-size:11px;color:var(--ct)">${r.nome.length>12?r.nome.substring(0,12)+'...':r.nome}</span></td>
+      <td style="font-size:11px">${r.etanol?'R$'+r.etanol.toFixed(2):'—'}</td>
+      <td style="font-size:11px">${r.gasolina?'R$'+r.gasolina.toFixed(2):'—'}</td>
+      <td>${r.p?`<span class="pct-pill ${pillCls(r.p)}">${r.p.toFixed(1)}%</span>`:'<span style="color:var(--ct)">—</span>'}</td>
+    </tr>
+  `).join('');
+}
+
+function buildCharts(){
+  if(!DADOS) return;
+  const ethH=DADOS.historico_hidratado;
+  const brentH=DADOS.historico_brent;
+  const isDark=matchMedia('(prefers-color-scheme:dark)').matches;
+  const gridColor=isDark?'rgba(255,255,255,0.06)':'rgba(0,0,0,0.05)';
+  const tickColor=isDark?'#888':'#666';
+  const commonOpts={responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{font:{size:10},color:tickColor},grid:{display:false}},y:{ticks:{font:{size:10},color:tickColor},grid:{color:gridColor}}}};
+
+  if(chartEth) chartEth.destroy();
+  chartEth=new Chart(document.getElementById('chart-eth'),{
+    type:'line',
+    data:{labels:ethH.map(e=>e.data),datasets:[{data:ethH.map(e=>e.valor),borderColor:'#1A3D1F',backgroundColor:'rgba(26,61,31,0.08)',pointRadius:3,pointBackgroundColor:'#1A3D1F',tension:0.3,fill:true,label:'R$/L'}]},
+    options:commonOpts
+  });
+
+  if(chartBrent) chartBrent.destroy();
+  chartBrent=new Chart(document.getElementById('chart-brent'),{
+    type:'line',
+    data:{labels:brentH.map(e=>e.data),datasets:[{data:brentH.map(e=>e.valor),borderColor:'#185FA5',backgroundColor:'rgba(24,95,165,0.08)',pointRadius:3,pointBackgroundColor:'#185FA5',tension:0.3,fill:true,label:'USD'}]},
+    options:commonOpts
+  });
+}
+
+function buildNews(){
+  if(!DADOS||!DADOS.noticias) return;
+  document.getElementById('news-ul').innerHTML=DADOS.noticias.map(n=>`
+    <li class="news-item">
+      <span class="news-tag">${n.tag}</span>
+      <a href="${n.url}" target="_blank" class="news-title">${n.titulo}</a>
+      <div class="news-meta">${n.fonte} · ${n.data}</div>
+    </li>
+  `).join('');
+}
+
+loadAll();
+</script>
+</body>
+</html>
