@@ -30,10 +30,10 @@ html{scroll-behavior:smooth;font-size:16px}
 body{font-family:'Inter',sans-serif;background:var(--ink);color:var(--branco);overflow-x:hidden;line-height:1.6}
 
 /* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;height:80px;display:flex;align-items:center;justify-content:space-between;padding:0 3rem;background:var(--ink);border-bottom:1px solid var(--linha2);transition:background 0.3s}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 3rem;background:var(--ink);border-bottom:1px solid var(--linha2);transition:background 0.3s}
 nav.scrolled{background:rgba(10,10,10,0.98);backdrop-filter:blur(12px)}
 .nav-logo{display:flex;align-items:center}
-.nav-logo img{height:64px;width:auto}
+.nav-logo img{height:52px;width:auto}
 .nav-links{display:flex;align-items:center;gap:2.5rem;list-style:none}
 .nav-links a{color:var(--cinza2);text-decoration:none;font-size:12px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;transition:color 0.2s}
 .nav-links a:hover{color:var(--branco)}
@@ -42,7 +42,7 @@ nav.scrolled{background:rgba(10,10,10,0.98);backdrop-filter:blur(12px)}
 .nav-mobile-btn{display:none;background:none;border:none;color:var(--branco);font-size:22px;cursor:pointer}
 
 /* HERO */
-.hero{min-height:100vh;padding-top:80px;display:grid;grid-template-columns:1fr 480px;gap:0;position:relative;overflow:hidden}
+.hero{min-height:100vh;padding-top:72px;display:grid;grid-template-columns:1fr 480px;gap:0;position:relative;overflow:hidden}
 .hero-left{display:flex;flex-direction:column;justify-content:center;padding:5rem 3rem 5rem 3rem;position:relative;z-index:2}
 .hero-right{position:relative;background:var(--ink2);border-left:1px solid var(--linha2);display:flex;flex-direction:column;justify-content:center;padding:3rem 2.5rem}
 .hero-right::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:linear-gradient(to bottom,transparent,var(--verde-vivo),transparent)}
@@ -51,6 +51,9 @@ nav.scrolled{background:rgba(10,10,10,0.98);backdrop-filter:blur(12px)}
 h1{font-family:'Playfair Display',serif;font-size:clamp(2.6rem,4.5vw,4rem);font-weight:700;line-height:1.15;letter-spacing:-0.01em;margin-bottom:1.5rem;color:var(--branco)}
 h1 em{font-style:italic;color:var(--verde-vivo)}
 .hero-tagline{font-size:1rem;color:var(--cinza1);line-height:1.85;max-width:500px;margin-bottom:1rem;font-weight:300}
+.hero-logo-title{display:flex;align-items:center;gap:2rem;margin-bottom:1.5rem}
+.hero-logo{width:140px;height:auto;flex-shrink:0}
+.hero-logo-title h1{margin-bottom:0}
 .hero-slogan{font-size:13px;font-weight:500;color:var(--cinza2);letter-spacing:0.08em;font-style:italic;margin-bottom:2.5rem;border-left:2px solid var(--verde);padding-left:14px}
 .hero-btns{display:flex;gap:12px;flex-wrap:wrap}
 .btn-p{background:var(--verde-vivo);color:var(--ink);padding:13px 26px;font-weight:600;font-size:13px;text-decoration:none;letter-spacing:0.06em;text-transform:uppercase;transition:all 0.2s;border-radius:2px;display:inline-flex;align-items:center;gap:8px}
@@ -234,7 +237,10 @@ footer{background:#050505;border-top:1px solid var(--linha2);padding:3.5rem 3rem
 <section class="hero" id="inicio">
   <div class="hero-left reveal">
     <div class="hero-eyebrow" data-pt="Ethanol & Energy Broker · Brasil & Exterior" data-en="Ethanol & Energy Broker · Brazil & International">Ethanol & Energy Broker · Brasil & Exterior</div>
-    <h1 data-pt="Conectamos<br>o mercado de<br><em>energia</em> com<br>precisão" data-en="Connecting<br>the <em>energy</em><br>market with<br>precision">Conectamos<br>o mercado de<br><em>energia</em> com<br>precisão</h1>
+    <div class="hero-logo-title">
+      <img src="logo.png" alt="RV Bioenergia" class="hero-logo">
+      <h1 data-pt="Conectamos<br>o mercado de<br><em>energia</em> com<br>precisão" data-en="Connecting<br>the <em>energy</em><br>market with<br>precision">Conectamos<br>o mercado de<br><em>energia</em> com<br>precisão</h1>
+    </div>
     <p class="hero-tagline" data-pt="Intermediação especializada em biocombustíveis, derivados de petróleo, commodities e logística — estruturando negócios B2B com inteligência, ética e resultados." data-en="Specialized brokerage in biofuels, petroleum derivatives, commodities and logistics — structuring B2B deals with intelligence, ethics and results.">Intermediação especializada em biocombustíveis, derivados de petróleo, commodities e logística — estruturando negócios B2B com inteligência, ética e resultados.</p>
     <div class="hero-slogan" data-pt='"Otimizando negócios, maximizando resultados"' data-en='"Optimizing business, maximizing results"'>"Otimizando negócios, maximizando resultados"</div>
     <div class="hero-btns">
@@ -514,7 +520,7 @@ function submitForm(e){
 function toggleMenu(){
   const ul=document.querySelector('.nav-links');
   const open=ul.style.display==='flex';
-  ul.style.cssText=open?'':'display:flex;flex-direction:column;position:absolute;top:80px;left:0;right:0;background:rgba(10,10,10,0.98);padding:1rem 1.5rem 1.5rem;gap:1rem;border-bottom:1px solid rgba(255,255,255,0.12)';
+  ul.style.cssText=open?'':'display:flex;flex-direction:column;position:absolute;top:72px;left:0;right:0;background:rgba(10,10,10,0.98);padding:1rem 1.5rem 1.5rem;gap:1rem;border-bottom:1px solid rgba(255,255,255,0.12)';
 }
 
 window.addEventListener('scroll',()=>{
