@@ -1,6 +1,6 @@
 {
-  "atualizado": "2026-06-15T21:37:13.510664",
-  "semana": "15/06 – 21/06/2026",
+  "atualizado": "2026-06-22T21:24:20.223794",
+  "semana": "22/06 – 28/06/2026",
   "nacional": {
     "paridade": 69.1,
     "etanol_medio": 4.42,
@@ -9,9 +9,9 @@
     "municipios_pesquisados": 387
   },
   "brent": {
-    "valor": 97.46,
-    "variacao": 0.17,
-    "data": "2026-06-08"
+    "valor": 84.36,
+    "variacao": -4.83,
+    "data": "2026-06-15"
   },
   "etanol_paulinia": {
     "hidratado": 3.42,
@@ -43,24 +43,24 @@
   ],
   "historico_brent": [
     {
-      "data": "04-10",
-      "valor": 119.07
+      "data": "04-17",
+      "valor": 98.63
     },
     {
-      "data": "04-22",
-      "valor": 113.44
+      "data": "04-29",
+      "valor": 124.16
     },
     {
-      "data": "05-05",
-      "valor": 114.51
+      "data": "05-12",
+      "valor": 111.37
     },
     {
-      "data": "05-15",
-      "valor": 113.96
+      "data": "05-22",
+      "valor": 106.9
     },
     {
-      "data": "05-28",
-      "valor": 95.47
+      "data": "06-04",
+      "valor": 98.98
     }
   ],
   "estados": [
@@ -233,35 +233,35 @@
       "fonte": "CEPEA/ESALQ",
       "url": "https://www.cepea.org.br/br/indicador/etanol.aspx",
       "tag": "Etanol",
-      "data": "15/06/2026"
+      "data": "22/06/2026"
     },
     {
       "titulo": "ANP publica levantamento semanal de preços de combustíveis",
       "fonte": "ANP",
       "url": "https://www.gov.br/anp/pt-br",
       "tag": "ANP",
-      "data": "15/06/2026"
+      "data": "22/06/2026"
     },
     {
       "titulo": "UNICA divulga dados de produção e comercialização do setor sucroenergético",
       "fonte": "UNICA",
       "url": "https://unica.com.br",
       "tag": "Produção",
-      "data": "15/06/2026"
+      "data": "22/06/2026"
     },
     {
       "titulo": "Brent e combustíveis: acompanhe variações do mercado internacional",
       "fonte": "Reuters Brasil",
       "url": "https://www.reuters.com/brasil",
       "tag": "Brent",
-      "data": "15/06/2026"
+      "data": "22/06/2026"
     },
     {
       "titulo": "CBios RenovaBio: acompanhe as negociações de créditos de carbono",
       "fonte": "MAPA",
       "url": "https://www.gov.br/agricultura",
       "tag": "RenovaBio",
-      "data": "15/06/2026"
+      "data": "22/06/2026"
     }
   ]
 }
