@@ -3,13 +3,13 @@
   "semana": "22/06 – 26/06/2026",
   "nacional": {
     "paridade": 63.7,
-    "etanol_medio": 4.42,
-    "gasolina_media": 6.4,
+    "etanol_medio": 4.32,
+    "gasolina_media": 6.64,
     "municipios_vantajosos": 257,
     "municipios_pesquisados": 387
   },
   "brent": {
-    "valor": 72.60,
+    "valor": 72.6,
     "variacao": -3.84,
     "data": "26/06/2026"
   },
@@ -79,164 +79,164 @@
     {
       "uf": "AC",
       "nome": "Acre",
-      "etanol": 4.12,
-      "gasolina": 6.48
+      "etanol": 5.89,
+      "gasolina": 7.89
     },
     {
       "uf": "AL",
       "nome": "Alagoas",
-      "etanol": 4.72,
-      "gasolina": 6.55
+      "etanol": 5.14,
+      "gasolina": 6.91
     },
     {
       "uf": "AM",
       "nome": "Amazonas",
-      "etanol": 4.89,
-      "gasolina": 6.72
+      "etanol": 5.19,
+      "gasolina": 7.58
     },
     {
       "uf": "AP",
       "nome": "Amapá",
-      "etanol": null,
-      "gasolina": null
+      "etanol": 5.84,
+      "gasolina": 6.6
     },
     {
       "uf": "BA",
       "nome": "Bahia",
-      "etanol": 4.65,
-      "gasolina": 6.6
+      "etanol": 5.07,
+      "gasolina": 7.2
     },
     {
       "uf": "CE",
       "nome": "Ceará",
-      "etanol": 4.68,
-      "gasolina": 6.62
+      "etanol": 5.42,
+      "gasolina": 7.08
     },
     {
       "uf": "DF",
       "nome": "Distrito Federal",
-      "etanol": 4.22,
-      "gasolina": 6.15
+      "etanol": 4.24,
+      "gasolina": 6.63
     },
     {
       "uf": "ES",
       "nome": "Espírito Santo",
-      "etanol": 4.38,
-      "gasolina": 6.32
+      "etanol": 4.93,
+      "gasolina": 6.7
     },
     {
       "uf": "GO",
       "nome": "Goiás",
-      "etanol": 3.85,
-      "gasolina": 6.1
+      "etanol": 4.16,
+      "gasolina": 6.69
     },
     {
       "uf": "MA",
       "nome": "Maranhão",
-      "etanol": 4.75,
-      "gasolina": 6.58
+      "etanol": 5.38,
+      "gasolina": 7.0
     },
     {
       "uf": "MG",
       "nome": "Minas Gerais",
-      "etanol": 4.15,
-      "gasolina": 6.1
+      "etanol": 4.23,
+      "gasolina": 6.41
     },
     {
       "uf": "MS",
       "nome": "Mato Grosso do Sul",
-      "etanol": 3.82,
-      "gasolina": 6.08
+      "etanol": 4.32,
+      "gasolina": 6.73
     },
     {
       "uf": "MT",
       "nome": "Mato Grosso",
       "etanol": 3.88,
-      "gasolina": 6.05
+      "gasolina": 6.79
     },
     {
       "uf": "PA",
       "nome": "Pará",
-      "etanol": 4.72,
-      "gasolina": 6.65
+      "etanol": 5.3,
+      "gasolina": 6.92
     },
     {
       "uf": "PB",
       "nome": "Paraíba",
-      "etanol": 4.88,
-      "gasolina": 6.6
+      "etanol": 4.9,
+      "gasolina": 6.61
     },
     {
       "uf": "PE",
       "nome": "Pernambuco",
-      "etanol": 4.62,
-      "gasolina": 6.58
+      "etanol": 5.22,
+      "gasolina": 6.94
     },
     {
       "uf": "PI",
       "nome": "Piauí",
-      "etanol": 4.82,
-      "gasolina": 6.62
+      "etanol": 5.04,
+      "gasolina": 6.88
     },
     {
       "uf": "PR",
       "nome": "Paraná",
-      "etanol": 3.92,
-      "gasolina": 6.05
+      "etanol": 4.28,
+      "gasolina": 6.67
     },
     {
       "uf": "RJ",
       "nome": "Rio de Janeiro",
-      "etanol": 4.42,
-      "gasolina": 6.38
+      "etanol": 4.94,
+      "gasolina": 6.78
     },
     {
       "uf": "RN",
       "nome": "Rio Grande do Norte",
-      "etanol": 4.92,
-      "gasolina": 6.6
+      "etanol": 5.62,
+      "gasolina": 6.8
     },
     {
       "uf": "RO",
       "nome": "Rondônia",
-      "etanol": 3.95,
-      "gasolina": 6.12
+      "etanol": 5.57,
+      "gasolina": 7.32
     },
     {
       "uf": "RR",
       "nome": "Roraima",
-      "etanol": 5.1,
-      "gasolina": 7.05
+      "etanol": 5.45,
+      "gasolina": 7.69
     },
     {
       "uf": "RS",
       "nome": "Rio Grande do Sul",
-      "etanol": 4.78,
-      "gasolina": 6.55
+      "etanol": 4.96,
+      "gasolina": 6.45
     },
     {
       "uf": "SC",
       "nome": "Santa Catarina",
-      "etanol": 4.35,
-      "gasolina": 6.28
+      "etanol": 4.77,
+      "gasolina": 6.56
     },
     {
       "uf": "SE",
       "nome": "Sergipe",
-      "etanol": 4.68,
-      "gasolina": 6.58
+      "etanol": 5.56,
+      "gasolina": 7.09
     },
     {
       "uf": "SP",
       "nome": "São Paulo",
-      "etanol": 3.72,
-      "gasolina": 6.02
+      "etanol": 3.94,
+      "gasolina": 6.49
     },
     {
       "uf": "TO",
       "nome": "Tocantins",
-      "etanol": 4.02,
-      "gasolina": 6.08
+      "etanol": 5.26,
+      "gasolina": 7.13
     }
   ],
   "noticias": [
@@ -255,11 +255,11 @@
       "data": "26/06/2026"
     },
     {
-      "titulo": "Etanol e gasolina: ANP monitora preços vantajosos nos estados produtores",
-      "fonte": "ANP",
-      "url": "https://www.gov.br/anp/pt-br",
+      "titulo": "Etanol hidratado recua 7,3% em maio com início da safra 2026/27, aponta boletim Ineep/ANP",
+      "fonte": "Ineep/ANP",
+      "url": "https://ineep.org.br/wp-content/uploads/2026/06/Boletim-de-Precos-n.-37.pdf",
       "tag": "ANP",
-      "data": "22/06/2026"
+      "data": "junho/2026"
     },
     {
       "titulo": "Etanol hidratado atinge paridade de 63,7% frente à gasolina; ANP aponta vantagem em 257 dos 387 municípios pesquisados",
@@ -267,6 +267,13 @@
       "url": "https://unica.com.br/noticias/safra-2026-2027-2a-quinzena-de-maio/",
       "tag": "Produção",
       "data": "22/06/2026"
+    },
+    {
+      "titulo": "ANP: preço médio do etanol no Brasil fica em R$ 4,58/L, equivalente a 68% da gasolina",
+      "fonte": "ANP",
+      "url": "https://www.combustiveis-anp.com.br/",
+      "tag": "ANP",
+      "data": "14-20/06/2026"
     },
     {
       "titulo": "CBios: emissão de créditos de carbono avança rumo à meta de 2026",
