@@ -2,10 +2,10 @@
   "atualizado": "2026-06-29T12:00:00",
   "semana": "22/06 – 26/06/2026",
   "nacional": {
-    "paridade": 69.1,
+    "paridade": 63.7,
     "etanol_medio": 4.42,
     "gasolina_media": 6.4,
-    "municipios_vantajosos": 232,
+    "municipios_vantajosos": 257,
     "municipios_pesquisados": 387
   },
   "brent": {
@@ -262,9 +262,9 @@
       "data": "22/06/2026"
     },
     {
-      "titulo": "UNICA divulga dados de produção e comercialização do setor sucroenergético",
-      "fonte": "UNICA",
-      "url": "https://unica.com.br",
+      "titulo": "Etanol hidratado atinge paridade de 63,7% frente à gasolina; ANP aponta vantagem em 257 dos 387 municípios pesquisados",
+      "fonte": "UNICA/ANP",
+      "url": "https://unica.com.br/noticias/safra-2026-2027-2a-quinzena-de-maio/",
       "tag": "Produção",
       "data": "22/06/2026"
     },
