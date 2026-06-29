@@ -1,6 +1,6 @@
 {
-  "atualizado": "2026-06-22T21:24:20.223794",
-  "semana": "22/06 – 28/06/2026",
+  "atualizado": "2026-06-29T12:00:00",
+  "semana": "22/06 – 26/06/2026",
   "nacional": {
     "paridade": 69.1,
     "etanol_medio": 4.42,
@@ -9,15 +9,15 @@
     "municipios_pesquisados": 387
   },
   "brent": {
-    "valor": 84.36,
-    "variacao": -4.83,
-    "data": "2026-06-15"
+    "valor": 72.60,
+    "variacao": -3.84,
+    "data": "26/06/2026"
   },
   "etanol_paulinia": {
-    "hidratado": 3.42,
-    "hidratado_anterior": 3.51,
-    "anidro": 3.18,
-    "anidro_anterior": 3.22
+    "hidratado": 2.2618,
+    "hidratado_anterior": 2.2429,
+    "anidro": 2.5509,
+    "anidro_anterior": 2.5311
   },
   "historico_hidratado": [
     {
@@ -39,6 +39,14 @@
     {
       "data": "09/06",
       "valor": 3.42
+    },
+    {
+      "data": "19/06",
+      "valor": 2.2429
+    },
+    {
+      "data": "26/06",
+      "valor": 2.2618
     }
   ],
   "historico_brent": [
@@ -61,6 +69,10 @@
     {
       "data": "06-04",
       "valor": 98.98
+    },
+    {
+      "data": "06-26",
+      "valor": 72.6
     }
   ],
   "estados": [
@@ -229,14 +241,21 @@
   ],
   "noticias": [
     {
-      "titulo": "Acompanhe as cotações semanais do etanol hidratado e anidro",
+      "titulo": "Etanol hidratado sobe 0,84% e anidro avança 0,78% em usinas paulistas",
       "fonte": "CEPEA/ESALQ",
       "url": "https://www.cepea.org.br/br/indicador/etanol.aspx",
       "tag": "Etanol",
-      "data": "22/06/2026"
+      "data": "26/06/2026"
     },
     {
-      "titulo": "ANP publica levantamento semanal de preços de combustíveis",
+      "titulo": "Brent recua quase 4% e volta a níveis pré-guerra com normalização do fluxo em Ormuz",
+      "fonte": "Seu Dinheiro",
+      "url": "https://www.seudinheiro.com",
+      "tag": "Brent",
+      "data": "26/06/2026"
+    },
+    {
+      "titulo": "Etanol e gasolina: ANP monitora preços vantajosos nos estados produtores",
       "fonte": "ANP",
       "url": "https://www.gov.br/anp/pt-br",
       "tag": "ANP",
@@ -250,18 +269,11 @@
       "data": "22/06/2026"
     },
     {
-      "titulo": "Brent e combustíveis: acompanhe variações do mercado internacional",
-      "fonte": "Reuters Brasil",
-      "url": "https://www.reuters.com/brasil",
-      "tag": "Brent",
-      "data": "22/06/2026"
-    },
-    {
-      "titulo": "CBios RenovaBio: acompanhe as negociações de créditos de carbono",
-      "fonte": "MAPA",
+      "titulo": "CBios: emissão de créditos de carbono avança rumo à meta de 2026",
+      "fonte": "RenovaBio/MAPA",
       "url": "https://www.gov.br/agricultura",
       "tag": "RenovaBio",
-      "data": "22/06/2026"
+      "data": "19/06/2026"
     }
   ]
 }
