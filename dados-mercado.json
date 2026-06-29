@@ -1,23 +1,23 @@
 {
-  "atualizado": "2026-06-29T12:00:00",
-  "semana": "22/06 – 26/06/2026",
+  "atualizado": "2026-06-29T18:30:36.005311",
+  "semana": "29/06 – 05/07/2026",
   "nacional": {
-    "paridade": 63.7,
-    "etanol_medio": 4.32,
-    "gasolina_media": 6.64,
-    "municipios_vantajosos": 257,
+    "paridade": 69.1,
+    "etanol_medio": 4.42,
+    "gasolina_media": 6.4,
+    "municipios_vantajosos": 232,
     "municipios_pesquisados": 387
   },
   "brent": {
-    "valor": 72.6,
-    "variacao": -3.84,
-    "data": "26/06/2026"
+    "valor": 76.49,
+    "variacao": -4.93,
+    "data": "2026-06-22"
   },
   "etanol_paulinia": {
-    "hidratado": 2.2618,
-    "hidratado_anterior": 2.2429,
-    "anidro": 2.5509,
-    "anidro_anterior": 2.5311
+    "hidratado": 3.42,
+    "hidratado_anterior": 3.51,
+    "anidro": 3.18,
+    "anidro_anterior": 3.22
   },
   "historico_hidratado": [
     {
@@ -39,248 +39,229 @@
     {
       "data": "09/06",
       "valor": 3.42
-    },
-    {
-      "data": "19/06",
-      "valor": 2.2429
-    },
-    {
-      "data": "26/06",
-      "valor": 2.2618
     }
   ],
   "historico_brent": [
     {
-      "data": "04-17",
-      "valor": 98.63
+      "data": "04-24",
+      "valor": 111.86
     },
     {
-      "data": "04-29",
-      "valor": 124.16
+      "data": "05-07",
+      "valor": 101.82
     },
     {
-      "data": "05-12",
-      "valor": 111.37
+      "data": "05-19",
+      "valor": 114.64
     },
     {
-      "data": "05-22",
-      "valor": 106.9
+      "data": "06-01",
+      "valor": 98.29
     },
     {
-      "data": "06-04",
-      "valor": 98.98
-    },
-    {
-      "data": "06-26",
-      "valor": 72.6
+      "data": "06-11",
+      "valor": 92.84
     }
   ],
   "estados": [
     {
       "uf": "AC",
       "nome": "Acre",
-      "etanol": 5.89,
-      "gasolina": 7.89
+      "etanol": 4.12,
+      "gasolina": 6.48
     },
     {
       "uf": "AL",
       "nome": "Alagoas",
-      "etanol": 5.14,
-      "gasolina": 6.91
+      "etanol": 4.72,
+      "gasolina": 6.55
     },
     {
       "uf": "AM",
       "nome": "Amazonas",
-      "etanol": 5.19,
-      "gasolina": 7.58
+      "etanol": 4.89,
+      "gasolina": 6.72
     },
     {
       "uf": "AP",
       "nome": "Amapá",
-      "etanol": 5.84,
-      "gasolina": 6.6
+      "etanol": null,
+      "gasolina": null
     },
     {
       "uf": "BA",
       "nome": "Bahia",
-      "etanol": 5.07,
-      "gasolina": 7.2
+      "etanol": 4.65,
+      "gasolina": 6.6
     },
     {
       "uf": "CE",
       "nome": "Ceará",
-      "etanol": 5.42,
-      "gasolina": 7.08
+      "etanol": 4.68,
+      "gasolina": 6.62
     },
     {
       "uf": "DF",
       "nome": "Distrito Federal",
-      "etanol": 4.24,
-      "gasolina": 6.63
+      "etanol": 4.22,
+      "gasolina": 6.15
     },
     {
       "uf": "ES",
       "nome": "Espírito Santo",
-      "etanol": 4.93,
-      "gasolina": 6.7
+      "etanol": 4.38,
+      "gasolina": 6.32
     },
     {
       "uf": "GO",
       "nome": "Goiás",
-      "etanol": 4.16,
-      "gasolina": 6.69
+      "etanol": 3.85,
+      "gasolina": 6.1
     },
     {
       "uf": "MA",
       "nome": "Maranhão",
-      "etanol": 5.38,
-      "gasolina": 7.0
+      "etanol": 4.75,
+      "gasolina": 6.58
     },
     {
       "uf": "MG",
       "nome": "Minas Gerais",
-      "etanol": 4.23,
-      "gasolina": 6.41
+      "etanol": 4.15,
+      "gasolina": 6.1
     },
     {
       "uf": "MS",
       "nome": "Mato Grosso do Sul",
-      "etanol": 4.32,
-      "gasolina": 6.73
+      "etanol": 3.82,
+      "gasolina": 6.08
     },
     {
       "uf": "MT",
       "nome": "Mato Grosso",
       "etanol": 3.88,
-      "gasolina": 6.79
+      "gasolina": 6.05
     },
     {
       "uf": "PA",
       "nome": "Pará",
-      "etanol": 5.3,
-      "gasolina": 6.92
+      "etanol": 4.72,
+      "gasolina": 6.65
     },
     {
       "uf": "PB",
       "nome": "Paraíba",
-      "etanol": 4.9,
-      "gasolina": 6.61
+      "etanol": 4.88,
+      "gasolina": 6.6
     },
     {
       "uf": "PE",
       "nome": "Pernambuco",
-      "etanol": 5.22,
-      "gasolina": 6.94
+      "etanol": 4.62,
+      "gasolina": 6.58
     },
     {
       "uf": "PI",
       "nome": "Piauí",
-      "etanol": 5.04,
-      "gasolina": 6.88
+      "etanol": 4.82,
+      "gasolina": 6.62
     },
     {
       "uf": "PR",
       "nome": "Paraná",
-      "etanol": 4.28,
-      "gasolina": 6.67
+      "etanol": 3.92,
+      "gasolina": 6.05
     },
     {
       "uf": "RJ",
       "nome": "Rio de Janeiro",
-      "etanol": 4.94,
-      "gasolina": 6.78
+      "etanol": 4.42,
+      "gasolina": 6.38
     },
     {
       "uf": "RN",
       "nome": "Rio Grande do Norte",
-      "etanol": 5.62,
-      "gasolina": 6.8
+      "etanol": 4.92,
+      "gasolina": 6.6
     },
     {
       "uf": "RO",
       "nome": "Rondônia",
-      "etanol": 5.57,
-      "gasolina": 7.32
+      "etanol": 3.95,
+      "gasolina": 6.12
     },
     {
       "uf": "RR",
       "nome": "Roraima",
-      "etanol": 5.45,
-      "gasolina": 7.69
+      "etanol": 5.1,
+      "gasolina": 7.05
     },
     {
       "uf": "RS",
       "nome": "Rio Grande do Sul",
-      "etanol": 4.96,
-      "gasolina": 6.45
+      "etanol": 4.78,
+      "gasolina": 6.55
     },
     {
       "uf": "SC",
       "nome": "Santa Catarina",
-      "etanol": 4.77,
-      "gasolina": 6.56
+      "etanol": 4.35,
+      "gasolina": 6.28
     },
     {
       "uf": "SE",
       "nome": "Sergipe",
-      "etanol": 5.56,
-      "gasolina": 7.09
+      "etanol": 4.68,
+      "gasolina": 6.58
     },
     {
       "uf": "SP",
       "nome": "São Paulo",
-      "etanol": 3.94,
-      "gasolina": 6.49
+      "etanol": 3.72,
+      "gasolina": 6.02
     },
     {
       "uf": "TO",
       "nome": "Tocantins",
-      "etanol": 5.26,
-      "gasolina": 7.13
+      "etanol": 4.02,
+      "gasolina": 6.08
     }
   ],
   "noticias": [
     {
-      "titulo": "Etanol hidratado sobe 0,84% e anidro avança 0,78% em usinas paulistas",
+      "titulo": "Acompanhe as cotações semanais do etanol hidratado e anidro",
       "fonte": "CEPEA/ESALQ",
       "url": "https://www.cepea.org.br/br/indicador/etanol.aspx",
       "tag": "Etanol",
-      "data": "26/06/2026"
+      "data": "29/06/2026"
     },
     {
-      "titulo": "Brent recua quase 4% e volta a níveis pré-guerra com normalização do fluxo em Ormuz",
-      "fonte": "Seu Dinheiro",
-      "url": "https://www.seudinheiro.com",
-      "tag": "Brent",
-      "data": "26/06/2026"
-    },
-    {
-      "titulo": "Etanol hidratado recua 7,3% em maio com início da safra 2026/27, aponta boletim Ineep/ANP",
-      "fonte": "Ineep/ANP",
-      "url": "https://ineep.org.br/wp-content/uploads/2026/06/Boletim-de-Precos-n.-37.pdf",
-      "tag": "ANP",
-      "data": "junho/2026"
-    },
-    {
-      "titulo": "Etanol hidratado atinge paridade de 63,7% frente à gasolina; ANP aponta vantagem em 257 dos 387 municípios pesquisados",
-      "fonte": "UNICA/ANP",
-      "url": "https://unica.com.br/noticias/safra-2026-2027-2a-quinzena-de-maio/",
-      "tag": "Produção",
-      "data": "22/06/2026"
-    },
-    {
-      "titulo": "ANP: preço médio do etanol no Brasil fica em R$ 4,58/L, equivalente a 68% da gasolina",
+      "titulo": "ANP publica levantamento semanal de preços de combustíveis",
       "fonte": "ANP",
-      "url": "https://www.combustiveis-anp.com.br/",
+      "url": "https://www.gov.br/anp/pt-br",
       "tag": "ANP",
-      "data": "14-20/06/2026"
+      "data": "29/06/2026"
     },
     {
-      "titulo": "CBios: emissão de créditos de carbono avança rumo à meta de 2026",
-      "fonte": "RenovaBio/MAPA",
+      "titulo": "UNICA divulga dados de produção e comercialização do setor sucroenergético",
+      "fonte": "UNICA",
+      "url": "https://unica.com.br",
+      "tag": "Produção",
+      "data": "29/06/2026"
+    },
+    {
+      "titulo": "Brent e combustíveis: acompanhe variações do mercado internacional",
+      "fonte": "Reuters Brasil",
+      "url": "https://www.reuters.com/brasil",
+      "tag": "Brent",
+      "data": "29/06/2026"
+    },
+    {
+      "titulo": "CBios RenovaBio: acompanhe as negociações de créditos de carbono",
+      "fonte": "MAPA",
       "url": "https://www.gov.br/agricultura",
       "tag": "RenovaBio",
-      "data": "19/06/2026"
+      "data": "29/06/2026"
     }
   ]
 }
