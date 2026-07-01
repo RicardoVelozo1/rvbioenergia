@@ -636,16 +636,10 @@ function toggleLang(){
 }
 
 function applyTranslations(){
-  const t = translations[currentLang];
-  document.querySelectorAll('[data-i18n]').forEach(el => {
-    const key = el.getAttribute('data-i18n');
-    if(t[key] !== undefined) el.innerHTML = t[key];
+  document.querySelectorAll('[data-pt]').forEach(el => {
+    const text = el.getAttribute('data-' + currentLang);
+    if(text !== null) el.innerHTML = text;
   });
-  // Hero especial
-  const hEye = document.querySelector('.hero-eyebrow');
-  if(hEye) hEye.textContent = currentLang==='pt' ? 'Ethanol & Energy Broker · Brasil & Exterior' : 'Ethanol & Energy Broker · Brazil & International';
-  const hSlogan = document.querySelector('.hero-slogan');
-  if(hSlogan) hSlogan.textContent = currentLang==='pt' ? '"Otimizando negócios, maximizando resultados"' : '"Optimizing business, maximizing results"';
 }
 </script>
 </body>
