@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" id="html-root">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Painel de mercado RV Bioenergia — cotações de etanol, paridade por estado, preço do Brent e notícias do setor em tempo real.">
-<title>Painel de Mercado — RV Bioenergia</title>
+<title id="page-title">Painel de Mercado — RV Bioenergia</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
@@ -128,8 +128,9 @@ tbody td{padding:6px 8px;font-size:12px}
     </a>
     <div class="nav-right">
       <div class="update-badge"><div class="live-dot"></div><span id="update-time">Carregando...</span></div>
-      <button class="btn-refresh" onclick="loadAll(true)">↻ Atualizar</button>
-      <a href="index.html" class="nav-back">← Site</a>
+      <button class="btn-refresh" onclick="loadAll(true)" data-pt="↻ Atualizar" data-en="↻ Refresh">↻ Atualizar</button>
+      <a href="index.html" class="nav-back" data-pt="← Site" data-en="← Home">← Site</a>
+      <button id="lang-btn" onclick="toggleLang()" style="background:none;border:1px solid rgba(92,184,0,0.3);color:rgba(255,255,255,0.7);font-size:11px;font-weight:600;letter-spacing:0.1em;padding:5px 12px;cursor:pointer;font-family:'Barlow',sans-serif;border-radius:4px;transition:all 0.2s">EN</button>
     </div>
   </div>
 </nav>
@@ -138,8 +139,8 @@ tbody td{padding:6px 8px;font-size:12px}
 
   <div class="page-header">
     <div>
-      <div class="page-title">Painel de Mercado</div>
-      <div class="page-meta">Biocombustíveis · Derivados · Logística
+      <div class="page-title" data-pt="Painel de Mercado" data-en="Market Dashboard">Painel de Mercado</div>
+      <div class="page-meta" data-pt="Biocombustíveis · Derivados · Logística" data-en="Biofuels · Derivatives · Logistics">Biocombustíveis · Derivados · Logística
         <span class="fonte-tag">ANP</span>
         <span class="fonte-tag">CEPEA</span>
         <span class="fonte-tag">UNICA</span>
@@ -151,37 +152,37 @@ tbody td{padding:6px 8px;font-size:12px}
   <!-- METRICS -->
   <div class="metrics-top">
     <div class="metric-card">
-      <div class="mc-label">Etanol Hidratado</div>
+      <div class="mc-label" data-pt="Etanol Hidratado" data-en="Hydrated Ethanol">Etanol Hidratado</div>
       <div class="mc-value" id="m-eth">—</div>
       <div class="mc-sub" id="m-eth-var"><span class="nt-txt">—</span></div>
-      <div class="mc-source">R$/litro · CEPEA Paulínia</div>
+      <div class="mc-source" data-pt="R$/litro · CEPEA Paulínia" data-en="R$/liter · CEPEA Paulínia">R$/litro · CEPEA Paulínia</div>
     </div>
     <div class="metric-card">
-      <div class="mc-label">Etanol Anidro</div>
+      <div class="mc-label" data-pt="Etanol Anidro" data-en="Anhydrous Ethanol">Etanol Anidro</div>
       <div class="mc-value" id="m-ani">—</div>
       <div class="mc-sub" id="m-ani-var"><span class="nt-txt">—</span></div>
-      <div class="mc-source">R$/litro · CEPEA Paulínia</div>
+      <div class="mc-source" data-pt="R$/litro · CEPEA Paulínia" data-en="R$/liter · CEPEA Paulínia">R$/litro · CEPEA Paulínia</div>
     </div>
     <div class="metric-card">
-      <div class="mc-label">Petróleo Brent</div>
+      <div class="mc-label" data-pt="Petróleo Brent" data-en="Brent Crude Oil">Petróleo Brent</div>
       <div class="mc-value" id="m-brent">—</div>
       <div class="mc-sub" id="m-brent-var"><span class="nt-txt">—</span></div>
-      <div class="mc-source">USD/barril · ICE</div>
+      <div class="mc-source" data-pt="USD/barril · ICE" data-en="USD/barrel · ICE">USD/barril · ICE</div>
     </div>
     <div class="metric-card">
-      <div class="mc-label">Gasolina Comum SP</div>
+      <div class="mc-label" data-pt="Gasolina Comum SP" data-en="Regular Gasoline SP">Gasolina Comum SP</div>
       <div class="mc-value" id="m-gas">—</div>
-      <div class="mc-sub"><span class="nt-txt">Referência semanal</span></div>
-      <div class="mc-source">R$/litro · ANP</div>
+      <div class="mc-sub"><span class="nt-txt" data-pt="Referência semanal" data-en="Weekly reference">Referência semanal</span></div>
+      <div class="mc-source" data-pt="R$/litro · ANP" data-en="R$/liter · ANP">R$/litro · ANP</div>
     </div>
   </div>
 
   <!-- NATIONAL PARITY -->
   <div class="national-parity">
     <div class="np-main">
-      <div class="np-label">Paridade Nacional Etanol / Gasolina</div>
+      <div class="np-label" data-pt="Paridade Nacional Etanol / Gasolina" data-en="National Ethanol / Gasoline Parity">Paridade Nacional Etanol / Gasolina</div>
       <div class="np-value" id="np-val">—%</div>
-      <span class="np-verdict" id="np-verdict">Calculando...</span>
+      <span class="np-verdict" id="np-verdict" data-pt="Calculando..." data-en="Calculating...">Calculando...</span>
     </div>
     <div class="np-bar-wrap">
       <div class="np-bar-label"><span>0%</span><span style="color:rgba(255,100,100,0.7)">70% (limite)</span><span>100%</span></div>
@@ -191,9 +192,9 @@ tbody td{padding:6px 8px;font-size:12px}
       </div>
     </div>
     <div class="np-stats">
-      <div class="np-stat"><div class="np-stat-val" id="np-muni">—</div><div class="np-stat-lbl">Municípios vantajosos</div></div>
-      <div class="np-stat"><div class="np-stat-val" id="np-total">—</div><div class="np-stat-lbl">Municípios pesquisados</div></div>
-      <div class="np-stat"><div class="np-stat-val" id="np-states-ok">—</div><div class="np-stat-lbl">Estados vantajosos</div></div>
+      <div class="np-stat"><div class="np-stat-val" id="np-muni">—</div><div class="np-stat-lbl" data-pt="Municípios vantajosos" data-en="Favorable cities">Municípios vantajosos</div></div>
+      <div class="np-stat"><div class="np-stat-val" id="np-total">—</div><div class="np-stat-lbl" data-pt="Municípios pesquisados" data-en="Total surveyed">Municípios pesquisados</div></div>
+      <div class="np-stat"><div class="np-stat-val" id="np-states-ok">—</div><div class="np-stat-lbl" data-pt="Estados vantajosos" data-en="Favorable states">Estados vantajosos</div></div>
     </div>
   </div>
 
@@ -201,12 +202,12 @@ tbody td{padding:6px 8px;font-size:12px}
   <div class="main-grid">
     <div class="map-card">
       <div class="card-title">
-        Paridade por Estado
+        <span data-pt="Paridade por Estado" data-en="Parity by State">Paridade por Estado</span>
         <div class="legend-row">
-          <div class="legend-item"><div class="legend-dot" style="background:#1A3D1F"></div>Ótimo &lt;65%</div>
-          <div class="legend-item"><div class="legend-dot" style="background:#5CB800"></div>Vantajoso 65-70%</div>
-          <div class="legend-item"><div class="legend-dot" style="background:#EF9F27"></div>Neutro 70-73%</div>
-          <div class="legend-item"><div class="legend-dot" style="background:#E24B4A"></div>Desfavorável &gt;73%</div>
+          <div class="legend-item"><div class="legend-dot" style="background:#1A3D1F"></div><span data-pt="Ótimo &lt;65%" data-en="Great &lt;65%">Ótimo &lt;65%</span></div>
+          <div class="legend-item"><div class="legend-dot" style="background:#5CB800"></div><span data-pt="Vantajoso 65-70%" data-en="Favorable 65-70%">Vantajoso 65-70%</span></div>
+          <div class="legend-item"><div class="legend-dot" style="background:#EF9F27"></div><span data-pt="Neutro 70-73%" data-en="Neutral 70-73%">Neutro 70-73%</span></div>
+          <div class="legend-item"><div class="legend-dot" style="background:#E24B4A"></div><span data-pt="Desfavorável &gt;73%" data-en="Unfavorable &gt;73%">Desfavorável &gt;73%</span></div>
         </div>
       </div>
       <svg viewBox="0 0 500 520" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto" id="brazil-svg">
@@ -252,15 +253,15 @@ tbody td{padding:6px 8px;font-size:12px}
     </div>
 
     <div class="table-card">
-      <div class="card-title">Ranking por estado</div>
+      <div class="card-title" data-pt="Ranking por estado" data-en="State Ranking">Ranking por estado</div>
       <div class="filter-tabs">
-        <button class="ftab active" onclick="filterStates('all',this)">Todos</button>
-        <button class="ftab" onclick="filterStates('good',this)">✓ Vantajoso</button>
-        <button class="ftab" onclick="filterStates('bad',this)">✗ Desfavorável</button>
+        <button class="ftab active" onclick="filterStates('all',this)" data-pt="Todos" data-en="All">Todos</button>
+        <button class="ftab" onclick="filterStates('good',this)" data-pt="✓ Vantajoso" data-en="✓ Favorable">✓ Vantajoso</button>
+        <button class="ftab" onclick="filterStates('bad',this)" data-pt="✗ Desfavorável" data-en="✗ Unfavorable">✗ Desfavorável</button>
       </div>
       <div class="state-list">
         <table>
-          <thead><tr><th>Estado</th><th>Etanol</th><th>Gas.</th><th>Paridade</th></tr></thead>
+          <thead><tr><th data-pt="Estado" data-en="State">Estado</th><th data-pt="Etanol" data-en="Ethanol">Etanol</th><th data-pt="Gas." data-en="Gas.">Gas.</th><th data-pt="Paridade" data-en="Parity">Paridade</th></tr></thead>
           <tbody id="states-tbody"></tbody>
         </table>
       </div>
@@ -270,15 +271,15 @@ tbody td{padding:6px 8px;font-size:12px}
   <!-- CHARTS + NEWS -->
   <div class="bottom-grid">
     <div class="chart-card">
-      <div class="card-title">Etanol Hidratado — histórico</div>
+      <div class="card-title" data-pt="Etanol Hidratado — histórico" data-en="Hydrated Ethanol — history">Etanol Hidratado — histórico</div>
       <div class="chart-wrap"><canvas id="chart-eth" role="img" aria-label="Histórico do preço do etanol hidratado">Gráfico histórico etanol hidratado.</canvas></div>
     </div>
     <div class="chart-card">
-      <div class="card-title">Brent — histórico</div>
+      <div class="card-title" data-pt="Brent — histórico" data-en="Brent — history">Brent — histórico</div>
       <div class="chart-wrap"><canvas id="chart-brent" role="img" aria-label="Histórico do preço do Brent">Gráfico histórico Brent.</canvas></div>
     </div>
     <div class="news-card">
-      <div class="card-title">Notícias do setor</div>
+      <div class="card-title" data-pt="Notícias do setor" data-en="Industry news">Notícias do setor</div>
       <ul class="news-list" id="news-ul"><li style="padding:10px 0;font-size:13px;color:var(--ct)"><span class="spinner"></span>Carregando...</li></ul>
     </div>
   </div>
@@ -313,16 +314,16 @@ async function loadAll(force=false){
     const r=await fetch(url);
     DADOS=await r.json();
     render();
-    t.textContent='Atualizado: '+new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
+    t.textContent=(currentLang==='pt'?'Atualizado: ':'Updated: ')+new Date().toLocaleTimeString(currentLang==='pt'?'pt-BR':'en-US',{hour:'2-digit',minute:'2-digit'});
   } catch(e){
-    t.textContent='Erro ao carregar dados';
+    t.textContent=currentLang==='pt'?'Erro ao carregar dados':'Error loading data';
     console.error(e);
   }
 }
 
 function render(){
   const d=DADOS;
-  document.getElementById('semana-badge').textContent='Semana: '+d.semana;
+  document.getElementById('semana-badge').textContent=(currentLang==='pt'?'Semana: ':'Week: ')+d.semana;
 
   // metrics
   const eth=d.etanol_paulinia.hidratado;
@@ -348,9 +349,9 @@ function render(){
   bar.style.width=Math.min(p,100)+'%';
   bar.style.background=p<=70?'#5CB800':'#E24B4A';
   const verd=document.getElementById('np-verdict');
-  if(p<=65){verd.textContent='Ótimo — etanol muito vantajoso';verd.className='np-verdict np-good';}
-  else if(p<=70){verd.textContent='Etanol compensa na média nacional';verd.className='np-verdict np-good';}
-  else{verd.textContent='Gasolina mais vantajosa na média';verd.className='np-verdict np-bad';}
+  if(p<=65){verd.textContent=currentLang==='pt'?'Ótimo — etanol muito vantajoso':'Great — ethanol much more favorable';verd.className='np-verdict np-good';}
+  else if(p<=70){verd.textContent=currentLang==='pt'?'Etanol compensa na média nacional':'Ethanol compensates on national average';verd.className='np-verdict np-good';}
+  else{verd.textContent=currentLang==='pt'?'Gasolina mais vantajosa na média':'Gasoline more advantageous on average';verd.className='np-verdict np-bad';}
   document.getElementById('np-muni').textContent=d.nacional.municipios_vantajosos;
   document.getElementById('np-total').textContent=d.nacional.municipios_pesquisados;
   const stOk=d.estados.filter(e=>e.etanol&&e.gasolina&&par(e.etanol,e.gasolina)<=70).length;
@@ -379,13 +380,13 @@ function render(){
       tn.textContent=e.nome;
       const tp=document.getElementById('tip-pct');
       tp.setAttribute('x',tx+8);tp.setAttribute('y',ty+28);tp.setAttribute('opacity',1);
-      tp.textContent=p2?p2.toFixed(1)+'% paridade':'Sem dados';
+      tp.textContent=p2?p2.toFixed(1)+(currentLang==='pt'?' paridade':' parity'):(currentLang==='pt'?'Sem dados':'No data');
       const te=document.getElementById('tip-eth');
       te.setAttribute('x',tx+8);te.setAttribute('y',ty+40);te.setAttribute('opacity',1);
-      te.textContent=e.etanol?'Etanol R$'+e.etanol.toFixed(2)+' · Gas R$'+e.gasolina.toFixed(2):'';
+      te.textContent=e.etanol?(currentLang==='pt'?'Etanol':'Ethanol')+' R$'+e.etanol.toFixed(2)+' · Gas R$'+e.gasolina.toFixed(2):'';
       const tv=document.getElementById('tip-verd');
       tv.setAttribute('x',tx+8);tv.setAttribute('y',ty+51);tv.setAttribute('opacity',1);
-      tv.textContent=!p2?'Sem dados':p2<65?'Ótimo':p2<=70?'Vantajoso':p2<=73?'Neutro':'Desfavorável';
+      tv.textContent=!p2?(currentLang==='pt'?'Sem dados':'No data'):p2<65?(currentLang==='pt'?'Ótimo':'Great'):p2<=70?(currentLang==='pt'?'Vantajoso':'Favorable'):p2<=73?(currentLang==='pt'?'Neutro':'Neutral'):(currentLang==='pt'?'Desfavorável':'Unfavorable');
     });
     el.addEventListener('mouseleave',()=>{
       ['tip-bg','tip-name','tip-pct','tip-eth','tip-verd'].forEach(id=>document.getElementById(id).setAttribute('opacity',0));
@@ -459,6 +460,26 @@ function buildNews(){
       <div class="news-meta">${n.fonte} · ${n.data}</div>
     </li>
   `).join('');
+}
+
+let currentLang = 'pt';
+
+function toggleLang(){
+  currentLang = currentLang === 'pt' ? 'en' : 'pt';
+  document.getElementById('lang-btn').textContent = currentLang === 'pt' ? 'EN' : 'PT';
+  document.getElementById('html-root').lang = currentLang === 'pt' ? 'pt-BR' : 'en';
+  document.getElementById('page-title').textContent = currentLang === 'pt'
+    ? 'Painel de Mercado — RV Bioenergia'
+    : 'Market Dashboard — RV Bioenergia';
+  applyTranslations();
+  if(DADOS) render(); // re-render JS-generated content with new language
+}
+
+function applyTranslations(){
+  document.querySelectorAll('[data-pt]').forEach(el => {
+    const text = el.getAttribute('data-' + currentLang);
+    if(text !== null) el.innerHTML = text;
+  });
 }
 
 loadAll();
