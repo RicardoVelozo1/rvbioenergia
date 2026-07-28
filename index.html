@@ -417,14 +417,19 @@ footer{background:#050505;border-top:1px solid var(--linha2);padding:3.5rem 3rem
         </div>
       </div>
       <div class="reveal" style="transition-delay:0.15s">
-        <form onsubmit="submitForm(event)">
+        <form action="https://formsubmit.co/ricardovelozo@rvbioenergia.com.br" method="POST">
+          <!-- Configurações Formsubmit (invisíveis ao visitante) -->
+          <input type="hidden" name="_subject" value="Novo contato — RV Bioenergia">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://rvbioenergia.com.br/?enviado=1">
+          <input type="hidden" name="_template" value="table">
           <div class="form-row">
-            <div class="fg"><label data-pt="Nome" data-en="Name">Nome</label><input type="text" placeholder="Seu nome" required></div>
-            <div class="fg"><label data-pt="Empresa" data-en="Company">Empresa</label><input type="text" placeholder="Sua empresa"></div>
+            <div class="fg"><label data-pt="Nome" data-en="Name">Nome</label><input type="text" name="Nome" placeholder="Seu nome" required></div>
+            <div class="fg"><label data-pt="Empresa" data-en="Company">Empresa</label><input type="text" name="Empresa" placeholder="Sua empresa"></div>
           </div>
-          <div class="fg"><label data-pt="E-mail" data-en="E-mail">E-mail</label><input type="email" placeholder="seu@email.com.br" required></div>
+          <div class="fg"><label data-pt="E-mail" data-en="E-mail">E-mail</label><input type="email" name="E-mail" placeholder="seu@email.com.br" required></div>
           <div class="fg"><label data-pt="Área de interesse" data-en="Area of interest">Área de interesse</label>
-            <select>
+            <select name="Área de interesse">
               <option value="" data-pt="Selecione..." data-en="Select...">Selecione...</option>
               <option data-pt="Biocombustíveis" data-en="Biofuels">Biocombustíveis</option>
               <option data-pt="Derivados de Petróleo" data-en="Petroleum Derivatives">Derivados de Petróleo</option>
@@ -434,7 +439,7 @@ footer{background:#050505;border-top:1px solid var(--linha2);padding:3.5rem 3rem
               <option data-pt="Deal Estruturado" data-en="Structured Deal">Deal Estruturado</option>
             </select>
           </div>
-          <div class="fg"><label data-pt="Mensagem" data-en="Message">Mensagem</label><textarea placeholder="Descreva brevemente sua necessidade..."></textarea></div>
+          <div class="fg"><label data-pt="Mensagem" data-en="Message">Mensagem</label><textarea name="Mensagem" placeholder="Descreva brevemente sua necessidade..."></textarea></div>
           <button type="submit" class="btn-submit" data-pt="Enviar mensagem →" data-en="Send message →">Enviar mensagem →</button>
         </form>
       </div>
