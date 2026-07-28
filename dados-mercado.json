@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-07-27T13:33:50.579312",
+  "atualizado": "2026-07-28T14:29:31.493616",
   "semana": "27/07 – 02/08/2026",
   "nacional": {
     "paridade": 69.1,
@@ -11,7 +11,7 @@
   "brent": {
     "valor": 86.99,
     "variacao": 2.33,
-    "data": "2026-07-20"
+    "data": "20/07/2026"
   },
   "etanol_paulinia": {
     "hidratado": 3.42,
@@ -43,23 +43,23 @@
   ],
   "historico_brent": [
     {
-      "data": "05-26",
+      "data": "26/05",
       "valor": 102.75
     },
     {
-      "data": "06-05",
+      "data": "05/06",
       "valor": 97.29
     },
     {
-      "data": "06-17",
+      "data": "17/06",
       "valor": 80.33
     },
     {
-      "data": "06-29",
+      "data": "29/06",
       "valor": 71.59
     },
     {
-      "data": "07-09",
+      "data": "09/07",
       "valor": 74.46
     }
   ],

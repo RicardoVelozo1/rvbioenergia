@@ -2,10 +2,8 @@ name: Atualizar Dados de Mercado
 
 on:
   schedule:
-    # 08:00h Brasília (BRT = UTC-3) = 11:00 UTC
-    # Roda de segunda a sexta (1-5)
-    - cron: '0 11 * * 1-5'
-  workflow_dispatch: # Permite rodar manualmente pelo GitHub
+    - cron: '0 11 * * 1'
+  workflow_dispatch:
 
 jobs:
   atualizar-dados:
@@ -29,7 +27,6 @@ jobs:
         run: |
           if [ -f "dados-mercado.json" ]; then
             echo "✓ dados-mercado.json gerado com sucesso"
-            cat dados-mercado.json | python3 -c "import json,sys; d=json.load(sys.stdin); print(f'  Brent: USD {d[\"brent\"][\"valor\"]}'); print(f'  Etanol: R$ {d[\"etanol_paulinia\"][\"hidratado\"]}'); print(f'  Paridade: {d[\"nacional\"][\"paridade\"]}%')"
           else
             echo "✗ ERRO: dados-mercado.json não foi gerado"
             exit 1
@@ -40,5 +37,5 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "RV Bioenergia Bot"
           git add dados-mercado.json
-          git diff --staged --quiet || git commit -m "🤖 Dados atualizados: $(TZ='America/Sao_Paulo' date +'%d/%m/%Y %H:%M') (Brasília)"
+          git diff --staged --quiet || git commit -m "🤖 Dados atualizados: $(date +'%d/%m/%Y %H:%M')"
           git push
