@@ -522,22 +522,22 @@ footer{background:#050505;border-top:1px solid var(--linha2);padding:3.5rem 3rem
 </a>
 
 <script>
-function newsTagLabel(tag){
-  const map={'Etanol':'Etanol','Brent':'Brent','ANP':'ANP','RenovaBio':'RenovaBio','Combustíveis':'Combustíveis','Produção':'Produção','Biocombustíveis':'Biocombustíveis'};
-  return map[tag]||tag;
-}
+const NEWS_TAG_EN={'Etanol':'Ethanol','Brent':'Brent','ANP':'ANP','RenovaBio':'RenovaBio','Combustíveis':'Fuels','Produção':'Production','Biocombustíveis':'Biofuels'};
+function newsTagLabel(tag){ return currentLang==='en' ? (NEWS_TAG_EN[tag]||tag) : tag; }
 
+let ultimasNoticias=[];
 function renderNewsHighlight(noticias){
+  ultimasNoticias=noticias||ultimasNoticias;
   const grid=document.getElementById('news-hl-grid');
   if(!grid) return;
-  if(!noticias||!noticias.length){
-    grid.innerHTML='<div class="news-hl-empty">Nenhuma notícia disponível no momento.</div>';
+  if(!ultimasNoticias||!ultimasNoticias.length){
+    grid.innerHTML='<div class="news-hl-empty">'+(currentLang==='en'?'No news available right now.':'Nenhuma notícia disponível no momento.')+'</div>';
     return;
   }
-  grid.innerHTML=noticias.slice(0,3).map(n=>`
+  grid.innerHTML=ultimasNoticias.slice(0,3).map(n=>`
     <a href="${n.url}" target="_blank" rel="noopener" class="news-hl-card">
       <span class="news-hl-tag">${newsTagLabel(n.tag)}</span>
-      <div class="news-hl-title">${n.titulo}</div>
+      <div class="news-hl-title">${currentLang==='en'&&n.titulo_en?n.titulo_en:n.titulo}</div>
       <div class="news-hl-meta">${n.fonte} · ${n.data}</div>
     </a>
   `).join('');
@@ -694,6 +694,7 @@ function toggleLang(){
   currentLang = currentLang === 'pt' ? 'en' : 'pt';
   document.getElementById('lang-btn').textContent = currentLang === 'pt' ? 'EN' : 'PT';
   applyTranslations();
+  renderNewsHighlight(); // re-renderiza as notícias no idioma atual
 }
 
 function applyTranslations(){
