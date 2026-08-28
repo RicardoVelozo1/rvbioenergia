@@ -157,6 +157,19 @@ h2 em{font-style:italic;color:var(--verde-vivo)}
 .mp-mlbl{font-size:9px;text-transform:uppercase;letter-spacing:0.12em;color:var(--cinza1);margin-top:3px}
 .mp-hint{font-size:12px;color:var(--cinza1);text-align:center;padding:14px;border-top:1px solid var(--linha2);font-weight:300;font-style:italic}
 
+/* NOTÍCIAS EM DESTAQUE */
+.news-hl{background:var(--ink)}
+.news-hl h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3vw,2.4rem);font-weight:700;color:var(--branco);margin-bottom:2rem}
+.news-hl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.news-hl-card{background:var(--ink2);border:1px solid var(--linha2);border-radius:4px;padding:1.5rem;text-decoration:none;color:var(--branco);display:flex;flex-direction:column;gap:10px;transition:all 0.2s;min-height:180px}
+.news-hl-card:hover{border-color:var(--verde-vivo);background:var(--ink3);transform:translateY(-2px)}
+.news-hl-tag{align-self:flex-start;font-size:10px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--verde-vivo);background:var(--verde-dim);padding:4px 10px;border-radius:10px}
+.news-hl-title{font-size:15px;font-weight:500;line-height:1.4;color:var(--branco);flex:1}
+.news-hl-meta{font-size:11px;color:var(--cinza1);opacity:0.9}
+.news-hl-empty{grid-column:1/-1;text-align:center;color:var(--cinza1);font-size:13px;padding:2rem 0}
+.news-hl-more{display:block;text-align:center;margin-top:2rem;font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--verde-vivo);text-decoration:none}
+@media(max-width:900px){.news-hl-grid{grid-template-columns:1fr}}
+
 /* CONTATO */
 .contato{background:var(--ink2)}
 .contato-grid{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:start}
@@ -381,7 +394,7 @@ footer{background:#050505;border-top:1px solid var(--linha2);padding:3.5rem 3rem
         <h2 data-pt="Dados em tempo real<br>para decisões <em>precisas</em>" data-en="Real-time data<br>for <em>precise</em> decisions">Dados em tempo real<br>para decisões <em>precisas</em></h2>
         <ul class="mp-list">
           <li class="mp-item" data-pt="Paridade etanol/gasolina por todos os estados" data-en="Ethanol/gasoline parity for all states">Paridade etanol/gasolina por todos os estados</li>
-          <li class="mp-item" data-pt="Cotações CEPEA Paulínia — hidratado e anidro" data-en="CEPEA Paulínia prices — hydrated and anhydrous">Cotações CEPEA Paulínia — hidratado e anidro</li>
+          <li class="mp-item" data-pt="Cotações CEPEA/ESALQ — Semanal SP (hidratado e anidro)" data-en="CEPEA/ESALQ Weekly SP prices (hydrated and anhydrous)">Cotações CEPEA/ESALQ — Semanal SP (hidratado e anidro)</li>
           <li class="mp-item" data-pt="Preço do Brent com variação diária" data-en="Brent price with daily variation">Preço do Brent com variação diária</li>
           <li class="mp-item" data-pt="Notícias e análises do setor sucroenergético" data-en="News and analysis from the sugar-energy sector">Notícias e análises do setor sucroenergético</li>
           <li class="mp-item" data-pt="Atualização automática semanal" data-en="Automatic weekly update">Atualização automática semanal</li>
@@ -393,11 +406,23 @@ footer{background:#050505;border-top:1px solid var(--linha2);padding:3.5rem 3rem
           <div class="mp-metric"><div class="mp-mval" id="mp-eth">R$ —</div><div class="mp-mlbl">Etanol Hid. SP</div></div>
           <div class="mp-metric"><div class="mp-mval" id="mp-brent">USD —</div><div class="mp-mlbl">Brent USD/bbl</div></div>
           <div class="mp-metric"><div class="mp-mval" id="mp-parity">—%</div><div class="mp-mlbl">Paridade Nacional</div></div>
-          <div class="mp-metric"><div class="mp-mval" id="mp-states">—</div><div class="mp-mlbl">Estados vantajosos</div></div>
+          <div class="mp-metric"><div class="mp-mval" id="mp-states">—</div><div class="mp-mlbl">Capitais vantajosas</div></div>
         </div>
         <div class="mp-hint" data-pt="Mapa interativo de paridade por estado disponível no painel" data-en="Interactive parity map by state available on the dashboard">Mapa interativo de paridade por estado disponível no painel</div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- NOTÍCIAS EM DESTAQUE -->
+<section class="news-hl" id="noticias">
+  <div class="sec-inner">
+    <div class="sec-eyebrow reveal" data-pt="Direto do mercado" data-en="Straight from the market">Direto do mercado</div>
+    <h2 class="reveal" data-pt="Notícias em destaque" data-en="Featured news">Notícias em destaque</h2>
+    <div class="news-hl-grid" id="news-hl-grid">
+      <div class="news-hl-empty" data-pt="Carregando notícias..." data-en="Loading news...">Carregando notícias...</div>
+    </div>
+    <a href="mercado.html" class="news-hl-more" data-pt="Ver todas as notícias no painel →" data-en="See all news on the dashboard →">Ver todas as notícias no painel →</a>
   </div>
 </section>
 
@@ -497,9 +522,31 @@ footer{background:#050505;border-top:1px solid var(--linha2);padding:3.5rem 3rem
 </a>
 
 <script>
+function newsTagLabel(tag){
+  const map={'Etanol':'Etanol','Brent':'Brent','ANP':'ANP','RenovaBio':'RenovaBio','Combustíveis':'Combustíveis','Produção':'Produção','Biocombustíveis':'Biocombustíveis'};
+  return map[tag]||tag;
+}
+
+function renderNewsHighlight(noticias){
+  const grid=document.getElementById('news-hl-grid');
+  if(!grid) return;
+  if(!noticias||!noticias.length){
+    grid.innerHTML='<div class="news-hl-empty">Nenhuma notícia disponível no momento.</div>';
+    return;
+  }
+  grid.innerHTML=noticias.slice(0,3).map(n=>`
+    <a href="${n.url}" target="_blank" rel="noopener" class="news-hl-card">
+      <span class="news-hl-tag">${newsTagLabel(n.tag)}</span>
+      <div class="news-hl-title">${n.titulo}</div>
+      <div class="news-hl-meta">${n.fonte} · ${n.data}</div>
+    </a>
+  `).join('');
+}
+
 async function loadDados(){
   try{
-    const r=await fetch('dados-mercado.json');
+    // Cache-busting sempre ativo: garante que a home nunca mostre dado antigo em cache
+    const r=await fetch('dados-mercado.json?t='+Date.now(),{cache:'no-store'});
     const d=await r.json();
     const eth=d.etanol_paulinia.hidratado;
     const ethP=d.etanol_paulinia.hidratado_anterior;
@@ -522,6 +569,7 @@ async function loadDados(){
     document.getElementById('h-verdict').textContent=p<=70?'✓ Etanol compensa na média nacional':'✗ Gasolina mais vantajosa na média';
     const stOk=d.estados.filter(e=>e.etanol&&e.gasolina&&(e.etanol/e.gasolina*100)<=70).length;
     document.getElementById('mp-states').textContent=stOk;
+    renderNewsHighlight(d.noticias);
   }catch(e){}
 }
 
