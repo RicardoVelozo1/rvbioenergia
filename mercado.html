@@ -163,13 +163,13 @@ tbody td{padding:6px 8px;font-size:12px}
       <div class="mc-label" data-pt="Etanol Hidratado" data-en="Hydrated Ethanol">Etanol Hidratado</div>
       <div class="mc-value" id="m-eth">—</div>
       <div class="mc-sub" id="m-eth-var"><span class="nt-txt">—</span></div>
-      <div class="mc-source" data-pt="R$/litro · CEPEA Paulínia" data-en="R$/liter · CEPEA Paulínia">R$/litro · CEPEA Paulínia</div>
+      <div class="mc-source" data-pt="R$/litro · CEPEA/ESALQ Semanal SP" data-en="R$/liter · CEPEA/ESALQ Weekly SP">R$/litro · CEPEA/ESALQ Semanal SP</div>
     </div>
     <div class="metric-card">
       <div class="mc-label" data-pt="Etanol Anidro" data-en="Anhydrous Ethanol">Etanol Anidro</div>
       <div class="mc-value" id="m-ani">—</div>
       <div class="mc-sub" id="m-ani-var"><span class="nt-txt">—</span></div>
-      <div class="mc-source" data-pt="R$/litro · CEPEA Paulínia" data-en="R$/liter · CEPEA Paulínia">R$/litro · CEPEA Paulínia</div>
+      <div class="mc-source" data-pt="R$/litro · CEPEA/ESALQ Semanal SP" data-en="R$/liter · CEPEA/ESALQ Weekly SP">R$/litro · CEPEA/ESALQ Semanal SP</div>
     </div>
     <div class="metric-card">
       <div class="mc-label" data-pt="Petróleo Brent" data-en="Brent Crude Oil">Petróleo Brent</div>
@@ -180,7 +180,7 @@ tbody td{padding:6px 8px;font-size:12px}
     <div class="metric-card">
       <div class="mc-label" data-pt="Gasolina Comum SP" data-en="Regular Gasoline SP">Gasolina Comum SP</div>
       <div class="mc-value" id="m-gas">—</div>
-      <div class="mc-sub"><span class="nt-txt" data-pt="Referência semanal" data-en="Weekly reference">Referência semanal</span></div>
+      <div class="mc-sub"><span class="nt-txt" data-pt="Referência semanal · Capital SP" data-en="Weekly reference · SP capital">Referência semanal · Capital SP</span></div>
       <div class="mc-source" data-pt="R$/litro · ANP" data-en="R$/liter · ANP">R$/litro · ANP</div>
     </div>
   </div>
@@ -202,7 +202,6 @@ tbody td{padding:6px 8px;font-size:12px}
     <div class="np-stats">
       <div class="np-stat"><div class="np-stat-val" id="np-muni">—</div><div class="np-stat-lbl" data-pt="Capitais vantajosas" data-en="Favorable capitals">Capitais vantajosas</div></div>
       <div class="np-stat"><div class="np-stat-val" id="np-total">—</div><div class="np-stat-lbl" data-pt="Capitais pesquisadas" data-en="Capitals surveyed">Capitais pesquisadas</div></div>
-      <div class="np-stat"><div class="np-stat-val" id="np-states-ok">—</div><div class="np-stat-lbl" data-pt="Estados vantajosos" data-en="Favorable states">Estados vantajosos</div></div>
     </div>
   </div>
 
@@ -318,11 +317,14 @@ async function loadAll(force=false){
   const t=document.getElementById('update-time');
   t.innerHTML='<span class="spinner"></span>Atualizando...';
   try {
-    const url='dados-mercado.json'+(force?'?t='+Date.now():'');
-    const r=await fetch(url);
+    // Cache-busting sempre ativo: garante que o navegador nunca exiba um JSON antigo em cache
+    const url='dados-mercado.json?t='+Date.now();
+    const r=await fetch(url,{cache:'no-store'});
     DADOS=await r.json();
     render();
-    t.textContent=(currentLang==='pt'?'Atualizado: ':'Updated: ')+new Date().toLocaleTimeString(currentLang==='pt'?'pt-BR':'en-US',{hour:'2-digit',minute:'2-digit'});
+    // Mostra o horário real do dado (campo "atualizado" do JSON), não o relógio local do navegador
+    const dt=new Date(DADOS.atualizado);
+    t.textContent=(currentLang==='pt'?'Dado de: ':'Data from: ')+dt.toLocaleString(currentLang==='pt'?'pt-BR':'en-US',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'});
   } catch(e){
     t.textContent=currentLang==='pt'?'Erro ao carregar dados':'Error loading data';
     console.error(e);
@@ -340,7 +342,8 @@ function render(){
   const aniP=d.etanol_paulinia.anidro_anterior;
   const brent=d.brent.valor;
   const brentVar=d.brent.variacao;
-  const gas=d.nacional.gasolina_media;
+  const spEstado=d.estados.find(e=>e.uf==='SP');
+  const gas=spEstado?spEstado.gasolina:d.nacional.gasolina_media;
 
   document.getElementById('m-eth').textContent='R$ '+eth.toFixed(2);
   document.getElementById('m-eth-var').innerHTML=varHtml(eth,ethP);
@@ -362,8 +365,6 @@ function render(){
   else{verd.textContent=currentLang==='pt'?'Gasolina mais vantajosa na média':'Gasoline more advantageous on average';verd.className='np-verdict np-bad';}
   document.getElementById('np-muni').textContent=d.nacional.municipios_vantajosos;
   document.getElementById('np-total').textContent=d.nacional.municipios_pesquisados;
-  const stOk=d.estados.filter(e=>e.etanol&&e.gasolina&&par(e.etanol,e.gasolina)<=70).length;
-  document.getElementById('np-states-ok').textContent=stOk;
 
   // map colors
   d.estados.forEach(e=>{
