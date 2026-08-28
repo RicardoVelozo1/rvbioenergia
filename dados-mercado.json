@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-08-27T20:49:16.113980",
+  "atualizado": "2026-08-28T14:00:00.000000",
   "semana": "24/08 – 30/08/2026",
   "nacional": {
     "paridade": 69.1,
@@ -9,9 +9,9 @@
     "municipios_pesquisados": 387
   },
   "brent": {
-    "valor": 88.24,
-    "variacao": -4.82,
-    "data": "25/08/2026"
+    "valor": 88.03,
+    "variacao": -0.55,
+    "data": "28/08/2026"
   },
   "etanol_paulinia": {
     "hidratado": 3.42,
@@ -61,6 +61,10 @@
     {
       "data": "14/08",
       "valor": 92.02
+    },
+    {
+      "data": "28/08",
+      "valor": 88.03
     }
   ],
   "estados": [
@@ -229,39 +233,46 @@
   ],
   "noticias": [
     {
+      "titulo": "Lula sanciona integralmente PLP dos Combustíveis (Lei Complementar 235/2026)",
+      "fonte": "Diário do Grande ABC",
+      "url": "https://www.dgabc.com.br/Noticia/4343752/lula-sanciona-integralmente-plp-dos-combustiveis-com-jabutis-",
+      "tag": "Combustíveis",
+      "data": "28/08/2026"
+    },
+    {
+      "titulo": "Nova lei garante R$ 1,2 bi em subvenção aos produtores de etanol hidratado",
+      "fonte": "Metrópoles",
+      "url": "https://www.metropoles.com/brasil/senado-aprova-plp-dos-combustiveis-com-pacote-de-beneficios-fiscais",
+      "tag": "Etanol",
+      "data": "28/08/2026"
+    },
+    {
+      "titulo": "Lei determina zeragem de alíquotas do etanol se tributação da gasolina cair 30% ou mais",
+      "fonte": "Correio Braziliense",
+      "url": "https://www.correiobraziliense.com.br/politica/2026/08/7479052-senado-aprova-plp-dos-combustiveis-e-texto-vai-a-sancao.html",
+      "tag": "Etanol",
+      "data": "28/08/2026"
+    },
+    {
+      "titulo": "Brent recua e caminha para encerrar a semana em baixa em meio a sinais de avanço no Oriente Médio",
+      "fonte": "Trading Economics",
+      "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
+      "tag": "Brent",
+      "data": "28/08/2026"
+    },
+    {
       "titulo": "Acompanhe as cotações semanais do etanol hidratado e anidro",
       "fonte": "CEPEA/ESALQ",
       "url": "https://www.cepea.org.br/br/indicador/etanol.aspx",
       "tag": "Etanol",
-      "data": "27/07/2026"
+      "data": "28/08/2026"
     },
     {
       "titulo": "ANP publica levantamento semanal de preços de combustíveis",
       "fonte": "ANP",
       "url": "https://www.gov.br/anp/pt-br",
       "tag": "ANP",
-      "data": "27/07/2026"
-    },
-    {
-      "titulo": "UNICA divulga dados de produção e comercialização do setor sucroenergético",
-      "fonte": "UNICA",
-      "url": "https://unica.com.br",
-      "tag": "Produção",
-      "data": "27/07/2026"
-    },
-    {
-      "titulo": "Brent e combustíveis: acompanhe variações do mercado internacional",
-      "fonte": "Reuters Brasil",
-      "url": "https://www.reuters.com/brasil",
-      "tag": "Brent",
-      "data": "27/07/2026"
-    },
-    {
-      "titulo": "CBios RenovaBio: acompanhe as negociações de créditos de carbono",
-      "fonte": "MAPA",
-      "url": "https://www.gov.br/agricultura",
-      "tag": "RenovaBio",
-      "data": "27/07/2026"
+      "data": "28/08/2026"
     }
   ]
 }
