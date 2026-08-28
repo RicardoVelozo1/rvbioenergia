@@ -4,8 +4,8 @@ RV Bioenergia — Coletor automático de dados de mercado
 Roda todo dia útil às 08:00h (Brasília) via GitHub Actions
 Fontes: GitHub Datasets (Brent), RSS (notícias),
         Notícias Agrícolas — espelho do CEPEA/ESALQ (etanol hidratado/anidro semanal SP,
-        pois cepea.org.br bloqueia scraping automatizado)
-ANP/Estados: mantém últimos valores válidos se scraping falhar
+        pois cepea.org.br bloqueia scraping automatizado),
+        CombustívelBR — dados ANP por capital de UF (paridade etanol x gasolina)
 """
 
 import json
@@ -89,6 +89,73 @@ def get_historico_brent(existing):
             result.append({"data": data, "valor": round(float(parts[1]), 2)})
     print(f"[BRENT HIST] {len(result)} pontos")
     return result
+
+CAPITAIS_UF = [
+    ("AC", "Acre", "rio-branco-ac"), ("AL", "Alagoas", "maceio-al"),
+    ("AP", "Amapá", "macapa-ap"), ("AM", "Amazonas", "manaus-am"),
+    ("BA", "Bahia", "salvador-ba"), ("CE", "Ceará", "fortaleza-ce"),
+    ("DF", "Distrito Federal", "brasilia-df"), ("ES", "Espírito Santo", "vitoria-es"),
+    ("GO", "Goiás", "goiania-go"), ("MA", "Maranhão", "sao-luis-ma"),
+    ("MT", "Mato Grosso", "cuiaba-mt"), ("MS", "Mato Grosso do Sul", "campo-grande-ms"),
+    ("MG", "Minas Gerais", "belo-horizonte-mg"), ("PA", "Pará", "belem-pa"),
+    ("PB", "Paraíba", "joao-pessoa-pb"), ("PR", "Paraná", "curitiba-pr"),
+    ("PE", "Pernambuco", "recife-pe"), ("PI", "Piauí", "teresina-pi"),
+    ("RJ", "Rio de Janeiro", "rio-de-janeiro-rj"), ("RN", "Rio Grande do Norte", "natal-rn"),
+    ("RS", "Rio Grande do Sul", "porto-alegre-rs"), ("RO", "Rondônia", "porto-velho-ro"),
+    ("RR", "Roraima", "boa-vista-rr"), ("SC", "Santa Catarina", "florianopolis-sc"),
+    ("SP", "São Paulo", "sao-paulo-sp"), ("SE", "Sergipe", "aracaju-se"),
+    ("TO", "Tocantins", "palmas-to"),
+]
+
+def get_paridade_capitais(existing):
+    """Busca preço de etanol/gasolina e paridade nas 27 capitais das UFs.
+    Fonte: CombustívelBR (combustivelbr.com.br), que processa e publica os dados
+    oficiais da pesquisa semanal da ANP por município — usamos apenas as capitais,
+    não a base completa de +2.700 municípios."""
+    print("[PARIDADE CAPITAIS] Buscando dados por capital (ANP via CombustívelBR)...")
+
+    padrao_gas = re.compile(r'gasolina a R\$(\d+,\d+)/litro')
+    padrao_eth = re.compile(r'etanol est[áa] a R\$(\d+,\d+)/litro')
+    padrao_prop = re.compile(r'propor[çc][ãa]o é (\d+)%')
+
+    estados = []
+    falhas = 0
+    for uf, nome, slug in CAPITAIS_UF:
+        url = f"https://combustivelbr.com.br/cidade/{slug}"
+        content = fetch_url(url, timeout=15)
+        if not content:
+            falhas += 1
+            continue
+        gas = padrao_gas.search(content)
+        eth = padrao_eth.search(content)
+        if not gas or not eth:
+            falhas += 1
+            continue
+        gasolina = round(float(gas.group(1).replace(',', '.')), 2)
+        etanol = round(float(eth.group(1).replace(',', '.')), 2)
+        estados.append({"uf": uf, "nome": nome, "etanol": etanol, "gasolina": gasolina})
+
+    if len(estados) < 20:
+        print(f"[PARIDADE CAPITAIS] Falhou em {falhas}/27 — mantendo dados anteriores")
+        return existing.get('nacional', {
+            "paridade": 70.0, "etanol_medio": 4.80, "gasolina_media": 6.83,
+            "municipios_vantajosos": 0, "municipios_pesquisados": 27
+        }), existing.get('estados', [])
+
+    etanol_medio = round(sum(e["etanol"] for e in estados) / len(estados), 2)
+    gasolina_media = round(sum(e["gasolina"] for e in estados) / len(estados), 2)
+    paridade = round(etanol_medio / gasolina_media * 100, 1)
+    vantajosos = sum(1 for e in estados if e["etanol"] / e["gasolina"] * 100 <= 70)
+
+    nacional = {
+        "paridade": paridade,
+        "etanol_medio": etanol_medio,
+        "gasolina_media": gasolina_media,
+        "municipios_vantajosos": vantajosos,
+        "municipios_pesquisados": len(estados)
+    }
+    print(f"[PARIDADE CAPITAIS] {len(estados)}/27 capitais coletadas ({falhas} falhas) | Paridade nacional: {paridade}%")
+    return nacional, estados
 
 def get_etanol_cepea(existing):
     """Busca os indicadores semanais do etanol hidratado e anidro CEPEA/ESALQ (SP).
@@ -210,14 +277,8 @@ def main():
     # Etanol CEPEA/ESALQ: automático via espelho Notícias Agrícolas
     etanol, hist_eth = get_etanol_cepea(existing)
 
-    # ANP/Estados: mantém últimos valores válidos
-    # (atualizados manualmente via sessão com Claude semanalmente)
-    nacional = existing.get('nacional', {
-        "paridade": 63.7, "etanol_medio": 4.32,
-        "gasolina_media": 6.64, "municipios_vantajosos": 257,
-        "municipios_pesquisados": 387
-    })
-    estados = existing.get('estados', [])
+    # Paridade e preços por estado: automático via capitais das UFs (ANP/CombustívelBR)
+    nacional, estados = get_paridade_capitais(existing)
 
     # Notícias: RSS automático com fallback
     noticias = get_noticias(existing)
