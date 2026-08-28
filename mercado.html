@@ -460,12 +460,15 @@ function buildCharts(){
   });
 }
 
+const NEWS_TAG_EN={'Etanol':'Ethanol','Brent':'Brent','ANP':'ANP','RenovaBio':'RenovaBio','Combustíveis':'Fuels','Produção':'Production','Biocombustíveis':'Biofuels'};
+function newsTagLabel(tag){ return currentLang==='en' ? (NEWS_TAG_EN[tag]||tag) : tag; }
+
 function buildNews(){
   if(!DADOS||!DADOS.noticias) return;
   document.getElementById('news-ul').innerHTML=DADOS.noticias.map(n=>`
     <li class="news-item">
-      <span class="news-tag">${n.tag}</span>
-      <a href="${n.url}" target="_blank" class="news-title">${n.titulo}</a>
+      <span class="news-tag">${newsTagLabel(n.tag)}</span>
+      <a href="${n.url}" target="_blank" class="news-title">${currentLang==='en'&&n.titulo_en?n.titulo_en:n.titulo}</a>
       <div class="news-meta">${n.fonte} · ${n.data}</div>
     </li>
   `).join('');
