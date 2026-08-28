@@ -211,14 +211,17 @@ def get_etanol_cepea(existing):
     return etanol, historico
 
 def get_noticias(existing):
-    """Busca notícias do setor via RSS público"""
+    """Busca notícias do setor via RSS público e mantém uma janela rolante de 7 dias:
+    notícias novas são adicionadas às existentes (sem apagar o que ainda é válido),
+    duplicatas são removidas e o que passou de 7 dias é descartado automaticamente.
+    Não depende de IA — é uma lógica de data + deduplicação, mais previsível e barata."""
     print("[NOTICIAS] Buscando via RSS...")
     feeds = [
         ("https://www.noticiasagricolas.com.br/rss/etanol.rss", "Notícias Agrícolas", "Etanol"),
         ("https://www.novacana.com/feed", "NovaCana", "Etanol"),
         ("https://www.udop.com.br/rss.php", "UDOP", "Biocombustíveis"),
     ]
-    noticias = []
+    novas = []
     for url, fonte, tag_padrao in feeds:
         content = fetch_url(url, timeout=10)
         if not content:
@@ -236,23 +239,56 @@ def get_noticias(existing):
                   "ANP" if "anp" in title.lower() else \
                   "RenovaBio" if any(w in title.lower() for w in ["cbio","renovabio","carbono"]) else \
                   tag_padrao
-            noticias.append({
+            novas.append({
                 "titulo": title[:120],
                 "fonte": fonte,
                 "url": links[i+1] if i+1 < len(links) else "#",
                 "tag": tag,
                 "data": datetime.now().strftime("%d/%m/%Y")
             })
-        if len(noticias) >= 6:
+        if len(novas) >= 6:
             break
 
-    if len(noticias) < 3:
-        # Mantém notícias anteriores se RSS falhou
-        print("[NOTICIAS] RSS falhou — mantendo notícias anteriores")
-        return existing.get('noticias', [])
+    if not novas:
+        print("[NOTICIAS] RSS falhou nesta rodada — mantendo janela de 7 dias já existente")
 
-    print(f"[NOTICIAS] {len(noticias)} notícias coletadas")
-    return noticias[:6]
+    # Junta existentes + novas, deduplicando por URL (fallback: título) e mantendo a data mais antiga
+    # de cada notícia (para a janela de 7 dias contar a partir da primeira vez que ela apareceu).
+    combinadas = {}
+    for n in existing.get('noticias', []) + novas:
+        chave = n.get('url') if n.get('url') and n['url'] != '#' else n.get('titulo', '').lower()
+        if not chave:
+            continue
+        if chave not in combinadas:
+            combinadas[chave] = n
+        else:
+            # Mantém a versão com a data mais antiga (primeira coleta), mas atualiza tag/fonte se vier melhor
+            existente_dt = _parse_data_br(combinadas[chave]['data'])
+            nova_dt = _parse_data_br(n['data'])
+            if existente_dt and nova_dt and nova_dt < existente_dt:
+                combinadas[chave]['data'] = n['data']
+
+    # Filtra: só mantém notícias com até 7 dias
+    limite = datetime.now() - timedelta(days=7)
+    validas = []
+    for n in combinadas.values():
+        dt = _parse_data_br(n['data'])
+        if dt is None or dt >= limite:
+            validas.append(n)
+
+    # Ordena da mais recente para a mais antiga, limita a 10 para não sobrecarregar o painel
+    validas.sort(key=lambda n: _parse_data_br(n['data']) or datetime.min, reverse=True)
+    resultado = validas[:10]
+
+    print(f"[NOTICIAS] {len(novas)} novas coletadas | {len(resultado)} válidas na janela de 7 dias")
+    return resultado
+
+def _parse_data_br(data_str):
+    """Converte 'DD/MM/YYYY' em datetime; retorna None se inválido."""
+    try:
+        return datetime.strptime(data_str, "%d/%m/%Y")
+    except (ValueError, TypeError):
+        return None
 
 def semana_atual():
     hoje = datetime.now()
