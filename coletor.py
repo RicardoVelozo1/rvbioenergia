@@ -10,6 +10,7 @@ Fontes: GitHub Datasets (Brent), RSS (notícias),
 
 import json
 import re
+import unicodedata
 import urllib.request
 import urllib.error
 from datetime import datetime, timedelta
@@ -210,11 +211,38 @@ def get_etanol_cepea(existing):
     print(f"[ETANOL CEPEA] Hidratado R$ {etanol['hidratado']} ({hid[0]['variacao']:+.2f}%) | Anidro R$ {etanol['anidro']} ({ani[0]['variacao']:+.2f}%)")
     return etanol, historico
 
+def _normalizar(txt):
+    """Remove acentos e coloca em minúsculas, para comparação de palavras-chave."""
+    nfkd = unicodedata.normalize('NFKD', txt)
+    return ''.join(c for c in nfkd if not unicodedata.combining(c)).lower()
+
+# Só entram notícias que toquem diretamente a atuação da RV Bioenergia (trading de
+# etanol/biodiesel). Notícias de soja, milho (fora do contexto de etanol), café, boi
+# etc. — comuns em portais agrícolas genéricos — são descartadas mesmo vindo da
+# mesma fonte, a menos que também citem um destes termos.
+PALAVRAS_RELEVANTES = [
+    "etanol", "biodiesel", "b100", "b-100", "diesel", "gasolina", "anp", "cepea",
+    "esalq", "renovabio", "cbio", "cbios", "brent", "petroleo", "cana-de-acucar",
+    "cana", "moagem", "safra de cana", "usina", "alcool combustivel", "icms",
+    "pis/cofins", "cofins", "tributacao de combustiveis", "aliquota", "subvencao",
+    "plp dos combustiveis", "combustivel", "combustiveis", "biocombustivel",
+    "biocombustiveis", "sucroenergetico", "hidratado", "anidro", "paridade",
+    "usinas sucroalcooleiras",
+]
+
+def _relevante(titulo):
+    t = _normalizar(titulo)
+    return any(p in t for p in PALAVRAS_RELEVANTES)
+
 def get_noticias(existing):
     """Busca notícias do setor via RSS público e mantém uma janela rolante de 7 dias:
     notícias novas são adicionadas às existentes (sem apagar o que ainda é válido),
     duplicatas são removidas e o que passou de 7 dias é descartado automaticamente.
-    Não depende de IA — é uma lógica de data + deduplicação, mais previsível e barata."""
+    Filtro de relevância: só entra notícia sobre etanol/biodiesel/diesel/gasolina,
+    ANP/CEPEA/ESALQ, RenovaBio/CBios, Brent/petróleo, cana-de-açúcar/safra/usina ou
+    tributação de combustíveis — descarta ruído de portais agrícolas genéricos.
+    Não depende de IA — é uma lógica de palavras-chave + data + deduplicação,
+    mais previsível e barata."""
     print("[NOTICIAS] Buscando via RSS...")
     feeds = [
         ("https://www.noticiasagricolas.com.br/rss/etanol.rss", "Notícias Agrícolas", "Etanol"),
@@ -222,6 +250,7 @@ def get_noticias(existing):
         ("https://www.udop.com.br/rss.php", "UDOP", "Biocombustíveis"),
     ]
     novas = []
+    descartadas = 0
     for url, fonte, tag_padrao in feeds:
         content = fetch_url(url, timeout=10)
         if not content:
@@ -229,9 +258,12 @@ def get_noticias(existing):
         # Suporte a CDATA e tags diretas
         titles = re.findall(r'<title>(?:<!\[CDATA\[)?(.*?)(?:\]\]>)?</title>', content)
         links = re.findall(r'<link>(?:<!\[CDATA\[)?(https?://[^<\]]+)(?:\]\]>)?</link>', content)
-        for i, title in enumerate(titles[1:6]):
+        for i, title in enumerate(titles[1:15]):
             title = title.strip()
             if not title or len(title) < 10:
+                continue
+            if not _relevante(title):
+                descartadas += 1
                 continue
             tag = "Etanol" if "etanol" in title.lower() else \
                   "Brent" if any(w in title.lower() for w in ["brent","petróleo","petroleo","crude"]) else \
@@ -246,11 +278,10 @@ def get_noticias(existing):
                 "tag": tag,
                 "data": datetime.now().strftime("%d/%m/%Y")
             })
-        if len(novas) >= 6:
-            break
 
     if not novas:
-        print("[NOTICIAS] RSS falhou nesta rodada — mantendo janela de 7 dias já existente")
+        print("[NOTICIAS] RSS falhou ou nada relevante nesta rodada — mantendo janela de 7 dias já existente")
+    print(f"[NOTICIAS] {descartadas} descartadas por não serem relevantes ao segmento")
 
     # Junta existentes + novas, deduplicando por URL (fallback: título) e mantendo a data mais antiga
     # de cada notícia (para a janela de 7 dias contar a partir da primeira vez que ela apareceu).
@@ -280,7 +311,7 @@ def get_noticias(existing):
     validas.sort(key=lambda n: _parse_data_br(n['data']) or datetime.min, reverse=True)
     resultado = validas[:10]
 
-    print(f"[NOTICIAS] {len(novas)} novas coletadas | {len(resultado)} válidas na janela de 7 dias")
+    print(f"[NOTICIAS] {len(novas)} relevantes coletadas | {len(resultado)} válidas na janela de 7 dias")
     return resultado
 
 def _parse_data_br(data_str):
