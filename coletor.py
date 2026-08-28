@@ -2,8 +2,10 @@
 """
 RV Bioenergia — Coletor automático de dados de mercado
 Roda todo dia útil às 08:00h (Brasília) via GitHub Actions
-Fontes: GitHub Datasets (Brent), RSS (notícias)
-Etanol/ANP: mantém últimos valores válidos se scraping falhar
+Fontes: GitHub Datasets (Brent), RSS (notícias),
+        Notícias Agrícolas — espelho do CEPEA/ESALQ (etanol hidratado/anidro semanal SP,
+        pois cepea.org.br bloqueia scraping automatizado)
+ANP/Estados: mantém últimos valores válidos se scraping falhar
 """
 
 import json
@@ -88,6 +90,59 @@ def get_historico_brent(existing):
     print(f"[BRENT HIST] {len(result)} pontos")
     return result
 
+def get_etanol_cepea(existing):
+    """Busca os indicadores semanais do etanol hidratado e anidro CEPEA/ESALQ (SP).
+    O site oficial cepea.org.br bloqueia scraping automatizado, então usamos o
+    espelho público do Notícias Agrícolas, que replica a mesma tabela do CEPEA/ESALQ
+    (Fonte: Cepea/Esalq) sem bloqueio."""
+    print("[ETANOL CEPEA] Buscando via espelho Notícias Agrícolas...")
+
+    padrao = re.compile(
+        r'\d{2}\s*-\s*(\d{2}/\d{2}/\d{4})[^0-9]{1,300}?(\d+,\d+)[^0-9+\-]{1,60}?([+\-]\d+,\d+)',
+        re.DOTALL
+    )
+
+    def parse_indicador(url):
+        content = fetch_url(url, timeout=15)
+        if not content:
+            return None
+        resultados = []
+        for data_str, valor_str, var_str in padrao.findall(content):
+            try:
+                resultados.append({
+                    "data": data_str,
+                    "valor": round(float(valor_str.replace(',', '.')), 4),
+                    "variacao": round(float(var_str.replace(',', '.')), 2)
+                })
+            except ValueError:
+                continue
+        return resultados or None
+
+    hid = parse_indicador("https://www.noticiasagricolas.com.br/cotacoes/sucroenergetico/indicador-semanal-etanol-hidratado-cepea-esalq")
+    ani = parse_indicador("https://www.noticiasagricolas.com.br/cotacoes/sucroenergetico/indicador-semanal-etanol-anidro-cepea-esalq")
+
+    if not hid or not ani:
+        print("[ETANOL CEPEA] Falhou — mantendo últimos valores")
+        etanol = existing.get('etanol_paulinia', {
+            "hidratado": 2.2618, "hidratado_anterior": 2.2429,
+            "anidro": 2.5509, "anidro_anterior": 2.5311
+        })
+        return etanol, existing.get('historico_hidratado', [])
+
+    etanol = {
+        "hidratado": hid[0]["valor"],
+        "hidratado_anterior": hid[1]["valor"] if len(hid) > 1 else hid[0]["valor"],
+        "anidro": ani[0]["valor"],
+        "anidro_anterior": ani[1]["valor"] if len(ani) > 1 else ani[0]["valor"]
+    }
+
+    # Histórico: últimas 5 semanas, ordem cronológica (para o gráfico)
+    ultimas5 = list(reversed(hid[:5]))
+    historico = [{"data": h["data"][:5], "valor": h["valor"]} for h in ultimas5]
+
+    print(f"[ETANOL CEPEA] Hidratado R$ {etanol['hidratado']} ({hid[0]['variacao']:+.2f}%) | Anidro R$ {etanol['anidro']} ({ani[0]['variacao']:+.2f}%)")
+    return etanol, historico
+
 def get_noticias(existing):
     """Busca notícias do setor via RSS público"""
     print("[NOTICIAS] Buscando via RSS...")
@@ -152,13 +207,11 @@ def main():
     brent = get_brent(existing)
     hist_brent = get_historico_brent(existing)
 
-    # Etanol/ANP/Estados: mantém últimos valores válidos
+    # Etanol CEPEA/ESALQ: automático via espelho Notícias Agrícolas
+    etanol, hist_eth = get_etanol_cepea(existing)
+
+    # ANP/Estados: mantém últimos valores válidos
     # (atualizados manualmente via sessão com Claude semanalmente)
-    etanol = existing.get('etanol_paulinia', {
-        "hidratado": 2.2618, "hidratado_anterior": 2.2429,
-        "anidro": 2.5509, "anidro_anterior": 2.5311
-    })
-    hist_eth = existing.get('historico_hidratado', [])
     nacional = existing.get('nacional', {
         "paridade": 63.7, "etanol_medio": 4.32,
         "gasolina_media": 6.64, "municipios_vantajosos": 257,
