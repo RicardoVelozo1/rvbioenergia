@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-08-28T15:08:37.933656",
+  "atualizado": "2026-08-28T15:23:46.777173",
   "semana": "24/08 – 30/08/2026",
   "nacional": {
     "paridade": 69.6,
@@ -233,42 +233,48 @@
       "fonte": "Diário do Grande ABC",
       "url": "https://www.dgabc.com.br/Noticia/4343752/lula-sanciona-integralmente-plp-dos-combustiveis-com-jabutis-",
       "tag": "Combustíveis",
-      "data": "28/08/2026"
+      "data": "28/08/2026",
+      "titulo_en": "Lula fully sanctions Fuel PLP (Complementary Law 235/2026)"
     },
     {
       "titulo": "Nova lei garante R$ 1,2 bi em subvenção aos produtores de etanol hidratado",
       "fonte": "Metrópoles",
       "url": "https://www.metropoles.com/brasil/senado-aprova-plp-dos-combustiveis-com-pacote-de-beneficios-fiscais",
       "tag": "Etanol",
-      "data": "28/08/2026"
+      "data": "28/08/2026",
+      "titulo_en": "New law guarantees R$1.2 billion in subsidy to hydrous ethanol producers"
     },
     {
       "titulo": "Lei determina zeragem de alíquotas do etanol se tributação da gasolina cair 30% ou mais",
       "fonte": "Correio Braziliense",
       "url": "https://www.correiobraziliense.com.br/politica/2026/08/7479052-senado-aprova-plp-dos-combustiveis-e-texto-vai-a-sancao.html",
       "tag": "Etanol",
-      "data": "28/08/2026"
+      "data": "28/08/2026",
+      "titulo_en": "Law determines zeroing of ethanol rates if gasoline taxation falls 30% or more"
     },
     {
       "titulo": "Brent recua e caminha para encerrar a semana em baixa em meio a sinais de avanço no Oriente Médio",
       "fonte": "Trading Economics",
       "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
       "tag": "Brent",
-      "data": "28/08/2026"
+      "data": "28/08/2026",
+      "titulo_en": "Brent pulls back and moves to end the week lower amid signs of progress in the Middle East"
     },
     {
       "titulo": "Acompanhe as cotações semanais do etanol hidratado e anidro",
       "fonte": "CEPEA/ESALQ",
       "url": "https://www.cepea.org.br/br/indicador/etanol.aspx",
       "tag": "Etanol",
-      "data": "28/08/2026"
+      "data": "28/08/2026",
+      "titulo_en": "Track weekly quotes for hydrous and anhydrous ethanol"
     },
     {
       "titulo": "ANP publica levantamento semanal de preços de combustíveis",
       "fonte": "ANP",
       "url": "https://www.gov.br/anp/pt-br",
       "tag": "ANP",
-      "data": "28/08/2026"
+      "data": "28/08/2026",
+      "titulo_en": "ANP publishes weekly survey of fuel prices."
     }
   ]
 }
