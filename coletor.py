@@ -13,6 +13,7 @@ import re
 import unicodedata
 import urllib.request
 import urllib.error
+import urllib.parse
 from datetime import datetime, timedelta
 
 OUTPUT_FILE = "dados-mercado.json"
@@ -234,6 +235,25 @@ def _relevante(titulo):
     t = _normalizar(titulo)
     return any(p in t for p in PALAVRAS_RELEVANTES)
 
+def _traduzir_en(texto):
+    """Traduz um título de notícia para inglês via API pública MyMemory (gratuita,
+    sem necessidade de chave). Se a tradução falhar por qualquer motivo (rede,
+    limite de uso, resposta inválida), devolve o texto original em português —
+    nunca deixa o pipeline quebrar por causa da tradução."""
+    try:
+        q = urllib.parse.quote(texto)
+        url = f"https://api.mymemory.translated.net/get?q={q}&langpair=pt|en"
+        content = fetch_url(url, timeout=10)
+        if not content:
+            return texto
+        data = json.loads(content)
+        traduzido = data.get('responseData', {}).get('translatedText')
+        if traduzido and len(traduzido.strip()) > 3 and "MYMEMORY WARNING" not in traduzido.upper():
+            return traduzido.strip()
+        return texto
+    except Exception:
+        return texto
+
 def get_noticias(existing):
     """Busca notícias do setor via RSS público e mantém uma janela rolante de 7 dias:
     notícias novas são adicionadas às existentes (sem apagar o que ainda é válido),
@@ -306,6 +326,16 @@ def get_noticias(existing):
         dt = _parse_data_br(n['data'])
         if dt is None or dt >= limite:
             validas.append(n)
+
+    # Traduz para inglês só as notícias que ainda não têm tradução salva
+    # (as que já estão na janela de 7 dias mantêm a tradução feita anteriormente)
+    traduzidas = 0
+    for n in validas:
+        if not n.get('titulo_en'):
+            n['titulo_en'] = _traduzir_en(n['titulo'])
+            traduzidas += 1
+    if traduzidas:
+        print(f"[NOTICIAS] {traduzidas} título(s) traduzido(s) para inglês")
 
     # Ordena da mais recente para a mais antiga, limita a 10 para não sobrecarregar o painel
     validas.sort(key=lambda n: _parse_data_br(n['data']) or datetime.min, reverse=True)
