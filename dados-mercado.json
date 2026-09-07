@@ -1,10 +1,10 @@
 {
-  "atualizado": "2026-09-04T14:36:35.264055",
-  "semana": "31/08 – 06/09/2026",
+  "atualizado": "2026-09-07T16:08:49.908705",
+  "semana": "07/09 – 13/09/2026",
   "nacional": {
-    "paridade": 69.7,
+    "paridade": 69.6,
     "etanol_medio": 4.67,
-    "gasolina_media": 6.7,
+    "gasolina_media": 6.71,
     "municipios_vantajosos": 12,
     "municipios_pesquisados": 27
   },
@@ -14,16 +14,12 @@
     "data": "01/09/2026"
   },
   "etanol_paulinia": {
-    "hidratado": 2.3116,
-    "hidratado_anterior": 2.2566,
-    "anidro": 2.6046,
-    "anidro_anterior": 2.5546
+    "hidratado": 2.3991,
+    "hidratado_anterior": 2.3116,
+    "anidro": 2.7829,
+    "anidro_anterior": 2.6046
   },
   "historico_hidratado": [
-    {
-      "data": "31/07",
-      "valor": 2.0454
-    },
     {
       "data": "07/08",
       "valor": 2.0457
@@ -39,6 +35,10 @@
     {
       "data": "28/08",
       "valor": 2.3116
+    },
+    {
+      "data": "04/09",
+      "valor": 2.3991
     }
   ],
   "historico_brent": [
@@ -67,164 +67,164 @@
     {
       "uf": "AC",
       "nome": "Acre",
-      "etanol": 4.96,
-      "gasolina": 7.29
+      "etanol": 5.0,
+      "gasolina": 7.28
     },
     {
       "uf": "AL",
       "nome": "Alagoas",
       "etanol": 4.99,
-      "gasolina": 6.72
+      "gasolina": 6.67
     },
     {
       "uf": "AP",
       "nome": "Amapá",
-      "etanol": 5.93,
-      "gasolina": 6.54
+      "etanol": 5.81,
+      "gasolina": 6.57
     },
     {
       "uf": "AM",
       "nome": "Amazonas",
-      "etanol": 4.86,
-      "gasolina": 7.27
+      "etanol": 5.07,
+      "gasolina": 7.21
     },
     {
       "uf": "BA",
       "nome": "Bahia",
-      "etanol": 4.36,
-      "gasolina": 6.42
+      "etanol": 4.3,
+      "gasolina": 6.37
     },
     {
       "uf": "CE",
       "nome": "Ceará",
-      "etanol": 4.98,
-      "gasolina": 6.99
+      "etanol": 4.97,
+      "gasolina": 6.98
     },
     {
       "uf": "DF",
       "nome": "Distrito Federal",
       "etanol": 4.29,
-      "gasolina": 6.59
+      "gasolina": 6.63
     },
     {
       "uf": "ES",
       "nome": "Espírito Santo",
-      "etanol": 4.52,
-      "gasolina": 6.33
+      "etanol": 4.51,
+      "gasolina": 6.29
     },
     {
       "uf": "GO",
       "nome": "Goiás",
-      "etanol": 4.08,
-      "gasolina": 6.61
+      "etanol": 3.88,
+      "gasolina": 6.48
     },
     {
       "uf": "MA",
       "nome": "Maranhão",
-      "etanol": 4.83,
-      "gasolina": 6.51
+      "etanol": 4.9,
+      "gasolina": 6.53
     },
     {
       "uf": "MT",
       "nome": "Mato Grosso",
-      "etanol": 3.86,
-      "gasolina": 6.91
+      "etanol": 3.98,
+      "gasolina": 6.98
     },
     {
       "uf": "MS",
       "nome": "Mato Grosso do Sul",
-      "etanol": 3.77,
-      "gasolina": 6.25
+      "etanol": 3.81,
+      "gasolina": 6.26
     },
     {
       "uf": "MG",
       "nome": "Minas Gerais",
-      "etanol": 4.06,
-      "gasolina": 6.32
+      "etanol": 4.07,
+      "gasolina": 6.36
     },
     {
       "uf": "PA",
       "nome": "Pará",
-      "etanol": 4.48,
-      "gasolina": 6.29
+      "etanol": 4.42,
+      "gasolina": 6.54
     },
     {
       "uf": "PB",
       "nome": "Paraíba",
-      "etanol": 4.64,
+      "etanol": 4.57,
       "gasolina": 6.35
     },
     {
       "uf": "PR",
       "nome": "Paraná",
-      "etanol": 4.66,
-      "gasolina": 6.84
+      "etanol": 4.65,
+      "gasolina": 6.83
     },
     {
       "uf": "PE",
       "nome": "Pernambuco",
-      "etanol": 4.97,
-      "gasolina": 6.79
+      "etanol": 4.95,
+      "gasolina": 6.75
     },
     {
       "uf": "PI",
       "nome": "Piauí",
-      "etanol": 4.82,
-      "gasolina": 6.81
+      "etanol": 4.81,
+      "gasolina": 6.83
     },
     {
       "uf": "RJ",
       "nome": "Rio de Janeiro",
-      "etanol": 4.67,
-      "gasolina": 6.52
+      "etanol": 4.69,
+      "gasolina": 6.53
     },
     {
       "uf": "RN",
       "nome": "Rio Grande do Norte",
-      "etanol": 4.88,
-      "gasolina": 6.49
+      "etanol": 5.21,
+      "gasolina": 6.78
     },
     {
       "uf": "RS",
       "nome": "Rio Grande do Sul",
-      "etanol": 4.3,
-      "gasolina": 6.0
+      "etanol": 4.26,
+      "gasolina": 5.9
     },
     {
       "uf": "RO",
       "nome": "Rondônia",
-      "etanol": 5.09,
-      "gasolina": 7.45
+      "etanol": 5.11,
+      "gasolina": 7.5
     },
     {
       "uf": "RR",
       "nome": "Roraima",
-      "etanol": 5.4,
+      "etanol": 5.39,
       "gasolina": 7.57
     },
     {
       "uf": "SC",
       "nome": "Santa Catarina",
-      "etanol": 4.46,
-      "gasolina": 6.59
+      "etanol": 4.36,
+      "gasolina": 6.54
     },
     {
       "uf": "SP",
       "nome": "São Paulo",
-      "etanol": 3.74,
-      "gasolina": 6.34
+      "etanol": 3.75,
+      "gasolina": 6.32
     },
     {
       "uf": "SE",
       "nome": "Sergipe",
-      "etanol": 5.33,
+      "etanol": 5.34,
       "gasolina": 7.03
     },
     {
       "uf": "TO",
       "nome": "Tocantins",
-      "etanol": 5.07,
-      "gasolina": 7.09
+      "etanol": 5.03,
+      "gasolina": 7.01
     }
   ],
   "noticias": []
