@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-09-10T14:41:32.487523",
+  "atualizado": "2026-09-11T14:39:54.443144",
   "semana": "07/09 – 13/09/2026",
   "nacional": {
     "paridade": 69.6,
@@ -9,9 +9,9 @@
     "municipios_pesquisados": 27
   },
   "brent": {
-    "valor": 96.02,
-    "variacao": 6.99,
-    "data": "01/09/2026"
+    "valor": 109.51,
+    "variacao": 3.19,
+    "data": "09/09/2026"
   },
   "etanol_paulinia": {
     "hidratado": 2.3991,
@@ -43,24 +43,24 @@
   ],
   "historico_brent": [
     {
-      "data": "07/07",
-      "valor": 71.78
+      "data": "15/07",
+      "valor": 83.08
     },
     {
-      "data": "17/07",
-      "valor": 85.01
+      "data": "27/07",
+      "valor": 91.82
     },
     {
-      "data": "29/07",
-      "valor": 91.95
+      "data": "06/08",
+      "valor": 89.65
     },
     {
-      "data": "10/08",
-      "valor": 92.74
+      "data": "18/08",
+      "valor": 95.29
     },
     {
-      "data": "20/08",
-      "valor": 94.0
+      "data": "28/08",
+      "valor": 89.75
     }
   ],
   "estados": [
