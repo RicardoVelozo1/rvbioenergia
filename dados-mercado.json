@@ -1,6 +1,6 @@
 {
-  "atualizado": "2026-09-11T14:39:54.443144",
-  "semana": "07/09 – 13/09/2026",
+  "atualizado": "2026-09-14T16:40:22.663819",
+  "semana": "14/09 – 20/09/2026",
   "nacional": {
     "paridade": 69.6,
     "etanol_medio": 4.67,
@@ -14,16 +14,12 @@
     "data": "09/09/2026"
   },
   "etanol_paulinia": {
-    "hidratado": 2.3991,
-    "hidratado_anterior": 2.3116,
-    "anidro": 2.7829,
-    "anidro_anterior": 2.6046
+    "hidratado": 2.4622,
+    "hidratado_anterior": 2.3991,
+    "anidro": 2.8475,
+    "anidro_anterior": 2.7829
   },
   "historico_hidratado": [
-    {
-      "data": "07/08",
-      "valor": 2.0457
-    },
     {
       "data": "14/08",
       "valor": 2.1939
@@ -39,6 +35,10 @@
     {
       "data": "04/09",
       "valor": 2.3991
+    },
+    {
+      "data": "11/09",
+      "valor": 2.4622
     }
   ],
   "historico_brent": [
