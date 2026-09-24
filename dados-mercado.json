@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-09-23T15:13:36.025718",
+  "atualizado": "2026-09-24T15:32:31.465667",
   "semana": "21/09 – 27/09/2026",
   "nacional": {
     "paridade": 70.3,
@@ -9,9 +9,9 @@
     "municipios_pesquisados": 27
   },
   "brent": {
-    "valor": 130.8,
-    "variacao": 7.88,
-    "data": "15/09/2026"
+    "valor": 114.89,
+    "variacao": -1.08,
+    "data": "22/09/2026"
   },
   "etanol_paulinia": {
     "hidratado": 2.4622,
@@ -43,24 +43,24 @@
   ],
   "historico_brent": [
     {
-      "data": "21/07",
-      "valor": 93.85
+      "data": "28/07",
+      "valor": 85.51
     },
     {
-      "data": "31/07",
-      "valor": 96.95
+      "data": "07/08",
+      "valor": 87.62
     },
     {
-      "data": "12/08",
-      "valor": 92.52
+      "data": "19/08",
+      "valor": 92.37
     },
     {
-      "data": "24/08",
-      "valor": 92.71
+      "data": "01/09",
+      "valor": 96.02
     },
     {
-      "data": "04/09",
-      "valor": 102.24
+      "data": "11/09",
+      "valor": 118.06
     }
   ],
   "estados": [
@@ -227,5 +227,78 @@
       "gasolina": 6.99
     }
   ],
-  "noticias": []
+  "noticias": [
+    {
+      "titulo": "Operação Crédito Oculto ataca esquema de lavagem de dinheiro no setor de combustíveis",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/operacao-credito-oculto-ataca-esquema-de-lavagem-de-dinheiro-no-setor-de-combustiveis",
+      "tag": "Etanol",
+      "data": "24/09/2026",
+      "titulo_en": "Operation Hidden Credit attacks money laundering scheme in the fuel sector"
+    },
+    {
+      "titulo": "Atvos adota insumos biológicos em 100% do plantio de seus canaviais",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/atvos-adota-insumos-biologicos-em-100-do-plantio-de-seus-canaviais",
+      "tag": "Etanol",
+      "data": "24/09/2026",
+      "titulo_en": "Atvos adopts biological inputs in 100% of the planting of its sugarcane fields"
+    },
+    {
+      "titulo": "“Nós não estamos vivendo uma transição energética”, afirma diretor da Canaplan",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/nos-nao-estamos-vivendo-uma-transicao-energetica-aponta-diretor-da-canaplan",
+      "tag": "Etanol",
+      "data": "24/09/2026",
+      "titulo_en": "\"We are not experiencing an energy transition,\" says Canaplan's director"
+    },
+    {
+      "titulo": "Petróleo deve cair de US$ 100 para US$ 70 em 2027, prevê Fitch Ratings",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/petroleo-deve-cair-de-us-100-para-us-70-em-2027-preve-fitch-ratings",
+      "tag": "Brent",
+      "data": "24/09/2026",
+      "titulo_en": "Oil expected to fall from $100 to $70 in 2027, predicts Fitch Ratings"
+    },
+    {
+      "titulo": "Alckmin sanciona lei que endurece punição para furto e roubo de combustível",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/alckmin-sanciona-lei-que-endurece-punicao-para-furto-e-roubo-de-combustivel",
+      "tag": "Etanol",
+      "data": "24/09/2026",
+      "titulo_en": "Alckmin sanctions law that toughens punishment for theft and fuel theft"
+    },
+    {
+      "titulo": "Ministério de Minas e Energia estima SAF em até 10% do combustível de aviação em 2030",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/ministerio-de-minas-e-energia-estima-saf-em-ate-10-do-combustivel-de-aviacao-em-2030",
+      "tag": "Etanol",
+      "data": "24/09/2026",
+      "titulo_en": "Ministry of Mines and Energy estimates SAF at up to 10% of aviation fuel in 2030"
+    },
+    {
+      "titulo": "Petróleo fecha em alta de quase 4%, enquanto presidente do Irã promete nunca se render",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/petroleo-fecha-em-alta-de-quase-4-enquanto-presidente-do-ira-promete-nunca-se-render",
+      "tag": "Brent",
+      "data": "24/09/2026",
+      "titulo_en": "Oil closes up almost 4%, while Iran's president vows never to surrender"
+    },
+    {
+      "titulo": "Desembargador beneficiou Master em decisão sobre usina Cansanção de Sinimbu",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/desembargador-beneficiou-master-em-decisao-sobre-usina-cansancao-de-sinimbu",
+      "tag": "Produção",
+      "data": "24/09/2026",
+      "titulo_en": "Judge benefited Master in decision on plant Cansanção de Sinimbu"
+    },
+    {
+      "titulo": "CNJ manda devolver R$ 4,7 bi à União em ações do setor sucroenergético citadas no caso Master",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/cnj-ordena-devolucao-de-r-4-7-bilhoes-ao-tesouro-em-processos-do-setor-sucroenergetico",
+      "tag": "Etanol",
+      "data": "24/09/2026",
+      "titulo_en": "Cnj orders to return $4.7 billion to the Federal Government in shares of the sugar-energy sector mentioned in the Master case"
+    }
+  ]
 }
