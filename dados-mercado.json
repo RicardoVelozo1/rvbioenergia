@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-09-24T15:32:31.465667",
+  "atualizado": "2026-09-25T15:36:20.054728",
   "semana": "21/09 – 27/09/2026",
   "nacional": {
     "paridade": 70.3,
@@ -229,76 +229,84 @@
   ],
   "noticias": [
     {
-      "titulo": "Operação Crédito Oculto ataca esquema de lavagem de dinheiro no setor de combustíveis",
+      "titulo": "Para a indústria, subsídio do governo a combustíveis não resolve o petróleo a US$ 100",
       "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/operacao-credito-oculto-ataca-esquema-de-lavagem-de-dinheiro-no-setor-de-combustiveis",
-      "tag": "Etanol",
-      "data": "24/09/2026",
-      "titulo_en": "Operation Hidden Credit attacks money laundering scheme in the fuel sector"
-    },
-    {
-      "titulo": "Atvos adota insumos biológicos em 100% do plantio de seus canaviais",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/atvos-adota-insumos-biologicos-em-100-do-plantio-de-seus-canaviais",
-      "tag": "Etanol",
-      "data": "24/09/2026",
-      "titulo_en": "Atvos adopts biological inputs in 100% of the planting of its sugarcane fields"
-    },
-    {
-      "titulo": "“Nós não estamos vivendo uma transição energética”, afirma diretor da Canaplan",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/nos-nao-estamos-vivendo-uma-transicao-energetica-aponta-diretor-da-canaplan",
-      "tag": "Etanol",
-      "data": "24/09/2026",
-      "titulo_en": "\"We are not experiencing an energy transition,\" says Canaplan's director"
-    },
-    {
-      "titulo": "Petróleo deve cair de US$ 100 para US$ 70 em 2027, prevê Fitch Ratings",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/petroleo-deve-cair-de-us-100-para-us-70-em-2027-preve-fitch-ratings",
+      "url": "https://www.novacana.com/noticias/para-a-industria-subsidio-do-governo-a-combustiveis-nao-resolve-o-petroleo-a-us-100",
       "tag": "Brent",
-      "data": "24/09/2026",
-      "titulo_en": "Oil expected to fall from $100 to $70 in 2027, predicts Fitch Ratings"
+      "data": "25/09/2026",
+      "titulo_en": "For industry, government fuel subsidy does not solve oil at$100"
     },
     {
-      "titulo": "Alckmin sanciona lei que endurece punição para furto e roubo de combustível",
+      "titulo": "Empresas estimam 636,15 mi t de cana e 39,02 mi t de açúcar no Centro-Sul em 2026/27",
       "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/alckmin-sanciona-lei-que-endurece-punicao-para-furto-e-roubo-de-combustivel",
+      "url": "https://www.novacana.com/noticias/empresas-estimam-636-15-mi-t-de-cana-e-39-02-mi-t-de-acucar-no-centro-sul-em-2026-27",
       "tag": "Etanol",
-      "data": "24/09/2026",
-      "titulo_en": "Alckmin sanctions law that toughens punishment for theft and fuel theft"
+      "data": "25/09/2026",
+      "titulo_en": "Companies estimate 636.15 million tons of cane and 39.02 million tons of sugar in the Center-South in 2026/27"
     },
     {
-      "titulo": "Ministério de Minas e Energia estima SAF em até 10% do combustível de aviação em 2030",
+      "titulo": "Preços da gasolina limitam recuperação do setor sucroenergético, diz presidente da Datagro",
       "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/ministerio-de-minas-e-energia-estima-saf-em-ate-10-do-combustivel-de-aviacao-em-2030",
+      "url": "https://www.novacana.com/noticias/precos-da-gasolina-limitam-recuperacao-do-setor-sucroenergetico-diz-presidente-da-datagro",
       "tag": "Etanol",
-      "data": "24/09/2026",
-      "titulo_en": "Ministry of Mines and Energy estimates SAF at up to 10% of aviation fuel in 2030"
+      "data": "25/09/2026",
+      "titulo_en": "Gasoline prices limit recovery of the sugar-energy sector, says Datagro president"
     },
     {
-      "titulo": "Petróleo fecha em alta de quase 4%, enquanto presidente do Irã promete nunca se render",
+      "titulo": "Governo deve prorrogar subvenção de R$ 2,12 por litro de diesel, diz Moretti",
       "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/petroleo-fecha-em-alta-de-quase-4-enquanto-presidente-do-ira-promete-nunca-se-render",
-      "tag": "Brent",
-      "data": "24/09/2026",
-      "titulo_en": "Oil closes up almost 4%, while Iran's president vows never to surrender"
+      "url": "https://www.novacana.com/noticias/governo-deve-prorrogar-subvencao-de-r-2-12-por-litro-de-diesel-diz-moretti",
+      "tag": "Etanol",
+      "data": "25/09/2026",
+      "titulo_en": "Government to extend grant of $2.12 per litre of diesel, says Moretti"
     },
     {
-      "titulo": "Desembargador beneficiou Master em decisão sobre usina Cansanção de Sinimbu",
+      "titulo": "Usina alvo da Crédito Oculto foi de foragido e hoje está em fundo secreto",
       "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/desembargador-beneficiou-master-em-decisao-sobre-usina-cansancao-de-sinimbu",
+      "url": "https://www.novacana.com/noticias/usina-alvo-da-credito-oculto-foi-de-foragido-e-hoje-esta-em-fundo-secreto",
       "tag": "Produção",
-      "data": "24/09/2026",
-      "titulo_en": "Judge benefited Master in decision on plant Cansanção de Sinimbu"
+      "data": "25/09/2026",
+      "titulo_en": "Hidden Credit's target plant was a fugitive and today it is in a secret fund"
     },
     {
-      "titulo": "CNJ manda devolver R$ 4,7 bi à União em ações do setor sucroenergético citadas no caso Master",
+      "titulo": "Usina Itajobi foi utilizada em fluxo de valores investigados na operação Crédito Oculto",
       "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/cnj-ordena-devolucao-de-r-4-7-bilhoes-ao-tesouro-em-processos-do-setor-sucroenergetico",
+      "url": "https://www.novacana.com/noticias/usina-itajobi-foi-utilizada-em-fluxo-de-valores-investigados-na-operacao-credito-oculto",
+      "tag": "Produção",
+      "data": "25/09/2026",
+      "titulo_en": "Itajobi Plant was used in the flow of amounts investigated in the Hidden Credit operation"
+    },
+    {
+      "titulo": "STF começa a analisar envio de caso de precatórios de usinas ao plenário",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/stf-comeca-a-analisar-envio-de-caso-de-precatorios-de-usinas-ao-plenario",
+      "tag": "Produção",
+      "data": "25/09/2026",
+      "titulo_en": "STF begins to analyze sending the case of precatoriums of power plants to the plenary"
+    },
+    {
+      "titulo": "Mercado de bioinsumos deve crescer até 7% em valor e 10% em volume em 2026, diz ANPII Bio",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/mercado-de-bioinsumos-deve-crescer-ate-7-em-valor-e-10-em-volume-em-2026-diz-anpii-bio",
+      "tag": "ANP",
+      "data": "25/09/2026",
+      "titulo_en": "Bioinputs market is expected to grow up to 7% in value and 10% in volume by 2026, says ANPII Bio"
+    },
+    {
+      "titulo": "Petróleo fecha em alta por falta de avanços diplomáticos entre Irã e EUA",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/petroleo-fecha-em-alta-por-falta-de-avancos-diplomaticos-entre-ira-e-eua",
+      "tag": "Brent",
+      "data": "25/09/2026",
+      "titulo_en": "Oil closes high due to lack of diplomatic advances between Iran and the US"
+    },
+    {
+      "titulo": "Guerra abre debate sobre aumentar mistura de biocombustível, diz CEO da Inpasa",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/guerra-abre-debate-sobre-aumentar-mistura-de-biocombustivel-diz-ceo-da-inpasa",
       "tag": "Etanol",
-      "data": "24/09/2026",
-      "titulo_en": "Cnj orders to return $4.7 billion to the Federal Government in shares of the sugar-energy sector mentioned in the Master case"
+      "data": "25/09/2026",
+      "titulo_en": "Guerra opens debate on increasing biofuel blending, says Inpasa CEO"
     }
   ]
 }
