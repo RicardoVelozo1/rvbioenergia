@@ -1,10 +1,10 @@
 {
-  "atualizado": "2026-09-25T15:36:20.054728",
-  "semana": "21/09 – 27/09/2026",
+  "atualizado": "2026-09-28T18:18:19.017946",
+  "semana": "28/09 – 04/10/2026",
   "nacional": {
     "paridade": 70.3,
-    "etanol_medio": 4.73,
-    "gasolina_media": 6.73,
+    "etanol_medio": 4.74,
+    "gasolina_media": 6.74,
     "municipios_vantajosos": 12,
     "municipios_pesquisados": 27
   },
@@ -14,16 +14,12 @@
     "data": "22/09/2026"
   },
   "etanol_paulinia": {
-    "hidratado": 2.4622,
-    "hidratado_anterior": 2.3991,
+    "hidratado": 2.582,
+    "hidratado_anterior": 2.4622,
     "anidro": 2.8475,
     "anidro_anterior": 2.7829
   },
   "historico_hidratado": [
-    {
-      "data": "14/08",
-      "valor": 2.1939
-    },
     {
       "data": "21/08",
       "valor": 2.2566
@@ -39,6 +35,10 @@
     {
       "data": "11/09",
       "valor": 2.4622
+    },
+    {
+      "data": "25/09",
+      "valor": 2.582
     }
   ],
   "historico_brent": [
@@ -67,8 +67,8 @@
     {
       "uf": "AC",
       "nome": "Acre",
-      "etanol": 4.94,
-      "gasolina": 7.29
+      "etanol": 4.85,
+      "gasolina": 7.26
     },
     {
       "uf": "AL",
@@ -80,24 +80,24 @@
       "uf": "AP",
       "nome": "Amapá",
       "etanol": 5.81,
-      "gasolina": 6.57
+      "gasolina": 6.49
     },
     {
       "uf": "AM",
       "nome": "Amazonas",
-      "etanol": 5.29,
+      "etanol": 5.13,
       "gasolina": 7.29
     },
     {
       "uf": "BA",
       "nome": "Bahia",
-      "etanol": 4.47,
-      "gasolina": 6.51
+      "etanol": 4.52,
+      "gasolina": 6.55
     },
     {
       "uf": "CE",
       "nome": "Ceará",
-      "etanol": 4.99,
+      "etanol": 4.98,
       "gasolina": 6.99
     },
     {
@@ -109,8 +109,8 @@
     {
       "uf": "ES",
       "nome": "Espírito Santo",
-      "etanol": 4.56,
-      "gasolina": 6.26
+      "etanol": 4.72,
+      "gasolina": 6.28
     },
     {
       "uf": "GO",
@@ -121,80 +121,80 @@
     {
       "uf": "MA",
       "nome": "Maranhão",
-      "etanol": 4.91,
-      "gasolina": 6.5
+      "etanol": 4.87,
+      "gasolina": 6.53
     },
     {
       "uf": "MT",
       "nome": "Mato Grosso",
       "etanol": 4.18,
-      "gasolina": 6.98
+      "gasolina": 6.97
     },
     {
       "uf": "MS",
       "nome": "Mato Grosso do Sul",
       "etanol": 3.82,
-      "gasolina": 6.27
+      "gasolina": 6.25
     },
     {
       "uf": "MG",
       "nome": "Minas Gerais",
-      "etanol": 4.22,
-      "gasolina": 6.34
+      "etanol": 4.29,
+      "gasolina": 6.38
     },
     {
       "uf": "PA",
       "nome": "Pará",
-      "etanol": 4.41,
-      "gasolina": 6.57
+      "etanol": 4.44,
+      "gasolina": 6.72
     },
     {
       "uf": "PB",
       "nome": "Paraíba",
-      "etanol": 4.52,
+      "etanol": 4.5,
       "gasolina": 6.32
     },
     {
       "uf": "PR",
       "nome": "Paraná",
-      "etanol": 4.63,
-      "gasolina": 6.81
+      "etanol": 4.64,
+      "gasolina": 6.8
     },
     {
       "uf": "PE",
       "nome": "Pernambuco",
-      "etanol": 4.86,
-      "gasolina": 6.78
+      "etanol": 4.97,
+      "gasolina": 6.97
     },
     {
       "uf": "PI",
       "nome": "Piauí",
-      "etanol": 4.83,
+      "etanol": 4.84,
       "gasolina": 6.84
     },
     {
       "uf": "RJ",
       "nome": "Rio de Janeiro",
-      "etanol": 4.7,
+      "etanol": 4.71,
       "gasolina": 6.54
     },
     {
       "uf": "RN",
       "nome": "Rio Grande do Norte",
-      "etanol": 5.46,
-      "gasolina": 6.96
+      "etanol": 5.35,
+      "gasolina": 6.92
     },
     {
       "uf": "RS",
       "nome": "Rio Grande do Sul",
-      "etanol": 4.43,
-      "gasolina": 6.05
+      "etanol": 4.37,
+      "gasolina": 5.95
     },
     {
       "uf": "RO",
       "nome": "Rondônia",
-      "etanol": 4.95,
-      "gasolina": 7.5
+      "etanol": 5.04,
+      "gasolina": 7.48
     },
     {
       "uf": "RR",
@@ -205,14 +205,14 @@
     {
       "uf": "SC",
       "nome": "Santa Catarina",
-      "etanol": 4.34,
-      "gasolina": 6.48
+      "etanol": 4.55,
+      "gasolina": 6.59
     },
     {
       "uf": "SP",
       "nome": "São Paulo",
       "etanol": 3.83,
-      "gasolina": 6.32
+      "gasolina": 6.3
     },
     {
       "uf": "SE",
@@ -223,11 +223,83 @@
     {
       "uf": "TO",
       "nome": "Tocantins",
-      "etanol": 4.94,
-      "gasolina": 6.99
+      "etanol": 5.04,
+      "gasolina": 7.01
     }
   ],
   "noticias": [
+    {
+      "titulo": "Alta no preço dos combustíveis provoca salto nas vendas de carros elétricos na Europa",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/alta-no-preco-dos-combustiveis-provoca-salto-nas-vendas-de-carros-eletricos-na-europa",
+      "tag": "Etanol",
+      "data": "28/09/2026",
+      "titulo_en": "High fuel prices cause jump in sales of electric cars in Europe"
+    },
+    {
+      "titulo": "Governo Trump deve propor normas mais brandas para economia de combustível em veículos",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/governo-trump-deve-propor-normas-mais-brandas-para-economia-de-combustivel-em-veiculos",
+      "tag": "Etanol",
+      "data": "28/09/2026",
+      "titulo_en": "The Trump administration should propose more lenient rules for fuel economy in vehicles"
+    },
+    {
+      "titulo": "Etanol é mais competitivo do que a gasolina em 11 estados e no Distrito Federal",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/etanol-e-mais-competitivo-do-que-a-gasolina-em-11-estados-e-no-distrito-federal",
+      "tag": "Etanol",
+      "data": "28/09/2026",
+      "titulo_en": "Ethanol is more competitive than gasoline in 11 states and the Federal District"
+    },
+    {
+      "titulo": "Viralcool assume usina em Avaré e chega a cinco unidades em São Paulo",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/viralcool-assume-usina-em-avare-e-chega-a-cinco-unidades-em-sao-paulo",
+      "tag": "Produção",
+      "data": "28/09/2026",
+      "titulo_en": "Viralcool takes over plant in Avaré and reaches five units in São Paulo"
+    },
+    {
+      "titulo": "Chuvas devem deixar mais de 35 milhões de toneladas de cana no campo, projeta Datagro",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/chuvas-devem-deixar-mais-de-35-milhoes-de-toneladas-de-cana-no-campo-projeta-datagro",
+      "tag": "Etanol",
+      "data": "28/09/2026",
+      "titulo_en": "Rains are expected to leave more than 35 million tons of sugarcane in the field, Datagro projects"
+    },
+    {
+      "titulo": "Grunner investe R$ 19,5 milhões em máquinas agrícolas a etanol e biometano",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/grunner-investe-r-19-5-milhoes-em-maquinas-agricolas-a-etanol-e-biometano",
+      "tag": "Etanol",
+      "data": "28/09/2026",
+      "titulo_en": "Grunner invests $19.5 million in ethanol and biomethane agricultural machinery"
+    },
+    {
+      "titulo": "Governo prorroga subvenção ao diesel em R$ 2,12 por litro por 30 dias",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/governo-prorroga-subvencao-ao-diesel-em-r-2-12-por-litro-por-30-dias",
+      "tag": "Etanol",
+      "data": "28/09/2026",
+      "titulo_en": "Government extends diesel subsidy at $2.12 per liter for 30 days"
+    },
+    {
+      "titulo": "Produção nacional de petróleo e gás atinge 6 milhões de barris pela 1ª vez em agosto",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/producao-nacional-de-petroleo-e-gas-atinge-6-milhoes-de-barris-pela-1-vez-em-agosto",
+      "tag": "Brent",
+      "data": "28/09/2026",
+      "titulo_en": "National oil and gas production reaches 6 million barrels for the first time in August"
+    },
+    {
+      "titulo": "Petróleo cai cerca de 2% com EUA e Irã explorando caminho para o fim da guerra",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/petroleo-cai-cerca-de-2-com-eua-e-ira-explorando-caminho-para-o-fim-da-guerra",
+      "tag": "Brent",
+      "data": "28/09/2026",
+      "titulo_en": "Oil falls about 2% as U.S. and Iran explore path to end the war"
+    },
     {
       "titulo": "Para a indústria, subsídio do governo a combustíveis não resolve o petróleo a US$ 100",
       "fonte": "NovaCana",
@@ -235,78 +307,6 @@
       "tag": "Brent",
       "data": "25/09/2026",
       "titulo_en": "For industry, government fuel subsidy does not solve oil at$100"
-    },
-    {
-      "titulo": "Empresas estimam 636,15 mi t de cana e 39,02 mi t de açúcar no Centro-Sul em 2026/27",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/empresas-estimam-636-15-mi-t-de-cana-e-39-02-mi-t-de-acucar-no-centro-sul-em-2026-27",
-      "tag": "Etanol",
-      "data": "25/09/2026",
-      "titulo_en": "Companies estimate 636.15 million tons of cane and 39.02 million tons of sugar in the Center-South in 2026/27"
-    },
-    {
-      "titulo": "Preços da gasolina limitam recuperação do setor sucroenergético, diz presidente da Datagro",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/precos-da-gasolina-limitam-recuperacao-do-setor-sucroenergetico-diz-presidente-da-datagro",
-      "tag": "Etanol",
-      "data": "25/09/2026",
-      "titulo_en": "Gasoline prices limit recovery of the sugar-energy sector, says Datagro president"
-    },
-    {
-      "titulo": "Governo deve prorrogar subvenção de R$ 2,12 por litro de diesel, diz Moretti",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/governo-deve-prorrogar-subvencao-de-r-2-12-por-litro-de-diesel-diz-moretti",
-      "tag": "Etanol",
-      "data": "25/09/2026",
-      "titulo_en": "Government to extend grant of $2.12 per litre of diesel, says Moretti"
-    },
-    {
-      "titulo": "Usina alvo da Crédito Oculto foi de foragido e hoje está em fundo secreto",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/usina-alvo-da-credito-oculto-foi-de-foragido-e-hoje-esta-em-fundo-secreto",
-      "tag": "Produção",
-      "data": "25/09/2026",
-      "titulo_en": "Hidden Credit's target plant was a fugitive and today it is in a secret fund"
-    },
-    {
-      "titulo": "Usina Itajobi foi utilizada em fluxo de valores investigados na operação Crédito Oculto",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/usina-itajobi-foi-utilizada-em-fluxo-de-valores-investigados-na-operacao-credito-oculto",
-      "tag": "Produção",
-      "data": "25/09/2026",
-      "titulo_en": "Itajobi Plant was used in the flow of amounts investigated in the Hidden Credit operation"
-    },
-    {
-      "titulo": "STF começa a analisar envio de caso de precatórios de usinas ao plenário",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/stf-comeca-a-analisar-envio-de-caso-de-precatorios-de-usinas-ao-plenario",
-      "tag": "Produção",
-      "data": "25/09/2026",
-      "titulo_en": "STF begins to analyze sending the case of precatoriums of power plants to the plenary"
-    },
-    {
-      "titulo": "Mercado de bioinsumos deve crescer até 7% em valor e 10% em volume em 2026, diz ANPII Bio",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/mercado-de-bioinsumos-deve-crescer-ate-7-em-valor-e-10-em-volume-em-2026-diz-anpii-bio",
-      "tag": "ANP",
-      "data": "25/09/2026",
-      "titulo_en": "Bioinputs market is expected to grow up to 7% in value and 10% in volume by 2026, says ANPII Bio"
-    },
-    {
-      "titulo": "Petróleo fecha em alta por falta de avanços diplomáticos entre Irã e EUA",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/petroleo-fecha-em-alta-por-falta-de-avancos-diplomaticos-entre-ira-e-eua",
-      "tag": "Brent",
-      "data": "25/09/2026",
-      "titulo_en": "Oil closes high due to lack of diplomatic advances between Iran and the US"
-    },
-    {
-      "titulo": "Guerra abre debate sobre aumentar mistura de biocombustível, diz CEO da Inpasa",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/guerra-abre-debate-sobre-aumentar-mistura-de-biocombustivel-diz-ceo-da-inpasa",
-      "tag": "Etanol",
-      "data": "25/09/2026",
-      "titulo_en": "Guerra opens debate on increasing biofuel blending, says Inpasa CEO"
     }
   ]
 }
