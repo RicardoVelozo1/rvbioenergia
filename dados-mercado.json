@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-09-29T16:40:43.071024",
+  "atualizado": "2026-09-30T16:33:20.583563",
   "semana": "28/09 – 04/10/2026",
   "nacional": {
     "paridade": 70.3,
@@ -229,84 +229,84 @@
   ],
   "noticias": [
     {
+      "titulo": "Citada na operação Crédito Oculto, usina Itajobi tem inscrição estadual cassada",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/citada-na-operacao-credito-oculto-usina-itajobi-tem-inscricao-estadual-cassada",
+      "tag": "Produção",
+      "data": "30/09/2026",
+      "titulo_en": "Cited in the Hidden Credit operation, Itajobi plant has its state registration revoked"
+    },
+    {
+      "titulo": "Padrão para uso de etanol de cana em navios pode ser aprovado em 2026",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/padrao-para-uso-de-etanol-de-cana-em-navios-pode-ser-aprovado-em-2026",
+      "tag": "Etanol",
+      "data": "30/09/2026",
+      "titulo_en": "Standard for use of sugarcane ethanol on ships may be approved in 2026"
+    },
+    {
+      "titulo": "Sindicom entrega agenda com propostas para o setor de combustíveis aos presidenciáveis",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/sindicom-entrega-agenda-com-propostas-para-o-setor-de-combustiveis-aos-presidenciaveis",
+      "tag": "Etanol",
+      "data": "30/09/2026",
+      "titulo_en": "Sindicom delivers agenda with proposals for the fuel sector to the presidential candidates"
+    },
+    {
+      "titulo": "Pedidos de navios a etanol já preveem demanda de até 20 bilhões de litros até 2030",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/pedidos-de-navios-a-etanol-ja-preveem-demanda-de-ate-20-bilhoes-de-litros-ate-2030",
+      "tag": "Etanol",
+      "data": "30/09/2026",
+      "titulo_en": "Orders for ethanol ships already forecast demand of up to 20 billion liters by 2030"
+    },
+    {
+      "titulo": "Zilor mira 14 milhões de toneladas de cana e avalia novas aquisições",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/zilor-mira-14-milhoes-de-toneladas-de-cana-e-avalia-novas-aquisicoes",
+      "tag": "Etanol",
+      "data": "30/09/2026",
+      "titulo_en": "Zilor targets 14 million tons of sugarcane and evaluates new acquisitions"
+    },
+    {
+      "titulo": "Com reestruturação da Raízen, “desconsolidação” do setor sucroenergético ganha relevância",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/com-reestruturacao-da-raizen-desconsolidacao-do-setor-sucroenergetico-ganha-relevancia",
+      "tag": "Etanol",
+      "data": "30/09/2026",
+      "titulo_en": "With Raízen's restructuring, \"deconsolidation\" of the sugar-energy sector gains relevance"
+    },
+    {
+      "titulo": "Consumo de anidro pode subir 8,3% em 2027 com mistura de 35% na gasolina, diz StoneX",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/consumo-de-anidro-pode-subir-8-3-em-2027-com-mistura-de-35-na-gasolina-diz-stonex",
+      "tag": "Etanol",
+      "data": "30/09/2026",
+      "titulo_en": "Anhydrous consumption could rise 8.3% in 2027 with 35% blending in gasoline, StoneX says"
+    },
+    {
+      "titulo": "Clima, e não o preço, será fator determinante para produção de açúcar nas usinas brasileiras",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/clima-e-nao-o-preco-sera-fator-determinante-para-producao-de-acucar-nas-usinas-brasileiras",
+      "tag": "Produção",
+      "data": "30/09/2026",
+      "titulo_en": "Climate, not price, will be a determining factor for sugar production in Brazilian mills"
+    },
+    {
+      "titulo": "Crise do diesel aumenta pressão sobre inflação americana e juros globais",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/crise-do-diesel-aumenta-pressao-sobre-inflacao-americana-e-juros-globais",
+      "tag": "Etanol",
+      "data": "30/09/2026",
+      "titulo_en": "Diesel crisis increases pressure on US inflation and global interest rates"
+    },
+    {
       "titulo": "ANP garante certificação RenovaBio para usinas de etanol na Lista Suja do trabalho escravo",
       "fonte": "NovaCana",
       "url": "https://www.novacana.com/noticias/anp-garante-certificacao-renovabio-para-usinas-de-etanol-na-lista-suja-do-trabalho-escravo",
       "tag": "Etanol",
       "data": "29/09/2026",
       "titulo_en": "ANP guarantees RenovaBio certification for ethanol plants on the Dirty List of slave labor"
-    },
-    {
-      "titulo": "ANP multa distribuidoras em mais de R$ 700 milhões por alta abusiva nos combustíveis",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/anp-multa-distribuidoras-em-mais-de-r-700-mi-por-alta-abusiva-nos-combustiveis",
-      "tag": "ANP",
-      "data": "29/09/2026",
-      "titulo_en": "ANP distributors fine of more than R$700 million for abusive high in fuels"
-    },
-    {
-      "titulo": "Setor de etanol corre o risco de viver um “superávit crônico”, alerta diretor da Canaplan",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/setor-de-etanol-corre-o-risco-de-viver-um-superavit-cronico-alerta-diretor-da-canaplan",
-      "tag": "Etanol",
-      "data": "29/09/2026",
-      "titulo_en": "The ethanol sector is at risk of experiencing a “chronic surplus”, warns Canaplan's director"
-    },
-    {
-      "titulo": "[Cepea] Chuvas restringem oferta de açúcar cristal e sustentam preços nas usinas",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/cepea-chuvas-restringem-oferta-de-acucar-cristal-e-sustentam-precos-nas-usinas",
-      "tag": "Produção",
-      "data": "29/09/2026",
-      "titulo_en": "[Cepea] Rains restrict the supply of crystal sugar and sustain prices at the mills"
-    },
-    {
-      "titulo": "[Cepea] Preço do etanol hidratado recua nas usinas após quase dois meses de alta",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/cepea-preco-do-etanol-hidratado-recua-nas-usinas-apos-quase-dois-meses-de-alta",
-      "tag": "Etanol",
-      "data": "29/09/2026",
-      "titulo_en": "[Cepea] Hydrated ethanol price falls at mills after almost two months of high"
-    },
-    {
-      "titulo": "Governo aumenta multa por abuso no valor do combustível para R$ 500 milhões",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/governo-aumenta-multa-por-abuso-no-valor-do-combustivel-para-r-500-milhoes",
-      "tag": "Etanol",
-      "data": "29/09/2026",
-      "titulo_en": "Government increases fine for fuel value abuse to $500 million"
-    },
-    {
-      "titulo": "Governo Trump conclui revogação de normas sobre eficiência de combustível",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/governo-trump-conclui-revogacao-de-normas-sobre-eficiencia-de-combustivel",
-      "tag": "Etanol",
-      "data": "29/09/2026",
-      "titulo_en": "Trump Administration Completes Repeal of Fuel Efficiency Rules"
-    },
-    {
-      "titulo": "Petróleo tem leve alta por preocupações com oferta, enquanto Trump rejeita proposta do Irã",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/petroleo-tem-leve-alta-por-preocupacoes-com-oferta-enquanto-trump-rejeita-proposta-do-ira",
-      "tag": "Brent",
-      "data": "29/09/2026",
-      "titulo_en": "Oil is up slightly due to supply concerns, while Trump rejects Iran's proposal"
-    },
-    {
-      "titulo": "“Gasolina sabor etanol”: Mistura se aproxima de patamar perigoso para imagem ao consumidor, diz Pecege",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/gasolina-sabor-etanol-mistura-se-aproxima-de-patamar-perigoso-alerta-pecege",
-      "tag": "Etanol",
-      "data": "29/09/2026",
-      "titulo_en": "\"Ethanol flavor gasoline\": Mixture approaches dangerous level for consumer image, says Pecege"
-    },
-    {
-      "titulo": "Com alta do etanol na Europa, Südzucker eleva margens e vê safra com mais otimismo",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/com-alta-do-etanol-na-europa-sudzucker-eleva-margens-e-ve-safra-com-mais-otimismo",
-      "tag": "Etanol",
-      "data": "29/09/2026",
-      "titulo_en": "With ethanol high in Europe, Südzucker raises margins and sees the harvest with more optimism"
     }
   ]
 }
