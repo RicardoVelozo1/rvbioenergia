@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-01T17:10:51.213956",
+  "atualizado": "2026-10-02T16:24:38.512775",
   "semana": "28/09 – 04/10/2026",
   "nacional": {
     "paridade": 70.3,
@@ -229,84 +229,84 @@
   ],
   "noticias": [
     {
+      "titulo": "TST afasta responsabilidade de usina em acidente com empregado de transportadora de cana",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/tst-afasta-responsabilidade-de-usina-em-acidente-com-empregado-de-transportadora-de-cana",
+      "tag": "Produção",
+      "data": "02/10/2026",
+      "titulo_en": "TST removes liability from plant in accident with employee of sugarcane carrier"
+    },
+    {
+      "titulo": "Argélia abre mercado para DDG brasileiro e amplia espaço para coproduto do etanol de milho",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/argelia-abre-mercado-para-ddg-brasileiro-e-amplia-espaco-para-coproduto-do-etanol-de-milho",
+      "tag": "Etanol",
+      "data": "02/10/2026",
+      "titulo_en": "Algeria opens market for Brazilian DDG and expands space for corn ethanol co-product"
+    },
+    {
+      "titulo": "Moagem de cana do Centro-Sul está mais baixa no acumulado da safra por chuvas em setembro",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/moagem-de-cana-do-centro-sul-esta-mais-baixa-no-acumulado-da-safra-por-chuvas-em-setembro",
+      "tag": "Produção",
+      "data": "02/10/2026",
+      "titulo_en": "Sugarcane milling in the Center-South is lower in the accumulated harvest due to rains in September"
+    },
+    {
+      "titulo": "Governo sanciona lei que moderniza seguro rural e torna subvenção despesa obrigatória",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/governo-sanciona-lei-que-moderniza-seguro-rural-e-torna-subvencao-despesa-obrigatoria",
+      "tag": "Etanol",
+      "data": "02/10/2026",
+      "titulo_en": "Government sanctions law that modernizes rural insurance and makes subsidy compulsory expenditure"
+    },
+    {
+      "titulo": "Produção de etanol dos EUA cai 2,04% na semana, para 1,007 milhão de barris por dia",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/producao-de-etanol-dos-eua-cai-2-04-na-semana-para-1-007-milhao-de-barris-por-dia",
+      "tag": "Etanol",
+      "data": "02/10/2026",
+      "titulo_en": "U.S. ethanol production falls 2.04% on the week to 1.007 million barrels per day"
+    },
+    {
+      "titulo": "Rússia não fornecerá diesel a mercados globais até que sanções sejam suspensas, diz Putin",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/russia-nao-fornecera-diesel-a-mercados-globais-ate-que-sancoes-sejam-suspensas-diz-putin",
+      "tag": "Etanol",
+      "data": "02/10/2026",
+      "titulo_en": "Russia will not supply diesel to global markets until sanctions are lifted, Putin says"
+    },
+    {
+      "titulo": "Petróleo sobe 4% com envio de mais tropas dos EUA ao Oriente Médio",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/petroleo-sobe-4-com-envio-de-mais-tropas-dos-eua-ao-oriente-medio",
+      "tag": "Brent",
+      "data": "02/10/2026",
+      "titulo_en": "Oil rises 4% as more US troops are sent to the Middle East"
+    },
+    {
+      "titulo": "FG/A prevê moagem de 654,9 milhões de toneladas de cana na safra 2026/27",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/fg-a-preve-moagem-de-654-9-milhoes-de-toneladas-de-cana-na-safra-2026-27",
+      "tag": "Produção",
+      "data": "02/10/2026",
+      "titulo_en": "FG/A forecasts the milling of 654.9 million tons of sugarcane in the 2026/27 harvest"
+    },
+    {
+      "titulo": "Fiscais resgatam 67 trabalhadores em condições análogas à escravidão em usina de Cabo Frio (RJ)",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/fiscais-resgatam-67-trabalhadores-em-condicoes-analogas-a-escravidao-em-usina-de-cabo-frio-rj",
+      "tag": "Produção",
+      "data": "02/10/2026",
+      "titulo_en": "Inspectors rescue 67 workers in conditions analogous to slavery at a plant in Cabo Frio (RJ)"
+    },
+    {
       "titulo": "Adecoagro vende usina em MG para fundo e foca em Mato Grosso do Sul",
       "fonte": "NovaCana",
       "url": "https://www.novacana.com/noticias/adecoagro-vende-usina-em-mg-para-fundo-e-foca-em-mato-grosso-do-sul",
       "tag": "Produção",
       "data": "01/10/2026",
       "titulo_en": "Adecoagro sells plant in MG to Fundo and focuses on Mato Grosso do Sul"
-    },
-    {
-      "titulo": "Usina de etanol de segunda geração da Raízen em Morro Agudo (SP) está em testes",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/usina-de-etanol-de-segunda-geracao-da-raizen-em-morro-agudo-sp-esta-em-testes",
-      "tag": "Etanol",
-      "data": "01/10/2026",
-      "titulo_en": "Raízen's second-generation ethanol plant in Morro Agudo (SP) is undergoing tests"
-    },
-    {
-      "titulo": "Vendas de etanol somam 2,06 bilhões de litros em agosto, maior volume desde dezembro de 2019",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/vendas-de-etanol-somam-2-06-bilhoes-de-litros-em-agosto-maior-volume-desde-dezembro-de-2019",
-      "tag": "Etanol",
-      "data": "01/10/2026",
-      "titulo_en": "Ethanol sales totaled 2.06 billion liters in August, the highest volume since December 2019"
-    },
-    {
-      "titulo": "Lula diz que vai comprar distribuidora de combustíveis se for reeleito",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/lula-diz-que-vai-comprar-distribuidora-de-combustiveis-se-eleito",
-      "tag": "Etanol",
-      "data": "01/10/2026",
-      "titulo_en": "Lula says he will buy fuel distributor if he is re-elected"
-    },
-    {
-      "titulo": "Prorrogação da subvenção ao diesel em R$ 2,12 custará R$ 10,5 bilhões",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/prorrogacao-da-subvencao-ao-diesel-em-r-2-12-custara-r-10-5-bilhoes",
-      "tag": "Etanol",
-      "data": "01/10/2026",
-      "titulo_en": "Extension of diesel subsidy in $2.12 will cost $10.5 billion"
-    },
-    {
-      "titulo": "MME abre caminho para usinas reversíveis e térmicas a resíduos em leilões",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/mme-abre-caminho-para-usinas-reversiveis-e-termicas-a-residuos-em-leiloes",
-      "tag": "Produção",
-      "data": "01/10/2026",
-      "titulo_en": "Mme paves the way for reversible and waste-to-waste thermal plants in auctions"
-    },
-    {
-      "titulo": "Petrobras recebe novas parcelas do programa de subvenção econômica da gasolina e do diesel",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/petrobras-recebe-novas-parcelas-do-programa-de-subvencao-economica-da-gasolina-e-do-diesel",
-      "tag": "Etanol",
-      "data": "01/10/2026",
-      "titulo_en": "Petrobras receives new installments of the economic subsidy program for gasoline and diesel"
-    },
-    {
-      "titulo": "Petróleo sobe cerca de US$ 1 por barril com impasse nas negociações entre EUA e Irã",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/petroleo-sobe-cerca-de-us-1-por-barril-com-impasse-nas-negociacoes-entre-eua-e-ira",
-      "tag": "Brent",
-      "data": "01/10/2026",
-      "titulo_en": "Oil rises about $1 per barrel with stalemate in US-Iran negotiations"
-    },
-    {
-      "titulo": "Confinamento pode ser o próximo passo do etanol após as usinas flex",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/confinamento-pode-ser-o-proximo-passo-do-etanol-apos-as-usinas-flex",
-      "tag": "Etanol",
-      "data": "01/10/2026",
-      "titulo_en": "Confinement could be ethanol's next step after flex-fuel plants"
-    },
-    {
-      "titulo": "Citada na operação Crédito Oculto, usina Itajobi tem inscrição estadual cassada",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/citada-na-operacao-credito-oculto-usina-itajobi-tem-inscricao-estadual-cassada",
-      "tag": "Produção",
-      "data": "30/09/2026",
-      "titulo_en": "Cited in the Hidden Credit operation, Itajobi plant has its state registration revoked"
     }
   ]
 }
