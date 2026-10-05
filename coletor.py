@@ -39,56 +39,87 @@ def load_existing():
     except Exception:
         return {}
 
-def get_brent(existing):
-    """Busca preço do Brent via GitHub Datasets (atualizado diariamente, 100% confiável)"""
-    print("[BRENT] Buscando dados...")
-    url = "https://raw.githubusercontent.com/datasets/oil-prices/main/data/brent-daily.csv"
+def _serie_brent_yahoo(intervalo="5d"):
+    """Série diária do Brent (futuro ICE, BZ=F) via Yahoo Finance. Lista [(YYYY-MM-DD, fechamento)]."""
+    url = f"https://query1.finance.yahoo.com/v8/finance/chart/BZ=F?range={intervalo}&interval=1d"
     content = fetch_url(url)
     if not content:
-        print("[BRENT] Falhou — mantendo último valor")
-        return existing.get('brent', {"valor": 72.60, "variacao": -3.84, "data": "—"})
-
-    lines = [l for l in content.strip().split('\n') if l and not l.startswith('Date')]
-    if len(lines) < 2:
-        return existing.get('brent')
-
-    last = lines[-1].split(',')
-    prev = lines[-2].split(',')
-    cur = round(float(last[1]), 2)
-    prv = round(float(prev[1]), 2)
-    variacao = round((cur - prv) / prv * 100, 2)
-    data = last[0]  # YYYY-MM-DD
-    # Formatar data para DD/MM/YYYY
+        return []
     try:
-        dt = datetime.strptime(data, '%Y-%m-%d')
-        data_fmt = dt.strftime('%d/%m/%Y')
-    except Exception:
-        data_fmt = data
+        res = json.loads(content)["chart"]["result"][0]
+        off = res.get("meta", {}).get("gmtoffset", 0) or 0
+        closes = res["indicators"]["quote"][0]["close"]
+        out = []
+        for t, v in zip(res["timestamp"], closes):
+            if v is None:
+                continue
+            out.append((datetime.utcfromtimestamp(t + off).strftime("%Y-%m-%d"), round(float(v), 2)))
+        return out
+    except Exception as e:
+        print(f"[BRENT] Yahoo inválido: {e}")
+        return []
 
-    print(f"[BRENT] USD {cur:.2f} ({variacao:+.2f}%) — {data_fmt}")
-    return {"valor": cur, "variacao": variacao, "data": data_fmt}
+def _serie_brent_csv():
+    """Série diária do Brent via GitHub Datasets (reserva; pode atrasar vários dias)."""
+    content = fetch_url("https://raw.githubusercontent.com/datasets/oil-prices/main/data/brent-daily.csv")
+    if not content:
+        return []
+    out = []
+    for l in content.strip().split('\n'):
+        p = l.strip().split(',')
+        if len(p) >= 2 and re.match(r'\d{4}-\d{2}-\d{2}$', p[0]):
+            try:
+                out.append((p[0], round(float(p[1]), 2)))
+            except ValueError:
+                pass
+    return out
+
+def _data_br(iso):
+    try:
+        return datetime.strptime(iso, '%Y-%m-%d').strftime('%d/%m/%Y')
+    except Exception:
+        return iso
+
+def get_brent(existing):
+    """Brent: fonte principal Yahoo Finance (ICE, atualiza diariamente); reserva GitHub Datasets.
+    Nunca troca um dado mais novo por um mais antigo."""
+    print("[BRENT] Buscando dados...")
+    serie = _serie_brent_yahoo("5d")
+    fonte = "Yahoo Finance (ICE Brent)"
+    if len(serie) < 2:
+        serie = _serie_brent_csv()[-5:]
+        fonte = "GitHub Datasets"
+    atual = existing.get('brent') or {"valor": 0, "variacao": 0, "data": "—"}
+    if len(serie) < 2:
+        print("[BRENT] Falhou — mantendo último valor")
+        return atual
+    cur, prv = serie[-1][1], serie[-2][1]
+    resultado = {"valor": cur, "variacao": round((cur - prv) / prv * 100, 2),
+                 "data": _data_br(serie[-1][0]), "fonte": fonte}
+    d_novo = _parse_data_br(resultado["data"])
+    d_old = _parse_data_br(atual.get("data", ""))
+    if d_novo and d_old and d_old > d_novo:
+        print("[BRENT] Dado existente é mais recente — mantido")
+        return atual
+    print(f"[BRENT] USD {cur:.2f} ({resultado['variacao']:+.2f}%) — {resultado['data']} [{fonte}]")
+    return resultado
 
 def get_historico_brent(existing):
-    """Últimas 8 semanas do Brent via GitHub Datasets"""
+    """Últimas 8 semanas do Brent (1 ponto por semana, terminando no dado mais recente)."""
     print("[BRENT HIST] Atualizando histórico...")
-    url = "https://raw.githubusercontent.com/datasets/oil-prices/main/data/brent-daily.csv"
-    content = fetch_url(url)
-    if not content:
+    serie = _serie_brent_yahoo("3mo")
+    if len(serie) < 20:
+        serie = _serie_brent_csv()
+    if len(serie) < 20:
         return existing.get('historico_brent', [])
-
-    lines = [l for l in content.strip().split('\n') if l and not l.startswith('Date')]
-    # 1 ponto por semana, últimas 8 semanas
-    selecionados = lines[-40::8][-8:]
+    pontos = list(reversed(serie[::-1][::5][:8]))
     result = []
-    for l in selecionados:
-        parts = l.split(',')
-        if len(parts) >= 2:
-            try:
-                dt = datetime.strptime(parts[0], '%Y-%m-%d')
-                data = dt.strftime('%d/%m')
-            except Exception:
-                data = parts[0][5:]
-            result.append({"data": data, "valor": round(float(parts[1]), 2)})
+    for iso, v in pontos:
+        try:
+            data = datetime.strptime(iso, '%Y-%m-%d').strftime('%d/%m')
+        except Exception:
+            data = iso[5:]
+        result.append({"data": data, "valor": v})
     print(f"[BRENT HIST] {len(result)} pontos")
     return result
 
@@ -231,8 +262,15 @@ PALAVRAS_RELEVANTES = [
     "usinas sucroalcooleiras",
 ]
 
+PALAVRAS_EXCLUIR = [
+    "trabalhador", "resgatad", "escravo", "tst ", "acidente", "demiss", "greve",
+    "hibrido", "eletric", "futebol", "eleicao", "candidato",
+]
+
 def _relevante(titulo):
     t = _normalizar(titulo)
+    if any(x in t for x in PALAVRAS_EXCLUIR):
+        return False
     return any(p in t for p in PALAVRAS_RELEVANTES)
 
 def _traduzir_en(texto):
@@ -306,7 +344,7 @@ def get_noticias(existing):
     # Junta existentes + novas, deduplicando por URL (fallback: título) e mantendo a data mais antiga
     # de cada notícia (para a janela de 7 dias contar a partir da primeira vez que ela apareceu).
     combinadas = {}
-    for n in existing.get('noticias', []) + novas:
+    for n in [x for x in existing.get('noticias', []) if _relevante(x.get('titulo',''))] + novas:
         chave = n.get('url') if n.get('url') and n['url'] != '#' else n.get('titulo', '').lower()
         if not chave:
             continue
