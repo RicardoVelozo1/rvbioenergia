@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-05T13:24:25.040386",
+  "atualizado": "2026-10-05T19:26:01.010621",
   "semana": "05/10 – 11/10/2026",
   "nacional": {
     "paridade": 70.6,
@@ -9,8 +9,8 @@
     "municipios_pesquisados": 27
   },
   "brent": {
-    "valor": 101.71,
-    "variacao": -0.53,
+    "valor": 99.99,
+    "variacao": -2.21,
     "data": "05/10/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
@@ -73,7 +73,7 @@
     },
     {
       "data": "05/10",
-      "valor": 101.69
+      "valor": 99.99
     }
   ],
   "estados": [
@@ -288,6 +288,22 @@
       "tag": "RenovaBio",
       "data": "05/10/2026",
       "titulo_en": "Average price of CBios increases in September, but volume of negotiated credits decreases"
+    },
+    {
+      "titulo": "Preço do etanol sobe nos postos, mas volta a cair nas usinas",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/preco-do-etanol-sobe-nos-postos-mas-volta-a-cair-nas-usinas",
+      "tag": "Etanol",
+      "data": "05/10/2026",
+      "titulo_en": "Ethanol price rises at the gas stations, but falls again at the mills"
+    },
+    {
+      "titulo": "Etanol de milho pode chegar a 45% da produção em dez anos, diz Unem",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/etanol-de-milho-pode-chegar-a-45-da-producao-em-dez-anos-diz-unem",
+      "tag": "Etanol",
+      "data": "05/10/2026",
+      "titulo_en": "Corn ethanol could reach 45% of production in ten years, says Unem"
     },
     {
       "titulo": "Argélia abre mercado para DDG brasileiro e amplia espaço para coproduto do etanol de milho",
