@@ -1,11 +1,11 @@
 {
-  "atualizado": "2026-10-02T16:24:38.512775",
-  "semana": "28/09 – 04/10/2026",
+  "atualizado": "2026-10-05T13:18:06.873085",
+  "semana": "05/10 – 11/10/2026",
   "nacional": {
-    "paridade": 70.3,
-    "etanol_medio": 4.74,
-    "gasolina_media": 6.74,
-    "municipios_vantajosos": 12,
+    "paridade": 70.6,
+    "etanol_medio": 4.75,
+    "gasolina_media": 6.73,
+    "municipios_vantajosos": 11,
     "municipios_pesquisados": 27
   },
   "brent": {
@@ -14,16 +14,12 @@
     "data": "29/09/2026"
   },
   "etanol_paulinia": {
-    "hidratado": 2.582,
-    "hidratado_anterior": 2.4622,
+    "hidratado": 2.5639,
+    "hidratado_anterior": 2.582,
     "anidro": 2.8475,
     "anidro_anterior": 2.7829
   },
   "historico_hidratado": [
-    {
-      "data": "21/08",
-      "valor": 2.2566
-    },
     {
       "data": "28/08",
       "valor": 2.3116
@@ -39,6 +35,10 @@
     {
       "data": "25/09",
       "valor": 2.582
+    },
+    {
+      "data": "02/10",
+      "valor": 2.5639
     }
   ],
   "historico_brent": [
@@ -67,32 +67,32 @@
     {
       "uf": "AC",
       "nome": "Acre",
-      "etanol": 4.85,
-      "gasolina": 7.26
+      "etanol": 4.81,
+      "gasolina": 7.25
     },
     {
       "uf": "AL",
       "nome": "Alagoas",
       "etanol": 4.96,
-      "gasolina": 6.59
+      "gasolina": 6.71
     },
     {
       "uf": "AP",
       "nome": "Amapá",
-      "etanol": 5.81,
+      "etanol": 5.84,
       "gasolina": 6.49
     },
     {
       "uf": "AM",
       "nome": "Amazonas",
-      "etanol": 5.13,
-      "gasolina": 7.29
+      "etanol": 5.0,
+      "gasolina": 7.01
     },
     {
       "uf": "BA",
       "nome": "Bahia",
-      "etanol": 4.52,
-      "gasolina": 6.55
+      "etanol": 4.43,
+      "gasolina": 6.39
     },
     {
       "uf": "CE",
@@ -103,50 +103,50 @@
     {
       "uf": "DF",
       "nome": "Distrito Federal",
-      "etanol": 4.42,
-      "gasolina": 6.68
+      "etanol": 4.46,
+      "gasolina": 6.66
     },
     {
       "uf": "ES",
       "nome": "Espírito Santo",
-      "etanol": 4.72,
-      "gasolina": 6.28
+      "etanol": 4.77,
+      "gasolina": 6.26
     },
     {
       "uf": "GO",
       "nome": "Goiás",
-      "etanol": 4.48,
-      "gasolina": 6.78
+      "etanol": 4.45,
+      "gasolina": 6.76
     },
     {
       "uf": "MA",
       "nome": "Maranhão",
-      "etanol": 4.87,
-      "gasolina": 6.53
+      "etanol": 4.7,
+      "gasolina": 6.48
     },
     {
       "uf": "MT",
       "nome": "Mato Grosso",
-      "etanol": 4.18,
-      "gasolina": 6.97
+      "etanol": 4.38,
+      "gasolina": 7.17
     },
     {
       "uf": "MS",
       "nome": "Mato Grosso do Sul",
-      "etanol": 3.82,
-      "gasolina": 6.25
+      "etanol": 3.93,
+      "gasolina": 6.28
     },
     {
       "uf": "MG",
       "nome": "Minas Gerais",
-      "etanol": 4.29,
-      "gasolina": 6.38
+      "etanol": 4.39,
+      "gasolina": 6.42
     },
     {
       "uf": "PA",
       "nome": "Pará",
       "etanol": 4.44,
-      "gasolina": 6.72
+      "gasolina": 6.57
     },
     {
       "uf": "PB",
@@ -158,43 +158,43 @@
       "uf": "PR",
       "nome": "Paraná",
       "etanol": 4.64,
-      "gasolina": 6.8
+      "gasolina": 6.79
     },
     {
       "uf": "PE",
       "nome": "Pernambuco",
-      "etanol": 4.97,
+      "etanol": 4.96,
       "gasolina": 6.97
     },
     {
       "uf": "PI",
       "nome": "Piauí",
-      "etanol": 4.84,
-      "gasolina": 6.84
+      "etanol": 4.87,
+      "gasolina": 6.86
     },
     {
       "uf": "RJ",
       "nome": "Rio de Janeiro",
       "etanol": 4.71,
-      "gasolina": 6.54
+      "gasolina": 6.52
     },
     {
       "uf": "RN",
       "nome": "Rio Grande do Norte",
-      "etanol": 5.35,
-      "gasolina": 6.92
+      "etanol": 5.2,
+      "gasolina": 6.76
     },
     {
       "uf": "RS",
       "nome": "Rio Grande do Sul",
-      "etanol": 4.37,
-      "gasolina": 5.95
+      "etanol": 4.41,
+      "gasolina": 5.98
     },
     {
       "uf": "RO",
       "nome": "Rondônia",
       "etanol": 5.04,
-      "gasolina": 7.48
+      "gasolina": 7.5
     },
     {
       "uf": "RR",
@@ -205,29 +205,93 @@
     {
       "uf": "SC",
       "nome": "Santa Catarina",
-      "etanol": 4.55,
-      "gasolina": 6.59
+      "etanol": 4.75,
+      "gasolina": 6.75
     },
     {
       "uf": "SP",
       "nome": "São Paulo",
-      "etanol": 3.83,
-      "gasolina": 6.3
+      "etanol": 3.92,
+      "gasolina": 6.36
     },
     {
       "uf": "SE",
       "nome": "Sergipe",
-      "etanol": 5.33,
-      "gasolina": 7.02
+      "etanol": 5.29,
+      "gasolina": 6.96
     },
     {
       "uf": "TO",
       "nome": "Tocantins",
-      "etanol": 5.04,
-      "gasolina": 7.01
+      "etanol": 5.06,
+      "gasolina": 7.02
     }
   ],
   "noticias": [
+    {
+      "titulo": "Grupo Pedra Agroindustrial inaugura fábrica de açúcar na usina Buriti",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/pedra-agroindustrial-inaugura-fabrica-de-acucar-na-usina-buriti",
+      "tag": "Produção",
+      "data": "05/10/2026",
+      "titulo_en": "Pedra Agroindustrial Group opens sugar factory at Buriti mill"
+    },
+    {
+      "titulo": "“Tava pedindo socorro”, relata um dos 67 trabalhadores resgatados de canavial no RJ",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/tava-pedindo-socorro-relata-um-dos-67-trabalhadores-resgatados-de-canavial-no-rj",
+      "tag": "Etanol",
+      "data": "05/10/2026",
+      "titulo_en": "\"I was asking for help,\" says one of the 67 workers rescued from sugarcane fields in Rio de Janeiro"
+    },
+    {
+      "titulo": "Biocombustíveis somam R$ 289 bilhões em investimentos no Brasil",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/biocombustiveis-somam-r-289-bilhoes-em-investimentos-no-brasil",
+      "tag": "Etanol",
+      "data": "05/10/2026",
+      "titulo_en": "Biofuels total $289 billion in investments in Brazil"
+    },
+    {
+      "titulo": "Carros híbridos asiáticos ganham mercado nos EUA com alta dos combustíveis",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/carros-hibridos-asiaticos-ganham-mercado-nos-eua-com-alta-dos-combustiveis",
+      "tag": "Etanol",
+      "data": "05/10/2026",
+      "titulo_en": "Asian hybrid cars gain market share in the US with high fuel prices"
+    },
+    {
+      "titulo": "Países do G7 concordam em liberar reservas de diesel e petróleo após pressão dos EUA",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/paises-do-g7-concordam-em-liberar-reservas-de-diesel-e-petroleo-apos-pressao-dos-eua",
+      "tag": "Brent",
+      "data": "05/10/2026",
+      "titulo_en": "G7 countries agree to release diesel and oil reserves after US pressure"
+    },
+    {
+      "titulo": "Petróleo fecha em queda após Europa concordar em utilizar reservas de diesel",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/petroleo-fecha-em-queda-apos-europa-concordar-em-utilizar-reservas-de-diesel",
+      "tag": "Brent",
+      "data": "05/10/2026",
+      "titulo_en": "Oil closes down after Europe agrees to use diesel reserves"
+    },
+    {
+      "titulo": "Usinas enfrentam dificuldades para moer cana no Brasil em meio às chuvas; portos também sofrem",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/usinas-enfrentam-dificuldades-para-moer-cana-no-brasil-em-meio-as-chuvas-portos-tambem-sofrem",
+      "tag": "Produção",
+      "data": "05/10/2026",
+      "titulo_en": "Mills face difficulties to grind sugarcane in Brazil amidst rains; ports also suffer"
+    },
+    {
+      "titulo": "Preço médio dos CBios tem alta em setembro, mas volume de créditos negociados recua",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/preco-medio-dos-cbios-tem-alta-em-setembro-mas-volume-de-creditos-negociados-recua",
+      "tag": "RenovaBio",
+      "data": "05/10/2026",
+      "titulo_en": "Average price of CBios increases in September, but volume of negotiated credits decreases"
+    },
     {
       "titulo": "TST afasta responsabilidade de usina em acidente com empregado de transportadora de cana",
       "fonte": "NovaCana",
@@ -243,70 +307,6 @@
       "tag": "Etanol",
       "data": "02/10/2026",
       "titulo_en": "Algeria opens market for Brazilian DDG and expands space for corn ethanol co-product"
-    },
-    {
-      "titulo": "Moagem de cana do Centro-Sul está mais baixa no acumulado da safra por chuvas em setembro",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/moagem-de-cana-do-centro-sul-esta-mais-baixa-no-acumulado-da-safra-por-chuvas-em-setembro",
-      "tag": "Produção",
-      "data": "02/10/2026",
-      "titulo_en": "Sugarcane milling in the Center-South is lower in the accumulated harvest due to rains in September"
-    },
-    {
-      "titulo": "Governo sanciona lei que moderniza seguro rural e torna subvenção despesa obrigatória",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/governo-sanciona-lei-que-moderniza-seguro-rural-e-torna-subvencao-despesa-obrigatoria",
-      "tag": "Etanol",
-      "data": "02/10/2026",
-      "titulo_en": "Government sanctions law that modernizes rural insurance and makes subsidy compulsory expenditure"
-    },
-    {
-      "titulo": "Produção de etanol dos EUA cai 2,04% na semana, para 1,007 milhão de barris por dia",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/producao-de-etanol-dos-eua-cai-2-04-na-semana-para-1-007-milhao-de-barris-por-dia",
-      "tag": "Etanol",
-      "data": "02/10/2026",
-      "titulo_en": "U.S. ethanol production falls 2.04% on the week to 1.007 million barrels per day"
-    },
-    {
-      "titulo": "Rússia não fornecerá diesel a mercados globais até que sanções sejam suspensas, diz Putin",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/russia-nao-fornecera-diesel-a-mercados-globais-ate-que-sancoes-sejam-suspensas-diz-putin",
-      "tag": "Etanol",
-      "data": "02/10/2026",
-      "titulo_en": "Russia will not supply diesel to global markets until sanctions are lifted, Putin says"
-    },
-    {
-      "titulo": "Petróleo sobe 4% com envio de mais tropas dos EUA ao Oriente Médio",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/petroleo-sobe-4-com-envio-de-mais-tropas-dos-eua-ao-oriente-medio",
-      "tag": "Brent",
-      "data": "02/10/2026",
-      "titulo_en": "Oil rises 4% as more US troops are sent to the Middle East"
-    },
-    {
-      "titulo": "FG/A prevê moagem de 654,9 milhões de toneladas de cana na safra 2026/27",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/fg-a-preve-moagem-de-654-9-milhoes-de-toneladas-de-cana-na-safra-2026-27",
-      "tag": "Produção",
-      "data": "02/10/2026",
-      "titulo_en": "FG/A forecasts the milling of 654.9 million tons of sugarcane in the 2026/27 harvest"
-    },
-    {
-      "titulo": "Fiscais resgatam 67 trabalhadores em condições análogas à escravidão em usina de Cabo Frio (RJ)",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/fiscais-resgatam-67-trabalhadores-em-condicoes-analogas-a-escravidao-em-usina-de-cabo-frio-rj",
-      "tag": "Produção",
-      "data": "02/10/2026",
-      "titulo_en": "Inspectors rescue 67 workers in conditions analogous to slavery at a plant in Cabo Frio (RJ)"
-    },
-    {
-      "titulo": "Adecoagro vende usina em MG para fundo e foca em Mato Grosso do Sul",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/adecoagro-vende-usina-em-mg-para-fundo-e-foca-em-mato-grosso-do-sul",
-      "tag": "Produção",
-      "data": "01/10/2026",
-      "titulo_en": "Adecoagro sells plant in MG to Fundo and focuses on Mato Grosso do Sul"
     }
   ]
 }
