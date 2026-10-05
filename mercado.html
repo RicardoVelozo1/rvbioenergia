@@ -175,7 +175,7 @@ tbody td{padding:6px 8px;font-size:12px}
       <div class="mc-label" data-pt="Petróleo Brent" data-en="Brent Crude Oil">Petróleo Brent</div>
       <div class="mc-value" id="m-brent">—</div>
       <div class="mc-sub" id="m-brent-var"><span class="nt-txt">—</span></div>
-      <div class="mc-source" data-pt="USD/barril · ICE" data-en="USD/barrel · ICE">USD/barril · ICE</div>
+      <div class="mc-source" id="m-brent-src">USD/barril · ICE</div>
     </div>
     <div class="metric-card">
       <div class="mc-label" data-pt="Gasolina Comum SP" data-en="Regular Gasoline SP">Gasolina Comum SP</div>
@@ -350,6 +350,17 @@ function render(){
   document.getElementById('m-ani').textContent='R$ '+ani.toFixed(2);
   document.getElementById('m-ani-var').innerHTML=varHtml(ani,aniP);
   document.getElementById('m-brent').textContent='USD '+brent.toFixed(2);
+  (function(){
+    const src=document.getElementById('m-brent-src');
+    let txt=(currentLang==='pt'?'USD/barril · ICE':'USD/barrel · ICE');
+    const mm=(d.brent.data||'').match(/(\d{2})\/(\d{2})\/(\d{4})/);
+    if(mm){
+      txt+=' · '+mm[1]+'/'+mm[2];
+      const idade=(Date.now()-new Date(+mm[3],+mm[2]-1,+mm[1]).getTime())/86400000;
+      if(idade>4) txt+=(currentLang==='pt'?' ⚠ defasado':' ⚠ delayed');
+    }
+    src.textContent=txt;
+  })();
   document.getElementById('m-brent-var').innerHTML=`<span class="${brentVar>=0?'up-txt':'dn-txt'}">${brentVar>=0?'▲':'▼'} ${Math.abs(brentVar).toFixed(2)}%</span>`;
   document.getElementById('m-gas').textContent='R$ '+gas.toFixed(2);
 
