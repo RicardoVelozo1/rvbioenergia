@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-05T13:18:06.873085",
+  "atualizado": "2026-10-05T13:24:25.040386",
   "semana": "05/10 – 11/10/2026",
   "nacional": {
     "paridade": 70.6,
@@ -9,9 +9,10 @@
     "municipios_pesquisados": 27
   },
   "brent": {
-    "valor": 113.96,
-    "variacao": -5.01,
-    "data": "29/09/2026"
+    "valor": 101.71,
+    "variacao": -0.53,
+    "data": "05/10/2026",
+    "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
     "hidratado": 2.5639,
@@ -43,24 +44,36 @@
   ],
   "historico_brent": [
     {
-      "data": "04/08",
-      "valor": 86.47
-    },
-    {
       "data": "14/08",
-      "valor": 92.02
+      "valor": 88.52
     },
     {
-      "data": "26/08",
-      "valor": 87.77
+      "data": "21/08",
+      "valor": 94.39
     },
     {
-      "data": "08/09",
-      "valor": 106.12
+      "data": "28/08",
+      "valor": 89.31
     },
     {
-      "data": "18/09",
-      "valor": 119.66
+      "data": "04/09",
+      "valor": 96.28
+    },
+    {
+      "data": "14/09",
+      "valor": 105.68
+    },
+    {
+      "data": "21/09",
+      "valor": 100.34
+    },
+    {
+      "data": "28/09",
+      "valor": 105.28
+    },
+    {
+      "data": "05/10",
+      "valor": 101.69
     }
   ],
   "estados": [
@@ -237,28 +250,12 @@
       "titulo_en": "Pedra Agroindustrial Group opens sugar factory at Buriti mill"
     },
     {
-      "titulo": "“Tava pedindo socorro”, relata um dos 67 trabalhadores resgatados de canavial no RJ",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/tava-pedindo-socorro-relata-um-dos-67-trabalhadores-resgatados-de-canavial-no-rj",
-      "tag": "Etanol",
-      "data": "05/10/2026",
-      "titulo_en": "\"I was asking for help,\" says one of the 67 workers rescued from sugarcane fields in Rio de Janeiro"
-    },
-    {
       "titulo": "Biocombustíveis somam R$ 289 bilhões em investimentos no Brasil",
       "fonte": "NovaCana",
       "url": "https://www.novacana.com/noticias/biocombustiveis-somam-r-289-bilhoes-em-investimentos-no-brasil",
       "tag": "Etanol",
       "data": "05/10/2026",
       "titulo_en": "Biofuels total $289 billion in investments in Brazil"
-    },
-    {
-      "titulo": "Carros híbridos asiáticos ganham mercado nos EUA com alta dos combustíveis",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/carros-hibridos-asiaticos-ganham-mercado-nos-eua-com-alta-dos-combustiveis",
-      "tag": "Etanol",
-      "data": "05/10/2026",
-      "titulo_en": "Asian hybrid cars gain market share in the US with high fuel prices"
     },
     {
       "titulo": "Países do G7 concordam em liberar reservas de diesel e petróleo após pressão dos EUA",
@@ -291,14 +288,6 @@
       "tag": "RenovaBio",
       "data": "05/10/2026",
       "titulo_en": "Average price of CBios increases in September, but volume of negotiated credits decreases"
-    },
-    {
-      "titulo": "TST afasta responsabilidade de usina em acidente com empregado de transportadora de cana",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/tst-afasta-responsabilidade-de-usina-em-acidente-com-empregado-de-transportadora-de-cana",
-      "tag": "Produção",
-      "data": "02/10/2026",
-      "titulo_en": "TST removes liability from plant in accident with employee of sugarcane carrier"
     },
     {
       "titulo": "Argélia abre mercado para DDG brasileiro e amplia espaço para coproduto do etanol de milho",
