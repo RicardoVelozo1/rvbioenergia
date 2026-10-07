@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-06T16:59:02.575697",
+  "atualizado": "2026-10-07T17:34:57.902625",
   "semana": "05/10 – 11/10/2026",
   "nacional": {
     "paridade": 70.6,
@@ -9,9 +9,9 @@
     "municipios_pesquisados": 27
   },
   "brent": {
-    "valor": 100.05,
-    "variacao": -0.27,
-    "data": "06/10/2026",
+    "valor": 100.12,
+    "variacao": -0.46,
+    "data": "07/10/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
@@ -44,36 +44,36 @@
   ],
   "historico_brent": [
     {
-      "data": "17/08",
-      "valor": 90.87
+      "data": "18/08",
+      "valor": 91.02
     },
     {
-      "data": "24/08",
-      "valor": 92.17
+      "data": "25/08",
+      "valor": 88.58
     },
     {
-      "data": "31/08",
-      "valor": 90.49
+      "data": "01/09",
+      "valor": 94.65
     },
     {
-      "data": "08/09",
-      "valor": 97.92
+      "data": "09/09",
+      "valor": 101.21
     },
     {
-      "data": "15/09",
-      "valor": 108.75
+      "data": "16/09",
+      "valor": 105.83
     },
     {
-      "data": "22/09",
-      "valor": 99.25
+      "data": "23/09",
+      "valor": 103.08
     },
     {
-      "data": "29/09",
-      "valor": 102.59
+      "data": "30/09",
+      "valor": 103.53
     },
     {
-      "data": "06/10",
-      "valor": 100.05
+      "data": "07/10",
+      "valor": 100.12
     }
   ],
   "estados": [
@@ -242,6 +242,62 @@
   ],
   "noticias": [
     {
+      "titulo": "MTE resgata 800 pessoas em condições degradantes em canaviais de Pernambuco",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/mte-resgata-800-pessoas-em-condicoes-degradantes-em-canaviais-de-pernambuco",
+      "tag": "Etanol",
+      "data": "07/10/2026",
+      "titulo_en": "MTE rescues 800 people in degrading conditions in Pernambuco sugarcane fields"
+    },
+    {
+      "titulo": "Baixo consumo de etanol pode limitar expansão do processamento de milho no país",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/baixo-consumo-de-etanol-pode-limitar-expansao-do-processamento-de-milho-no-pais",
+      "tag": "Etanol",
+      "data": "07/10/2026",
+      "titulo_en": "Low ethanol consumption may limit expansion of corn processing in the country"
+    },
+    {
+      "titulo": "Enzima encontrada na raiz da cana aumenta em seis vezes a produção de açúcar a partir do bagaço",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/enzima-encontrada-na-raiz-da-cana-aumenta-em-seis-vezes-a-producao-de-acucar-a-partir-do-bagaco",
+      "tag": "Produção",
+      "data": "07/10/2026",
+      "titulo_en": "Enzyme found in sugarcane root increases sugar production from bagasse by six times"
+    },
+    {
+      "titulo": "Raízen, São Martinho e FS lideram exposição ao crédito privado entre usinas; setor soma R$ 58,4 bi",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/raizen-sao-martinho-e-fs-lideram-exposicao-ao-credito-privado-entre-usinas-setor-soma-r-58-4-bi",
+      "tag": "Produção",
+      "data": "07/10/2026",
+      "titulo_en": "Raízen, São Martinho and FS lead exposure to private credit between mills; sector totals $58.4 billion"
+    },
+    {
+      "titulo": "Shell prevê margens de refino recordes com guerra no Irã impulsionando mercado de combustíveis",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/shell-preve-margens-de-refino-recordes-com-guerra-no-ira-impulsionando-mercado-de-combustiveis",
+      "tag": "Etanol",
+      "data": "07/10/2026",
+      "titulo_en": "Shell forecasts record refining margins as Iran war boosts fuel market"
+    },
+    {
+      "titulo": "Donald Trump diz que avalia suspender imposto federal sobre gasolina",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/donald-trump-diz-que-que-avalia-suspender-imposto-federal-sobre-gasolina",
+      "tag": "Etanol",
+      "data": "07/10/2026",
+      "titulo_en": "Donald Trump says he is considering suspending federal gasoline tax"
+    },
+    {
+      "titulo": "Brasil bate recorde histórico de exportação de petróleo em setembro com produção em alta",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/brasil-bate-recorde-historico-de-exportacao-de-petroleo-em-setembro-com-producao-em-alta",
+      "tag": "Brent",
+      "data": "07/10/2026",
+      "titulo_en": "Brazil breaks historic record of oil exports in September with production on the rise"
+    },
+    {
       "titulo": "Fazenda publica portaria com metodologia para alíquotas de CBS e IBS de combustíveis",
       "fonte": "NovaCana",
       "url": "https://www.novacana.com/noticias/fazenda-publica-portaria-com-metodologia-para-aliquotas-de-cbs-e-ibs-de-combustiveis",
@@ -264,62 +320,6 @@
       "tag": "Produção",
       "data": "06/10/2026",
       "titulo_en": "[Cepea] Ethanol prices end September high in São Paulo mills"
-    },
-    {
-      "titulo": "Presidente dos EUA diz que gasolina cara é “pequeno preço” por segurança contra Irã",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/presidente-dos-eua-diz-que-gasolina-cara-e-pequeno-preco-por-seguranca-contra-ira",
-      "tag": "Etanol",
-      "data": "06/10/2026",
-      "titulo_en": "US President says expensive gasoline is “small price” for security against Iran"
-    },
-    {
-      "titulo": "Donald Trump amplia acesso da população ao diesel isento de impostos",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/donald-trump-amplia-acesso-da-populacao-ao-diesel-isento-de-impostos",
-      "tag": "Etanol",
-      "data": "06/10/2026",
-      "titulo_en": "Donald Trump expands population access to duty-free diesel"
-    },
-    {
-      "titulo": "Petróleo recua com diálogo entre Irã e Catar e liberação de estoques do G7",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/petroleo-recua-com-dialogo-entre-ira-e-catar-e-liberacao-de-estoques-do-g7",
-      "tag": "Brent",
-      "data": "06/10/2026",
-      "titulo_en": "Oil retreats with dialogue between Iran and Qatar and release of G7 stocks"
-    },
-    {
-      "titulo": "Grupo Pedra Agroindustrial inaugura fábrica de açúcar na usina Buriti",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/pedra-agroindustrial-inaugura-fabrica-de-acucar-na-usina-buriti",
-      "tag": "Produção",
-      "data": "05/10/2026",
-      "titulo_en": "Pedra Agroindustrial Group opens sugar factory at Buriti mill"
-    },
-    {
-      "titulo": "Biocombustíveis somam R$ 289 bilhões em investimentos no Brasil",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/biocombustiveis-somam-r-289-bilhoes-em-investimentos-no-brasil",
-      "tag": "Etanol",
-      "data": "05/10/2026",
-      "titulo_en": "Biofuels total $289 billion in investments in Brazil"
-    },
-    {
-      "titulo": "Países do G7 concordam em liberar reservas de diesel e petróleo após pressão dos EUA",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/paises-do-g7-concordam-em-liberar-reservas-de-diesel-e-petroleo-apos-pressao-dos-eua",
-      "tag": "Brent",
-      "data": "05/10/2026",
-      "titulo_en": "G7 countries agree to release diesel and oil reserves after US pressure"
-    },
-    {
-      "titulo": "Petróleo fecha em queda após Europa concordar em utilizar reservas de diesel",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/petroleo-fecha-em-queda-apos-europa-concordar-em-utilizar-reservas-de-diesel",
-      "tag": "Brent",
-      "data": "05/10/2026",
-      "titulo_en": "Oil closes down after Europe agrees to use diesel reserves"
     }
   ]
 }
