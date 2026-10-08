@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-07T17:34:57.902625",
+  "atualizado": "2026-10-08T17:38:24.291160",
   "semana": "05/10 – 11/10/2026",
   "nacional": {
     "paridade": 70.6,
@@ -9,9 +9,9 @@
     "municipios_pesquisados": 27
   },
   "brent": {
-    "valor": 100.12,
-    "variacao": -0.46,
-    "data": "07/10/2026",
+    "valor": 103.71,
+    "variacao": 3.5,
+    "data": "08/10/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
@@ -44,36 +44,36 @@
   ],
   "historico_brent": [
     {
-      "data": "18/08",
-      "valor": 91.02
+      "data": "19/08",
+      "valor": 91.62
     },
     {
-      "data": "25/08",
-      "valor": 88.58
+      "data": "26/08",
+      "valor": 87.84
     },
     {
-      "data": "01/09",
-      "valor": 94.65
+      "data": "02/09",
+      "valor": 95.63
     },
     {
-      "data": "09/09",
-      "valor": 101.21
+      "data": "10/09",
+      "valor": 107.63
     },
     {
-      "data": "16/09",
-      "valor": 105.83
+      "data": "17/09",
+      "valor": 104.82
     },
     {
-      "data": "23/09",
-      "valor": 103.08
+      "data": "24/09",
+      "valor": 106.6
     },
     {
-      "data": "30/09",
-      "valor": 103.53
+      "data": "01/10",
+      "valor": 102.31
     },
     {
-      "data": "07/10",
-      "valor": 100.12
+      "data": "08/10",
+      "valor": 103.71
     }
   ],
   "estados": [
@@ -242,6 +242,54 @@
   ],
   "noticias": [
     {
+      "titulo": "Além de fabricar SAF, JetBio quer transformar etanol em diesel verde",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/jetbio-quer-transformar-etanol-em-diesel-verde",
+      "tag": "Etanol",
+      "data": "08/10/2026",
+      "titulo_en": "In addition to manufacturing SAF, JetBio wants to turn ethanol into green diesel"
+    },
+    {
+      "titulo": "Produção de etanol dos EUA avança 4,57% na semana, para 1,053 milhão de barris por dia",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/producao-de-etanol-dos-eua-avanca-4-57-na-semana-para-1-053-milhao-de-barris-por-dia",
+      "tag": "Etanol",
+      "data": "08/10/2026",
+      "titulo_en": "U.S. ethanol production advances 4.57% on the week to 1.053 million barrels per day"
+    },
+    {
+      "titulo": "EUA interceptam 90 carregamentos de combustível para Cuba, que chama medida de “ilegal”",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/eua-interceptam-90-carregamentos-de-combustivel-para-cuba-que-chama-medida-de-ilegal",
+      "tag": "Etanol",
+      "data": "08/10/2026",
+      "titulo_en": "U.S. intercepts 90 shipments of fuel to Cuba, which it calls “illegal”"
+    },
+    {
+      "titulo": "Preços do petróleo recuam com acordo para liberação acelerada de estoques",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/precos-do-petroleo-recuam-com-acordo-para-liberacao-acelerada-de-estoques",
+      "tag": "Brent",
+      "data": "08/10/2026",
+      "titulo_en": "Oil prices fall with agreement for accelerated release of inventories"
+    },
+    {
+      "titulo": "Qual cana deixar no campo? Especialista recomenda “bisar” as melhores plantas",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/qual-cana-deixar-no-campo-especialista-recomenda-bisar-as-melhores-plantas",
+      "tag": "Etanol",
+      "data": "08/10/2026",
+      "titulo_en": "Which cane to leave in the field? Expert recommends “bisar” the best plants"
+    },
+    {
+      "titulo": "Exportação de etanol dos EUA em agosto aumenta 6% ante julho, para 801,67 milhões de litros",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/exportacao-de-etanol-dos-eua-em-agosto-aumenta-6-ante-julho-para-801-67-milhoes-de-litros",
+      "tag": "Etanol",
+      "data": "08/10/2026",
+      "titulo_en": "U.S. ethanol exports in August increased 6% from July to 801.67 million liters"
+    },
+    {
       "titulo": "MTE resgata 800 pessoas em condições degradantes em canaviais de Pernambuco",
       "fonte": "NovaCana",
       "url": "https://www.novacana.com/noticias/mte-resgata-800-pessoas-em-condicoes-degradantes-em-canaviais-de-pernambuco",
@@ -272,54 +320,6 @@
       "tag": "Produção",
       "data": "07/10/2026",
       "titulo_en": "Raízen, São Martinho and FS lead exposure to private credit between mills; sector totals $58.4 billion"
-    },
-    {
-      "titulo": "Shell prevê margens de refino recordes com guerra no Irã impulsionando mercado de combustíveis",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/shell-preve-margens-de-refino-recordes-com-guerra-no-ira-impulsionando-mercado-de-combustiveis",
-      "tag": "Etanol",
-      "data": "07/10/2026",
-      "titulo_en": "Shell forecasts record refining margins as Iran war boosts fuel market"
-    },
-    {
-      "titulo": "Donald Trump diz que avalia suspender imposto federal sobre gasolina",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/donald-trump-diz-que-que-avalia-suspender-imposto-federal-sobre-gasolina",
-      "tag": "Etanol",
-      "data": "07/10/2026",
-      "titulo_en": "Donald Trump says he is considering suspending federal gasoline tax"
-    },
-    {
-      "titulo": "Brasil bate recorde histórico de exportação de petróleo em setembro com produção em alta",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/brasil-bate-recorde-historico-de-exportacao-de-petroleo-em-setembro-com-producao-em-alta",
-      "tag": "Brent",
-      "data": "07/10/2026",
-      "titulo_en": "Brazil breaks historic record of oil exports in September with production on the rise"
-    },
-    {
-      "titulo": "Fazenda publica portaria com metodologia para alíquotas de CBS e IBS de combustíveis",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/fazenda-publica-portaria-com-metodologia-para-aliquotas-de-cbs-e-ibs-de-combustiveis",
-      "tag": "Etanol",
-      "data": "06/10/2026",
-      "titulo_en": "Public Treasury Ordinance with methodology for CBS and IBS fuel rates"
-    },
-    {
-      "titulo": "[Cepea] Com chuvas limitando produção, cotações do açúcar cristal seguem em alta",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/cepea-com-chuvas-limitando-producao-cotacoes-do-acucar-cristal-seguem-em-alta",
-      "tag": "Produção",
-      "data": "06/10/2026",
-      "titulo_en": "[Cepea] With rains limiting production, quotations of crystal sugar continue to rise"
-    },
-    {
-      "titulo": "[Cepea] Preços dos etanóis encerram setembro em alta nas usinas paulistas",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/cepea-precos-dos-etanois-encerram-setembro-em-alta-nas-usinas-paulistas",
-      "tag": "Produção",
-      "data": "06/10/2026",
-      "titulo_en": "[Cepea] Ethanol prices end September high in São Paulo mills"
     }
   ]
 }
