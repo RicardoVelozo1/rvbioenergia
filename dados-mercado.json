@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-08T17:38:24.291160",
+  "atualizado": "2026-10-09T17:14:19.339420",
   "semana": "05/10 – 11/10/2026",
   "nacional": {
     "paridade": 70.6,
@@ -9,9 +9,9 @@
     "municipios_pesquisados": 27
   },
   "brent": {
-    "valor": 103.71,
-    "variacao": 3.5,
-    "data": "08/10/2026",
+    "valor": 103.9,
+    "variacao": -0.36,
+    "data": "09/10/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
@@ -44,36 +44,36 @@
   ],
   "historico_brent": [
     {
-      "data": "19/08",
-      "valor": 91.62
+      "data": "20/08",
+      "valor": 93.78
     },
     {
-      "data": "26/08",
-      "valor": 87.84
+      "data": "27/08",
+      "valor": 89.7
     },
     {
-      "data": "02/09",
-      "valor": 95.63
+      "data": "03/09",
+      "valor": 95.52
     },
     {
-      "data": "10/09",
-      "valor": 107.63
+      "data": "11/09",
+      "valor": 104.61
     },
     {
-      "data": "17/09",
-      "valor": 104.82
+      "data": "18/09",
+      "valor": 103.87
     },
     {
-      "data": "24/09",
-      "valor": 106.6
+      "data": "25/09",
+      "valor": 104.32
     },
     {
-      "data": "01/10",
-      "valor": 102.31
+      "data": "02/10",
+      "valor": 102.25
     },
     {
-      "data": "08/10",
-      "valor": 103.71
+      "data": "09/10",
+      "valor": 103.9
     }
   ],
   "estados": [
@@ -242,6 +242,46 @@
   ],
   "noticias": [
     {
+      "titulo": "Exportação de etanol em setembro foi a maior em quatro anos, com 340,99 mi L",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/exportacao-de-etanol-em-setembro-foi-a-maior-em-quatro-anos-com-340-99-mi-l",
+      "tag": "Etanol",
+      "data": "09/10/2026",
+      "titulo_en": "Ethanol exports in September were the highest in four years, with 340.99 million L"
+    },
+    {
+      "titulo": "AGU pede ao STF suspensão de precatórios de usinas que podem custar R$ 255 bilhões",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/agu-pede-ao-stf-suspensao-de-precatorios-de-usinas-que-podem-custar-r-255-bilhoes",
+      "tag": "Produção",
+      "data": "09/10/2026",
+      "titulo_en": "AGU asks the STF to suspend the warrants of plants that may cost $255 billion"
+    },
+    {
+      "titulo": "[Opinião] Lei do Combustível do Futuro completa dois anos e deve ser fortalecida",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/opiniao-lei-do-combustivel-do-futuro-completa-dois-anos-e-deve-ser-fortalecida",
+      "tag": "Etanol",
+      "data": "09/10/2026",
+      "titulo_en": "[Opinion] Future Fuel Law completes two years and should be strengthened"
+    },
+    {
+      "titulo": "Governo prepara prorrogação de subsídios para gasolina e etanol às vésperas das eleições",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/governo-prepara-prorrogacao-de-subsidios-para-gasolina-e-etanol-as-vesperas-das-eleicoes",
+      "tag": "Etanol",
+      "data": "09/10/2026",
+      "titulo_en": "Government prepares extension of subsidies for gasoline and ethanol on the eve of the elections"
+    },
+    {
+      "titulo": "Mercado de bioinsumos deve ter alta anual de até 7% em valor e 10% em volume, diz ANPII Bio",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/mercado-de-bioinsumos-deve-ter-alta-anual-de-ate-7-em-valor-e-10-em-volume-diz-anpii-bio",
+      "tag": "ANP",
+      "data": "09/10/2026",
+      "titulo_en": "Bioinputs market should have an annual increase of up to 7% in value and 10% in volume, says ANPII Bio"
+    },
+    {
       "titulo": "Além de fabricar SAF, JetBio quer transformar etanol em diesel verde",
       "fonte": "NovaCana",
       "url": "https://www.novacana.com/noticias/jetbio-quer-transformar-etanol-em-diesel-verde",
@@ -280,46 +320,6 @@
       "tag": "Etanol",
       "data": "08/10/2026",
       "titulo_en": "Which cane to leave in the field? Expert recommends “bisar” the best plants"
-    },
-    {
-      "titulo": "Exportação de etanol dos EUA em agosto aumenta 6% ante julho, para 801,67 milhões de litros",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/exportacao-de-etanol-dos-eua-em-agosto-aumenta-6-ante-julho-para-801-67-milhoes-de-litros",
-      "tag": "Etanol",
-      "data": "08/10/2026",
-      "titulo_en": "U.S. ethanol exports in August increased 6% from July to 801.67 million liters"
-    },
-    {
-      "titulo": "MTE resgata 800 pessoas em condições degradantes em canaviais de Pernambuco",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/mte-resgata-800-pessoas-em-condicoes-degradantes-em-canaviais-de-pernambuco",
-      "tag": "Etanol",
-      "data": "07/10/2026",
-      "titulo_en": "MTE rescues 800 people in degrading conditions in Pernambuco sugarcane fields"
-    },
-    {
-      "titulo": "Baixo consumo de etanol pode limitar expansão do processamento de milho no país",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/baixo-consumo-de-etanol-pode-limitar-expansao-do-processamento-de-milho-no-pais",
-      "tag": "Etanol",
-      "data": "07/10/2026",
-      "titulo_en": "Low ethanol consumption may limit expansion of corn processing in the country"
-    },
-    {
-      "titulo": "Enzima encontrada na raiz da cana aumenta em seis vezes a produção de açúcar a partir do bagaço",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/enzima-encontrada-na-raiz-da-cana-aumenta-em-seis-vezes-a-producao-de-acucar-a-partir-do-bagaco",
-      "tag": "Produção",
-      "data": "07/10/2026",
-      "titulo_en": "Enzyme found in sugarcane root increases sugar production from bagasse by six times"
-    },
-    {
-      "titulo": "Raízen, São Martinho e FS lideram exposição ao crédito privado entre usinas; setor soma R$ 58,4 bi",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/raizen-sao-martinho-e-fs-lideram-exposicao-ao-credito-privado-entre-usinas-setor-soma-r-58-4-bi",
-      "tag": "Produção",
-      "data": "07/10/2026",
-      "titulo_en": "Raízen, São Martinho and FS lead exposure to private credit between mills; sector totals $58.4 billion"
     }
   ]
 }
