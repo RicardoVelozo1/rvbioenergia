@@ -1,24 +1,24 @@
 {
-  "atualizado": "2026-10-09T17:14:19.339420",
-  "semana": "05/10 – 11/10/2026",
+  "atualizado": "2026-10-12T20:02:02.687428",
+  "semana": "12/10 – 18/10/2026",
   "nacional": {
     "paridade": 70.6,
-    "etanol_medio": 4.75,
-    "gasolina_media": 6.73,
+    "etanol_medio": 4.76,
+    "gasolina_media": 6.74,
     "municipios_vantajosos": 11,
     "municipios_pesquisados": 27
   },
   "brent": {
-    "valor": 103.9,
-    "variacao": -0.36,
-    "data": "09/10/2026",
+    "valor": 106.25,
+    "variacao": 1.46,
+    "data": "12/10/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
     "hidratado": 2.5639,
     "hidratado_anterior": 2.582,
-    "anidro": 2.8475,
-    "anidro_anterior": 2.7829
+    "anidro": 3.0532,
+    "anidro_anterior": 2.8475
   },
   "historico_hidratado": [
     {
@@ -44,50 +44,50 @@
   ],
   "historico_brent": [
     {
-      "data": "20/08",
-      "valor": 93.78
+      "data": "21/08",
+      "valor": 94.39
     },
     {
-      "data": "27/08",
-      "valor": 89.7
+      "data": "28/08",
+      "valor": 89.31
     },
     {
-      "data": "03/09",
-      "valor": 95.52
+      "data": "04/09",
+      "valor": 96.28
     },
     {
-      "data": "11/09",
-      "valor": 104.61
+      "data": "14/09",
+      "valor": 105.68
     },
     {
-      "data": "18/09",
-      "valor": 103.87
+      "data": "21/09",
+      "valor": 100.34
     },
     {
-      "data": "25/09",
-      "valor": 104.32
+      "data": "28/09",
+      "valor": 105.28
     },
     {
-      "data": "02/10",
-      "valor": 102.25
+      "data": "05/10",
+      "valor": 100.32
     },
     {
-      "data": "09/10",
-      "valor": 103.9
+      "data": "12/10",
+      "valor": 106.25
     }
   ],
   "estados": [
     {
       "uf": "AC",
       "nome": "Acre",
-      "etanol": 4.81,
-      "gasolina": 7.25
+      "etanol": 4.84,
+      "gasolina": 7.27
     },
     {
       "uf": "AL",
       "nome": "Alagoas",
-      "etanol": 4.96,
-      "gasolina": 6.71
+      "etanol": 4.94,
+      "gasolina": 6.66
     },
     {
       "uf": "AP",
@@ -98,56 +98,56 @@
     {
       "uf": "AM",
       "nome": "Amazonas",
-      "etanol": 5.0,
-      "gasolina": 7.01
+      "etanol": 5.27,
+      "gasolina": 7.28
     },
     {
       "uf": "BA",
       "nome": "Bahia",
-      "etanol": 4.43,
-      "gasolina": 6.39
+      "etanol": 4.61,
+      "gasolina": 6.69
     },
     {
       "uf": "CE",
       "nome": "Ceará",
-      "etanol": 4.98,
+      "etanol": 4.97,
       "gasolina": 6.99
     },
     {
       "uf": "DF",
       "nome": "Distrito Federal",
-      "etanol": 4.46,
-      "gasolina": 6.66
+      "etanol": 4.42,
+      "gasolina": 6.61
     },
     {
       "uf": "ES",
       "nome": "Espírito Santo",
-      "etanol": 4.77,
-      "gasolina": 6.26
+      "etanol": 4.58,
+      "gasolina": 6.23
     },
     {
       "uf": "GO",
       "nome": "Goiás",
-      "etanol": 4.45,
+      "etanol": 4.43,
       "gasolina": 6.76
     },
     {
       "uf": "MA",
       "nome": "Maranhão",
-      "etanol": 4.7,
-      "gasolina": 6.48
+      "etanol": 4.83,
+      "gasolina": 6.51
     },
     {
       "uf": "MT",
       "nome": "Mato Grosso",
-      "etanol": 4.38,
-      "gasolina": 7.17
+      "etanol": 4.35,
+      "gasolina": 7.14
     },
     {
       "uf": "MS",
       "nome": "Mato Grosso do Sul",
-      "etanol": 3.93,
-      "gasolina": 6.28
+      "etanol": 3.94,
+      "gasolina": 6.29
     },
     {
       "uf": "MG",
@@ -158,55 +158,55 @@
     {
       "uf": "PA",
       "nome": "Pará",
-      "etanol": 4.44,
-      "gasolina": 6.57
+      "etanol": 4.45,
+      "gasolina": 6.51
     },
     {
       "uf": "PB",
       "nome": "Paraíba",
-      "etanol": 4.5,
+      "etanol": 4.49,
       "gasolina": 6.32
     },
     {
       "uf": "PR",
       "nome": "Paraná",
-      "etanol": 4.64,
-      "gasolina": 6.79
+      "etanol": 4.62,
+      "gasolina": 6.76
     },
     {
       "uf": "PE",
       "nome": "Pernambuco",
       "etanol": 4.96,
-      "gasolina": 6.97
+      "gasolina": 6.96
     },
     {
       "uf": "PI",
       "nome": "Piauí",
-      "etanol": 4.87,
-      "gasolina": 6.86
+      "etanol": 4.83,
+      "gasolina": 6.82
     },
     {
       "uf": "RJ",
       "nome": "Rio de Janeiro",
-      "etanol": 4.71,
-      "gasolina": 6.52
+      "etanol": 4.74,
+      "gasolina": 6.54
     },
     {
       "uf": "RN",
       "nome": "Rio Grande do Norte",
-      "etanol": 5.2,
-      "gasolina": 6.76
+      "etanol": 5.11,
+      "gasolina": 6.6
     },
     {
       "uf": "RS",
       "nome": "Rio Grande do Sul",
-      "etanol": 4.41,
-      "gasolina": 5.98
+      "etanol": 4.47,
+      "gasolina": 5.95
     },
     {
       "uf": "RO",
       "nome": "Rondônia",
-      "etanol": 5.04,
+      "etanol": 5.05,
       "gasolina": 7.5
     },
     {
@@ -219,28 +219,36 @@
       "uf": "SC",
       "nome": "Santa Catarina",
       "etanol": 4.75,
-      "gasolina": 6.75
+      "gasolina": 6.73
     },
     {
       "uf": "SP",
       "nome": "São Paulo",
-      "etanol": 3.92,
-      "gasolina": 6.36
+      "etanol": 3.91,
+      "gasolina": 6.35
     },
     {
       "uf": "SE",
       "nome": "Sergipe",
-      "etanol": 5.29,
-      "gasolina": 6.96
+      "etanol": 5.25,
+      "gasolina": 6.94
     },
     {
       "uf": "TO",
       "nome": "Tocantins",
-      "etanol": 5.06,
-      "gasolina": 7.02
+      "etanol": 5.09,
+      "gasolina": 7.05
     }
   ],
   "noticias": [
+    {
+      "titulo": "Governo zera impostos sobre gasolina, dá subvenção ao diesel e anuncia benefícios para etanol",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/governo-zera-impostos-sobre-gasolina-da-subvencao-ao-diesel-e-anuncia-beneficios-para-etanol",
+      "tag": "Etanol",
+      "data": "12/10/2026",
+      "titulo_en": "Government zeroes gasoline taxes, subsidizes diesel and announces benefits for ethanol"
+    },
     {
       "titulo": "Exportação de etanol em setembro foi a maior em quatro anos, com 340,99 mi L",
       "fonte": "NovaCana",
@@ -312,14 +320,6 @@
       "tag": "Brent",
       "data": "08/10/2026",
       "titulo_en": "Oil prices fall with agreement for accelerated release of inventories"
-    },
-    {
-      "titulo": "Qual cana deixar no campo? Especialista recomenda “bisar” as melhores plantas",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/qual-cana-deixar-no-campo-especialista-recomenda-bisar-as-melhores-plantas",
-      "tag": "Etanol",
-      "data": "08/10/2026",
-      "titulo_en": "Which cane to leave in the field? Expert recommends “bisar” the best plants"
     }
   ]
 }
