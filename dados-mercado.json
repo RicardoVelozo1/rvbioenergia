@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-12T20:02:02.687428",
+  "atualizado": "2026-10-13T17:50:51.330825",
   "semana": "12/10 – 18/10/2026",
   "nacional": {
     "paridade": 70.6,
@@ -9,9 +9,9 @@
     "municipios_pesquisados": 27
   },
   "brent": {
-    "valor": 106.25,
-    "variacao": 1.46,
-    "data": "12/10/2026",
+    "valor": 105.66,
+    "variacao": -0.93,
+    "data": "13/10/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
@@ -44,36 +44,36 @@
   ],
   "historico_brent": [
     {
-      "data": "21/08",
-      "valor": 94.39
+      "data": "24/08",
+      "valor": 92.17
     },
     {
-      "data": "28/08",
-      "valor": 89.31
+      "data": "31/08",
+      "valor": 90.49
     },
     {
-      "data": "04/09",
-      "valor": 96.28
+      "data": "08/09",
+      "valor": 97.92
     },
     {
-      "data": "14/09",
-      "valor": 105.68
+      "data": "15/09",
+      "valor": 108.75
     },
     {
-      "data": "21/09",
-      "valor": 100.34
+      "data": "22/09",
+      "valor": 99.25
     },
     {
-      "data": "28/09",
-      "valor": 105.28
+      "data": "29/09",
+      "valor": 102.59
     },
     {
-      "data": "05/10",
-      "valor": 100.32
+      "data": "06/10",
+      "valor": 100.58
     },
     {
-      "data": "12/10",
-      "valor": 106.25
+      "data": "13/10",
+      "valor": 105.66
     }
   ],
   "estados": [
@@ -242,84 +242,84 @@
   ],
   "noticias": [
     {
-      "titulo": "Governo zera impostos sobre gasolina, dá subvenção ao diesel e anuncia benefícios para etanol",
+      "titulo": "Preços do etanol seguem em alta nos postos, mas os da gasolina recuam",
       "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/governo-zera-impostos-sobre-gasolina-da-subvencao-ao-diesel-e-anuncia-beneficios-para-etanol",
+      "url": "https://www.novacana.com/noticias/precos-do-etanol-seguem-em-alta-nos-postos-mas-os-da-gasolina-recuam",
       "tag": "Etanol",
-      "data": "12/10/2026",
-      "titulo_en": "Government zeroes gasoline taxes, subsidizes diesel and announces benefits for ethanol"
+      "data": "13/10/2026",
+      "titulo_en": "Ethanol prices continue to rise at gas stations, but gasoline prices fall"
     },
     {
-      "titulo": "Exportação de etanol em setembro foi a maior em quatro anos, com 340,99 mi L",
+      "titulo": "Preço da gasolina mantém estabilidade ao longo da guerra com subsídios",
       "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/exportacao-de-etanol-em-setembro-foi-a-maior-em-quatro-anos-com-340-99-mi-l",
+      "url": "https://www.novacana.com/noticias/preco-da-gasolina-mantem-estabilidade-ao-longo-da-guerra-com-subsidios",
       "tag": "Etanol",
-      "data": "09/10/2026",
-      "titulo_en": "Ethanol exports in September were the highest in four years, with 340.99 million L"
+      "data": "13/10/2026",
+      "titulo_en": "Gasoline price maintains stability throughout the war with subsidies"
     },
     {
-      "titulo": "AGU pede ao STF suspensão de precatórios de usinas que podem custar R$ 255 bilhões",
+      "titulo": "Zilor faz primeira emissão de CPR-Fs em busca de R$ 500 milhões para operação de cana",
       "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/agu-pede-ao-stf-suspensao-de-precatorios-de-usinas-que-podem-custar-r-255-bilhoes",
+      "url": "https://www.novacana.com/noticias/zilor-faz-primeira-emissao-de-cpr-fs-em-busca-de-r-500-milhoes-para-operacao-de-cana",
+      "tag": "Etanol",
+      "data": "13/10/2026",
+      "titulo_en": "Zilor makes first issue of CPR-Fs in search of $500 million for sugarcane operation"
+    },
+    {
+      "titulo": "Usinas tentam barrar pedido para que STF suspenda ações de preço e precatórios do setor",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/usinas-tentam-barrar-pedido-para-que-stf-suspenda-acoes-de-preco-e-precatorios-do-setor",
       "tag": "Produção",
-      "data": "09/10/2026",
-      "titulo_en": "AGU asks the STF to suspend the warrants of plants that may cost $255 billion"
+      "data": "13/10/2026",
+      "titulo_en": "Plants try to block request for STF to suspend price actions and precatoriums of the sector"
     },
     {
-      "titulo": "[Opinião] Lei do Combustível do Futuro completa dois anos e deve ser fortalecida",
+      "titulo": "Ações de usinas de etanol subiram na B3 com aumento no subsídio",
       "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/opiniao-lei-do-combustivel-do-futuro-completa-dois-anos-e-deve-ser-fortalecida",
+      "url": "https://www.novacana.com/noticias/acoes-de-usinas-de-etanol-sobem-na-b3-com-aumento-no-subsidio",
       "tag": "Etanol",
-      "data": "09/10/2026",
-      "titulo_en": "[Opinion] Future Fuel Law completes two years and should be strengthened"
+      "data": "13/10/2026",
+      "titulo_en": "Shares of ethanol plants rose on B3 with increase in subsidy"
     },
     {
-      "titulo": "Governo prepara prorrogação de subsídios para gasolina e etanol às vésperas das eleições",
+      "titulo": "Governo amplia medidas de combustíveis e mantém custo previsto em R$ 40 bi",
       "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/governo-prepara-prorrogacao-de-subsidios-para-gasolina-e-etanol-as-vesperas-das-eleicoes",
+      "url": "https://www.novacana.com/noticias/governo-amplia-medidas-de-combustiveis-e-mantem-custo-previsto-em-r-40-bi",
       "tag": "Etanol",
-      "data": "09/10/2026",
-      "titulo_en": "Government prepares extension of subsidies for gasoline and ethanol on the eve of the elections"
+      "data": "13/10/2026",
+      "titulo_en": "Government expands fuel measures and maintains estimated cost of R$40 billion"
     },
     {
-      "titulo": "Mercado de bioinsumos deve ter alta anual de até 7% em valor e 10% em volume, diz ANPII Bio",
+      "titulo": "Etanol hidratado sobe 2,87% e anidro cai 0,15% nesta semana nas usinas paulistas",
       "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/mercado-de-bioinsumos-deve-ter-alta-anual-de-ate-7-em-valor-e-10-em-volume-diz-anpii-bio",
-      "tag": "ANP",
-      "data": "09/10/2026",
-      "titulo_en": "Bioinputs market should have an annual increase of up to 7% in value and 10% in volume, says ANPII Bio"
-    },
-    {
-      "titulo": "Além de fabricar SAF, JetBio quer transformar etanol em diesel verde",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/jetbio-quer-transformar-etanol-em-diesel-verde",
+      "url": "https://www.novacana.com/noticias/etanol-hidratado-sobe-2-87-e-anidro-cai-0-15-nesta-semana-nas-usinas-paulistas",
       "tag": "Etanol",
-      "data": "08/10/2026",
-      "titulo_en": "In addition to manufacturing SAF, JetBio wants to turn ethanol into green diesel"
+      "data": "13/10/2026",
+      "titulo_en": "Hydrated ethanol rises 2.87% and anhydrous falls 0.15% this week in São Paulo mills"
     },
     {
-      "titulo": "Produção de etanol dos EUA avança 4,57% na semana, para 1,053 milhão de barris por dia",
+      "titulo": "Ucrânia suspende ataques a refinarias de petróleo russas por dois dias, diz Zelenskiy",
       "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/producao-de-etanol-dos-eua-avanca-4-57-na-semana-para-1-053-milhao-de-barris-por-dia",
-      "tag": "Etanol",
-      "data": "08/10/2026",
-      "titulo_en": "U.S. ethanol production advances 4.57% on the week to 1.053 million barrels per day"
-    },
-    {
-      "titulo": "EUA interceptam 90 carregamentos de combustível para Cuba, que chama medida de “ilegal”",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/eua-interceptam-90-carregamentos-de-combustivel-para-cuba-que-chama-medida-de-ilegal",
-      "tag": "Etanol",
-      "data": "08/10/2026",
-      "titulo_en": "U.S. intercepts 90 shipments of fuel to Cuba, which it calls “illegal”"
-    },
-    {
-      "titulo": "Preços do petróleo recuam com acordo para liberação acelerada de estoques",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/precos-do-petroleo-recuam-com-acordo-para-liberacao-acelerada-de-estoques",
+      "url": "https://www.novacana.com/noticias/ucrania-suspende-ataques-a-refinarias-de-petroleo-russas-por-dois-dias-diz-zelenskiy",
       "tag": "Brent",
-      "data": "08/10/2026",
-      "titulo_en": "Oil prices fall with agreement for accelerated release of inventories"
+      "data": "13/10/2026",
+      "titulo_en": "Ukraine suspends attacks on Russian oil refineries for two days, Zelenskiy says"
+    },
+    {
+      "titulo": "Trump defende acordo de diesel com Rússia, enquanto parlamentares de ambos os partidos discordam",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/trump-defende-acordo-de-diesel-com-russia-enquanto-parlamentares-de-ambos-os-partidos-discordam",
+      "tag": "Etanol",
+      "data": "13/10/2026",
+      "titulo_en": "Trump defends diesel deal with Russia, while lawmakers from both parties disagree"
+    },
+    {
+      "titulo": "Petróleo fecha em alta após ataques dos houthis na Arábia Saudita",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/petroleo-fecha-em-alta-apos-ataques-dos-houthis-na-arabia-saudita",
+      "tag": "Brent",
+      "data": "13/10/2026",
+      "titulo_en": "Oil closes higher after Houthi attacks in Saudi Arabia"
     }
   ]
 }
