@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-13T17:50:51.330825",
+  "atualizado": "2026-10-14T15:34:51.966752",
   "semana": "12/10 – 18/10/2026",
   "nacional": {
     "paridade": 70.6,
@@ -9,9 +9,9 @@
     "municipios_pesquisados": 27
   },
   "brent": {
-    "valor": 105.66,
-    "variacao": -0.93,
-    "data": "13/10/2026",
+    "valor": 105.83,
+    "variacao": 0.13,
+    "data": "14/10/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
@@ -44,36 +44,36 @@
   ],
   "historico_brent": [
     {
-      "data": "24/08",
-      "valor": 92.17
+      "data": "25/08",
+      "valor": 88.58
     },
     {
-      "data": "31/08",
-      "valor": 90.49
+      "data": "01/09",
+      "valor": 94.65
     },
     {
-      "data": "08/09",
-      "valor": 97.92
+      "data": "09/09",
+      "valor": 101.21
     },
     {
-      "data": "15/09",
-      "valor": 108.75
+      "data": "16/09",
+      "valor": 105.83
     },
     {
-      "data": "22/09",
-      "valor": 99.25
+      "data": "23/09",
+      "valor": 103.08
     },
     {
-      "data": "29/09",
-      "valor": 102.59
+      "data": "30/09",
+      "valor": 103.53
     },
     {
-      "data": "06/10",
-      "valor": 100.58
+      "data": "07/10",
+      "valor": 100.2
     },
     {
-      "data": "13/10",
-      "valor": 105.66
+      "data": "14/10",
+      "valor": 105.83
     }
   ],
   "estados": [
@@ -242,84 +242,84 @@
   ],
   "noticias": [
     {
+      "titulo": "Tereos amplia alcance de tecnologia própria para impulsionar eficiência em cinco usinas",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/tereos-amplia-alcance-de-tecnologia-propria-para-impulsionar-eficiencia-em-cinco-usinas",
+      "tag": "Produção",
+      "data": "14/10/2026",
+      "titulo_en": "Tereos expands the reach of its own technology to boost efficiency in five plants"
+    },
+    {
+      "titulo": "Com maior participação de mercado do hidratado, StoneX vê preços “menos estressados”",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/com-maior-participacao-de-mercado-do-hidratado-stonex-ve-precos-menos-estressados",
+      "tag": "Etanol",
+      "data": "14/10/2026",
+      "titulo_en": "With greater market share of hydrated, StoneX sees “less stressed” prices"
+    },
+    {
+      "titulo": "[Cepea] Preço do açúcar cristal avança pouco e câmbio limita efeito da alta externa",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/cepea-preco-do-acucar-cristal-avanca-pouco-e-cambio-limita-efeito-da-alta-externa",
+      "tag": "Etanol",
+      "data": "14/10/2026",
+      "titulo_en": "[Cepea] Crystal sugar price advances little and exchange rate limits the effect of the external increase"
+    },
+    {
+      "titulo": "Petrobras diz que já recebeu R$ 16 bilhões de programas de subvenção a preços de combustíveis",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/petrobras-diz-que-ja-recebeu-r-16-bilhoes-de-programas-de-subvencao-a-precos-de-combustiveis",
+      "tag": "Etanol",
+      "data": "14/10/2026",
+      "titulo_en": "Petrobras says it has already received R$16 billion from fuel price subsidy programs"
+    },
+    {
+      "titulo": "Trump anuncia exploração de petróleo, gás e minerais na Groenlândia",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/trump-anuncia-exploracao-de-petroleo-gas-e-minerais-na-groenlandia",
+      "tag": "Brent",
+      "data": "14/10/2026",
+      "titulo_en": "Trump Announces Oil, Gas and Mineral Exploration in Greenland"
+    },
+    {
+      "titulo": "Acordo de Trump com Putin sobre diesel gera críticas e dúvidas sobre impacto nos preços",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/acordo-de-trump-com-putin-sobre-diesel-gera-criticas-e-duvidas-sobre-impacto-nos-precos",
+      "tag": "Etanol",
+      "data": "14/10/2026",
+      "titulo_en": "Trump's agreement with Putin on diesel generates criticism and doubts about the impact on prices"
+    },
+    {
+      "titulo": "Argentina pede ao Tribunal do Mar que impeça extração de petróleo na bacia das Malvinas",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/argentina-pede-ao-tribunal-do-mar-que-impeca-extracao-de-petroleo-na-bacia-das-malvinas",
+      "tag": "Brent",
+      "data": "14/10/2026",
+      "titulo_en": "Argentina asks the Sea Court to prevent oil extraction in the Falklands basin"
+    },
+    {
+      "titulo": "[Opinião] COP31 expõe a conta das guerras do petróleo",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/opiniao-cop31-expoe-a-conta-das-guerras-do-petroleo",
+      "tag": "Brent",
+      "data": "14/10/2026",
+      "titulo_en": "[Opinion] COP31 exposes the account of the oil wars"
+    },
+    {
+      "titulo": "Petróleo fecha com tendências mistas e gás atinge maior nível desde 2022",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/petroleo-fecha-com-tendencias-mistas-e-gas-atinge-maior-nivel-desde-2022",
+      "tag": "Brent",
+      "data": "14/10/2026",
+      "titulo_en": "Oil closes with mixed trends and gas reaches highest level since 2022"
+    },
+    {
       "titulo": "Preços do etanol seguem em alta nos postos, mas os da gasolina recuam",
       "fonte": "NovaCana",
       "url": "https://www.novacana.com/noticias/precos-do-etanol-seguem-em-alta-nos-postos-mas-os-da-gasolina-recuam",
       "tag": "Etanol",
       "data": "13/10/2026",
       "titulo_en": "Ethanol prices continue to rise at gas stations, but gasoline prices fall"
-    },
-    {
-      "titulo": "Preço da gasolina mantém estabilidade ao longo da guerra com subsídios",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/preco-da-gasolina-mantem-estabilidade-ao-longo-da-guerra-com-subsidios",
-      "tag": "Etanol",
-      "data": "13/10/2026",
-      "titulo_en": "Gasoline price maintains stability throughout the war with subsidies"
-    },
-    {
-      "titulo": "Zilor faz primeira emissão de CPR-Fs em busca de R$ 500 milhões para operação de cana",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/zilor-faz-primeira-emissao-de-cpr-fs-em-busca-de-r-500-milhoes-para-operacao-de-cana",
-      "tag": "Etanol",
-      "data": "13/10/2026",
-      "titulo_en": "Zilor makes first issue of CPR-Fs in search of $500 million for sugarcane operation"
-    },
-    {
-      "titulo": "Usinas tentam barrar pedido para que STF suspenda ações de preço e precatórios do setor",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/usinas-tentam-barrar-pedido-para-que-stf-suspenda-acoes-de-preco-e-precatorios-do-setor",
-      "tag": "Produção",
-      "data": "13/10/2026",
-      "titulo_en": "Plants try to block request for STF to suspend price actions and precatoriums of the sector"
-    },
-    {
-      "titulo": "Ações de usinas de etanol subiram na B3 com aumento no subsídio",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/acoes-de-usinas-de-etanol-sobem-na-b3-com-aumento-no-subsidio",
-      "tag": "Etanol",
-      "data": "13/10/2026",
-      "titulo_en": "Shares of ethanol plants rose on B3 with increase in subsidy"
-    },
-    {
-      "titulo": "Governo amplia medidas de combustíveis e mantém custo previsto em R$ 40 bi",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/governo-amplia-medidas-de-combustiveis-e-mantem-custo-previsto-em-r-40-bi",
-      "tag": "Etanol",
-      "data": "13/10/2026",
-      "titulo_en": "Government expands fuel measures and maintains estimated cost of R$40 billion"
-    },
-    {
-      "titulo": "Etanol hidratado sobe 2,87% e anidro cai 0,15% nesta semana nas usinas paulistas",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/etanol-hidratado-sobe-2-87-e-anidro-cai-0-15-nesta-semana-nas-usinas-paulistas",
-      "tag": "Etanol",
-      "data": "13/10/2026",
-      "titulo_en": "Hydrated ethanol rises 2.87% and anhydrous falls 0.15% this week in São Paulo mills"
-    },
-    {
-      "titulo": "Ucrânia suspende ataques a refinarias de petróleo russas por dois dias, diz Zelenskiy",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/ucrania-suspende-ataques-a-refinarias-de-petroleo-russas-por-dois-dias-diz-zelenskiy",
-      "tag": "Brent",
-      "data": "13/10/2026",
-      "titulo_en": "Ukraine suspends attacks on Russian oil refineries for two days, Zelenskiy says"
-    },
-    {
-      "titulo": "Trump defende acordo de diesel com Rússia, enquanto parlamentares de ambos os partidos discordam",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/trump-defende-acordo-de-diesel-com-russia-enquanto-parlamentares-de-ambos-os-partidos-discordam",
-      "tag": "Etanol",
-      "data": "13/10/2026",
-      "titulo_en": "Trump defends diesel deal with Russia, while lawmakers from both parties disagree"
-    },
-    {
-      "titulo": "Petróleo fecha em alta após ataques dos houthis na Arábia Saudita",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/petroleo-fecha-em-alta-apos-ataques-dos-houthis-na-arabia-saudita",
-      "tag": "Brent",
-      "data": "13/10/2026",
-      "titulo_en": "Oil closes higher after Houthi attacks in Saudi Arabia"
     }
   ]
 }
