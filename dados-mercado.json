@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-14T15:34:51.966752",
+  "atualizado": "2026-10-15T15:23:06.399332",
   "semana": "12/10 – 18/10/2026",
   "nacional": {
     "paridade": 70.6,
@@ -9,9 +9,9 @@
     "municipios_pesquisados": 27
   },
   "brent": {
-    "valor": 105.83,
-    "variacao": 0.13,
-    "data": "14/10/2026",
+    "valor": 105.71,
+    "variacao": -0.33,
+    "data": "15/10/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
@@ -44,36 +44,36 @@
   ],
   "historico_brent": [
     {
-      "data": "25/08",
-      "valor": 88.58
+      "data": "26/08",
+      "valor": 87.84
     },
     {
-      "data": "01/09",
-      "valor": 94.65
+      "data": "02/09",
+      "valor": 95.63
     },
     {
-      "data": "09/09",
-      "valor": 101.21
+      "data": "10/09",
+      "valor": 107.63
     },
     {
-      "data": "16/09",
-      "valor": 105.83
+      "data": "17/09",
+      "valor": 104.82
     },
     {
-      "data": "23/09",
-      "valor": 103.08
+      "data": "24/09",
+      "valor": 106.6
     },
     {
-      "data": "30/09",
-      "valor": 103.53
+      "data": "01/10",
+      "valor": 102.31
     },
     {
-      "data": "07/10",
-      "valor": 100.2
+      "data": "08/10",
+      "valor": 104.28
     },
     {
-      "data": "14/10",
-      "valor": 105.83
+      "data": "15/10",
+      "valor": 105.71
     }
   ],
   "estados": [
@@ -242,6 +242,70 @@
   ],
   "noticias": [
     {
+      "titulo": "Be8 começa a receber trigo para nova planta de glúten e etanol no Rio Grande do Sul",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/be8-comeca-a-receber-trigo-para-nova-planta-de-gluten-e-etanol-no-rio-grande-do-sul",
+      "tag": "Etanol",
+      "data": "15/10/2026",
+      "titulo_en": "Be8 begins receiving wheat for new gluten and ethanol plant in Rio Grande do Sul"
+    },
+    {
+      "titulo": "ANP anuncia que fará auditoria em unidade da BP Bioenergy em Tocantins",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/anp-anuncia-que-fara-auditoria-em-unidade-da-bp-bioenergy-em-tocantins",
+      "tag": "ANP",
+      "data": "15/10/2026",
+      "titulo_en": "ANP announces that it will audit a BP Bioenergy unit in Tocantins"
+    },
+    {
+      "titulo": "Os “efeitos colaterais” do etanol de milho no mercado, conforme o Rabobank",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/os-efeitos-colaterais-do-etanol-de-milho-no-mercado-conforme-o-rabobank",
+      "tag": "Etanol",
+      "data": "15/10/2026",
+      "titulo_en": "The “side effects” of corn ethanol on the market, according to Rabobank"
+    },
+    {
+      "titulo": "Trump tenta baixar preço dos combustíveis, mas falta combinar com os iranianos",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/trump-tenta-baixar-preco-dos-combustiveis-mas-falta-combinar-com-os-iranianos",
+      "tag": "Etanol",
+      "data": "15/10/2026",
+      "titulo_en": "Trump tries to lower fuel prices, but it remains to be agreed with the Iranians"
+    },
+    {
+      "titulo": "Escassez de diesel pode persistir até boa parte de 2027, diz IEA",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/escassez-de-diesel-pode-persistir-ate-boa-parte-de-2027-diz-iea",
+      "tag": "Etanol",
+      "data": "15/10/2026",
+      "titulo_en": "Diesel shortages could persist well into 2027, says IEA"
+    },
+    {
+      "titulo": "Petróleo sobe após ataque à Saudi Aramco e riscos no Estreito de Ormuz",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/petroleo-sobe-apos-ataque-a-saudi-aramco-e-riscos-no-estreito-de-ormuz",
+      "tag": "Brent",
+      "data": "15/10/2026",
+      "titulo_en": "Oil rises after attack on Saudi Aramco and risks in the Strait of Hormuz"
+    },
+    {
+      "titulo": "Agência dos EUA vai realocar metas de biocombustíveis de pequenas refinarias isentas",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/epa-vai-realocar-volumes-de-biocombustiveis-de-pequenas-refinarias-isentas",
+      "tag": "Etanol",
+      "data": "15/10/2026",
+      "titulo_en": "U.S. agency to reallocate biofuel targets from small refineries exempt"
+    },
+    {
+      "titulo": "Petróleo Brent deve rondar os US$ 90 até fim do ano e ter alívio contido em 2027",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/petroleo-brent-deve-rondar-os-us-90-ate-fim-do-ano-e-ter-alivio-contido-em-2027",
+      "tag": "Brent",
+      "data": "15/10/2026",
+      "titulo_en": "Brent Oil should be around $90 by the end of the year and have relief contained in 2027"
+    },
+    {
       "titulo": "Tereos amplia alcance de tecnologia própria para impulsionar eficiência em cinco usinas",
       "fonte": "NovaCana",
       "url": "https://www.novacana.com/noticias/tereos-amplia-alcance-de-tecnologia-propria-para-impulsionar-eficiencia-em-cinco-usinas",
@@ -256,70 +320,6 @@
       "tag": "Etanol",
       "data": "14/10/2026",
       "titulo_en": "With greater market share of hydrated, StoneX sees “less stressed” prices"
-    },
-    {
-      "titulo": "[Cepea] Preço do açúcar cristal avança pouco e câmbio limita efeito da alta externa",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/cepea-preco-do-acucar-cristal-avanca-pouco-e-cambio-limita-efeito-da-alta-externa",
-      "tag": "Etanol",
-      "data": "14/10/2026",
-      "titulo_en": "[Cepea] Crystal sugar price advances little and exchange rate limits the effect of the external increase"
-    },
-    {
-      "titulo": "Petrobras diz que já recebeu R$ 16 bilhões de programas de subvenção a preços de combustíveis",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/petrobras-diz-que-ja-recebeu-r-16-bilhoes-de-programas-de-subvencao-a-precos-de-combustiveis",
-      "tag": "Etanol",
-      "data": "14/10/2026",
-      "titulo_en": "Petrobras says it has already received R$16 billion from fuel price subsidy programs"
-    },
-    {
-      "titulo": "Trump anuncia exploração de petróleo, gás e minerais na Groenlândia",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/trump-anuncia-exploracao-de-petroleo-gas-e-minerais-na-groenlandia",
-      "tag": "Brent",
-      "data": "14/10/2026",
-      "titulo_en": "Trump Announces Oil, Gas and Mineral Exploration in Greenland"
-    },
-    {
-      "titulo": "Acordo de Trump com Putin sobre diesel gera críticas e dúvidas sobre impacto nos preços",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/acordo-de-trump-com-putin-sobre-diesel-gera-criticas-e-duvidas-sobre-impacto-nos-precos",
-      "tag": "Etanol",
-      "data": "14/10/2026",
-      "titulo_en": "Trump's agreement with Putin on diesel generates criticism and doubts about the impact on prices"
-    },
-    {
-      "titulo": "Argentina pede ao Tribunal do Mar que impeça extração de petróleo na bacia das Malvinas",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/argentina-pede-ao-tribunal-do-mar-que-impeca-extracao-de-petroleo-na-bacia-das-malvinas",
-      "tag": "Brent",
-      "data": "14/10/2026",
-      "titulo_en": "Argentina asks the Sea Court to prevent oil extraction in the Falklands basin"
-    },
-    {
-      "titulo": "[Opinião] COP31 expõe a conta das guerras do petróleo",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/opiniao-cop31-expoe-a-conta-das-guerras-do-petroleo",
-      "tag": "Brent",
-      "data": "14/10/2026",
-      "titulo_en": "[Opinion] COP31 exposes the account of the oil wars"
-    },
-    {
-      "titulo": "Petróleo fecha com tendências mistas e gás atinge maior nível desde 2022",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/petroleo-fecha-com-tendencias-mistas-e-gas-atinge-maior-nivel-desde-2022",
-      "tag": "Brent",
-      "data": "14/10/2026",
-      "titulo_en": "Oil closes with mixed trends and gas reaches highest level since 2022"
-    },
-    {
-      "titulo": "Preços do etanol seguem em alta nos postos, mas os da gasolina recuam",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/precos-do-etanol-seguem-em-alta-nos-postos-mas-os-da-gasolina-recuam",
-      "tag": "Etanol",
-      "data": "13/10/2026",
-      "titulo_en": "Ethanol prices continue to rise at gas stations, but gasoline prices fall"
     }
   ]
 }
