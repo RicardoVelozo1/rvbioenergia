@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-15T15:23:06.399332",
+  "atualizado": "2026-10-16T15:03:11.514530",
   "semana": "12/10 – 18/10/2026",
   "nacional": {
     "paridade": 70.6,
@@ -9,9 +9,9 @@
     "municipios_pesquisados": 27
   },
   "brent": {
-    "valor": 105.71,
-    "variacao": -0.33,
-    "data": "15/10/2026",
+    "valor": 105.94,
+    "variacao": 0.02,
+    "data": "16/10/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
@@ -44,36 +44,36 @@
   ],
   "historico_brent": [
     {
-      "data": "26/08",
-      "valor": 87.84
+      "data": "27/08",
+      "valor": 89.7
     },
     {
-      "data": "02/09",
-      "valor": 95.63
+      "data": "03/09",
+      "valor": 95.52
     },
     {
-      "data": "10/09",
-      "valor": 107.63
+      "data": "11/09",
+      "valor": 104.61
     },
     {
-      "data": "17/09",
-      "valor": 104.82
+      "data": "18/09",
+      "valor": 103.87
     },
     {
-      "data": "24/09",
-      "valor": 106.6
+      "data": "25/09",
+      "valor": 104.32
     },
     {
-      "data": "01/10",
-      "valor": 102.31
+      "data": "02/10",
+      "valor": 102.25
     },
     {
-      "data": "08/10",
-      "valor": 104.28
+      "data": "09/10",
+      "valor": 104.72
     },
     {
-      "data": "15/10",
-      "valor": 105.71
+      "data": "16/10",
+      "valor": 105.88
     }
   ],
   "estados": [
@@ -242,6 +242,54 @@
   ],
   "noticias": [
     {
+      "titulo": "Justiça reconhece cobrança indevida de ICMS sobre etanol hidratado em SP",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/justica-reconhece-cobranca-indevida-de-icms-sobre-etanol-hidratado-em-sp",
+      "tag": "Etanol",
+      "data": "16/10/2026",
+      "titulo_en": "Justice recognizes undue collection of ICMS on hydrous ethanol in SP"
+    },
+    {
+      "titulo": "Identificação correta da murcha da cana ainda é um desafio para sucroenergéticas",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/identificacao-correta-da-murcha-da-cana-ainda-e-um-desafio-para-sucroenergeticas",
+      "tag": "Etanol",
+      "data": "16/10/2026",
+      "titulo_en": "Correct identification of sugarcane wilt is still a challenge for sugar-energy"
+    },
+    {
+      "titulo": "FS fará medida compensatória de R$ 1,5 milhão em Cláudia (MT) por ampliação de usina",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/fs-fara-medida-compensatoria-de-r-1-5-milhao-em-claudia-mt-por-ampliacao-de-usina",
+      "tag": "Produção",
+      "data": "16/10/2026",
+      "titulo_en": "FS will make a compensatory measure of $1.5 million in Cláudia (MT) for plant expansion"
+    },
+    {
+      "titulo": "MPMS investiga possível relação entre usina de açúcar e etanol e infestação de moscas em Angélica",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/mpms-investiga-possivel-relacao-entre-usina-de-acucar-e-etanol-e-infestacao-de-moscas-em-angelica",
+      "tag": "Etanol",
+      "data": "16/10/2026",
+      "titulo_en": "MPMs investigates possible relationship between sugar and ethanol plant and fly infestation in Angélica"
+    },
+    {
+      "titulo": "Chuvas reduzem moagem de cana e sustentam preços do açúcar e etanol, aponta Itaú BBA",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/chuvas-reduzem-moagem-de-cana-e-sustentam-precos-do-acucar-e-etanol-aponta-itau-bba",
+      "tag": "Etanol",
+      "data": "16/10/2026",
+      "titulo_en": "Rains reduce sugarcane milling and sustain sugar and ethanol prices, points out Itaú BBA"
+    },
+    {
+      "titulo": "Brent fecha praticamente estável enquanto EUA consideram aliviar sanções à \"frota-sombra\"",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/brent-fecha-praticamente-estavel-enquanto-eua-consideram-aliviar-sancoes-a-frota-sombra",
+      "tag": "Brent",
+      "data": "16/10/2026",
+      "titulo_en": "Brent closes virtually flat as U.S. considers easing “shadow fleet” sanctions"
+    },
+    {
       "titulo": "Be8 começa a receber trigo para nova planta de glúten e etanol no Rio Grande do Sul",
       "fonte": "NovaCana",
       "url": "https://www.novacana.com/noticias/be8-comeca-a-receber-trigo-para-nova-planta-de-gluten-e-etanol-no-rio-grande-do-sul",
@@ -272,54 +320,6 @@
       "tag": "Etanol",
       "data": "15/10/2026",
       "titulo_en": "Trump tries to lower fuel prices, but it remains to be agreed with the Iranians"
-    },
-    {
-      "titulo": "Escassez de diesel pode persistir até boa parte de 2027, diz IEA",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/escassez-de-diesel-pode-persistir-ate-boa-parte-de-2027-diz-iea",
-      "tag": "Etanol",
-      "data": "15/10/2026",
-      "titulo_en": "Diesel shortages could persist well into 2027, says IEA"
-    },
-    {
-      "titulo": "Petróleo sobe após ataque à Saudi Aramco e riscos no Estreito de Ormuz",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/petroleo-sobe-apos-ataque-a-saudi-aramco-e-riscos-no-estreito-de-ormuz",
-      "tag": "Brent",
-      "data": "15/10/2026",
-      "titulo_en": "Oil rises after attack on Saudi Aramco and risks in the Strait of Hormuz"
-    },
-    {
-      "titulo": "Agência dos EUA vai realocar metas de biocombustíveis de pequenas refinarias isentas",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/epa-vai-realocar-volumes-de-biocombustiveis-de-pequenas-refinarias-isentas",
-      "tag": "Etanol",
-      "data": "15/10/2026",
-      "titulo_en": "U.S. agency to reallocate biofuel targets from small refineries exempt"
-    },
-    {
-      "titulo": "Petróleo Brent deve rondar os US$ 90 até fim do ano e ter alívio contido em 2027",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/petroleo-brent-deve-rondar-os-us-90-ate-fim-do-ano-e-ter-alivio-contido-em-2027",
-      "tag": "Brent",
-      "data": "15/10/2026",
-      "titulo_en": "Brent Oil should be around $90 by the end of the year and have relief contained in 2027"
-    },
-    {
-      "titulo": "Tereos amplia alcance de tecnologia própria para impulsionar eficiência em cinco usinas",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/tereos-amplia-alcance-de-tecnologia-propria-para-impulsionar-eficiencia-em-cinco-usinas",
-      "tag": "Produção",
-      "data": "14/10/2026",
-      "titulo_en": "Tereos expands the reach of its own technology to boost efficiency in five plants"
-    },
-    {
-      "titulo": "Com maior participação de mercado do hidratado, StoneX vê preços “menos estressados”",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/com-maior-participacao-de-mercado-do-hidratado-stonex-ve-precos-menos-estressados",
-      "tag": "Etanol",
-      "data": "14/10/2026",
-      "titulo_en": "With greater market share of hydrated, StoneX sees “less stressed” prices"
     }
   ]
 }
