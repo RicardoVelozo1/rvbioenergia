@@ -198,7 +198,7 @@ def get_etanol_cepea(existing):
     print("[ETANOL CEPEA] Buscando via espelho Notícias Agrícolas...")
 
     padrao = re.compile(
-        r'\d{2}\s*-\s*(\d{2}/\d{2}/\d{4})[^0-9]{1,300}?(\d+,\d+)[^0-9+\-]{1,60}?([+\-]\d+,\d+)',
+        r'\d{2}\s*-\s*(\d{2}/\d{2}/\d{4})[^0-9]{1,300}?(\d+,\d+)[^0-9+\-]{1,60}?([+\-]?\d+,\d+)',
         re.DOTALL
     )
 
