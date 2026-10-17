@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-16T15:03:11.514530",
+  "atualizado": "2026-10-17T23:49:07.189445",
   "semana": "12/10 – 18/10/2026",
   "nacional": {
     "paridade": 70.6,
@@ -9,29 +9,21 @@
     "municipios_pesquisados": 27
   },
   "brent": {
-    "valor": 105.94,
-    "variacao": 0.02,
+    "valor": 109.86,
+    "variacao": 3.72,
     "data": "16/10/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
-    "hidratado": 2.5639,
-    "hidratado_anterior": 2.582,
-    "anidro": 3.0532,
-    "anidro_anterior": 2.8475
+    "hidratado": 2.6892,
+    "hidratado_anterior": 2.6374,
+    "anidro": 3.0824,
+    "anidro_anterior": 3.0532
   },
   "historico_hidratado": [
     {
-      "data": "28/08",
-      "valor": 2.3116
-    },
-    {
-      "data": "04/09",
-      "valor": 2.3991
-    },
-    {
-      "data": "11/09",
-      "valor": 2.4622
+      "data": "18/09",
+      "valor": 2.6412
     },
     {
       "data": "25/09",
@@ -40,6 +32,14 @@
     {
       "data": "02/10",
       "valor": 2.5639
+    },
+    {
+      "data": "09/10",
+      "valor": 2.6374
+    },
+    {
+      "data": "16/10",
+      "valor": 2.6892
     }
   ],
   "historico_brent": [
@@ -73,7 +73,7 @@
     },
     {
       "data": "16/10",
-      "valor": 105.88
+      "valor": 109.86
     }
   ],
   "estados": [
@@ -242,6 +242,30 @@
   ],
   "noticias": [
     {
+      "titulo": "Etanol na navegação pode abrir mercado de até 30 bilhões de litros, avalia SCA Brasil",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/etanol-na-navegacao-pode-abrir-mercado-de-ate-30-bilhoes-de-litros-avalia-sca-brasil",
+      "tag": "Etanol",
+      "data": "17/10/2026",
+      "titulo_en": "Ethanol in shipping can open a market of up to 30 billion liters, evaluates SCA Brasil"
+    },
+    {
+      "titulo": "Pecege projeta moagem de 629,5 milhões de toneladas de cana no Centro-Sul, com 31,6 milhões de toneladas bisadas",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/pecege-projeta-moagem-de-629-5-milhoes-de-toneladas-de-cana-no-centro-sul-com-31-6-milhoes-de-toneladas-bisadas",
+      "tag": "Produção",
+      "data": "17/10/2026",
+      "titulo_en": "Pecege projects crushing of 629.5 million tons of sugarcane in the Center-South, with 31.6 million tons of sugarcane"
+    },
+    {
+      "titulo": "Produção de milho no Brasil deve ser recorde em 2026/27; etanol deverá demandar 34 milhões de toneladas",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/producao-de-milho-no-brasil-deve-ser-recorde-em-2026-27-etanol-devera-demandar-34-milhoes-de-toneladas",
+      "tag": "Etanol",
+      "data": "17/10/2026",
+      "titulo_en": "Corn production in Brazil is expected to be a record in 2026/27; ethanol is expected to demand 34 million tons"
+    },
+    {
       "titulo": "Justiça reconhece cobrança indevida de ICMS sobre etanol hidratado em SP",
       "fonte": "NovaCana",
       "url": "https://www.novacana.com/noticias/justica-reconhece-cobranca-indevida-de-icms-sobre-etanol-hidratado-em-sp",
@@ -296,30 +320,6 @@
       "tag": "Etanol",
       "data": "15/10/2026",
       "titulo_en": "Be8 begins receiving wheat for new gluten and ethanol plant in Rio Grande do Sul"
-    },
-    {
-      "titulo": "ANP anuncia que fará auditoria em unidade da BP Bioenergy em Tocantins",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/anp-anuncia-que-fara-auditoria-em-unidade-da-bp-bioenergy-em-tocantins",
-      "tag": "ANP",
-      "data": "15/10/2026",
-      "titulo_en": "ANP announces that it will audit a BP Bioenergy unit in Tocantins"
-    },
-    {
-      "titulo": "Os “efeitos colaterais” do etanol de milho no mercado, conforme o Rabobank",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/os-efeitos-colaterais-do-etanol-de-milho-no-mercado-conforme-o-rabobank",
-      "tag": "Etanol",
-      "data": "15/10/2026",
-      "titulo_en": "The “side effects” of corn ethanol on the market, according to Rabobank"
-    },
-    {
-      "titulo": "Trump tenta baixar preço dos combustíveis, mas falta combinar com os iranianos",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/trump-tenta-baixar-preco-dos-combustiveis-mas-falta-combinar-com-os-iranianos",
-      "tag": "Etanol",
-      "data": "15/10/2026",
-      "titulo_en": "Trump tries to lower fuel prices, but it remains to be agreed with the Iranians"
     }
   ]
 }
