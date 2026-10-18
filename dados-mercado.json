@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-18T00:44:24.327978",
+  "atualizado": "2026-10-18T00:46:26.293255",
   "semana": "12/10 – 18/10/2026",
   "nacional": {
     "paridade": 70.6,
@@ -240,6 +240,10 @@
       "gasolina": 7.05
     }
   ],
+  "diagnostico_anp": {
+    "ed42": "download falhou: HTTP Error 404: Not Found",
+    "erro": "[Errno 2] No such file or directory: 'pdftotext'"
+  },
   "noticias": [
     {
       "titulo": "Etanol na navegação pode abrir mercado de até 30 bilhões de litros, avalia SCA Brasil",
