@@ -161,6 +161,8 @@ def _capitais_sem_preco_anp(texto):
                 break
     return sem
 
+DIAG_ANP = {}
+
 def get_capitais_sem_preco_anp():
     """Baixa a edição mais recente da Síntese Semanal de Preços da ANP e identifica capitais sem preço
     na semana (ex.: Macapá '-'), para não misturar valores antigos de terceiros com a semana atual.
@@ -175,17 +177,21 @@ def get_capitais_sem_preco_anp():
                 req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 (compatible; RVBioenergia/1.0)'})
                 dados = urllib.request.urlopen(req, timeout=30).read()
             except Exception as e:
+                DIAG_ANP[f'ed{ed}'] = f'download falhou: {str(e)[:80]}'
                 continue
             if not dados.startswith(b'%PDF'):
+                DIAG_ANP[f'ed{ed}'] = 'resposta não é PDF'
                 continue
             with tempfile.TemporaryDirectory() as tmp:
                 pdf = os.path.join(tmp, 's.pdf')
                 open(pdf, 'wb').write(dados)
                 txt = subprocess.run(['pdftotext', '-layout', pdf, '-'], capture_output=True, text=True, timeout=60).stdout
             sem = _capitais_sem_preco_anp(txt)
+            DIAG_ANP[f'ed{ed}'] = f'ok, {len(txt)} chars; sem preço: {sorted(sem)}; trecho Macapá: ' + ' | '.join(l.strip()[:60] for l in txt.splitlines() if 'Macap' in l)[:200]
             print(f"[ANP] Edição {ed}: capitais sem preço na semana: {sorted(sem) or 'nenhuma'}")
             return sem
     except Exception as e:
+        DIAG_ANP['erro'] = str(e)[:120]
         print(f"[ANP] Verificação indisponível: {e}")
     return set()
 
@@ -480,6 +486,7 @@ def main():
         "historico_hidratado": hist_eth,
         "historico_brent": hist_brent,
         "estados": estados,
+        "diagnostico_anp": DIAG_ANP,
         "noticias": noticias
     }
 
