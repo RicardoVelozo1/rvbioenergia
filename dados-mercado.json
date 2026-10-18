@@ -1,12 +1,12 @@
 {
-  "atualizado": "2026-10-18T00:46:26.293255",
+  "atualizado": "2026-10-18T00:48:31.376797",
   "semana": "12/10 – 18/10/2026",
   "nacional": {
-    "paridade": 70.6,
-    "etanol_medio": 4.76,
-    "gasolina_media": 6.74,
+    "paridade": 69.9,
+    "etanol_medio": 4.72,
+    "gasolina_media": 6.75,
     "municipios_vantajosos": 11,
-    "municipios_pesquisados": 27
+    "municipios_pesquisados": 26
   },
   "brent": {
     "valor": 109.86,
@@ -88,12 +88,6 @@
       "nome": "Alagoas",
       "etanol": 4.94,
       "gasolina": 6.66
-    },
-    {
-      "uf": "AP",
-      "nome": "Amapá",
-      "etanol": 5.84,
-      "gasolina": 6.49
     },
     {
       "uf": "AM",
@@ -242,7 +236,7 @@
   ],
   "diagnostico_anp": {
     "ed42": "download falhou: HTTP Error 404: Not Found",
-    "erro": "[Errno 2] No such file or directory: 'pdftotext'"
+    "ed41": "ok, 18478 chars; sem preço: ['AP']; trecho Macapá: Macapá - | Macapá - | Macapá - | Macapá 127,69"
   },
   "noticias": [
     {
