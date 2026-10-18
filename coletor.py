@@ -9,6 +9,7 @@ Fontes: GitHub Datasets (Brent), RSS (notícias),
 """
 
 import json
+import sys
 import re
 import unicodedata
 import urllib.request
@@ -152,10 +153,13 @@ def _capitais_sem_preco_anp(texto):
     norm = _normalizar(texto).splitlines()
     for uf, cap in ANP_CAPITAL.items():
         alvo = _normalizar(cap)
-        for linha in norm:
+        for i, linha in enumerate(norm):
             l = linha.strip()
             if l.startswith(alvo):
                 resto = l[len(alvo):].split()
+                if not resto:  # nome sozinho na linha: valor na linha seguinte
+                    prox = next((x.strip() for x in norm[i+1:i+4] if x.strip()), '')
+                    resto = prox.split()
                 if resto and resto[0] in ('-', '–', '—'):
                     sem.add(uf)
                 break
@@ -185,7 +189,15 @@ def get_capitais_sem_preco_anp():
             with tempfile.TemporaryDirectory() as tmp:
                 pdf = os.path.join(tmp, 's.pdf')
                 open(pdf, 'wb').write(dados)
-                txt = subprocess.run(['pdftotext', '-layout', pdf, '-'], capture_output=True, text=True, timeout=60).stdout
+                try:
+                    txt = subprocess.run(['pdftotext', '-layout', pdf, '-'], capture_output=True, text=True, timeout=60).stdout
+                except FileNotFoundError:
+                    try:
+                        import pypdf
+                    except ImportError:
+                        subprocess.run([sys.executable, '-m', 'pip', 'install', '-q', 'pypdf'], timeout=120)
+                        import pypdf
+                    txt = '\n'.join((p.extract_text() or '') for p in pypdf.PdfReader(pdf).pages)
             sem = _capitais_sem_preco_anp(txt)
             DIAG_ANP[f'ed{ed}'] = f'ok, {len(txt)} chars; sem preço: {sorted(sem)}; trecho Macapá: ' + ' | '.join(l.strip()[:60] for l in txt.splitlines() if 'Macap' in l)[:200]
             print(f"[ANP] Edição {ed}: capitais sem preço na semana: {sorted(sem) or 'nenhuma'}")
