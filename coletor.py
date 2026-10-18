@@ -140,6 +140,55 @@ CAPITAIS_UF = [
     ("TO", "Tocantins", "palmas-to"),
 ]
 
+ANP_CAPITAL = {'AC':'Rio Branco','AL':'Maceió','AP':'Macapá','AM':'Manaus','BA':'Salvador','CE':'Fortaleza',
+    'DF':'Brasília','ES':'Vitória','GO':'Goiânia','MA':'São Luís','MT':'Cuiabá','MS':'Campo Grande',
+    'MG':'Belo Horizonte','PA':'Belém','PB':'João Pessoa','PR':'Curitiba','PE':'Recife','PI':'Teresina',
+    'RJ':'Rio de Janeiro','RN':'Natal','RS':'Porto Alegre','RO':'Porto Velho','RR':'Boa Vista',
+    'SC':'Florianópolis','SP':'São Paulo','SE':'Aracaju','TO':'Palmas'}
+
+def _capitais_sem_preco_anp(texto):
+    """Dado o texto da Síntese Semanal da ANP, devolve as UFs cuja capital aparece sem preço ('-')."""
+    sem = set()
+    norm = _normalizar(texto).splitlines()
+    for uf, cap in ANP_CAPITAL.items():
+        alvo = _normalizar(cap)
+        for linha in norm:
+            l = linha.strip()
+            if l.startswith(alvo):
+                resto = l[len(alvo):].split()
+                if resto and resto[0] in ('-', '–', '—'):
+                    sem.add(uf)
+                break
+    return sem
+
+def get_capitais_sem_preco_anp():
+    """Baixa a edição mais recente da Síntese Semanal de Preços da ANP e identifica capitais sem preço
+    na semana (ex.: Macapá '-'), para não misturar valores antigos de terceiros com a semana atual.
+    Falha segura: se algo der errado, não exclui nada (comportamento anterior)."""
+    import subprocess, tempfile, os
+    try:
+        # Edição 41 = semana encerrada em 10/10/2026; uma por semana.
+        ed_max = 41 + (datetime.now().date() - datetime(2026, 10, 10).date()).days // 7
+        for ed in range(ed_max, ed_max - 3, -1):
+            url = f"https://www.gov.br/anp/pt-br/assuntos/precos-e-defesa-da-concorrencia/precos/arq-sintese-semanal/2026/sintese-precos-{ed}.pdf"
+            try:
+                req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 (compatible; RVBioenergia/1.0)'})
+                dados = urllib.request.urlopen(req, timeout=30).read()
+            except Exception as e:
+                continue
+            if not dados.startswith(b'%PDF'):
+                continue
+            with tempfile.TemporaryDirectory() as tmp:
+                pdf = os.path.join(tmp, 's.pdf')
+                open(pdf, 'wb').write(dados)
+                txt = subprocess.run(['pdftotext', '-layout', pdf, '-'], capture_output=True, text=True, timeout=60).stdout
+            sem = _capitais_sem_preco_anp(txt)
+            print(f"[ANP] Edição {ed}: capitais sem preço na semana: {sorted(sem) or 'nenhuma'}")
+            return sem
+    except Exception as e:
+        print(f"[ANP] Verificação indisponível: {e}")
+    return set()
+
 def get_paridade_capitais(existing):
     """Busca preço de etanol/gasolina e paridade nas 27 capitais das UFs.
     Fonte: CombustívelBR (combustivelbr.com.br), que processa e publica os dados
@@ -153,7 +202,11 @@ def get_paridade_capitais(existing):
 
     estados = []
     falhas = 0
+    sem_preco = get_capitais_sem_preco_anp()
     for uf, nome, slug in CAPITAIS_UF:
+        if uf in sem_preco:
+            print(f"[PARIDADE CAPITAIS] {nome}: sem preço na ANP nesta semana — excluída")
+            continue
         url = f"https://combustivelbr.com.br/cidade/{slug}"
         content = fetch_url(url, timeout=15)
         if not content:
