@@ -1,6 +1,6 @@
 {
-  "atualizado": "2026-10-18T00:48:31.376797",
-  "semana": "12/10 – 18/10/2026",
+  "atualizado": "2026-10-19T17:14:21.098500",
+  "semana": "19/10 – 25/10/2026",
   "nacional": {
     "paridade": 69.9,
     "etanol_medio": 4.72,
@@ -9,9 +9,9 @@
     "municipios_pesquisados": 26
   },
   "brent": {
-    "valor": 109.86,
-    "variacao": 3.72,
-    "data": "16/10/2026",
+    "valor": 110.02,
+    "variacao": 0.15,
+    "data": "19/10/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
@@ -44,36 +44,36 @@
   ],
   "historico_brent": [
     {
-      "data": "27/08",
-      "valor": 89.7
+      "data": "28/08",
+      "valor": 89.31
     },
     {
-      "data": "03/09",
-      "valor": 95.52
+      "data": "04/09",
+      "valor": 96.28
     },
     {
-      "data": "11/09",
-      "valor": 104.61
+      "data": "14/09",
+      "valor": 105.68
     },
     {
-      "data": "18/09",
-      "valor": 103.87
+      "data": "21/09",
+      "valor": 100.34
     },
     {
-      "data": "25/09",
-      "valor": 104.32
+      "data": "28/09",
+      "valor": 105.28
     },
     {
-      "data": "02/10",
-      "valor": 102.25
+      "data": "05/10",
+      "valor": 100.32
     },
     {
-      "data": "09/10",
-      "valor": 104.72
+      "data": "12/10",
+      "valor": 106.65
     },
     {
-      "data": "16/10",
-      "valor": 109.86
+      "data": "19/10",
+      "valor": 110.02
     }
   ],
   "estados": [
@@ -240,6 +240,62 @@
   },
   "noticias": [
     {
+      "titulo": "Governo da Índia suspende destinação de açúcar para etanol e ações recuam",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/governo-da-india-suspende-destinacao-de-acucar-para-etanol-e-acoes-recuam",
+      "tag": "Etanol",
+      "data": "19/10/2026",
+      "titulo_en": "Government of India suspends allocation of sugar to ethanol and shares fall back"
+    },
+    {
+      "titulo": "Setor de biocombustíveis teme retrocessos em políticas públicas",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/setor-de-biocombustiveis-teme-retrocessos-em-politicas-publicas",
+      "tag": "Etanol",
+      "data": "19/10/2026",
+      "titulo_en": "The biofuels sector fears setbacks in public policies"
+    },
+    {
+      "titulo": "PF identifica grupo criminoso que recebia avisos sobre fiscalizações em postos de combustíveis",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/pf-identifica-grupo-criminoso-que-recebia-avisos-sobre-fiscalizacoes-em-postos-de-combustiveis",
+      "tag": "Etanol",
+      "data": "19/10/2026",
+      "titulo_en": "PF identifies criminal group that received warnings about inspections at gas stations"
+    },
+    {
+      "titulo": "“Garapeiros” e “pipoqueiros” fazem as contas para investir em etanol",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/garapeiros-e-pipoqueiros-fazem-as-contas-para-investir-em-etanol",
+      "tag": "Etanol",
+      "data": "19/10/2026",
+      "titulo_en": "“Garapeiros” and “pipoqueiros” do the math to invest in ethanol"
+    },
+    {
+      "titulo": "Bagaço de cana ajuda a limpar águas e vira adubo para hortas de Jundiaí (SP)",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/bagaco-de-cana-ajuda-a-limpar-aguas-e-vira-adubo-para-hortas-de-jundiai-sp",
+      "tag": "Etanol",
+      "data": "19/10/2026",
+      "titulo_en": "Sugarcane bagasse helps clean water and becomes fertilizer for vegetable gardens in Jundiaí (SP)"
+    },
+    {
+      "titulo": "Agro e eleições: O que Flávio Bolsonaro e Lula propõem sobre bioenergia e biocombustíveis",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/agro-e-eleicoes-o-que-flavio-bolsonaro-e-lula-propoem-sobre-bioenergia-e-biocombustiveis",
+      "tag": "Etanol",
+      "data": "19/10/2026",
+      "titulo_en": "Agro and elections: What Flávio Bolsonaro and Lula propose about bioenergy and biofuels"
+    },
+    {
+      "titulo": "Volkswagen Saveiro Robust ganha versão somente a etanol",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/volkswagen-saveiro-robust-ganha-versao-somente-a-etanol",
+      "tag": "Etanol",
+      "data": "19/10/2026",
+      "titulo_en": "Volkswagen Saveiro Robust gets an ethanol-only version"
+    },
+    {
       "titulo": "Etanol na navegação pode abrir mercado de até 30 bilhões de litros, avalia SCA Brasil",
       "fonte": "NovaCana",
       "url": "https://www.novacana.com/noticias/etanol-na-navegacao-pode-abrir-mercado-de-ate-30-bilhoes-de-litros-avalia-sca-brasil",
@@ -262,62 +318,6 @@
       "tag": "Etanol",
       "data": "17/10/2026",
       "titulo_en": "Corn production in Brazil is expected to be a record in 2026/27; ethanol is expected to demand 34 million tons"
-    },
-    {
-      "titulo": "Justiça reconhece cobrança indevida de ICMS sobre etanol hidratado em SP",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/justica-reconhece-cobranca-indevida-de-icms-sobre-etanol-hidratado-em-sp",
-      "tag": "Etanol",
-      "data": "16/10/2026",
-      "titulo_en": "Justice recognizes undue collection of ICMS on hydrous ethanol in SP"
-    },
-    {
-      "titulo": "Identificação correta da murcha da cana ainda é um desafio para sucroenergéticas",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/identificacao-correta-da-murcha-da-cana-ainda-e-um-desafio-para-sucroenergeticas",
-      "tag": "Etanol",
-      "data": "16/10/2026",
-      "titulo_en": "Correct identification of sugarcane wilt is still a challenge for sugar-energy"
-    },
-    {
-      "titulo": "FS fará medida compensatória de R$ 1,5 milhão em Cláudia (MT) por ampliação de usina",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/fs-fara-medida-compensatoria-de-r-1-5-milhao-em-claudia-mt-por-ampliacao-de-usina",
-      "tag": "Produção",
-      "data": "16/10/2026",
-      "titulo_en": "FS will make a compensatory measure of $1.5 million in Cláudia (MT) for plant expansion"
-    },
-    {
-      "titulo": "MPMS investiga possível relação entre usina de açúcar e etanol e infestação de moscas em Angélica",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/mpms-investiga-possivel-relacao-entre-usina-de-acucar-e-etanol-e-infestacao-de-moscas-em-angelica",
-      "tag": "Etanol",
-      "data": "16/10/2026",
-      "titulo_en": "MPMs investigates possible relationship between sugar and ethanol plant and fly infestation in Angélica"
-    },
-    {
-      "titulo": "Chuvas reduzem moagem de cana e sustentam preços do açúcar e etanol, aponta Itaú BBA",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/chuvas-reduzem-moagem-de-cana-e-sustentam-precos-do-acucar-e-etanol-aponta-itau-bba",
-      "tag": "Etanol",
-      "data": "16/10/2026",
-      "titulo_en": "Rains reduce sugarcane milling and sustain sugar and ethanol prices, points out Itaú BBA"
-    },
-    {
-      "titulo": "Brent fecha praticamente estável enquanto EUA consideram aliviar sanções à \"frota-sombra\"",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/brent-fecha-praticamente-estavel-enquanto-eua-consideram-aliviar-sancoes-a-frota-sombra",
-      "tag": "Brent",
-      "data": "16/10/2026",
-      "titulo_en": "Brent closes virtually flat as U.S. considers easing “shadow fleet” sanctions"
-    },
-    {
-      "titulo": "Be8 começa a receber trigo para nova planta de glúten e etanol no Rio Grande do Sul",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/be8-comeca-a-receber-trigo-para-nova-planta-de-gluten-e-etanol-no-rio-grande-do-sul",
-      "tag": "Etanol",
-      "data": "15/10/2026",
-      "titulo_en": "Be8 begins receiving wheat for new gluten and ethanol plant in Rio Grande do Sul"
     }
   ]
 }
