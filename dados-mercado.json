@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-19T17:14:21.098500",
+  "atualizado": "2026-10-20T15:25:36.628517",
   "semana": "19/10 – 25/10/2026",
   "nacional": {
     "paridade": 69.9,
@@ -9,9 +9,9 @@
     "municipios_pesquisados": 26
   },
   "brent": {
-    "valor": 110.02,
-    "variacao": 0.15,
-    "data": "19/10/2026",
+    "valor": 108.12,
+    "variacao": -1.31,
+    "data": "20/10/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
@@ -44,36 +44,36 @@
   ],
   "historico_brent": [
     {
-      "data": "28/08",
-      "valor": 89.31
+      "data": "31/08",
+      "valor": 90.49
     },
     {
-      "data": "04/09",
-      "valor": 96.28
+      "data": "08/09",
+      "valor": 97.92
     },
     {
-      "data": "14/09",
-      "valor": 105.68
+      "data": "15/09",
+      "valor": 108.75
     },
     {
-      "data": "21/09",
-      "valor": 100.34
+      "data": "22/09",
+      "valor": 99.25
     },
     {
-      "data": "28/09",
-      "valor": 105.28
+      "data": "29/09",
+      "valor": 102.59
     },
     {
-      "data": "05/10",
-      "valor": 100.32
+      "data": "06/10",
+      "valor": 100.58
     },
     {
-      "data": "12/10",
-      "valor": 106.65
+      "data": "13/10",
+      "valor": 105.69
     },
     {
-      "data": "19/10",
-      "valor": 110.02
+      "data": "20/10",
+      "valor": 108.12
     }
   ],
   "estados": [
@@ -240,6 +240,70 @@
   },
   "noticias": [
     {
+      "titulo": "Arrecadação com ICMS de usinas de etanol de Mato Grosso supera incentivos fiscais",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/arrecadacao-com-icms-de-usinas-de-etanol-de-mato-grosso-supera-incentivos-fiscais",
+      "tag": "Etanol",
+      "data": "20/10/2026",
+      "titulo_en": "Collection with ICMS of ethanol plants in Mato Grosso exceeds tax incentives"
+    },
+    {
+      "titulo": "ANP recomenda incentivo fiscal a usina paulista de biometano de R$ 268 milhões",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/anp-recomenda-incentivo-fiscal-a-usina-paulista-de-biometano-de-r-268-milhoes",
+      "tag": "Produção",
+      "data": "20/10/2026",
+      "titulo_en": "ANP recommends a tax incentive for the São Paulo biomethane plant of R$268 million"
+    },
+    {
+      "titulo": "ANP publica comunicado sobre indicação de escriturador de CBio por cooperativas",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/anp-publica-comunicado-sobre-indicacao-de-escriturador-de-cbio-por-cooperativas",
+      "tag": "ANP",
+      "data": "20/10/2026",
+      "titulo_en": "ANP publishes notice on appointment of CBio bookkeeper by cooperatives"
+    },
+    {
+      "titulo": "[Cepea] Menor oferta e alta externa impulsionam preços do açúcar cristal",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/cepea-menor-oferta-e-alta-externa-impulsionam-precos-do-acucar-cristal",
+      "tag": "Etanol",
+      "data": "20/10/2026",
+      "titulo_en": "[Cepea] Lower supply and high external prices drive crystal sugar"
+    },
+    {
+      "titulo": "[Cepea] Oferta reduzida e alta do açúcar sustentam preço do etanol nas usinas",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/cepea-oferta-reduzida-e-alta-do-acucar-sustentam-preco-do-etanol-nas-usinas",
+      "tag": "Etanol",
+      "data": "20/10/2026",
+      "titulo_en": "[Cepea] Reduced and high sugar supply support ethanol prices at mills"
+    },
+    {
+      "titulo": "Moagem da safra de cana 2026/27 do Norte-Nordeste atinge 16,7% do previsto",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/moagem-da-safra-de-cana-2026-27-do-norte-nordeste-atinge-16-7-do-previsto",
+      "tag": "Produção",
+      "data": "20/10/2026",
+      "titulo_en": "Milling of the 2026/27 sugarcane crop from the North-Northeast reaches 16.7% of the forecast"
+    },
+    {
+      "titulo": "Em meio à crise na França, Macron busca apoio de países do Golfo para baixar combustíveis",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/em-meio-a-crise-na-franca-macron-busca-apoio-de-paises-do-golfo-para-baixar-combustiveis",
+      "tag": "Etanol",
+      "data": "20/10/2026",
+      "titulo_en": "Amid the crisis in France, Macron seeks support from Gulf countries to cut fuel"
+    },
+    {
+      "titulo": "Petróleo fecha abaixo dos US$ 110 após atingir maior patamar desde maio",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/petroleo-fecha-abaixo-dos-us-110-apos-atingir-maior-patamar-desde-maio",
+      "tag": "Brent",
+      "data": "20/10/2026",
+      "titulo_en": "Oil closes below $110 after reaching the highest level since May"
+    },
+    {
       "titulo": "Governo da Índia suspende destinação de açúcar para etanol e ações recuam",
       "fonte": "NovaCana",
       "url": "https://www.novacana.com/noticias/governo-da-india-suspende-destinacao-de-acucar-para-etanol-e-acoes-recuam",
@@ -254,70 +318,6 @@
       "tag": "Etanol",
       "data": "19/10/2026",
       "titulo_en": "The biofuels sector fears setbacks in public policies"
-    },
-    {
-      "titulo": "PF identifica grupo criminoso que recebia avisos sobre fiscalizações em postos de combustíveis",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/pf-identifica-grupo-criminoso-que-recebia-avisos-sobre-fiscalizacoes-em-postos-de-combustiveis",
-      "tag": "Etanol",
-      "data": "19/10/2026",
-      "titulo_en": "PF identifies criminal group that received warnings about inspections at gas stations"
-    },
-    {
-      "titulo": "“Garapeiros” e “pipoqueiros” fazem as contas para investir em etanol",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/garapeiros-e-pipoqueiros-fazem-as-contas-para-investir-em-etanol",
-      "tag": "Etanol",
-      "data": "19/10/2026",
-      "titulo_en": "“Garapeiros” and “pipoqueiros” do the math to invest in ethanol"
-    },
-    {
-      "titulo": "Bagaço de cana ajuda a limpar águas e vira adubo para hortas de Jundiaí (SP)",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/bagaco-de-cana-ajuda-a-limpar-aguas-e-vira-adubo-para-hortas-de-jundiai-sp",
-      "tag": "Etanol",
-      "data": "19/10/2026",
-      "titulo_en": "Sugarcane bagasse helps clean water and becomes fertilizer for vegetable gardens in Jundiaí (SP)"
-    },
-    {
-      "titulo": "Agro e eleições: O que Flávio Bolsonaro e Lula propõem sobre bioenergia e biocombustíveis",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/agro-e-eleicoes-o-que-flavio-bolsonaro-e-lula-propoem-sobre-bioenergia-e-biocombustiveis",
-      "tag": "Etanol",
-      "data": "19/10/2026",
-      "titulo_en": "Agro and elections: What Flávio Bolsonaro and Lula propose about bioenergy and biofuels"
-    },
-    {
-      "titulo": "Volkswagen Saveiro Robust ganha versão somente a etanol",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/volkswagen-saveiro-robust-ganha-versao-somente-a-etanol",
-      "tag": "Etanol",
-      "data": "19/10/2026",
-      "titulo_en": "Volkswagen Saveiro Robust gets an ethanol-only version"
-    },
-    {
-      "titulo": "Etanol na navegação pode abrir mercado de até 30 bilhões de litros, avalia SCA Brasil",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/etanol-na-navegacao-pode-abrir-mercado-de-ate-30-bilhoes-de-litros-avalia-sca-brasil",
-      "tag": "Etanol",
-      "data": "17/10/2026",
-      "titulo_en": "Ethanol in shipping can open a market of up to 30 billion liters, evaluates SCA Brasil"
-    },
-    {
-      "titulo": "Pecege projeta moagem de 629,5 milhões de toneladas de cana no Centro-Sul, com 31,6 milhões de toneladas bisadas",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/pecege-projeta-moagem-de-629-5-milhoes-de-toneladas-de-cana-no-centro-sul-com-31-6-milhoes-de-toneladas-bisadas",
-      "tag": "Produção",
-      "data": "17/10/2026",
-      "titulo_en": "Pecege projects crushing of 629.5 million tons of sugarcane in the Center-South, with 31.6 million tons of sugarcane"
-    },
-    {
-      "titulo": "Produção de milho no Brasil deve ser recorde em 2026/27; etanol deverá demandar 34 milhões de toneladas",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/producao-de-milho-no-brasil-deve-ser-recorde-em-2026-27-etanol-devera-demandar-34-milhoes-de-toneladas",
-      "tag": "Etanol",
-      "data": "17/10/2026",
-      "titulo_en": "Corn production in Brazil is expected to be a record in 2026/27; ethanol is expected to demand 34 million tons"
     }
   ]
 }
