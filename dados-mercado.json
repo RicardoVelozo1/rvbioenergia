@@ -1,17 +1,17 @@
 {
-  "atualizado": "2026-10-20T15:25:36.628517",
+  "atualizado": "2026-10-21T15:42:12.554098",
   "semana": "19/10 – 25/10/2026",
   "nacional": {
-    "paridade": 69.9,
-    "etanol_medio": 4.72,
-    "gasolina_media": 6.75,
-    "municipios_vantajosos": 11,
+    "paridade": 70.8,
+    "etanol_medio": 4.76,
+    "gasolina_media": 6.72,
+    "municipios_vantajosos": 10,
     "municipios_pesquisados": 26
   },
   "brent": {
-    "valor": 108.12,
-    "variacao": -1.31,
-    "data": "20/10/2026",
+    "valor": 108.3,
+    "variacao": -0.45,
+    "data": "21/10/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
@@ -44,50 +44,50 @@
   ],
   "historico_brent": [
     {
-      "data": "31/08",
-      "valor": 90.49
+      "data": "01/09",
+      "valor": 94.65
     },
     {
-      "data": "08/09",
-      "valor": 97.92
+      "data": "09/09",
+      "valor": 101.21
     },
     {
-      "data": "15/09",
-      "valor": 108.75
+      "data": "16/09",
+      "valor": 105.83
     },
     {
-      "data": "22/09",
-      "valor": 99.25
+      "data": "23/09",
+      "valor": 103.08
     },
     {
-      "data": "29/09",
-      "valor": 102.59
+      "data": "30/09",
+      "valor": 103.53
     },
     {
-      "data": "06/10",
-      "valor": 100.58
+      "data": "07/10",
+      "valor": 100.2
     },
     {
-      "data": "13/10",
-      "valor": 105.69
+      "data": "14/10",
+      "valor": 106.06
     },
     {
-      "data": "20/10",
-      "valor": 108.12
+      "data": "21/10",
+      "valor": 108.3
     }
   ],
   "estados": [
-    {
-      "uf": "AC",
-      "nome": "Acre",
-      "etanol": 4.84,
-      "gasolina": 7.27
-    },
     {
       "uf": "AL",
       "nome": "Alagoas",
       "etanol": 4.94,
       "gasolina": 6.66
+    },
+    {
+      "uf": "AP",
+      "nome": "Amapá",
+      "etanol": 5.84,
+      "gasolina": 6.49
     },
     {
       "uf": "AM",
@@ -235,10 +235,57 @@
     }
   ],
   "diagnostico_anp": {
-    "ed42": "download falhou: HTTP Error 404: Not Found",
-    "ed41": "ok, 18478 chars; sem preço: ['AP']; trecho Macapá: Macapá - | Macapá - | Macapá - | Macapá 127,69"
+    "ed42": "ok, 18483 chars; sem preço: []; trecho Macapá: Macapá 6,49 | Macapá 5,81 | Macapá | Macapá 7,24 | Macapá 127,46"
   },
   "noticias": [
+    {
+      "titulo": "Preços nos postos: Etanol volta a cair após cinco semanas de elevação",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/precos-nos-postos-etanol-volta-a-cair-apos-cinco-semanas-de-elevacao",
+      "tag": "Etanol",
+      "data": "21/10/2026",
+      "titulo_en": "Prices at stations: Ethanol falls again after five weeks of elevation"
+    },
+    {
+      "titulo": "Maersk realiza seu primeiro abastecimento comercial de navio com etanol",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/maersk-realiza-seu-primeiro-abastecimento-comercial-de-navio-com-etanol",
+      "tag": "Etanol",
+      "data": "21/10/2026",
+      "titulo_en": "Maersk conducts its first commercial ship bunkering with ethanol"
+    },
+    {
+      "titulo": "Chuva acima da média afeta qualidade da cana e adia fim da colheita em São Paulo",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/chuva-acima-da-media-afeta-qualidade-da-cana-e-adia-fim-da-colheita-em-sao-paulo",
+      "tag": "Etanol",
+      "data": "21/10/2026",
+      "titulo_en": "Above-average rainfall affects cane quality and postpones end of harvest in São Paulo"
+    },
+    {
+      "titulo": "Defasagem em diesel da Petrobras se aproxima do valor do subsídio, relata Abicom",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/defasagem-em-diesel-da-petrobras-se-aproxima-do-valor-do-subsidio-relata-abicom",
+      "tag": "Etanol",
+      "data": "21/10/2026",
+      "titulo_en": "Petrobras diesel lag approaches subsidy amount, Abicom reports"
+    },
+    {
+      "titulo": "Frete rodoviário sobe em setembro por pressão do diesel, aponta Edenred Mobilidade",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/frete-rodoviario-sobe-em-setembro-por-pressao-do-diesel-aponta-edenred-mobilidade",
+      "tag": "Etanol",
+      "data": "21/10/2026",
+      "titulo_en": "Road freight rises in September due to diesel pressure, points out Edenred Mobilidade"
+    },
+    {
+      "titulo": "Diesel russo retorna à Turquia e ao Brasil após fim de veto às exportações",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/diesel-russo-retorna-a-turquia-e-ao-brasil-apos-fim-de-veto-as-exportacoes",
+      "tag": "Etanol",
+      "data": "21/10/2026",
+      "titulo_en": "Russian diesel returns to Turkey and Brazil after the end of the export ban"
+    },
     {
       "titulo": "Arrecadação com ICMS de usinas de etanol de Mato Grosso supera incentivos fiscais",
       "fonte": "NovaCana",
@@ -270,54 +317,6 @@
       "tag": "Etanol",
       "data": "20/10/2026",
       "titulo_en": "[Cepea] Lower supply and high external prices drive crystal sugar"
-    },
-    {
-      "titulo": "[Cepea] Oferta reduzida e alta do açúcar sustentam preço do etanol nas usinas",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/cepea-oferta-reduzida-e-alta-do-acucar-sustentam-preco-do-etanol-nas-usinas",
-      "tag": "Etanol",
-      "data": "20/10/2026",
-      "titulo_en": "[Cepea] Reduced and high sugar supply support ethanol prices at mills"
-    },
-    {
-      "titulo": "Moagem da safra de cana 2026/27 do Norte-Nordeste atinge 16,7% do previsto",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/moagem-da-safra-de-cana-2026-27-do-norte-nordeste-atinge-16-7-do-previsto",
-      "tag": "Produção",
-      "data": "20/10/2026",
-      "titulo_en": "Milling of the 2026/27 sugarcane crop from the North-Northeast reaches 16.7% of the forecast"
-    },
-    {
-      "titulo": "Em meio à crise na França, Macron busca apoio de países do Golfo para baixar combustíveis",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/em-meio-a-crise-na-franca-macron-busca-apoio-de-paises-do-golfo-para-baixar-combustiveis",
-      "tag": "Etanol",
-      "data": "20/10/2026",
-      "titulo_en": "Amid the crisis in France, Macron seeks support from Gulf countries to cut fuel"
-    },
-    {
-      "titulo": "Petróleo fecha abaixo dos US$ 110 após atingir maior patamar desde maio",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/petroleo-fecha-abaixo-dos-us-110-apos-atingir-maior-patamar-desde-maio",
-      "tag": "Brent",
-      "data": "20/10/2026",
-      "titulo_en": "Oil closes below $110 after reaching the highest level since May"
-    },
-    {
-      "titulo": "Governo da Índia suspende destinação de açúcar para etanol e ações recuam",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/governo-da-india-suspende-destinacao-de-acucar-para-etanol-e-acoes-recuam",
-      "tag": "Etanol",
-      "data": "19/10/2026",
-      "titulo_en": "Government of India suspends allocation of sugar to ethanol and shares fall back"
-    },
-    {
-      "titulo": "Setor de biocombustíveis teme retrocessos em políticas públicas",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/setor-de-biocombustiveis-teme-retrocessos-em-politicas-publicas",
-      "tag": "Etanol",
-      "data": "19/10/2026",
-      "titulo_en": "The biofuels sector fears setbacks in public policies"
     }
   ]
 }
