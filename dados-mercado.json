@@ -1,17 +1,17 @@
 {
-  "atualizado": "2026-10-21T15:42:12.554098",
+  "atualizado": "2026-10-22T15:43:30.367814",
   "semana": "19/10 – 25/10/2026",
   "nacional": {
-    "paridade": 70.8,
+    "paridade": 70.6,
     "etanol_medio": 4.76,
-    "gasolina_media": 6.72,
-    "municipios_vantajosos": 10,
-    "municipios_pesquisados": 26
+    "gasolina_media": 6.74,
+    "municipios_vantajosos": 11,
+    "municipios_pesquisados": 27
   },
   "brent": {
-    "valor": 108.3,
-    "variacao": -0.45,
-    "data": "21/10/2026",
+    "valor": 111.19,
+    "variacao": 2.18,
+    "data": "22/10/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
@@ -44,39 +44,45 @@
   ],
   "historico_brent": [
     {
-      "data": "01/09",
-      "valor": 94.65
+      "data": "02/09",
+      "valor": 95.63
     },
     {
-      "data": "09/09",
-      "valor": 101.21
+      "data": "10/09",
+      "valor": 107.63
     },
     {
-      "data": "16/09",
-      "valor": 105.83
+      "data": "17/09",
+      "valor": 104.82
     },
     {
-      "data": "23/09",
-      "valor": 103.08
+      "data": "24/09",
+      "valor": 106.6
     },
     {
-      "data": "30/09",
-      "valor": 103.53
+      "data": "01/10",
+      "valor": 102.31
     },
     {
-      "data": "07/10",
-      "valor": 100.2
+      "data": "08/10",
+      "valor": 104.28
     },
     {
-      "data": "14/10",
-      "valor": 106.06
+      "data": "15/10",
+      "valor": 105.92
     },
     {
-      "data": "21/10",
-      "valor": 108.3
+      "data": "22/10",
+      "valor": 111.19
     }
   ],
   "estados": [
+    {
+      "uf": "AC",
+      "nome": "Acre",
+      "etanol": 4.84,
+      "gasolina": 7.27
+    },
     {
       "uf": "AL",
       "nome": "Alagoas",
@@ -239,6 +245,46 @@
   },
   "noticias": [
     {
+      "titulo": "Açúcar em alta e usinas com desconto podem destravar aquisições no setor sucroenergético",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/acucar-em-alta-e-usinas-com-desconto-podem-destravar-aquisicoes-no-setor-sucroenergetico",
+      "tag": "Produção",
+      "data": "22/10/2026",
+      "titulo_en": "Rising sugar and discounted mills can unlock acquisitions in the sugar-energy sector"
+    },
+    {
+      "titulo": "Setor de combustíveis cobra combate às fraudes e à sonegação do próximo presidente",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/setor-de-combustiveis-cobra-combate-as-fraudes-e-a-sonegacao-do-proximo-presidente",
+      "tag": "Etanol",
+      "data": "22/10/2026",
+      "titulo_en": "Fuel sector calls for combating fraud and evasion of the next president"
+    },
+    {
+      "titulo": "Varejista não tem direito a crédito de PIS e Cofins por etanol anidro, afirma STJ",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/varejista-nao-tem-direito-a-credito-de-pis-e-cofins-por-etanol-anidro-afirma-stj",
+      "tag": "Etanol",
+      "data": "22/10/2026",
+      "titulo_en": "Retailer is not entitled to PIS and Cofins credit for anhydrous ethanol, says STJ"
+    },
+    {
+      "titulo": "Preço global do diesel deve permanecer alto apesar do acordo entre EUA e Rússia",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/preco-global-do-diesel-deve-permanecer-alto-apesar-do-acordo-entre-eua-e-russia",
+      "tag": "Etanol",
+      "data": "22/10/2026",
+      "titulo_en": "Global diesel price expected to remain high despite US-Russia deal"
+    },
+    {
+      "titulo": "Preço do diesel dispara 6,67% em outubro e chega a R$ 7,20 por litro, aponta pesquisa",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/preco-do-diesel-dispara-6-67-em-outubro-e-chega-a-r-7-20-por-litro-aponta-pesquisa",
+      "tag": "Etanol",
+      "data": "22/10/2026",
+      "titulo_en": "Diesel price soars 6.67% in October and reaches R$7.20 per liter, research shows"
+    },
+    {
       "titulo": "Preços nos postos: Etanol volta a cair após cinco semanas de elevação",
       "fonte": "NovaCana",
       "url": "https://www.novacana.com/noticias/precos-nos-postos-etanol-volta-a-cair-apos-cinco-semanas-de-elevacao",
@@ -277,46 +323,6 @@
       "tag": "Etanol",
       "data": "21/10/2026",
       "titulo_en": "Road freight rises in September due to diesel pressure, points out Edenred Mobilidade"
-    },
-    {
-      "titulo": "Diesel russo retorna à Turquia e ao Brasil após fim de veto às exportações",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/diesel-russo-retorna-a-turquia-e-ao-brasil-apos-fim-de-veto-as-exportacoes",
-      "tag": "Etanol",
-      "data": "21/10/2026",
-      "titulo_en": "Russian diesel returns to Turkey and Brazil after the end of the export ban"
-    },
-    {
-      "titulo": "Arrecadação com ICMS de usinas de etanol de Mato Grosso supera incentivos fiscais",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/arrecadacao-com-icms-de-usinas-de-etanol-de-mato-grosso-supera-incentivos-fiscais",
-      "tag": "Etanol",
-      "data": "20/10/2026",
-      "titulo_en": "Collection with ICMS of ethanol plants in Mato Grosso exceeds tax incentives"
-    },
-    {
-      "titulo": "ANP recomenda incentivo fiscal a usina paulista de biometano de R$ 268 milhões",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/anp-recomenda-incentivo-fiscal-a-usina-paulista-de-biometano-de-r-268-milhoes",
-      "tag": "Produção",
-      "data": "20/10/2026",
-      "titulo_en": "ANP recommends a tax incentive for the São Paulo biomethane plant of R$268 million"
-    },
-    {
-      "titulo": "ANP publica comunicado sobre indicação de escriturador de CBio por cooperativas",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/anp-publica-comunicado-sobre-indicacao-de-escriturador-de-cbio-por-cooperativas",
-      "tag": "ANP",
-      "data": "20/10/2026",
-      "titulo_en": "ANP publishes notice on appointment of CBio bookkeeper by cooperatives"
-    },
-    {
-      "titulo": "[Cepea] Menor oferta e alta externa impulsionam preços do açúcar cristal",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/cepea-menor-oferta-e-alta-externa-impulsionam-precos-do-acucar-cristal",
-      "tag": "Etanol",
-      "data": "20/10/2026",
-      "titulo_en": "[Cepea] Lower supply and high external prices drive crystal sugar"
     }
   ]
 }
