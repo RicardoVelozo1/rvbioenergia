@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-22T15:43:30.367814",
+  "atualizado": "2026-10-23T15:30:59.363311",
   "semana": "19/10 – 25/10/2026",
   "nacional": {
     "paridade": 70.6,
@@ -9,9 +9,9 @@
     "municipios_pesquisados": 27
   },
   "brent": {
-    "valor": 111.19,
-    "variacao": 2.18,
-    "data": "22/10/2026",
+    "valor": 111.52,
+    "variacao": -1.46,
+    "data": "23/10/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
@@ -44,36 +44,36 @@
   ],
   "historico_brent": [
     {
-      "data": "02/09",
-      "valor": 95.63
+      "data": "03/09",
+      "valor": 95.52
     },
     {
-      "data": "10/09",
-      "valor": 107.63
+      "data": "11/09",
+      "valor": 104.61
     },
     {
-      "data": "17/09",
-      "valor": 104.82
+      "data": "18/09",
+      "valor": 103.87
     },
     {
-      "data": "24/09",
-      "valor": 106.6
+      "data": "25/09",
+      "valor": 104.32
     },
     {
-      "data": "01/10",
-      "valor": 102.31
+      "data": "02/10",
+      "valor": 102.25
     },
     {
-      "data": "08/10",
-      "valor": 104.28
+      "data": "09/10",
+      "valor": 104.72
     },
     {
-      "data": "15/10",
-      "valor": 105.92
+      "data": "16/10",
+      "valor": 109.86
     },
     {
-      "data": "22/10",
-      "valor": 111.19
+      "data": "23/10",
+      "valor": 111.52
     }
   ],
   "estados": [
@@ -245,6 +245,62 @@
   },
   "noticias": [
     {
+      "titulo": "Lula x Flávio Bolsonaro: O que cada um propõe para o preço da gasolina, do diesel e da conta de luz?",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/lula-x-flavio-bolsonaro-o-que-cada-um-propoe-para-o-preco-da-gasolina-do-diesel-e-da-conta-de-luz",
+      "tag": "Etanol",
+      "data": "23/10/2026",
+      "titulo_en": "Lula x Flávio Bolsonaro: What does each one propose for the price of gasoline, diesel and electricity bill?"
+    },
+    {
+      "titulo": "[Unica] Atualização da safra de cana-de-açúcar 2026/27 até agosto",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/unica-atualizacao-da-safra-de-cana-de-acucar-2026-27-ate-agosto",
+      "tag": "Produção",
+      "data": "23/10/2026",
+      "titulo_en": "[Only] Update of the 2026/27 sugarcane crop until August"
+    },
+    {
+      "titulo": "Copersucar acerta primeira venda de etanol para navios no mundo",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/copersucar-acerta-primeira-venda-de-etanol-para-navios-no-mundo",
+      "tag": "Etanol",
+      "data": "23/10/2026",
+      "titulo_en": "Copersucar settles first sale of ethanol to ships in the world"
+    },
+    {
+      "titulo": "Refinarias privadas buscam acordo antes de judicializar subsídio ao diesel",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/refinarias-privadas-buscam-acordo-antes-de-judicializar-subsidio-ao-diesel",
+      "tag": "Etanol",
+      "data": "23/10/2026",
+      "titulo_en": "Private refineries seek settlement before judicializing diesel subsidy"
+    },
+    {
+      "titulo": "Mercado de combustíveis no Amazonas registra aumento de concentração na última década",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/mercado-de-combustiveis-no-amazonas-registra-aumento-de-concentracao-na-ultima-decada",
+      "tag": "Etanol",
+      "data": "23/10/2026",
+      "titulo_en": "Fuel market in Amazonas registers increased concentration in the last decade"
+    },
+    {
+      "titulo": "Revisão de norma sobre livro de movimentação de combustíveis é debatida em workshop",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/revisao-de-norma-sobre-livro-de-movimentacao-de-combustiveis-e-debatida-em-workshop",
+      "tag": "Etanol",
+      "data": "23/10/2026",
+      "titulo_en": "Revision of standard on fuel handling book is discussed in workshop"
+    },
+    {
+      "titulo": "Governo arrecada R$ 12,9 bilhões com imposto de exportação de petróleo em 2026",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/governo-arrecada-r-12-9-bilhoes-com-imposto-de-exportacao-de-petroleo-em-2026",
+      "tag": "Brent",
+      "data": "23/10/2026",
+      "titulo_en": "Government collects R$12.9 billion with oil export tax in 2026"
+    },
+    {
       "titulo": "Açúcar em alta e usinas com desconto podem destravar aquisições no setor sucroenergético",
       "fonte": "NovaCana",
       "url": "https://www.novacana.com/noticias/acucar-em-alta-e-usinas-com-desconto-podem-destravar-aquisicoes-no-setor-sucroenergetico",
@@ -267,62 +323,6 @@
       "tag": "Etanol",
       "data": "22/10/2026",
       "titulo_en": "Retailer is not entitled to PIS and Cofins credit for anhydrous ethanol, says STJ"
-    },
-    {
-      "titulo": "Preço global do diesel deve permanecer alto apesar do acordo entre EUA e Rússia",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/preco-global-do-diesel-deve-permanecer-alto-apesar-do-acordo-entre-eua-e-russia",
-      "tag": "Etanol",
-      "data": "22/10/2026",
-      "titulo_en": "Global diesel price expected to remain high despite US-Russia deal"
-    },
-    {
-      "titulo": "Preço do diesel dispara 6,67% em outubro e chega a R$ 7,20 por litro, aponta pesquisa",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/preco-do-diesel-dispara-6-67-em-outubro-e-chega-a-r-7-20-por-litro-aponta-pesquisa",
-      "tag": "Etanol",
-      "data": "22/10/2026",
-      "titulo_en": "Diesel price soars 6.67% in October and reaches R$7.20 per liter, research shows"
-    },
-    {
-      "titulo": "Preços nos postos: Etanol volta a cair após cinco semanas de elevação",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/precos-nos-postos-etanol-volta-a-cair-apos-cinco-semanas-de-elevacao",
-      "tag": "Etanol",
-      "data": "21/10/2026",
-      "titulo_en": "Prices at stations: Ethanol falls again after five weeks of elevation"
-    },
-    {
-      "titulo": "Maersk realiza seu primeiro abastecimento comercial de navio com etanol",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/maersk-realiza-seu-primeiro-abastecimento-comercial-de-navio-com-etanol",
-      "tag": "Etanol",
-      "data": "21/10/2026",
-      "titulo_en": "Maersk conducts its first commercial ship bunkering with ethanol"
-    },
-    {
-      "titulo": "Chuva acima da média afeta qualidade da cana e adia fim da colheita em São Paulo",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/chuva-acima-da-media-afeta-qualidade-da-cana-e-adia-fim-da-colheita-em-sao-paulo",
-      "tag": "Etanol",
-      "data": "21/10/2026",
-      "titulo_en": "Above-average rainfall affects cane quality and postpones end of harvest in São Paulo"
-    },
-    {
-      "titulo": "Defasagem em diesel da Petrobras se aproxima do valor do subsídio, relata Abicom",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/defasagem-em-diesel-da-petrobras-se-aproxima-do-valor-do-subsidio-relata-abicom",
-      "tag": "Etanol",
-      "data": "21/10/2026",
-      "titulo_en": "Petrobras diesel lag approaches subsidy amount, Abicom reports"
-    },
-    {
-      "titulo": "Frete rodoviário sobe em setembro por pressão do diesel, aponta Edenred Mobilidade",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/frete-rodoviario-sobe-em-setembro-por-pressao-do-diesel-aponta-edenred-mobilidade",
-      "tag": "Etanol",
-      "data": "21/10/2026",
-      "titulo_en": "Road freight rises in September due to diesel pressure, points out Edenred Mobilidade"
     }
   ]
 }
