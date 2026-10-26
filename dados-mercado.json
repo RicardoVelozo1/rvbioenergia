@@ -1,6 +1,6 @@
 {
-  "atualizado": "2026-10-23T15:30:59.363311",
-  "semana": "19/10 – 25/10/2026",
+  "atualizado": "2026-10-26T17:03:06.088876",
+  "semana": "26/10 – 01/11/2026",
   "nacional": {
     "paridade": 70.6,
     "etanol_medio": 4.76,
@@ -9,22 +9,18 @@
     "municipios_pesquisados": 27
   },
   "brent": {
-    "valor": 111.52,
-    "variacao": -1.46,
-    "data": "23/10/2026",
+    "valor": 111.87,
+    "variacao": -4.16,
+    "data": "26/10/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
-    "hidratado": 2.6892,
-    "hidratado_anterior": 2.6374,
-    "anidro": 3.0824,
-    "anidro_anterior": 3.0532
+    "hidratado": 2.74,
+    "hidratado_anterior": 2.6892,
+    "anidro": 3.395,
+    "anidro_anterior": 3.0824
   },
   "historico_hidratado": [
-    {
-      "data": "18/09",
-      "valor": 2.6412
-    },
     {
       "data": "25/09",
       "valor": 2.582
@@ -40,40 +36,44 @@
     {
       "data": "16/10",
       "valor": 2.6892
+    },
+    {
+      "data": "23/10",
+      "valor": 2.74
     }
   ],
   "historico_brent": [
     {
-      "data": "03/09",
-      "valor": 95.52
+      "data": "04/09",
+      "valor": 96.28
     },
     {
-      "data": "11/09",
-      "valor": 104.61
+      "data": "14/09",
+      "valor": 105.68
     },
     {
-      "data": "18/09",
-      "valor": 103.87
+      "data": "21/09",
+      "valor": 100.34
     },
     {
-      "data": "25/09",
-      "valor": 104.32
+      "data": "28/09",
+      "valor": 105.28
     },
     {
-      "data": "02/10",
-      "valor": 102.25
+      "data": "05/10",
+      "valor": 100.32
     },
     {
-      "data": "09/10",
-      "valor": 104.72
+      "data": "12/10",
+      "valor": 106.65
     },
     {
-      "data": "16/10",
-      "valor": 109.86
+      "data": "19/10",
+      "valor": 109.55
     },
     {
-      "data": "23/10",
-      "valor": 111.52
+      "data": "26/10",
+      "valor": 111.87
     }
   ],
   "estados": [
@@ -241,9 +241,58 @@
     }
   ],
   "diagnostico_anp": {
+    "ed43": "download falhou: HTTP Error 404: Not Found",
     "ed42": "ok, 18483 chars; sem preço: []; trecho Macapá: Macapá 6,49 | Macapá 5,81 | Macapá | Macapá 7,24 | Macapá 127,46"
   },
   "noticias": [
+    {
+      "titulo": "Datagro estima 640,5 milhões de toneladas de cana no Centro-Sul em 2026/27",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/datagro-estima-640-5-milhoes-de-toneladas-de-cana-no-centro-sul-em-2026-27",
+      "tag": "Etanol",
+      "data": "26/10/2026",
+      "titulo_en": "Datagro estimates 640.5 million tons of sugarcane in the Center-South in 2026/27"
+    },
+    {
+      "titulo": "Incêndio atinge tanque de etanol em usina em Pitangueiras (SP); suspeita é que raio tenha provocado chamas",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/incendio-atinge-tanque-de-etanol-em-usina-em-pitangueiras-sp-suspeita-e-que-raio-tenha-provocado-chamas",
+      "tag": "Etanol",
+      "data": "26/10/2026",
+      "titulo_en": "Fire hits ethanol tank at plant in Pitangueiras (SP); it is suspected that lightning has caused flames"
+    },
+    {
+      "titulo": "Rússia se diz pronta para fornecer mais diesel aos EUA",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/russia-se-diz-pronta-para-fornecer-mais-diesel-aos-eua",
+      "tag": "Etanol",
+      "data": "26/10/2026",
+      "titulo_en": "Russia says it is ready to supply more diesel to the US"
+    },
+    {
+      "titulo": "Governo deve manter subsídios em 2027 se petróleo seguir alta, diz Durigan",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/governo-deve-manter-subsidios-em-2027-se-petroleo-seguir-alta-diz-durigan",
+      "tag": "Brent",
+      "data": "26/10/2026",
+      "titulo_en": "Government should keep subsidies in 2027 if oil remains high, says Durigan"
+    },
+    {
+      "titulo": "Petróleo dispara US$ 3 com ataques e vazamento; fecha no maior nível desde abril",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/petroleo-dispara-us-3-com-ataques-e-vazamento-fecha-no-maior-nivel-desde-abril",
+      "tag": "Brent",
+      "data": "26/10/2026",
+      "titulo_en": "Oil skyrockets $3 with attacks and spills; closes at highest level since April"
+    },
+    {
+      "titulo": "Açúcar bruto registra primeira alta na ICE em seis pregões puxado pelo petróleo",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/acucar-bruto-registra-primeira-alta-na-ice-em-seis-pregoes-puxado-pelo-petroleo",
+      "tag": "Brent",
+      "data": "26/10/2026",
+      "titulo_en": "Raw sugar records first rise in ice in six trading sessions pulled by oil"
+    },
     {
       "titulo": "Lula x Flávio Bolsonaro: O que cada um propõe para o preço da gasolina, do diesel e da conta de luz?",
       "fonte": "NovaCana",
@@ -275,54 +324,6 @@
       "tag": "Etanol",
       "data": "23/10/2026",
       "titulo_en": "Private refineries seek settlement before judicializing diesel subsidy"
-    },
-    {
-      "titulo": "Mercado de combustíveis no Amazonas registra aumento de concentração na última década",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/mercado-de-combustiveis-no-amazonas-registra-aumento-de-concentracao-na-ultima-decada",
-      "tag": "Etanol",
-      "data": "23/10/2026",
-      "titulo_en": "Fuel market in Amazonas registers increased concentration in the last decade"
-    },
-    {
-      "titulo": "Revisão de norma sobre livro de movimentação de combustíveis é debatida em workshop",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/revisao-de-norma-sobre-livro-de-movimentacao-de-combustiveis-e-debatida-em-workshop",
-      "tag": "Etanol",
-      "data": "23/10/2026",
-      "titulo_en": "Revision of standard on fuel handling book is discussed in workshop"
-    },
-    {
-      "titulo": "Governo arrecada R$ 12,9 bilhões com imposto de exportação de petróleo em 2026",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/governo-arrecada-r-12-9-bilhoes-com-imposto-de-exportacao-de-petroleo-em-2026",
-      "tag": "Brent",
-      "data": "23/10/2026",
-      "titulo_en": "Government collects R$12.9 billion with oil export tax in 2026"
-    },
-    {
-      "titulo": "Açúcar em alta e usinas com desconto podem destravar aquisições no setor sucroenergético",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/acucar-em-alta-e-usinas-com-desconto-podem-destravar-aquisicoes-no-setor-sucroenergetico",
-      "tag": "Produção",
-      "data": "22/10/2026",
-      "titulo_en": "Rising sugar and discounted mills can unlock acquisitions in the sugar-energy sector"
-    },
-    {
-      "titulo": "Setor de combustíveis cobra combate às fraudes e à sonegação do próximo presidente",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/setor-de-combustiveis-cobra-combate-as-fraudes-e-a-sonegacao-do-proximo-presidente",
-      "tag": "Etanol",
-      "data": "22/10/2026",
-      "titulo_en": "Fuel sector calls for combating fraud and evasion of the next president"
-    },
-    {
-      "titulo": "Varejista não tem direito a crédito de PIS e Cofins por etanol anidro, afirma STJ",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/varejista-nao-tem-direito-a-credito-de-pis-e-cofins-por-etanol-anidro-afirma-stj",
-      "tag": "Etanol",
-      "data": "22/10/2026",
-      "titulo_en": "Retailer is not entitled to PIS and Cofins credit for anhydrous ethanol, says STJ"
     }
   ]
 }
