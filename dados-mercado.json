@@ -1,17 +1,17 @@
 {
-  "atualizado": "2026-10-26T17:03:06.088876",
+  "atualizado": "2026-10-27T16:06:03.374056",
   "semana": "26/10 – 01/11/2026",
   "nacional": {
     "paridade": 70.6,
     "etanol_medio": 4.76,
     "gasolina_media": 6.74,
     "municipios_vantajosos": 11,
-    "municipios_pesquisados": 27
+    "municipios_pesquisados": 26
   },
   "brent": {
-    "valor": 111.87,
-    "variacao": -4.16,
-    "data": "26/10/2026",
+    "valor": 109.69,
+    "variacao": -5.28,
+    "data": "27/10/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
@@ -44,36 +44,36 @@
   ],
   "historico_brent": [
     {
-      "data": "04/09",
-      "valor": 96.28
+      "data": "08/09",
+      "valor": 97.92
     },
     {
-      "data": "14/09",
-      "valor": 105.68
+      "data": "15/09",
+      "valor": 108.75
     },
     {
-      "data": "21/09",
-      "valor": 100.34
+      "data": "22/09",
+      "valor": 99.25
     },
     {
-      "data": "28/09",
-      "valor": 105.28
+      "data": "29/09",
+      "valor": 102.59
     },
     {
-      "data": "05/10",
-      "valor": 100.32
+      "data": "06/10",
+      "valor": 100.58
     },
     {
-      "data": "12/10",
-      "valor": 106.65
+      "data": "13/10",
+      "valor": 105.69
     },
     {
-      "data": "19/10",
-      "valor": 109.55
+      "data": "20/10",
+      "valor": 108.79
     },
     {
-      "data": "26/10",
-      "valor": 111.87
+      "data": "27/10",
+      "valor": 109.69
     }
   ],
   "estados": [
@@ -216,12 +216,6 @@
       "gasolina": 7.57
     },
     {
-      "uf": "SC",
-      "nome": "Santa Catarina",
-      "etanol": 4.75,
-      "gasolina": 6.73
-    },
-    {
       "uf": "SP",
       "nome": "São Paulo",
       "etanol": 3.91,
@@ -241,10 +235,73 @@
     }
   ],
   "diagnostico_anp": {
-    "ed43": "download falhou: HTTP Error 404: Not Found",
-    "ed42": "ok, 18483 chars; sem preço: []; trecho Macapá: Macapá 6,49 | Macapá 5,81 | Macapá | Macapá 7,24 | Macapá 127,46"
+    "ed43": "ok, 18291 chars; sem preço: ['SC']; trecho Macapá: Macapá 6,30 | Macapá | R$ 6,30 | Macapá - | Macapá 7,16 | Macapá 127,46"
   },
   "noticias": [
+    {
+      "titulo": "Preços nos postos: Etanol perde competividade com estabilidade e queda na gasolina",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/precos-nos-postos-etanol-perde-competividade-com-estabilidade-e-queda-na-gasolina",
+      "tag": "Etanol",
+      "data": "27/10/2026",
+      "titulo_en": "Gasoline prices at the pumps: Ethanol loses competitiveness as gasoline prices stabilize and fall."
+    },
+    {
+      "titulo": "[Cepea] Cotações do açúcar cristal seguem em alta, mas avanços perdem força",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/cepea-cotacoes-do-acucar-cristal-seguem-em-alta-mas-avancos-perdem-forca",
+      "tag": "Etanol",
+      "data": "27/10/2026",
+      "titulo_en": "[Cepea] Crystal sugar prices remain high, but advances lose momentum"
+    },
+    {
+      "titulo": "[Cepea] Oferta reduzida e demanda aquecida impulsionam preços do etanol",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/cepea-oferta-reduzida-e-demanda-aquecida-impulsionam-precos-do-etanol",
+      "tag": "Etanol",
+      "data": "27/10/2026",
+      "titulo_en": "[Cepea] Reduced supply and strong demand drive up ethanol prices."
+    },
+    {
+      "titulo": "“Apreensivo”, setor de cana espera de Lula ajuste fiscal e subsídios",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/apreensivo-setor-de-cana-espera-de-lula-ajuste-fiscal-e-subsidios",
+      "tag": "Etanol",
+      "data": "27/10/2026",
+      "titulo_en": "&quot;Apprehensive,&quot; the sugarcane sector awaits fiscal adjustment and subsidies from Lula."
+    },
+    {
+      "titulo": "Etanol pode ganhar competitividade com reforma tributária e exigirá nova logística",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/etanol-pode-ganhar-competitividade-com-reforma-tributaria-e-exigira-nova-logistica",
+      "tag": "Etanol",
+      "data": "27/10/2026",
+      "titulo_en": "Ethanol may gain competitiveness with tax reform and will require new logistics"
+    },
+    {
+      "titulo": "Subsídios e barreiras comerciais transformam açúcar e etanol em instrumentos geopolíticos",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/subsidios-e-barreiras-comerciais-transformam-acucar-e-etanol-em-instrumentos-geopoliticos",
+      "tag": "Etanol",
+      "data": "27/10/2026",
+      "titulo_en": "Subsidies and trade barriers turn sugar and ethanol into geopolitical instruments"
+    },
+    {
+      "titulo": "Governo renova subvenção de R$ 2,12 do diesel por mais 30 dias",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/governo-renova-subvencao-de-r-2-12-do-diesel-por-mais-30-dias",
+      "tag": "Etanol",
+      "data": "27/10/2026",
+      "titulo_en": "Government renews R$ 2.12 diesel subsidy for another 30 days."
+    },
+    {
+      "titulo": "Petróleo cai com movimento para possível acordo entre Estados Unidos e Irã",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/petroleo-cai-com-movimento-para-possivel-acordo-entre-estados-unidos-e-ira",
+      "tag": "Brent",
+      "data": "27/10/2026",
+      "titulo_en": "Oil falls with movement for possible agreement between the United States and Iran"
+    },
     {
       "titulo": "Datagro estima 640,5 milhões de toneladas de cana no Centro-Sul em 2026/27",
       "fonte": "NovaCana",
@@ -260,70 +317,6 @@
       "tag": "Etanol",
       "data": "26/10/2026",
       "titulo_en": "Fire hits ethanol tank at plant in Pitangueiras (SP); it is suspected that lightning has caused flames"
-    },
-    {
-      "titulo": "Rússia se diz pronta para fornecer mais diesel aos EUA",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/russia-se-diz-pronta-para-fornecer-mais-diesel-aos-eua",
-      "tag": "Etanol",
-      "data": "26/10/2026",
-      "titulo_en": "Russia says it is ready to supply more diesel to the US"
-    },
-    {
-      "titulo": "Governo deve manter subsídios em 2027 se petróleo seguir alta, diz Durigan",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/governo-deve-manter-subsidios-em-2027-se-petroleo-seguir-alta-diz-durigan",
-      "tag": "Brent",
-      "data": "26/10/2026",
-      "titulo_en": "Government should keep subsidies in 2027 if oil remains high, says Durigan"
-    },
-    {
-      "titulo": "Petróleo dispara US$ 3 com ataques e vazamento; fecha no maior nível desde abril",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/petroleo-dispara-us-3-com-ataques-e-vazamento-fecha-no-maior-nivel-desde-abril",
-      "tag": "Brent",
-      "data": "26/10/2026",
-      "titulo_en": "Oil skyrockets $3 with attacks and spills; closes at highest level since April"
-    },
-    {
-      "titulo": "Açúcar bruto registra primeira alta na ICE em seis pregões puxado pelo petróleo",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/acucar-bruto-registra-primeira-alta-na-ice-em-seis-pregoes-puxado-pelo-petroleo",
-      "tag": "Brent",
-      "data": "26/10/2026",
-      "titulo_en": "Raw sugar records first rise in ice in six trading sessions pulled by oil"
-    },
-    {
-      "titulo": "Lula x Flávio Bolsonaro: O que cada um propõe para o preço da gasolina, do diesel e da conta de luz?",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/lula-x-flavio-bolsonaro-o-que-cada-um-propoe-para-o-preco-da-gasolina-do-diesel-e-da-conta-de-luz",
-      "tag": "Etanol",
-      "data": "23/10/2026",
-      "titulo_en": "Lula x Flávio Bolsonaro: What does each one propose for the price of gasoline, diesel and electricity bill?"
-    },
-    {
-      "titulo": "[Unica] Atualização da safra de cana-de-açúcar 2026/27 até agosto",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/unica-atualizacao-da-safra-de-cana-de-acucar-2026-27-ate-agosto",
-      "tag": "Produção",
-      "data": "23/10/2026",
-      "titulo_en": "[Only] Update of the 2026/27 sugarcane crop until August"
-    },
-    {
-      "titulo": "Copersucar acerta primeira venda de etanol para navios no mundo",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/copersucar-acerta-primeira-venda-de-etanol-para-navios-no-mundo",
-      "tag": "Etanol",
-      "data": "23/10/2026",
-      "titulo_en": "Copersucar settles first sale of ethanol to ships in the world"
-    },
-    {
-      "titulo": "Refinarias privadas buscam acordo antes de judicializar subsídio ao diesel",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/refinarias-privadas-buscam-acordo-antes-de-judicializar-subsidio-ao-diesel",
-      "tag": "Etanol",
-      "data": "23/10/2026",
-      "titulo_en": "Private refineries seek settlement before judicializing diesel subsidy"
     }
   ]
 }
