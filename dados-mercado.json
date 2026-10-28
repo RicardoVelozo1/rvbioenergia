@@ -1,17 +1,17 @@
 {
-  "atualizado": "2026-10-27T16:06:03.374056",
+  "atualizado": "2026-10-28T16:52:39.012472",
   "semana": "26/10 – 01/11/2026",
   "nacional": {
-    "paridade": 70.6,
-    "etanol_medio": 4.76,
-    "gasolina_media": 6.74,
+    "paridade": 69.7,
+    "etanol_medio": 4.66,
+    "gasolina_media": 6.69,
     "municipios_vantajosos": 11,
-    "municipios_pesquisados": 26
+    "municipios_pesquisados": 25
   },
   "brent": {
-    "valor": 109.69,
-    "variacao": -5.28,
-    "data": "27/10/2026",
+    "valor": 112.35,
+    "variacao": -1.34,
+    "data": "28/10/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
@@ -44,36 +44,36 @@
   ],
   "historico_brent": [
     {
-      "data": "08/09",
-      "valor": 97.92
+      "data": "09/09",
+      "valor": 101.21
     },
     {
-      "data": "15/09",
-      "valor": 108.75
+      "data": "16/09",
+      "valor": 105.83
     },
     {
-      "data": "22/09",
-      "valor": 99.25
+      "data": "23/09",
+      "valor": 103.08
     },
     {
-      "data": "29/09",
-      "valor": 102.59
+      "data": "30/09",
+      "valor": 103.53
     },
     {
-      "data": "06/10",
-      "valor": 100.58
+      "data": "07/10",
+      "valor": 100.2
     },
     {
-      "data": "13/10",
-      "valor": 105.69
+      "data": "14/10",
+      "valor": 106.06
     },
     {
-      "data": "20/10",
-      "valor": 108.79
+      "data": "21/10",
+      "valor": 108.82
     },
     {
-      "data": "27/10",
-      "valor": 109.69
+      "data": "28/10",
+      "valor": 112.35
     }
   ],
   "estados": [
@@ -81,73 +81,67 @@
       "uf": "AC",
       "nome": "Acre",
       "etanol": 4.84,
-      "gasolina": 7.27
+      "gasolina": 7.26
     },
     {
       "uf": "AL",
       "nome": "Alagoas",
-      "etanol": 4.94,
-      "gasolina": 6.66
-    },
-    {
-      "uf": "AP",
-      "nome": "Amapá",
-      "etanol": 5.84,
-      "gasolina": 6.49
+      "etanol": 4.97,
+      "gasolina": 6.67
     },
     {
       "uf": "AM",
       "nome": "Amazonas",
-      "etanol": 5.27,
-      "gasolina": 7.28
+      "etanol": 4.96,
+      "gasolina": 6.97
     },
     {
       "uf": "BA",
       "nome": "Bahia",
-      "etanol": 4.61,
-      "gasolina": 6.69
+      "etanol": 4.48,
+      "gasolina": 6.57
     },
     {
       "uf": "CE",
       "nome": "Ceará",
-      "etanol": 4.97,
-      "gasolina": 6.99
+      "etanol": 4.93,
+      "gasolina": 6.98
     },
     {
       "uf": "DF",
       "nome": "Distrito Federal",
-      "etanol": 4.42,
-      "gasolina": 6.61
+      "etanol": 4.3,
+      "gasolina": 6.39
     },
     {
       "uf": "ES",
       "nome": "Espírito Santo",
-      "etanol": 4.58,
-      "gasolina": 6.23
+      "etanol": 4.66,
+      "gasolina": 6.24
     },
     {
       "uf": "GO",
       "nome": "Goiás",
-      "etanol": 4.43,
-      "gasolina": 6.76
+      "etanol": 3.83,
+      "gasolina": 6.49
     },
     {
       "uf": "MA",
       "nome": "Maranhão",
-      "etanol": 4.83,
-      "gasolina": 6.51
+      "etanol": 4.82,
+      "gasolina": 6.43
     },
     {
       "uf": "MT",
       "nome": "Mato Grosso",
-      "etanol": 4.35,
-      "gasolina": 7.14
+      "etanol": 4.15,
+      "gasolina": 6.93
     },
     {
       "uf": "MS",
       "nome": "Mato Grosso do Sul",
-      "etanol": 3.94,
-      "gasolina": 6.29
+      "etanol": 3.93,
+      "gasolina": 6.25
     },
     {
       "uf": "MG",
@@ -158,68 +152,68 @@
     {
       "uf": "PA",
       "nome": "Pará",
-      "etanol": 4.45,
-      "gasolina": 6.51
+      "etanol": 4.36,
+      "gasolina": 6.39
     },
     {
       "uf": "PB",
       "nome": "Paraíba",
-      "etanol": 4.49,
-      "gasolina": 6.32
+      "etanol": 4.46,
+      "gasolina": 6.24
     },
     {
       "uf": "PR",
       "nome": "Paraná",
-      "etanol": 4.62,
+      "etanol": 4.63,
       "gasolina": 6.76
     },
     {
       "uf": "PE",
       "nome": "Pernambuco",
-      "etanol": 4.96,
+      "etanol": 4.95,
       "gasolina": 6.96
     },
     {
       "uf": "PI",
       "nome": "Piauí",
-      "etanol": 4.83,
-      "gasolina": 6.82
+      "etanol": 4.81,
+      "gasolina": 6.78
     },
     {
       "uf": "RJ",
       "nome": "Rio de Janeiro",
-      "etanol": 4.74,
-      "gasolina": 6.54
+      "etanol": 4.73,
+      "gasolina": 6.51
     },
     {
       "uf": "RN",
       "nome": "Rio Grande do Norte",
-      "etanol": 5.11,
-      "gasolina": 6.6
+      "etanol": 5.23,
+      "gasolina": 6.82
     },
     {
       "uf": "RS",
       "nome": "Rio Grande do Sul",
-      "etanol": 4.47,
-      "gasolina": 5.95
+      "etanol": 4.45,
+      "gasolina": 5.91
     },
     {
       "uf": "RO",
       "nome": "Rondônia",
       "etanol": 5.05,
-      "gasolina": 7.5
+      "gasolina": 7.49
     },
     {
       "uf": "RR",
       "nome": "Roraima",
       "etanol": 5.38,
-      "gasolina": 7.57
+      "gasolina": 7.56
     },
     {
       "uf": "SP",
       "nome": "São Paulo",
-      "etanol": 3.91,
-      "gasolina": 6.35
+      "etanol": 3.94,
+      "gasolina": 6.33
     },
     {
       "uf": "SE",
@@ -231,13 +225,77 @@
       "uf": "TO",
       "nome": "Tocantins",
       "etanol": 5.09,
-      "gasolina": 7.05
+      "gasolina": 7.07
     }
   ],
   "diagnostico_anp": {
     "ed43": "ok, 18291 chars; sem preço: ['SC']; trecho Macapá: Macapá 6,30 | Macapá | R$ 6,30 | Macapá - | Macapá 7,16 | Macapá 127,46"
   },
   "noticias": [
+    {
+      "titulo": "Acusados na operação Carbono Oculto aprofundaram crise nos canaviais paulistas",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/acusados-na-operacao-carbono-oculto-aprofundaram-crise-nos-canaviais-paulistas",
+      "tag": "RenovaBio",
+      "data": "28/10/2026",
+      "titulo_en": "Accused in the Hidden Carbon operation deepened the crisis in São Paulo's sugarcane fields"
+    },
+    {
+      "titulo": "Consultoria avalia mercado de etanol e os principais “fantasmas” que assombram 2026/27",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/consultoria-avalia-mercado-de-etanol-e-os-principais-fantasmas-que-assombram-2026-27",
+      "tag": "Etanol",
+      "data": "28/10/2026",
+      "titulo_en": "Consulting evaluates the ethanol market and the main \"ghosts\" that haunt 2026/27"
+    },
+    {
+      "titulo": "Regiões canavieiras têm até 50 dias perdidos de moagem devido às chuvas",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/regioes-canavieiras-tem-ate-50-dias-perdidos-de-moagem-devido-as-chuvas",
+      "tag": "Produção",
+      "data": "28/10/2026",
+      "titulo_en": "Sugarcane regions have up to 50 days of milling lost due to rainfall"
+    },
+    {
+      "titulo": "Câmara aprova apoio financeiro a produtores de cana-de-açúcar no Nordeste",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/camara-aprova-apoio-financeiro-a-produtores-de-cana-de-acucar-no-nordeste",
+      "tag": "Etanol",
+      "data": "28/10/2026",
+      "titulo_en": "Chamber approves financial support for sugarcane producers in the Northeast"
+    },
+    {
+      "titulo": "Vendas de etanol hidratado em São Paulo se aproximam de recorde",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/vendas-de-etanol-hidratado-em-sao-paulo-se-aproximam-de-recorde",
+      "tag": "Etanol",
+      "data": "28/10/2026",
+      "titulo_en": "Hydrous ethanol sales in São Paulo near record high"
+    },
+    {
+      "titulo": "Setor sucroenergético precisa de medidas para garantir sustentabilidade, diz Plinio Nastari",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/setor-sucroenergetico-precisa-de-medidas-para-garantir-sustentabilidade-diz-plinio-nastari",
+      "tag": "Etanol",
+      "data": "28/10/2026",
+      "titulo_en": "The sugar-energy sector needs measures to ensure sustainability, says Plinio Nastari"
+    },
+    {
+      "titulo": "Goldman vê manutenção de preços do diesel pela Petrobras após governo manter subsídios",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/goldman-ve-manutencao-de-precos-do-diesel-pela-petrobras-apos-governo-manter-subsidios",
+      "tag": "Etanol",
+      "data": "28/10/2026",
+      "titulo_en": "Goldman sees diesel price maintenance by Petrobras after government maintains subsidies"
+    },
+    {
+      "titulo": "Petróleo cai quase US$ 2 após avanço de negociações no Oriente Médio",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/petroleo-cai-quase-us-2-apos-avanco-de-negociacoes-no-oriente-medio",
+      "tag": "Brent",
+      "data": "28/10/2026",
+      "titulo_en": "Oil Falls Nearly $2 After Middle East Negotiations Breakthrough"
+    },
     {
       "titulo": "Preços nos postos: Etanol perde competividade com estabilidade e queda na gasolina",
       "fonte": "NovaCana",
@@ -253,70 +311,6 @@
       "tag": "Etanol",
       "data": "27/10/2026",
       "titulo_en": "[Cepea] Crystal sugar prices remain high, but advances lose momentum"
-    },
-    {
-      "titulo": "[Cepea] Oferta reduzida e demanda aquecida impulsionam preços do etanol",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/cepea-oferta-reduzida-e-demanda-aquecida-impulsionam-precos-do-etanol",
-      "tag": "Etanol",
-      "data": "27/10/2026",
-      "titulo_en": "[Cepea] Reduced supply and strong demand drive up ethanol prices."
-    },
-    {
-      "titulo": "“Apreensivo”, setor de cana espera de Lula ajuste fiscal e subsídios",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/apreensivo-setor-de-cana-espera-de-lula-ajuste-fiscal-e-subsidios",
-      "tag": "Etanol",
-      "data": "27/10/2026",
-      "titulo_en": "&quot;Apprehensive,&quot; the sugarcane sector awaits fiscal adjustment and subsidies from Lula."
-    },
-    {
-      "titulo": "Etanol pode ganhar competitividade com reforma tributária e exigirá nova logística",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/etanol-pode-ganhar-competitividade-com-reforma-tributaria-e-exigira-nova-logistica",
-      "tag": "Etanol",
-      "data": "27/10/2026",
-      "titulo_en": "Ethanol may gain competitiveness with tax reform and will require new logistics"
-    },
-    {
-      "titulo": "Subsídios e barreiras comerciais transformam açúcar e etanol em instrumentos geopolíticos",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/subsidios-e-barreiras-comerciais-transformam-acucar-e-etanol-em-instrumentos-geopoliticos",
-      "tag": "Etanol",
-      "data": "27/10/2026",
-      "titulo_en": "Subsidies and trade barriers turn sugar and ethanol into geopolitical instruments"
-    },
-    {
-      "titulo": "Governo renova subvenção de R$ 2,12 do diesel por mais 30 dias",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/governo-renova-subvencao-de-r-2-12-do-diesel-por-mais-30-dias",
-      "tag": "Etanol",
-      "data": "27/10/2026",
-      "titulo_en": "Government renews R$ 2.12 diesel subsidy for another 30 days."
-    },
-    {
-      "titulo": "Petróleo cai com movimento para possível acordo entre Estados Unidos e Irã",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/petroleo-cai-com-movimento-para-possivel-acordo-entre-estados-unidos-e-ira",
-      "tag": "Brent",
-      "data": "27/10/2026",
-      "titulo_en": "Oil falls with movement for possible agreement between the United States and Iran"
-    },
-    {
-      "titulo": "Datagro estima 640,5 milhões de toneladas de cana no Centro-Sul em 2026/27",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/datagro-estima-640-5-milhoes-de-toneladas-de-cana-no-centro-sul-em-2026-27",
-      "tag": "Etanol",
-      "data": "26/10/2026",
-      "titulo_en": "Datagro estimates 640.5 million tons of sugarcane in the Center-South in 2026/27"
-    },
-    {
-      "titulo": "Incêndio atinge tanque de etanol em usina em Pitangueiras (SP); suspeita é que raio tenha provocado chamas",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/incendio-atinge-tanque-de-etanol-em-usina-em-pitangueiras-sp-suspeita-e-que-raio-tenha-provocado-chamas",
-      "tag": "Etanol",
-      "data": "26/10/2026",
-      "titulo_en": "Fire hits ethanol tank at plant in Pitangueiras (SP); it is suspected that lightning has caused flames"
     }
   ]
 }
