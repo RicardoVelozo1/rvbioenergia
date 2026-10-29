@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-28T16:52:39.012472",
+  "atualizado": "2026-10-29T17:08:11.383850",
   "semana": "26/10 – 01/11/2026",
   "nacional": {
     "paridade": 69.7,
@@ -9,9 +9,9 @@
     "municipios_pesquisados": 25
   },
   "brent": {
-    "valor": 112.35,
-    "variacao": -1.34,
-    "data": "28/10/2026",
+    "valor": 110.05,
+    "variacao": -4.57,
+    "data": "29/10/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
@@ -44,36 +44,36 @@
   ],
   "historico_brent": [
     {
-      "data": "09/09",
-      "valor": 101.21
+      "data": "10/09",
+      "valor": 107.63
     },
     {
-      "data": "16/09",
-      "valor": 105.83
+      "data": "17/09",
+      "valor": 104.82
     },
     {
-      "data": "23/09",
-      "valor": 103.08
+      "data": "24/09",
+      "valor": 106.6
     },
     {
-      "data": "30/09",
-      "valor": 103.53
+      "data": "01/10",
+      "valor": 102.31
     },
     {
-      "data": "07/10",
-      "valor": 100.2
+      "data": "08/10",
+      "valor": 104.28
     },
     {
-      "data": "14/10",
-      "valor": 106.06
+      "data": "15/10",
+      "valor": 105.92
     },
     {
-      "data": "21/10",
-      "valor": 108.82
+      "data": "22/10",
+      "valor": 113.17
     },
     {
-      "data": "28/10",
-      "valor": 112.35
+      "data": "29/10",
+      "valor": 110.05
     }
   ],
   "estados": [
@@ -233,6 +233,70 @@
   },
   "noticias": [
     {
+      "titulo": "Instituto Mauá testa uso de etanol em motores a diesel",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/instituto-maua-testa-uso-de-etanol-em-motores-a-diesel",
+      "tag": "Etanol",
+      "data": "29/10/2026",
+      "titulo_en": "Instituto Mauá tests the use of ethanol in diesel engines"
+    },
+    {
+      "titulo": "Etanol de milho levanta polêmica de uso da terra para biocombustível",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/etanol-de-milho-levanta-polemica-de-uso-da-terra-para-biocombustivel",
+      "tag": "Etanol",
+      "data": "29/10/2026",
+      "titulo_en": "Corn ethanol raises land use controversy for biofuel"
+    },
+    {
+      "titulo": "Safra 2027/28 pode atingir 650 milhões de toneladas de cana, projeta Bioagência",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/safra-2027-28-pode-atingir-650-milhoes-de-toneladas-de-cana-projeta-bioagencia",
+      "tag": "Produção",
+      "data": "29/10/2026",
+      "titulo_en": "Crop 2027/28 can reach 650 million tons of sugarcane, projects Bioagency"
+    },
+    {
+      "titulo": "Estados aprovam aumento do ICMS sobre gasolina, diesel e gás de cozinha a partir de 2027",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/estados-aprovam-aumento-do-icms-sobre-gasolina-diesel-e-gas-de-cozinha-a-partir-de-2027",
+      "tag": "Etanol",
+      "data": "29/10/2026",
+      "titulo_en": "States approve ICMS increase on gasoline, diesel and cooking gas from 2027"
+    },
+    {
+      "titulo": "Diesel sobe até 8% desde setembro; com alta do ICMS em 2027, pode ficar mais caro",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/diesel-sobe-ate-8-desde-setembro-com-alta-do-icms-em-2027-pode-ficar-mais-caro",
+      "tag": "Etanol",
+      "data": "29/10/2026",
+      "titulo_en": "Diesel has risen by up to 8% since September; with ICMS rising in 2027, it may become more expensive"
+    },
+    {
+      "titulo": "CNI propõe medidas para ampliar a oferta de biocombustíveis no Brasil",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/cni-propoe-medidas-para-ampliar-a-oferta-de-biocombustiveis-no-brasil",
+      "tag": "Etanol",
+      "data": "29/10/2026",
+      "titulo_en": "CNI proposes measures to increase the supply of biofuels in Brazil"
+    },
+    {
+      "titulo": "Produção de açúcar e etanol do Centro-Sul recua na 1ª quinzena de outubro, aponta Mapa",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/producao-de-acucar-e-etanol-do-centro-sul-recua-na-1-quinzena-de-outubro-aponta-mapa",
+      "tag": "Etanol",
+      "data": "29/10/2026",
+      "titulo_en": "Sugar and ethanol production in the Center-South declined in the first half of October, according to Mapa"
+    },
+    {
+      "titulo": "Senado aprova subsídio e financiamento de R$ 24,5 bilhões a produtores de cana",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/senado-aprova-subsidio-e-financiamento-de-r-24-5-bilhoes-a-produtores-de-cana",
+      "tag": "Etanol",
+      "data": "29/10/2026",
+      "titulo_en": "Senate approves subsidy and financing of $24.5 billion to sugarcane producers"
+    },
+    {
       "titulo": "Acusados na operação Carbono Oculto aprofundaram crise nos canaviais paulistas",
       "fonte": "NovaCana",
       "url": "https://www.novacana.com/noticias/acusados-na-operacao-carbono-oculto-aprofundaram-crise-nos-canaviais-paulistas",
@@ -247,70 +311,6 @@
       "tag": "Etanol",
       "data": "28/10/2026",
       "titulo_en": "Consulting evaluates the ethanol market and the main \"ghosts\" that haunt 2026/27"
-    },
-    {
-      "titulo": "Regiões canavieiras têm até 50 dias perdidos de moagem devido às chuvas",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/regioes-canavieiras-tem-ate-50-dias-perdidos-de-moagem-devido-as-chuvas",
-      "tag": "Produção",
-      "data": "28/10/2026",
-      "titulo_en": "Sugarcane regions have up to 50 days of milling lost due to rainfall"
-    },
-    {
-      "titulo": "Câmara aprova apoio financeiro a produtores de cana-de-açúcar no Nordeste",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/camara-aprova-apoio-financeiro-a-produtores-de-cana-de-acucar-no-nordeste",
-      "tag": "Etanol",
-      "data": "28/10/2026",
-      "titulo_en": "Chamber approves financial support for sugarcane producers in the Northeast"
-    },
-    {
-      "titulo": "Vendas de etanol hidratado em São Paulo se aproximam de recorde",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/vendas-de-etanol-hidratado-em-sao-paulo-se-aproximam-de-recorde",
-      "tag": "Etanol",
-      "data": "28/10/2026",
-      "titulo_en": "Hydrous ethanol sales in São Paulo near record high"
-    },
-    {
-      "titulo": "Setor sucroenergético precisa de medidas para garantir sustentabilidade, diz Plinio Nastari",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/setor-sucroenergetico-precisa-de-medidas-para-garantir-sustentabilidade-diz-plinio-nastari",
-      "tag": "Etanol",
-      "data": "28/10/2026",
-      "titulo_en": "The sugar-energy sector needs measures to ensure sustainability, says Plinio Nastari"
-    },
-    {
-      "titulo": "Goldman vê manutenção de preços do diesel pela Petrobras após governo manter subsídios",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/goldman-ve-manutencao-de-precos-do-diesel-pela-petrobras-apos-governo-manter-subsidios",
-      "tag": "Etanol",
-      "data": "28/10/2026",
-      "titulo_en": "Goldman sees diesel price maintenance by Petrobras after government maintains subsidies"
-    },
-    {
-      "titulo": "Petróleo cai quase US$ 2 após avanço de negociações no Oriente Médio",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/petroleo-cai-quase-us-2-apos-avanco-de-negociacoes-no-oriente-medio",
-      "tag": "Brent",
-      "data": "28/10/2026",
-      "titulo_en": "Oil Falls Nearly $2 After Middle East Negotiations Breakthrough"
-    },
-    {
-      "titulo": "Preços nos postos: Etanol perde competividade com estabilidade e queda na gasolina",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/precos-nos-postos-etanol-perde-competividade-com-estabilidade-e-queda-na-gasolina",
-      "tag": "Etanol",
-      "data": "27/10/2026",
-      "titulo_en": "Gasoline prices at the pumps: Ethanol loses competitiveness as gasoline prices stabilize and fall."
-    },
-    {
-      "titulo": "[Cepea] Cotações do açúcar cristal seguem em alta, mas avanços perdem força",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/cepea-cotacoes-do-acucar-cristal-seguem-em-alta-mas-avancos-perdem-forca",
-      "tag": "Etanol",
-      "data": "27/10/2026",
-      "titulo_en": "[Cepea] Crystal sugar prices remain high, but advances lose momentum"
     }
   ]
 }
