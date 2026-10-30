@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-29T17:08:11.383850",
+  "atualizado": "2026-10-30T16:51:18.473085",
   "semana": "26/10 – 01/11/2026",
   "nacional": {
     "paridade": 69.7,
@@ -9,9 +9,9 @@
     "municipios_pesquisados": 25
   },
   "brent": {
-    "valor": 110.05,
-    "variacao": -4.57,
-    "data": "29/10/2026",
+    "valor": 113.36,
+    "variacao": -1.32,
+    "data": "30/10/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
@@ -44,36 +44,36 @@
   ],
   "historico_brent": [
     {
-      "data": "10/09",
-      "valor": 107.63
+      "data": "11/09",
+      "valor": 104.61
     },
     {
-      "data": "17/09",
-      "valor": 104.82
+      "data": "18/09",
+      "valor": 103.87
     },
     {
-      "data": "24/09",
-      "valor": 106.6
+      "data": "25/09",
+      "valor": 104.32
     },
     {
-      "data": "01/10",
-      "valor": 102.31
+      "data": "02/10",
+      "valor": 102.25
     },
     {
-      "data": "08/10",
-      "valor": 104.28
+      "data": "09/10",
+      "valor": 104.72
     },
     {
-      "data": "15/10",
-      "valor": 105.92
+      "data": "16/10",
+      "valor": 109.86
     },
     {
-      "data": "22/10",
-      "valor": 113.17
+      "data": "23/10",
+      "valor": 116.72
     },
     {
-      "data": "29/10",
-      "valor": 110.05
+      "data": "30/10",
+      "valor": 113.36
     }
   ],
   "estados": [
@@ -233,6 +233,70 @@
   },
   "noticias": [
     {
+      "titulo": "ANP antecipa regulamentação da certificação de hidrogênio de baixa emissão de carbono",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/anp-antecipa-regulamentacao-da-certificacao-de-hidrogenio-de-baixa-emissao-de-carbono",
+      "tag": "ANP",
+      "data": "30/10/2026",
+      "titulo_en": "ANP anticipates regulation of low-carbon hydrogen certification"
+    },
+    {
+      "titulo": "Usina Santa Terezinha compra insumos da Syngenta com CBios",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/usina-santa-terezinha-compra-insumos-da-syngenta-com-cbios",
+      "tag": "Produção",
+      "data": "30/10/2026",
+      "titulo_en": "Usina Santa Terezinha purchases inputs from Syngenta with CBios"
+    },
+    {
+      "titulo": "Governo inicia em janeiro testes para mistura de 35% de etanol na gasolina",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/governo-inicia-em-janeiro-testes-para-mistura-de-35-de-etanol-na-gasolina",
+      "tag": "Etanol",
+      "data": "30/10/2026",
+      "titulo_en": "Government starts in January tests for blending 35% ethanol in gasoline"
+    },
+    {
+      "titulo": "MME estima que biocombustíveis terão investimentos de R$ 142 bilhões até 2036",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/mme-estima-que-biocombustiveis-terao-investimentos-de-r-142-bilhoes-ate-2036",
+      "tag": "Etanol",
+      "data": "30/10/2026",
+      "titulo_en": "Mme estimates that biofuels will have investments of $142 billion by 2036"
+    },
+    {
+      "titulo": "CNI alerta que produção de biocombustíveis pode não acompanhar metas",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/cni-alerta-que-producao-de-biocombustiveis-pode-nao-acompanhar-metas",
+      "tag": "Produção",
+      "data": "30/10/2026",
+      "titulo_en": "CNI warns that biofuel production may not keep up with targets"
+    },
+    {
+      "titulo": "Governo vê R$ 64,6 bi em receita extra de petróleo e liberou R$ 39 bi em subsídios",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/governo-ve-r-64-6-bi-em-receita-extra-de-petroleo-e-liberou-r-39-bi-em-subsidios",
+      "tag": "Brent",
+      "data": "30/10/2026",
+      "titulo_en": "Government sees $64.6 billion in extra oil revenue and released $39 billion in subsidies"
+    },
+    {
+      "titulo": "BP quadriplica lucro líquido no 3º trimestre com aumento do preço do petróleo",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/bp-quadriplica-lucro-liquido-no-3-trimestre-com-aumento-do-preco-do-petroleo",
+      "tag": "Brent",
+      "data": "30/10/2026",
+      "titulo_en": "BP quadruples net income in Q3 as oil price rises"
+    },
+    {
+      "titulo": "Petróleo fecha em baixa com avanço das negociações entre EUA e Irã",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/petroleo-fecha-em-baixa-com-avanco-das-negociacoes-entre-eua-e-ira",
+      "tag": "Brent",
+      "data": "30/10/2026",
+      "titulo_en": "Oil closes lower with progress in negotiations between the US and Iran"
+    },
+    {
       "titulo": "Instituto Mauá testa uso de etanol em motores a diesel",
       "fonte": "NovaCana",
       "url": "https://www.novacana.com/noticias/instituto-maua-testa-uso-de-etanol-em-motores-a-diesel",
@@ -247,70 +311,6 @@
       "tag": "Etanol",
       "data": "29/10/2026",
       "titulo_en": "Corn ethanol raises land use controversy for biofuel"
-    },
-    {
-      "titulo": "Safra 2027/28 pode atingir 650 milhões de toneladas de cana, projeta Bioagência",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/safra-2027-28-pode-atingir-650-milhoes-de-toneladas-de-cana-projeta-bioagencia",
-      "tag": "Produção",
-      "data": "29/10/2026",
-      "titulo_en": "Crop 2027/28 can reach 650 million tons of sugarcane, projects Bioagency"
-    },
-    {
-      "titulo": "Estados aprovam aumento do ICMS sobre gasolina, diesel e gás de cozinha a partir de 2027",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/estados-aprovam-aumento-do-icms-sobre-gasolina-diesel-e-gas-de-cozinha-a-partir-de-2027",
-      "tag": "Etanol",
-      "data": "29/10/2026",
-      "titulo_en": "States approve ICMS increase on gasoline, diesel and cooking gas from 2027"
-    },
-    {
-      "titulo": "Diesel sobe até 8% desde setembro; com alta do ICMS em 2027, pode ficar mais caro",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/diesel-sobe-ate-8-desde-setembro-com-alta-do-icms-em-2027-pode-ficar-mais-caro",
-      "tag": "Etanol",
-      "data": "29/10/2026",
-      "titulo_en": "Diesel has risen by up to 8% since September; with ICMS rising in 2027, it may become more expensive"
-    },
-    {
-      "titulo": "CNI propõe medidas para ampliar a oferta de biocombustíveis no Brasil",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/cni-propoe-medidas-para-ampliar-a-oferta-de-biocombustiveis-no-brasil",
-      "tag": "Etanol",
-      "data": "29/10/2026",
-      "titulo_en": "CNI proposes measures to increase the supply of biofuels in Brazil"
-    },
-    {
-      "titulo": "Produção de açúcar e etanol do Centro-Sul recua na 1ª quinzena de outubro, aponta Mapa",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/producao-de-acucar-e-etanol-do-centro-sul-recua-na-1-quinzena-de-outubro-aponta-mapa",
-      "tag": "Etanol",
-      "data": "29/10/2026",
-      "titulo_en": "Sugar and ethanol production in the Center-South declined in the first half of October, according to Mapa"
-    },
-    {
-      "titulo": "Senado aprova subsídio e financiamento de R$ 24,5 bilhões a produtores de cana",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/senado-aprova-subsidio-e-financiamento-de-r-24-5-bilhoes-a-produtores-de-cana",
-      "tag": "Etanol",
-      "data": "29/10/2026",
-      "titulo_en": "Senate approves subsidy and financing of $24.5 billion to sugarcane producers"
-    },
-    {
-      "titulo": "Acusados na operação Carbono Oculto aprofundaram crise nos canaviais paulistas",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/acusados-na-operacao-carbono-oculto-aprofundaram-crise-nos-canaviais-paulistas",
-      "tag": "RenovaBio",
-      "data": "28/10/2026",
-      "titulo_en": "Accused in the Hidden Carbon operation deepened the crisis in São Paulo's sugarcane fields"
-    },
-    {
-      "titulo": "Consultoria avalia mercado de etanol e os principais “fantasmas” que assombram 2026/27",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/consultoria-avalia-mercado-de-etanol-e-os-principais-fantasmas-que-assombram-2026-27",
-      "tag": "Etanol",
-      "data": "28/10/2026",
-      "titulo_en": "Consulting evaluates the ethanol market and the main \"ghosts\" that haunt 2026/27"
     }
   ]
 }
