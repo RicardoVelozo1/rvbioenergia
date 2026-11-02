@@ -1,6 +1,6 @@
 {
-  "atualizado": "2026-10-30T16:51:18.473085",
-  "semana": "26/10 – 01/11/2026",
+  "atualizado": "2026-11-02T20:35:42.294313",
+  "semana": "02/11 – 08/11/2026",
   "nacional": {
     "paridade": 69.7,
     "etanol_medio": 4.66,
@@ -9,22 +9,18 @@
     "municipios_pesquisados": 25
   },
   "brent": {
-    "valor": 113.36,
-    "variacao": -1.32,
-    "data": "30/10/2026",
+    "valor": 104.38,
+    "variacao": -11.27,
+    "data": "02/11/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
-    "hidratado": 2.74,
-    "hidratado_anterior": 2.6892,
-    "anidro": 3.395,
-    "anidro_anterior": 3.0824
+    "hidratado": 2.8135,
+    "hidratado_anterior": 2.74,
+    "anidro": 3.3997,
+    "anidro_anterior": 3.395
   },
   "historico_hidratado": [
-    {
-      "data": "25/09",
-      "valor": 2.582
-    },
     {
       "data": "02/10",
       "valor": 2.5639
@@ -40,40 +36,44 @@
     {
       "data": "23/10",
       "valor": 2.74
+    },
+    {
+      "data": "30/10",
+      "valor": 2.8135
     }
   ],
   "historico_brent": [
     {
-      "data": "11/09",
-      "valor": 104.61
+      "data": "13/09",
+      "valor": 105.68
     },
     {
-      "data": "18/09",
-      "valor": 103.87
+      "data": "20/09",
+      "valor": 100.34
     },
     {
-      "data": "25/09",
-      "valor": 104.32
+      "data": "27/09",
+      "valor": 105.28
     },
     {
-      "data": "02/10",
-      "valor": 102.25
+      "data": "04/10",
+      "valor": 100.32
     },
     {
-      "data": "09/10",
-      "valor": 104.72
+      "data": "11/10",
+      "valor": 106.65
     },
     {
-      "data": "16/10",
-      "valor": 109.86
+      "data": "18/10",
+      "valor": 109.55
     },
     {
-      "data": "23/10",
-      "valor": 116.72
+      "data": "25/10",
+      "valor": 115.81
     },
     {
-      "data": "30/10",
-      "valor": 113.36
+      "data": "02/11",
+      "valor": 104.38
     }
   ],
   "estados": [
@@ -229,9 +229,26 @@
     }
   ],
   "diagnostico_anp": {
+    "ed44": "download falhou: HTTP Error 404: Not Found",
     "ed43": "ok, 18291 chars; sem preço: ['SC']; trecho Macapá: Macapá 6,30 | Macapá | R$ 6,30 | Macapá - | Macapá 7,16 | Macapá 127,46"
   },
   "noticias": [
+    {
+      "titulo": "Eleições nos EUA e no Brasil podem impulsionar mercado de etanol, diz consultoria",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/eleicoes-nos-eua-e-no-brasil-podem-impulsionar-mercado-de-etanol-diz-consultoria",
+      "tag": "Etanol",
+      "data": "02/11/2026",
+      "titulo_en": "Elections in the US and Brazil could boost ethanol market, says consultancy"
+    },
+    {
+      "titulo": "Produção de etanol de milho no Centro-Sul fica aquém do esperado, avalia StoneX",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/producao-de-etanol-de-milho-no-centro-sul-fica-aquem-do-esperado-avalia-stonex",
+      "tag": "Etanol",
+      "data": "02/11/2026",
+      "titulo_en": "Corn ethanol production in the Center-South falls short of expectations, evaluates StoneX"
+    },
     {
       "titulo": "ANP antecipa regulamentação da certificação de hidrogênio de baixa emissão de carbono",
       "fonte": "NovaCana",
@@ -295,22 +312,6 @@
       "tag": "Brent",
       "data": "30/10/2026",
       "titulo_en": "Oil closes lower with progress in negotiations between the US and Iran"
-    },
-    {
-      "titulo": "Instituto Mauá testa uso de etanol em motores a diesel",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/instituto-maua-testa-uso-de-etanol-em-motores-a-diesel",
-      "tag": "Etanol",
-      "data": "29/10/2026",
-      "titulo_en": "Instituto Mauá tests the use of ethanol in diesel engines"
-    },
-    {
-      "titulo": "Etanol de milho levanta polêmica de uso da terra para biocombustível",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/etanol-de-milho-levanta-polemica-de-uso-da-terra-para-biocombustivel",
-      "tag": "Etanol",
-      "data": "29/10/2026",
-      "titulo_en": "Corn ethanol raises land use controversy for biofuel"
     }
   ]
 }
