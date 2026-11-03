@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-02T20:35:42.294313",
+  "atualizado": "2026-11-03T18:07:54.159760",
   "semana": "02/11 – 08/11/2026",
   "nacional": {
     "paridade": 69.7,
@@ -9,9 +9,9 @@
     "municipios_pesquisados": 25
   },
   "brent": {
-    "valor": 104.38,
-    "variacao": -11.27,
-    "data": "02/11/2026",
+    "valor": 103.44,
+    "variacao": -1.27,
+    "data": "03/11/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
@@ -44,36 +44,36 @@
   ],
   "historico_brent": [
     {
-      "data": "13/09",
-      "valor": 105.68
+      "data": "14/09",
+      "valor": 108.75
     },
     {
-      "data": "20/09",
-      "valor": 100.34
+      "data": "21/09",
+      "valor": 99.25
     },
     {
-      "data": "27/09",
-      "valor": 105.28
+      "data": "28/09",
+      "valor": 102.59
     },
     {
-      "data": "04/10",
-      "valor": 100.32
+      "data": "05/10",
+      "valor": 100.58
     },
     {
-      "data": "11/10",
-      "valor": 106.65
+      "data": "12/10",
+      "valor": 105.69
     },
     {
-      "data": "18/10",
-      "valor": 109.55
+      "data": "19/10",
+      "valor": 108.79
     },
     {
-      "data": "25/10",
-      "valor": 115.81
+      "data": "26/10",
+      "valor": 113.88
     },
     {
-      "data": "02/11",
-      "valor": 104.38
+      "data": "03/11",
+      "valor": 103.44
     }
   ],
   "estados": [
@@ -234,84 +234,84 @@
   },
   "noticias": [
     {
-      "titulo": "Eleições nos EUA e no Brasil podem impulsionar mercado de etanol, diz consultoria",
+      "titulo": "Etanol acumula alta de 38% em três meses com atraso na safra de cana",
       "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/eleicoes-nos-eua-e-no-brasil-podem-impulsionar-mercado-de-etanol-diz-consultoria",
+      "url": "https://www.novacana.com/noticias/etanol-acumula-alta-de-38-em-tres-meses-com-atraso-na-safra-de-cana",
       "tag": "Etanol",
-      "data": "02/11/2026",
-      "titulo_en": "Elections in the US and Brazil could boost ethanol market, says consultancy"
+      "data": "03/11/2026",
+      "titulo_en": "Ethanol accumulates an increase of 38% in three months with a delay in the sugarcane harvest"
     },
     {
-      "titulo": "Produção de etanol de milho no Centro-Sul fica aquém do esperado, avalia StoneX",
+      "titulo": "Cota para exportação de açúcar aos EUA recua 35,9%, mas usinas têm diferentes impactos",
       "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/producao-de-etanol-de-milho-no-centro-sul-fica-aquem-do-esperado-avalia-stonex",
-      "tag": "Etanol",
-      "data": "02/11/2026",
-      "titulo_en": "Corn ethanol production in the Center-South falls short of expectations, evaluates StoneX"
+      "url": "https://www.novacana.com/noticias/cota-para-exportacao-de-acucar-aos-eua-recua-35-9-mas-usinas-tem-diferentes-impactos",
+      "tag": "Produção",
+      "data": "03/11/2026",
+      "titulo_en": "Quota for sugar exports to the US falls 35.9%, but mills have different impacts"
     },
     {
-      "titulo": "ANP antecipa regulamentação da certificação de hidrogênio de baixa emissão de carbono",
+      "titulo": "ANP enviará ao Cade processos contra distribuidoras por elevação abusiva de preços",
       "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/anp-antecipa-regulamentacao-da-certificacao-de-hidrogenio-de-baixa-emissao-de-carbono",
+      "url": "https://www.novacana.com/noticias/anp-enviara-ao-cade-processos-contra-distribuidoras-por-elevacao-abusiva-de-precos",
       "tag": "ANP",
-      "data": "30/10/2026",
-      "titulo_en": "ANP anticipates regulation of low-carbon hydrogen certification"
+      "data": "03/11/2026",
+      "titulo_en": "ANP will send to Cade lawsuits against distributors for abusive price increase"
     },
     {
-      "titulo": "Usina Santa Terezinha compra insumos da Syngenta com CBios",
+      "titulo": "Enzimas do intestino do peixe-boi podem produzir biocombustíveis e bioinsumos, diz estudo",
       "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/usina-santa-terezinha-compra-insumos-da-syngenta-com-cbios",
-      "tag": "Produção",
-      "data": "30/10/2026",
-      "titulo_en": "Usina Santa Terezinha purchases inputs from Syngenta with CBios"
-    },
-    {
-      "titulo": "Governo inicia em janeiro testes para mistura de 35% de etanol na gasolina",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/governo-inicia-em-janeiro-testes-para-mistura-de-35-de-etanol-na-gasolina",
+      "url": "https://www.novacana.com/noticias/enzimas-do-intestino-do-peixe-boi-podem-produzir-biocombustiveis-e-bioinsumos-diz-estudo",
       "tag": "Etanol",
-      "data": "30/10/2026",
-      "titulo_en": "Government starts in January tests for blending 35% ethanol in gasoline"
+      "data": "03/11/2026",
+      "titulo_en": "Enzymes from the gut of manatees can produce biofuels and bioinputs, says study"
     },
     {
-      "titulo": "MME estima que biocombustíveis terão investimentos de R$ 142 bilhões até 2036",
+      "titulo": "Asplana evita queda no preço do ATR em três usinas de Alagoas: “Queremos mais”",
       "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/mme-estima-que-biocombustiveis-terao-investimentos-de-r-142-bilhoes-ate-2036",
-      "tag": "Etanol",
-      "data": "30/10/2026",
-      "titulo_en": "Mme estimates that biofuels will have investments of $142 billion by 2036"
-    },
-    {
-      "titulo": "CNI alerta que produção de biocombustíveis pode não acompanhar metas",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/cni-alerta-que-producao-de-biocombustiveis-pode-nao-acompanhar-metas",
+      "url": "https://www.novacana.com/noticias/asplana-evita-queda-no-preco-do-atr-em-tres-usinas-de-alagoas-queremos-mais",
       "tag": "Produção",
-      "data": "30/10/2026",
-      "titulo_en": "CNI warns that biofuel production may not keep up with targets"
+      "data": "03/11/2026",
+      "titulo_en": "Asplana avoids a drop in the price of ATR in three plants in Alagoas: \"We want more\""
     },
     {
-      "titulo": "Governo vê R$ 64,6 bi em receita extra de petróleo e liberou R$ 39 bi em subsídios",
+      "titulo": "Coruripe amplia moagem em 9,4%, mas Ebitda recua 27% no acumulado de 2026/27",
       "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/governo-ve-r-64-6-bi-em-receita-extra-de-petroleo-e-liberou-r-39-bi-em-subsidios",
-      "tag": "Brent",
-      "data": "30/10/2026",
-      "titulo_en": "Government sees $64.6 billion in extra oil revenue and released $39 billion in subsidies"
+      "url": "https://www.novacana.com/noticias/coruripe-amplia-moagem-em-9-4-mas-ebitda-recua-27-no-acumulado-de-2026-27",
+      "tag": "Produção",
+      "data": "03/11/2026",
+      "titulo_en": "Coruripe increases milling by 9.4%, but EBITDA decreases 27% in the accumulated of 2026/27"
     },
     {
-      "titulo": "BP quadriplica lucro líquido no 3º trimestre com aumento do preço do petróleo",
+      "titulo": "Unicamp cria açúcar de cana que reduz pela metade o pico de glicose em teste com humanos",
       "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/bp-quadriplica-lucro-liquido-no-3-trimestre-com-aumento-do-preco-do-petroleo",
-      "tag": "Brent",
-      "data": "30/10/2026",
-      "titulo_en": "BP quadruples net income in Q3 as oil price rises"
+      "url": "https://www.novacana.com/noticias/unicamp-cria-acucar-de-cana-que-reduz-pela-metade-o-pico-de-glicose-em-teste-com-humanos",
+      "tag": "Etanol",
+      "data": "03/11/2026",
+      "titulo_en": "Unicamp creates cane sugar that halves the glucose peak in human testing"
     },
     {
-      "titulo": "Petróleo fecha em baixa com avanço das negociações entre EUA e Irã",
+      "titulo": "Etanol hidratado sobe 2,68% e anidro avança 0,14% na semana nas usinas paulistas",
       "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/petroleo-fecha-em-baixa-com-avanco-das-negociacoes-entre-eua-e-ira",
-      "tag": "Brent",
-      "data": "30/10/2026",
-      "titulo_en": "Oil closes lower with progress in negotiations between the US and Iran"
+      "url": "https://www.novacana.com/noticias/etanol-hidratado-sobe-2-68-e-anidro-avanca-0-14-na-semana-nas-usinas-paulistas",
+      "tag": "Etanol",
+      "data": "03/11/2026",
+      "titulo_en": "Hydrated ethanol rises 2.68% and anhydrous advances 0.14% in the week in São Paulo mills"
+    },
+    {
+      "titulo": "Orplana defende políticas públicas para produtores independentes de cana de todo o país",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/orplana-defende-politicas-publicas-para-produtores-independentes-de-cana-de-todo-o-pais",
+      "tag": "Etanol",
+      "data": "03/11/2026",
+      "titulo_en": "Orplana advocates public policies for independent sugarcane producers across the country"
+    },
+    {
+      "titulo": "Custo dos juros da dívida rural sobe 191% em quatro anos, mostra Cepea",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/custo-dos-juros-da-divida-rural-sobe-191-em-quatro-anos-mostra-cepea",
+      "tag": "Etanol",
+      "data": "03/11/2026",
+      "titulo_en": "Rural debt interest cost rises 191% in four years, Cepea shows"
     }
   ]
 }
