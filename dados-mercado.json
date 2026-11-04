@@ -1,17 +1,17 @@
 {
-  "atualizado": "2026-11-03T18:07:54.159760",
+  "atualizado": "2026-11-04T18:16:41.439343",
   "semana": "02/11 – 08/11/2026",
   "nacional": {
-    "paridade": 69.7,
-    "etanol_medio": 4.66,
-    "gasolina_media": 6.69,
-    "municipios_vantajosos": 11,
-    "municipios_pesquisados": 25
+    "paridade": 70.5,
+    "etanol_medio": 4.68,
+    "gasolina_media": 6.64,
+    "municipios_vantajosos": 12,
+    "municipios_pesquisados": 27
   },
   "brent": {
-    "valor": 103.44,
-    "variacao": -1.27,
-    "data": "03/11/2026",
+    "valor": 94.87,
+    "variacao": -8.43,
+    "data": "04/11/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
@@ -44,62 +44,68 @@
   ],
   "historico_brent": [
     {
-      "data": "14/09",
-      "valor": 108.75
+      "data": "15/09",
+      "valor": 105.83
     },
     {
-      "data": "21/09",
-      "valor": 99.25
+      "data": "22/09",
+      "valor": 103.08
     },
     {
-      "data": "28/09",
-      "valor": 102.59
+      "data": "29/09",
+      "valor": 103.53
     },
     {
-      "data": "05/10",
-      "valor": 100.58
+      "data": "06/10",
+      "valor": 100.2
     },
     {
-      "data": "12/10",
-      "valor": 105.69
+      "data": "13/10",
+      "valor": 106.06
     },
     {
-      "data": "19/10",
-      "valor": 108.79
+      "data": "20/10",
+      "valor": 108.82
     },
     {
-      "data": "26/10",
-      "valor": 113.88
+      "data": "27/10",
+      "valor": 115.32
     },
     {
-      "data": "03/11",
-      "valor": 103.44
+      "data": "04/11",
+      "valor": 94.87
     }
   ],
   "estados": [
     {
       "uf": "AC",
       "nome": "Acre",
-      "etanol": 4.84,
+      "etanol": 4.83,
       "gasolina": 7.26
     },
     {
       "uf": "AL",
       "nome": "Alagoas",
-      "etanol": 4.97,
-      "gasolina": 6.67
+      "etanol": 4.92,
+      "gasolina": 6.61
+    },
+    {
+      "uf": "AP",
+      "nome": "Amapá",
+      "etanol": 5.49,
+      "gasolina": 6.34
     },
     {
       "uf": "AM",
       "nome": "Amazonas",
-      "etanol": 4.96,
-      "gasolina": 6.97
+      "etanol": 4.85,
+      "gasolina": 6.91
     },
     {
       "uf": "BA",
       "nome": "Bahia",
-      "etanol": 4.48,
-      "gasolina": 6.57
+      "etanol": 4.46,
+      "gasolina": 6.46
     },
     {
       "uf": "CE",
@@ -110,129 +116,198 @@
     {
       "uf": "DF",
       "nome": "Distrito Federal",
-      "etanol": 4.3,
-      "gasolina": 6.39
+      "etanol": 4.33,
+      "gasolina": 6.38
     },
     {
       "uf": "ES",
       "nome": "Espírito Santo",
-      "etanol": 4.66,
-      "gasolina": 6.24
+      "etanol": 4.65,
+      "gasolina": 6.2
     },
     {
       "uf": "GO",
       "nome": "Goiás",
-      "etanol": 3.83,
-      "gasolina": 6.49
+      "etanol": 3.72,
+      "gasolina": 6.23
     },
     {
       "uf": "MA",
       "nome": "Maranhão",
-      "etanol": 4.82,
-      "gasolina": 6.43
+      "etanol": 4.72,
+      "gasolina": 6.31
     },
     {
       "uf": "MT",
       "nome": "Mato Grosso",
-      "etanol": 4.15,
+      "etanol": 4.16,
       "gasolina": 6.93
     },
     {
       "uf": "MS",
       "nome": "Mato Grosso do Sul",
-      "etanol": 3.93,
-      "gasolina": 6.25
+      "etanol": 3.94,
+      "gasolina": 6.23
     },
     {
       "uf": "MG",
       "nome": "Minas Gerais",
-      "etanol": 4.39,
-      "gasolina": 6.42
+      "etanol": 4.46,
+      "gasolina": 6.48
     },
     {
       "uf": "PA",
       "nome": "Pará",
-      "etanol": 4.36,
-      "gasolina": 6.39
+      "etanol": 4.34,
+      "gasolina": 6.49
     },
     {
       "uf": "PB",
       "nome": "Paraíba",
-      "etanol": 4.46,
-      "gasolina": 6.24
+      "etanol": 4.44,
+      "gasolina": 6.23
     },
     {
       "uf": "PR",
       "nome": "Paraná",
-      "etanol": 4.63,
-      "gasolina": 6.76
+      "etanol": 4.62,
+      "gasolina": 6.74
     },
     {
       "uf": "PE",
       "nome": "Pernambuco",
-      "etanol": 4.95,
-      "gasolina": 6.96
+      "etanol": 4.84,
+      "gasolina": 6.86
     },
     {
       "uf": "PI",
       "nome": "Piauí",
-      "etanol": 4.81,
-      "gasolina": 6.78
+      "etanol": 4.82,
+      "gasolina": 6.73
     },
     {
       "uf": "RJ",
       "nome": "Rio de Janeiro",
-      "etanol": 4.73,
+      "etanol": 4.78,
       "gasolina": 6.51
     },
     {
       "uf": "RN",
       "nome": "Rio Grande do Norte",
-      "etanol": 5.23,
-      "gasolina": 6.82
+      "etanol": 5.26,
+      "gasolina": 6.72
     },
     {
       "uf": "RS",
       "nome": "Rio Grande do Sul",
-      "etanol": 4.45,
-      "gasolina": 5.91
+      "etanol": 4.5,
+      "gasolina": 5.89
     },
     {
       "uf": "RO",
       "nome": "Rondônia",
       "etanol": 5.05,
-      "gasolina": 7.49
+      "gasolina": 7.51
     },
     {
       "uf": "RR",
       "nome": "Roraima",
       "etanol": 5.38,
-      "gasolina": 7.56
+      "gasolina": 7.57
+    },
+    {
+      "uf": "SC",
+      "nome": "Santa Catarina",
+      "etanol": 4.5,
+      "gasolina": 6.46
     },
     {
       "uf": "SP",
       "nome": "São Paulo",
-      "etanol": 3.94,
-      "gasolina": 6.33
+      "etanol": 3.99,
+      "gasolina": 6.36
     },
     {
       "uf": "SE",
       "nome": "Sergipe",
-      "etanol": 5.25,
-      "gasolina": 6.94
+      "etanol": 5.19,
+      "gasolina": 6.95
     },
     {
       "uf": "TO",
       "nome": "Tocantins",
-      "etanol": 5.09,
-      "gasolina": 7.07
+      "etanol": 5.07,
+      "gasolina": 7.01
     }
   ],
   "diagnostico_anp": {
-    "ed44": "download falhou: HTTP Error 404: Not Found",
-    "ed43": "ok, 18291 chars; sem preço: ['SC']; trecho Macapá: Macapá 6,30 | Macapá | R$ 6,30 | Macapá - | Macapá 7,16 | Macapá 127,46"
+    "ed44": "ok, 18553 chars; sem preço: []; trecho Macapá: Macapá 6,34 | Macapá | R$ 6,34 | Macapá 5,49 | Macapá | Macapá 7,28 | Macapá | R$ 7,28 | Macapá 127,46"
   },
   "noticias": [
+    {
+      "titulo": "Consumo de hidratado tem recorde no acumulado, mas participação de mercado recua ante agosto",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/consumo-de-hidratado-atinge-recorde-historico-mas-participacao-de-mercado-recua",
+      "tag": "Etanol",
+      "data": "04/11/2026",
+      "titulo_en": "Hydrated consumption has a record in the accumulated, but market share declines compared to August"
+    },
+    {
+      "titulo": "Preços nos postos: Etanol volta a subir nos postos, enquanto gasolina cai",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/precos-nos-postos-etanol-volta-a-subir-nos-postos-enquanto-gasolina-cai",
+      "tag": "Etanol",
+      "data": "04/11/2026",
+      "titulo_en": "Prices at stations: Ethanol rises again at stations, while gasoline falls"
+    },
+    {
+      "titulo": "[Cepea] Dólar reforça movimento de alta no preço do açúcar cristal",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/cepea-dolar-reforca-movimento-de-alta-no-preco-do-acucar-cristal",
+      "tag": "Etanol",
+      "data": "04/11/2026",
+      "titulo_en": "[Cepea] Dollar reinforces upward movement in the price of crystal sugar"
+    },
+    {
+      "titulo": "Usina São Manoel obtém enquadramento no Reidi para investir em biometano",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/usina-sao-manoel-obtem-enquadramento-no-reidi-para-investir-em-biometano",
+      "tag": "Produção",
+      "data": "04/11/2026",
+      "titulo_en": "São Manoel plant obtains qualification in Reidi to invest in biomethane"
+    },
+    {
+      "titulo": "Brasilcom pede corte de 15% nas metas anuais do RenovaBio ao governo",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/brasilcom-pede-corte-de-15-nas-metas-do-renovabio-ao-governo",
+      "tag": "RenovaBio",
+      "data": "04/11/2026",
+      "titulo_en": "Brasilcom asks the government to cut RenovaBio's annual goals by 15%"
+    },
+    {
+      "titulo": "ANP multa distribuidoras em mais de R$ 700 milhões por elevação abusiva de preços",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/anp-multa-distribuidoras-em-mais-de-r-700-milhoes-por-elevacao-abusiva-de-precos",
+      "tag": "ANP",
+      "data": "04/11/2026",
+      "titulo_en": "ANP distributors fine of more than R$700 million for abusive price increase"
+    },
+    {
+      "titulo": "Brasil entrega roteiros para países se afastarem de combustíveis fósseis",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/brasil-entrega-roteiros-para-paises-se-afastarem-de-combustiveis-fosseis",
+      "tag": "Etanol",
+      "data": "04/11/2026",
+      "titulo_en": "Brazil delivers roadmaps for countries to move away from fossil fuels"
+    },
+    {
+      "titulo": "Chuvas atrasam colheita de cana e ameaçam rentabilidade da BrasilAgro em São Paulo",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/chuvas-atrasam-colheita-de-cana-e-ameacam-rentabilidade-da-brasilagro-em-sao-paulo",
+      "tag": "Etanol",
+      "data": "04/11/2026",
+      "titulo_en": "Rains delay sugarcane harvest and threaten BrasilAgro's profitability in São Paulo"
+    },
     {
       "titulo": "Etanol acumula alta de 38% em três meses com atraso na safra de cana",
       "fonte": "NovaCana",
@@ -248,70 +323,6 @@
       "tag": "Produção",
       "data": "03/11/2026",
       "titulo_en": "Quota for sugar exports to the US falls 35.9%, but mills have different impacts"
-    },
-    {
-      "titulo": "ANP enviará ao Cade processos contra distribuidoras por elevação abusiva de preços",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/anp-enviara-ao-cade-processos-contra-distribuidoras-por-elevacao-abusiva-de-precos",
-      "tag": "ANP",
-      "data": "03/11/2026",
-      "titulo_en": "ANP will send to Cade lawsuits against distributors for abusive price increase"
-    },
-    {
-      "titulo": "Enzimas do intestino do peixe-boi podem produzir biocombustíveis e bioinsumos, diz estudo",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/enzimas-do-intestino-do-peixe-boi-podem-produzir-biocombustiveis-e-bioinsumos-diz-estudo",
-      "tag": "Etanol",
-      "data": "03/11/2026",
-      "titulo_en": "Enzymes from the gut of manatees can produce biofuels and bioinputs, says study"
-    },
-    {
-      "titulo": "Asplana evita queda no preço do ATR em três usinas de Alagoas: “Queremos mais”",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/asplana-evita-queda-no-preco-do-atr-em-tres-usinas-de-alagoas-queremos-mais",
-      "tag": "Produção",
-      "data": "03/11/2026",
-      "titulo_en": "Asplana avoids a drop in the price of ATR in three plants in Alagoas: \"We want more\""
-    },
-    {
-      "titulo": "Coruripe amplia moagem em 9,4%, mas Ebitda recua 27% no acumulado de 2026/27",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/coruripe-amplia-moagem-em-9-4-mas-ebitda-recua-27-no-acumulado-de-2026-27",
-      "tag": "Produção",
-      "data": "03/11/2026",
-      "titulo_en": "Coruripe increases milling by 9.4%, but EBITDA decreases 27% in the accumulated of 2026/27"
-    },
-    {
-      "titulo": "Unicamp cria açúcar de cana que reduz pela metade o pico de glicose em teste com humanos",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/unicamp-cria-acucar-de-cana-que-reduz-pela-metade-o-pico-de-glicose-em-teste-com-humanos",
-      "tag": "Etanol",
-      "data": "03/11/2026",
-      "titulo_en": "Unicamp creates cane sugar that halves the glucose peak in human testing"
-    },
-    {
-      "titulo": "Etanol hidratado sobe 2,68% e anidro avança 0,14% na semana nas usinas paulistas",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/etanol-hidratado-sobe-2-68-e-anidro-avanca-0-14-na-semana-nas-usinas-paulistas",
-      "tag": "Etanol",
-      "data": "03/11/2026",
-      "titulo_en": "Hydrated ethanol rises 2.68% and anhydrous advances 0.14% in the week in São Paulo mills"
-    },
-    {
-      "titulo": "Orplana defende políticas públicas para produtores independentes de cana de todo o país",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/orplana-defende-politicas-publicas-para-produtores-independentes-de-cana-de-todo-o-pais",
-      "tag": "Etanol",
-      "data": "03/11/2026",
-      "titulo_en": "Orplana advocates public policies for independent sugarcane producers across the country"
-    },
-    {
-      "titulo": "Custo dos juros da dívida rural sobe 191% em quatro anos, mostra Cepea",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/custo-dos-juros-da-divida-rural-sobe-191-em-quatro-anos-mostra-cepea",
-      "tag": "Etanol",
-      "data": "03/11/2026",
-      "titulo_en": "Rural debt interest cost rises 191% in four years, Cepea shows"
     }
   ]
 }
