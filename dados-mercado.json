@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-04T18:16:41.439343",
+  "atualizado": "2026-11-05T18:22:39.390852",
   "semana": "02/11 – 08/11/2026",
   "nacional": {
     "paridade": 70.5,
@@ -9,9 +9,9 @@
     "municipios_pesquisados": 27
   },
   "brent": {
-    "valor": 94.87,
-    "variacao": -8.43,
-    "data": "04/11/2026",
+    "valor": 97.75,
+    "variacao": 3.31,
+    "data": "05/11/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
@@ -44,36 +44,36 @@
   ],
   "historico_brent": [
     {
-      "data": "15/09",
-      "valor": 105.83
+      "data": "16/09",
+      "valor": 104.82
     },
     {
-      "data": "22/09",
-      "valor": 103.08
+      "data": "23/09",
+      "valor": 106.6
     },
     {
-      "data": "29/09",
-      "valor": 103.53
+      "data": "30/09",
+      "valor": 102.31
     },
     {
-      "data": "06/10",
-      "valor": 100.2
+      "data": "07/10",
+      "valor": 104.28
     },
     {
-      "data": "13/10",
-      "valor": 106.06
+      "data": "14/10",
+      "valor": 105.92
     },
     {
-      "data": "20/10",
-      "valor": 108.82
+      "data": "21/10",
+      "valor": 113.17
     },
     {
-      "data": "27/10",
-      "valor": 115.32
+      "data": "28/10",
+      "valor": 114.88
     },
     {
-      "data": "04/11",
-      "valor": 94.87
+      "data": "05/11",
+      "valor": 97.75
     }
   ],
   "estados": [
@@ -245,6 +245,54 @@
   },
   "noticias": [
     {
+      "titulo": "Tradings estimam entre 650 e 660 mi t de cana para 2027/28; cana bisada pode ser problema",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/tradings-estimam-entre-650-e-660-mi-t-de-cana-para-2027-28-cana-bisada-pode-ser-problema",
+      "tag": "Etanol",
+      "data": "05/11/2026",
+      "titulo_en": "Tradings estimate between 650 and 660 million tons of sugarcane for 2027/28; bisated sugarcane can be a problem"
+    },
+    {
+      "titulo": "Safra de cana 2027/28 será mais açucareira que a atual no Centro-Sul, projeta Rabobank",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/producao-de-acucar-do-centro-sul-pode-crescer-13-9-em-2027-28-preve-rabobank",
+      "tag": "Produção",
+      "data": "05/11/2026",
+      "titulo_en": "Sugarcane crop 2027/28 will be more sugary than the current one in the Center-South, Rabobank projects"
+    },
+    {
+      "titulo": "Índia prioriza alimentação enquanto El Niño prejudica ambições relacionadas ao etanol",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/india-prioriza-alimentacao-enquanto-el-nino-prejudica-ambicoes-relacionadas-ao-etanol",
+      "tag": "Etanol",
+      "data": "05/11/2026",
+      "titulo_en": "India prioritizes food while El Niño undermines ethanol-related ambitions"
+    },
+    {
+      "titulo": "Estoques de petróleo nos EUA caem em 865 mil barris, mostra DoE",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/estoques-de-petroleo-nos-eua-caem-em-865-mil-barris-mostra-doe",
+      "tag": "Brent",
+      "data": "05/11/2026",
+      "titulo_en": "U.S. oil inventories fall by 865,000 barrels, DoE shows"
+    },
+    {
+      "titulo": "Petróleo cai mais de 8% após resultados das eleições nos EUA",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/petroleo-cai-mais-de-8-apos-resultados-das-eleicoes-nos-eua",
+      "tag": "Brent",
+      "data": "05/11/2026",
+      "titulo_en": "Oil Falls More Than 8% After US Election Results"
+    },
+    {
+      "titulo": "Brasil terá sete novas usinas de etanol de milho em 2027 e oferta recorde deve baixar preço",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/brasil-tera-sete-novas-usinas-de-etanol-de-milho-em-2027-e-oferta-recorde-deve-baixar-preco",
+      "tag": "Etanol",
+      "data": "05/11/2026",
+      "titulo_en": "Brazil will have seven new corn ethanol plants in 2027 and a record offer should lower the price"
+    },
+    {
       "titulo": "Consumo de hidratado tem recorde no acumulado, mas participação de mercado recua ante agosto",
       "fonte": "NovaCana",
       "url": "https://www.novacana.com/noticias/consumo-de-hidratado-atinge-recorde-historico-mas-participacao-de-mercado-recua",
@@ -275,54 +323,6 @@
       "tag": "Produção",
       "data": "04/11/2026",
       "titulo_en": "São Manoel plant obtains qualification in Reidi to invest in biomethane"
-    },
-    {
-      "titulo": "Brasilcom pede corte de 15% nas metas anuais do RenovaBio ao governo",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/brasilcom-pede-corte-de-15-nas-metas-do-renovabio-ao-governo",
-      "tag": "RenovaBio",
-      "data": "04/11/2026",
-      "titulo_en": "Brasilcom asks the government to cut RenovaBio's annual goals by 15%"
-    },
-    {
-      "titulo": "ANP multa distribuidoras em mais de R$ 700 milhões por elevação abusiva de preços",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/anp-multa-distribuidoras-em-mais-de-r-700-milhoes-por-elevacao-abusiva-de-precos",
-      "tag": "ANP",
-      "data": "04/11/2026",
-      "titulo_en": "ANP distributors fine of more than R$700 million for abusive price increase"
-    },
-    {
-      "titulo": "Brasil entrega roteiros para países se afastarem de combustíveis fósseis",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/brasil-entrega-roteiros-para-paises-se-afastarem-de-combustiveis-fosseis",
-      "tag": "Etanol",
-      "data": "04/11/2026",
-      "titulo_en": "Brazil delivers roadmaps for countries to move away from fossil fuels"
-    },
-    {
-      "titulo": "Chuvas atrasam colheita de cana e ameaçam rentabilidade da BrasilAgro em São Paulo",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/chuvas-atrasam-colheita-de-cana-e-ameacam-rentabilidade-da-brasilagro-em-sao-paulo",
-      "tag": "Etanol",
-      "data": "04/11/2026",
-      "titulo_en": "Rains delay sugarcane harvest and threaten BrasilAgro's profitability in São Paulo"
-    },
-    {
-      "titulo": "Etanol acumula alta de 38% em três meses com atraso na safra de cana",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/etanol-acumula-alta-de-38-em-tres-meses-com-atraso-na-safra-de-cana",
-      "tag": "Etanol",
-      "data": "03/11/2026",
-      "titulo_en": "Ethanol accumulates an increase of 38% in three months with a delay in the sugarcane harvest"
-    },
-    {
-      "titulo": "Cota para exportação de açúcar aos EUA recua 35,9%, mas usinas têm diferentes impactos",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/cota-para-exportacao-de-acucar-aos-eua-recua-35-9-mas-usinas-tem-diferentes-impactos",
-      "tag": "Produção",
-      "data": "03/11/2026",
-      "titulo_en": "Quota for sugar exports to the US falls 35.9%, but mills have different impacts"
     }
   ]
 }
