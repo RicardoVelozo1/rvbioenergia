@@ -1,17 +1,17 @@
 {
-  "atualizado": "2026-11-05T18:22:39.390852",
+  "atualizado": "2026-11-06T17:46:52.708863",
   "semana": "02/11 – 08/11/2026",
   "nacional": {
-    "paridade": 70.5,
-    "etanol_medio": 4.68,
-    "gasolina_media": 6.64,
+    "paridade": 69.7,
+    "etanol_medio": 4.62,
+    "gasolina_media": 6.63,
     "municipios_vantajosos": 12,
-    "municipios_pesquisados": 27
+    "municipios_pesquisados": 24
   },
   "brent": {
-    "valor": 97.75,
-    "variacao": 3.31,
-    "data": "05/11/2026",
+    "valor": 97.56,
+    "variacao": -0.74,
+    "data": "06/11/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
@@ -44,36 +44,36 @@
   ],
   "historico_brent": [
     {
-      "data": "16/09",
-      "valor": 104.82
+      "data": "17/09",
+      "valor": 103.87
     },
     {
-      "data": "23/09",
-      "valor": 106.6
+      "data": "24/09",
+      "valor": 104.32
     },
     {
-      "data": "30/09",
-      "valor": 102.31
+      "data": "01/10",
+      "valor": 102.25
     },
     {
-      "data": "07/10",
-      "valor": 104.28
+      "data": "08/10",
+      "valor": 104.72
     },
     {
-      "data": "14/10",
-      "valor": 105.92
+      "data": "15/10",
+      "valor": 109.86
     },
     {
-      "data": "21/10",
-      "valor": 113.17
+      "data": "22/10",
+      "valor": 116.72
     },
     {
-      "data": "28/10",
-      "valor": 114.88
+      "data": "29/10",
+      "valor": 117.64
     },
     {
-      "data": "05/11",
-      "valor": 97.75
+      "data": "06/11",
+      "valor": 97.56
     }
   ],
   "estados": [
@@ -90,28 +90,10 @@
       "gasolina": 6.61
     },
     {
-      "uf": "AP",
-      "nome": "Amapá",
-      "etanol": 5.49,
-      "gasolina": 6.34
-    },
-    {
-      "uf": "AM",
-      "nome": "Amazonas",
-      "etanol": 4.85,
-      "gasolina": 6.91
-    },
-    {
       "uf": "BA",
       "nome": "Bahia",
       "etanol": 4.46,
       "gasolina": 6.46
-    },
-    {
-      "uf": "CE",
-      "nome": "Ceará",
-      "etanol": 4.93,
-      "gasolina": 6.98
     },
     {
       "uf": "DF",
@@ -245,84 +227,84 @@
   },
   "noticias": [
     {
+      "titulo": "Combustíveis estariam duas vezes mais caros sem ações do governo",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/combustiveis-estariam-duas-vezes-mais-caros-sem-acoes-do-governo",
+      "tag": "Etanol",
+      "data": "06/11/2026",
+      "titulo_en": "Fuels would be twice as expensive without government action"
+    },
+    {
+      "titulo": "Comissão aprova projeto de incentivo à produção e ao uso do etanol",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/comissao-aprova-projeto-de-incentivo-a-producao-e-ao-uso-do-etanol",
+      "tag": "Etanol",
+      "data": "06/11/2026",
+      "titulo_en": "Commission approves project to encourage the production and use of ethanol"
+    },
+    {
+      "titulo": "BFA reúne Petrobras, Vale e biorrefinarias para discutir novo momento do etanol",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/biofuels-academy-reune-petrobras-vale-e-biorrefinarias-para-discutir-novo-momento-do-etanol",
+      "tag": "Etanol",
+      "data": "06/11/2026",
+      "titulo_en": "BFA brings together Petrobras, Vale and biorefineries to discuss new ethanol moment"
+    },
+    {
+      "titulo": "CNPE analisa mudança de responsabilidade sobre mistura de biocombustíveis",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/cnpe-analisa-mudanca-de-responsabilidade-sobre-mistura-de-biocombustiveis",
+      "tag": "Etanol",
+      "data": "06/11/2026",
+      "titulo_en": "CNPE analyzes change of responsibility on biofuel blending"
+    },
+    {
+      "titulo": "Governo prorroga imposto de 12% sobre exportação de petróleo e subsídio ao diesel",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/governo-prorroga-imposto-de-12-sobre-exportacao-de-petroleo-e-subsidio-ao-diesel",
+      "tag": "Brent",
+      "data": "06/11/2026",
+      "titulo_en": "Government extends 12% tax on oil exports and diesel subsidy"
+    },
+    {
+      "titulo": "Raio atinge tanque de usina em Ourinhos (SP) e provoca princípio de incêndio",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/raio-atinge-tanque-de-usina-em-ourinhos-sp-e-provoca-principio-de-incendio",
+      "tag": "Produção",
+      "data": "06/11/2026",
+      "titulo_en": "Lightning strikes plant tank in Ourinhos (SP) and causes fire outbreak"
+    },
+    {
+      "titulo": "Cofco assume as operações de usinas recém-compradas da Bunge",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/cofco-assume-as-operacoes-de-usinas-recem-compradas-da-bunge",
+      "tag": "Produção",
+      "data": "06/11/2026",
+      "titulo_en": "Cofco takes over Bunge's newly purchased power plant operations"
+    },
+    {
+      "titulo": "Orplana defende flexibilização da jornada no setor sucroenergético",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/orplana-defende-flexibilizacao-da-jornada-no-setor-sucroenergetico",
+      "tag": "Etanol",
+      "data": "06/11/2026",
+      "titulo_en": "Orplana advocates flexibility of the journey in the sugar-energy sector"
+    },
+    {
+      "titulo": "Com fim do mandato de Fernando Moura, Amanda Gondim assume diretoria da ANP",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/com-o-fim-do-mandato-de-fernando-moura-amanda-gondim-assume-diretoria-da-anp",
+      "tag": "ANP",
+      "data": "06/11/2026",
+      "titulo_en": "At the end of Fernando Moura's term, Amanda Gondim takes over the ANP's board of directors"
+    },
+    {
       "titulo": "Tradings estimam entre 650 e 660 mi t de cana para 2027/28; cana bisada pode ser problema",
       "fonte": "NovaCana",
       "url": "https://www.novacana.com/noticias/tradings-estimam-entre-650-e-660-mi-t-de-cana-para-2027-28-cana-bisada-pode-ser-problema",
       "tag": "Etanol",
       "data": "05/11/2026",
       "titulo_en": "Tradings estimate between 650 and 660 million tons of sugarcane for 2027/28; bisated sugarcane can be a problem"
-    },
-    {
-      "titulo": "Safra de cana 2027/28 será mais açucareira que a atual no Centro-Sul, projeta Rabobank",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/producao-de-acucar-do-centro-sul-pode-crescer-13-9-em-2027-28-preve-rabobank",
-      "tag": "Produção",
-      "data": "05/11/2026",
-      "titulo_en": "Sugarcane crop 2027/28 will be more sugary than the current one in the Center-South, Rabobank projects"
-    },
-    {
-      "titulo": "Índia prioriza alimentação enquanto El Niño prejudica ambições relacionadas ao etanol",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/india-prioriza-alimentacao-enquanto-el-nino-prejudica-ambicoes-relacionadas-ao-etanol",
-      "tag": "Etanol",
-      "data": "05/11/2026",
-      "titulo_en": "India prioritizes food while El Niño undermines ethanol-related ambitions"
-    },
-    {
-      "titulo": "Estoques de petróleo nos EUA caem em 865 mil barris, mostra DoE",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/estoques-de-petroleo-nos-eua-caem-em-865-mil-barris-mostra-doe",
-      "tag": "Brent",
-      "data": "05/11/2026",
-      "titulo_en": "U.S. oil inventories fall by 865,000 barrels, DoE shows"
-    },
-    {
-      "titulo": "Petróleo cai mais de 8% após resultados das eleições nos EUA",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/petroleo-cai-mais-de-8-apos-resultados-das-eleicoes-nos-eua",
-      "tag": "Brent",
-      "data": "05/11/2026",
-      "titulo_en": "Oil Falls More Than 8% After US Election Results"
-    },
-    {
-      "titulo": "Brasil terá sete novas usinas de etanol de milho em 2027 e oferta recorde deve baixar preço",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/brasil-tera-sete-novas-usinas-de-etanol-de-milho-em-2027-e-oferta-recorde-deve-baixar-preco",
-      "tag": "Etanol",
-      "data": "05/11/2026",
-      "titulo_en": "Brazil will have seven new corn ethanol plants in 2027 and a record offer should lower the price"
-    },
-    {
-      "titulo": "Consumo de hidratado tem recorde no acumulado, mas participação de mercado recua ante agosto",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/consumo-de-hidratado-atinge-recorde-historico-mas-participacao-de-mercado-recua",
-      "tag": "Etanol",
-      "data": "04/11/2026",
-      "titulo_en": "Hydrated consumption has a record in the accumulated, but market share declines compared to August"
-    },
-    {
-      "titulo": "Preços nos postos: Etanol volta a subir nos postos, enquanto gasolina cai",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/precos-nos-postos-etanol-volta-a-subir-nos-postos-enquanto-gasolina-cai",
-      "tag": "Etanol",
-      "data": "04/11/2026",
-      "titulo_en": "Prices at stations: Ethanol rises again at stations, while gasoline falls"
-    },
-    {
-      "titulo": "[Cepea] Dólar reforça movimento de alta no preço do açúcar cristal",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/cepea-dolar-reforca-movimento-de-alta-no-preco-do-acucar-cristal",
-      "tag": "Etanol",
-      "data": "04/11/2026",
-      "titulo_en": "[Cepea] Dollar reinforces upward movement in the price of crystal sugar"
-    },
-    {
-      "titulo": "Usina São Manoel obtém enquadramento no Reidi para investir em biometano",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/usina-sao-manoel-obtem-enquadramento-no-reidi-para-investir-em-biometano",
-      "tag": "Produção",
-      "data": "04/11/2026",
-      "titulo_en": "São Manoel plant obtains qualification in Reidi to invest in biomethane"
     }
   ]
 }
