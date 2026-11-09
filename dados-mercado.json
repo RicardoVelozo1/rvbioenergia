@@ -1,30 +1,26 @@
 {
-  "atualizado": "2026-11-06T17:46:52.708863",
-  "semana": "02/11 – 08/11/2026",
+  "atualizado": "2026-11-09T21:09:47.181914",
+  "semana": "09/11 – 15/11/2026",
   "nacional": {
-    "paridade": 69.7,
-    "etanol_medio": 4.62,
-    "gasolina_media": 6.63,
+    "paridade": 70.5,
+    "etanol_medio": 4.68,
+    "gasolina_media": 6.64,
     "municipios_vantajosos": 12,
-    "municipios_pesquisados": 24
+    "municipios_pesquisados": 27
   },
   "brent": {
-    "valor": 97.56,
-    "variacao": -0.74,
-    "data": "06/11/2026",
+    "valor": 92.67,
+    "variacao": -5.75,
+    "data": "09/11/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
-    "hidratado": 2.8135,
-    "hidratado_anterior": 2.74,
-    "anidro": 3.3997,
-    "anidro_anterior": 3.395
+    "hidratado": 2.8799,
+    "hidratado_anterior": 2.8135,
+    "anidro": 3.5831,
+    "anidro_anterior": 3.3997
   },
   "historico_hidratado": [
-    {
-      "data": "02/10",
-      "valor": 2.5639
-    },
     {
       "data": "09/10",
       "valor": 2.6374
@@ -40,40 +36,44 @@
     {
       "data": "30/10",
       "valor": 2.8135
+    },
+    {
+      "data": "06/11",
+      "valor": 2.8799
     }
   ],
   "historico_brent": [
     {
-      "data": "17/09",
-      "valor": 103.87
+      "data": "20/09",
+      "valor": 100.34
     },
     {
-      "data": "24/09",
-      "valor": 104.32
+      "data": "27/09",
+      "valor": 105.28
     },
     {
-      "data": "01/10",
-      "valor": 102.25
+      "data": "04/10",
+      "valor": 100.32
     },
     {
-      "data": "08/10",
-      "valor": 104.72
+      "data": "11/10",
+      "valor": 106.65
     },
     {
-      "data": "15/10",
-      "valor": 109.86
+      "data": "18/10",
+      "valor": 109.55
     },
     {
-      "data": "22/10",
-      "valor": 116.72
+      "data": "25/10",
+      "valor": 115.81
     },
     {
-      "data": "29/10",
-      "valor": 117.64
+      "data": "02/11",
+      "valor": 104.77
     },
     {
-      "data": "06/11",
-      "valor": 97.56
+      "data": "09/11",
+      "valor": 92.67
     }
   ],
   "estados": [
@@ -90,10 +90,28 @@
       "gasolina": 6.61
     },
     {
+      "uf": "AP",
+      "nome": "Amapá",
+      "etanol": 5.49,
+      "gasolina": 6.34
+    },
+    {
+      "uf": "AM",
+      "nome": "Amazonas",
+      "etanol": 4.85,
+      "gasolina": 6.91
+    },
+    {
       "uf": "BA",
       "nome": "Bahia",
       "etanol": 4.46,
       "gasolina": 6.46
+    },
+    {
+      "uf": "CE",
+      "nome": "Ceará",
+      "etanol": 4.93,
+      "gasolina": 6.98
     },
     {
       "uf": "DF",
@@ -223,9 +241,57 @@
     }
   ],
   "diagnostico_anp": {
-    "ed44": "ok, 18553 chars; sem preço: []; trecho Macapá: Macapá 6,34 | Macapá | R$ 6,34 | Macapá 5,49 | Macapá | Macapá 7,28 | Macapá | R$ 7,28 | Macapá 127,46"
+    "ed45": "ok, 18465 chars; sem preço: []; trecho Macapá: Macapá 6,31 | Macapá - | Macapá 7,14 | Macapá | R$ 7,14 | Macapá 127,46"
   },
   "noticias": [
+    {
+      "titulo": "Apesar de alta na alavancagem, liquidez ajuda usinas a enfrentarem ciclo de preços baixos",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/apesar-de-alta-na-alavancagem-liquidez-ajuda-usinas-a-enfrentarem-ciclo-de-precos-baixos",
+      "tag": "Produção",
+      "data": "09/11/2026",
+      "titulo_en": "Despite high leverage, liquidity helps mills cope with low price cycles"
+    },
+    {
+      "titulo": "Queda do Brent volta a acomodar preço do diesel da Petrobras à subvenção, diz Abicom",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/queda-do-brent-volta-a-acomodar-preco-do-diesel-da-petrobras-a-subvencao-diz-abicom",
+      "tag": "Brent",
+      "data": "09/11/2026",
+      "titulo_en": "Brent's fall again accommodates Petrobras' diesel price to the subsidy, says Abicom"
+    },
+    {
+      "titulo": "Lula: Vamos à COP31 com proposta para que mundo leve a sério redução de petróleo",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/lula-vamos-a-cop31-com-proposta-para-que-mundo-leve-a-serio-reducao-de-petroleo",
+      "tag": "Brent",
+      "data": "09/11/2026",
+      "titulo_en": "Lula: We are going to COP31 with a proposal for the world to take oil reduction seriously"
+    },
+    {
+      "titulo": "Mapa do caminho sobre combustíveis fósseis poderá ser levado para a COP32, diz Capobianco",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/mapa-do-caminho-sobre-combustiveis-fosseis-podera-ser-levado-para-a-cop32-diz-capobianco",
+      "tag": "Etanol",
+      "data": "09/11/2026",
+      "titulo_en": "Fossil fuel roadmap could be taken to COP32, says Capobianco"
+    },
+    {
+      "titulo": "Governo federal aprova 18 diretrizes para mapa sobre fim do uso de combustíveis fósseis",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/governo-federal-aprova-18-diretrizes-para-mapa-sobre-fim-do-uso-de-combustiveis-fosseis",
+      "tag": "Etanol",
+      "data": "09/11/2026",
+      "titulo_en": "Federal government approves 18 guidelines for mapa on end of fossil fuel use"
+    },
+    {
+      "titulo": "Governo prorroga imposto sobre exportação de petróleo até o fim do ano",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/governo-prorroga-imposto-sobre-exportacao-de-petroleo-ate-o-fim-do-ano",
+      "tag": "Brent",
+      "data": "09/11/2026",
+      "titulo_en": "Government extends tax on oil exports until the end of the year"
+    },
     {
       "titulo": "Combustíveis estariam duas vezes mais caros sem ações do governo",
       "fonte": "NovaCana",
@@ -257,54 +323,6 @@
       "tag": "Etanol",
       "data": "06/11/2026",
       "titulo_en": "CNPE analyzes change of responsibility on biofuel blending"
-    },
-    {
-      "titulo": "Governo prorroga imposto de 12% sobre exportação de petróleo e subsídio ao diesel",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/governo-prorroga-imposto-de-12-sobre-exportacao-de-petroleo-e-subsidio-ao-diesel",
-      "tag": "Brent",
-      "data": "06/11/2026",
-      "titulo_en": "Government extends 12% tax on oil exports and diesel subsidy"
-    },
-    {
-      "titulo": "Raio atinge tanque de usina em Ourinhos (SP) e provoca princípio de incêndio",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/raio-atinge-tanque-de-usina-em-ourinhos-sp-e-provoca-principio-de-incendio",
-      "tag": "Produção",
-      "data": "06/11/2026",
-      "titulo_en": "Lightning strikes plant tank in Ourinhos (SP) and causes fire outbreak"
-    },
-    {
-      "titulo": "Cofco assume as operações de usinas recém-compradas da Bunge",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/cofco-assume-as-operacoes-de-usinas-recem-compradas-da-bunge",
-      "tag": "Produção",
-      "data": "06/11/2026",
-      "titulo_en": "Cofco takes over Bunge's newly purchased power plant operations"
-    },
-    {
-      "titulo": "Orplana defende flexibilização da jornada no setor sucroenergético",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/orplana-defende-flexibilizacao-da-jornada-no-setor-sucroenergetico",
-      "tag": "Etanol",
-      "data": "06/11/2026",
-      "titulo_en": "Orplana advocates flexibility of the journey in the sugar-energy sector"
-    },
-    {
-      "titulo": "Com fim do mandato de Fernando Moura, Amanda Gondim assume diretoria da ANP",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/com-o-fim-do-mandato-de-fernando-moura-amanda-gondim-assume-diretoria-da-anp",
-      "tag": "ANP",
-      "data": "06/11/2026",
-      "titulo_en": "At the end of Fernando Moura's term, Amanda Gondim takes over the ANP's board of directors"
-    },
-    {
-      "titulo": "Tradings estimam entre 650 e 660 mi t de cana para 2027/28; cana bisada pode ser problema",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/tradings-estimam-entre-650-e-660-mi-t-de-cana-para-2027-28-cana-bisada-pode-ser-problema",
-      "tag": "Etanol",
-      "data": "05/11/2026",
-      "titulo_en": "Tradings estimate between 650 and 660 million tons of sugarcane for 2027/28; bisated sugarcane can be a problem"
     }
   ]
 }
