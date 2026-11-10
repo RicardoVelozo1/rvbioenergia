@@ -1,17 +1,17 @@
 {
-  "atualizado": "2026-11-09T21:09:47.181914",
+  "atualizado": "2026-11-10T18:21:54.652298",
   "semana": "09/11 – 15/11/2026",
   "nacional": {
-    "paridade": 70.5,
-    "etanol_medio": 4.68,
-    "gasolina_media": 6.64,
-    "municipios_vantajosos": 12,
-    "municipios_pesquisados": 27
+    "paridade": 69.5,
+    "etanol_medio": 4.58,
+    "gasolina_media": 6.59,
+    "municipios_vantajosos": 11,
+    "municipios_pesquisados": 24
   },
   "brent": {
-    "valor": 92.67,
-    "variacao": -5.75,
-    "data": "09/11/2026",
+    "valor": 91.92,
+    "variacao": -0.7,
+    "data": "10/11/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
@@ -44,68 +44,62 @@
   ],
   "historico_brent": [
     {
-      "data": "20/09",
-      "valor": 100.34
+      "data": "21/09",
+      "valor": 99.25
     },
     {
-      "data": "27/09",
-      "valor": 105.28
+      "data": "28/09",
+      "valor": 102.59
     },
     {
-      "data": "04/10",
-      "valor": 100.32
+      "data": "05/10",
+      "valor": 100.58
     },
     {
-      "data": "11/10",
-      "valor": 106.65
+      "data": "12/10",
+      "valor": 105.69
     },
     {
-      "data": "18/10",
-      "valor": 109.55
+      "data": "19/10",
+      "valor": 108.79
     },
     {
-      "data": "25/10",
-      "valor": 115.81
+      "data": "26/10",
+      "valor": 113.88
     },
     {
-      "data": "02/11",
-      "valor": 104.77
+      "data": "03/11",
+      "valor": 103.6
     },
     {
-      "data": "09/11",
-      "valor": 92.67
+      "data": "10/11",
+      "valor": 91.92
     }
   ],
   "estados": [
     {
       "uf": "AC",
       "nome": "Acre",
-      "etanol": 4.83,
-      "gasolina": 7.26
+      "etanol": 4.85,
+      "gasolina": 7.27
     },
     {
       "uf": "AL",
       "nome": "Alagoas",
       "etanol": 4.92,
-      "gasolina": 6.61
-    },
-    {
-      "uf": "AP",
-      "nome": "Amapá",
-      "etanol": 5.49,
-      "gasolina": 6.34
+      "gasolina": 6.6
     },
     {
       "uf": "AM",
       "nome": "Amazonas",
-      "etanol": 4.85,
-      "gasolina": 6.91
+      "etanol": 4.98,
+      "gasolina": 6.97
     },
     {
       "uf": "BA",
       "nome": "Bahia",
-      "etanol": 4.46,
-      "gasolina": 6.46
+      "etanol": 4.44,
+      "gasolina": 6.43
     },
     {
       "uf": "CE",
@@ -116,38 +110,38 @@
     {
       "uf": "DF",
       "nome": "Distrito Federal",
-      "etanol": 4.33,
-      "gasolina": 6.38
+      "etanol": 4.51,
+      "gasolina": 6.57
     },
     {
       "uf": "ES",
       "nome": "Espírito Santo",
-      "etanol": 4.65,
-      "gasolina": 6.2
+      "etanol": 4.62,
+      "gasolina": 6.15
     },
     {
       "uf": "GO",
       "nome": "Goiás",
-      "etanol": 3.72,
-      "gasolina": 6.23
+      "etanol": 3.66,
+      "gasolina": 6.15
     },
     {
       "uf": "MA",
       "nome": "Maranhão",
-      "etanol": 4.72,
-      "gasolina": 6.31
+      "etanol": 4.73,
+      "gasolina": 6.21
     },
     {
       "uf": "MT",
       "nome": "Mato Grosso",
-      "etanol": 4.16,
-      "gasolina": 6.93
+      "etanol": 4.1,
+      "gasolina": 6.91
     },
     {
       "uf": "MS",
       "nome": "Mato Grosso do Sul",
-      "etanol": 3.94,
-      "gasolina": 6.23
+      "etanol": 3.97,
+      "gasolina": 6.26
     },
     {
       "uf": "MG",
@@ -158,92 +152,128 @@
     {
       "uf": "PA",
       "nome": "Pará",
-      "etanol": 4.34,
-      "gasolina": 6.49
+      "etanol": 4.28,
+      "gasolina": 6.34
     },
     {
       "uf": "PB",
       "nome": "Paraíba",
-      "etanol": 4.44,
-      "gasolina": 6.23
+      "etanol": 4.38,
+      "gasolina": 6.21
     },
     {
       "uf": "PR",
       "nome": "Paraná",
-      "etanol": 4.62,
-      "gasolina": 6.74
+      "etanol": 4.64,
+      "gasolina": 6.76
     },
     {
       "uf": "PE",
       "nome": "Pernambuco",
-      "etanol": 4.84,
-      "gasolina": 6.86
+      "etanol": 4.82,
+      "gasolina": 6.85
     },
     {
       "uf": "PI",
       "nome": "Piauí",
-      "etanol": 4.82,
-      "gasolina": 6.73
+      "etanol": 4.79,
+      "gasolina": 6.74
     },
     {
       "uf": "RJ",
       "nome": "Rio de Janeiro",
-      "etanol": 4.78,
-      "gasolina": 6.51
+      "etanol": 4.77,
+      "gasolina": 6.48
     },
     {
       "uf": "RN",
       "nome": "Rio Grande do Norte",
-      "etanol": 5.26,
-      "gasolina": 6.72
+      "etanol": 4.94,
+      "gasolina": 6.5
     },
     {
       "uf": "RS",
       "nome": "Rio Grande do Sul",
-      "etanol": 4.5,
+      "etanol": 4.46,
       "gasolina": 5.89
     },
     {
       "uf": "RO",
       "nome": "Rondônia",
-      "etanol": 5.05,
+      "etanol": 5.06,
       "gasolina": 7.51
-    },
-    {
-      "uf": "RR",
-      "nome": "Roraima",
-      "etanol": 5.38,
-      "gasolina": 7.57
     },
     {
       "uf": "SC",
       "nome": "Santa Catarina",
-      "etanol": 4.5,
-      "gasolina": 6.46
+      "etanol": 4.62,
+      "gasolina": 6.45
     },
     {
       "uf": "SP",
       "nome": "São Paulo",
-      "etanol": 3.99,
-      "gasolina": 6.36
-    },
-    {
-      "uf": "SE",
-      "nome": "Sergipe",
-      "etanol": 5.19,
-      "gasolina": 6.95
+      "etanol": 4.01,
+      "gasolina": 6.35
     },
     {
       "uf": "TO",
       "nome": "Tocantins",
-      "etanol": 5.07,
-      "gasolina": 7.01
+      "etanol": 5.01,
+      "gasolina": 7.03
     }
   ],
   "diagnostico_anp": {
     "ed45": "ok, 18465 chars; sem preço: []; trecho Macapá: Macapá 6,31 | Macapá - | Macapá 7,14 | Macapá | R$ 7,14 | Macapá 127,46"
   },
   "noticias": [
+    {
+      "titulo": "Revisão de regras do RenovaBio para novos distribuidores é tema de audiência pública",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/revisao-de-regras-do-renovabio-para-novos-distribuidores-e-tema-de-audiencia-publica",
+      "tag": "RenovaBio",
+      "data": "10/11/2026",
+      "titulo_en": "Review of RenovaBio rules for new distributors is the subject of a public hearing"
+    },
+    {
+      "titulo": "Preços nos postos: Etanol segue em alta, mas ainda é competitivo na média nacional",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/precos-nos-postos-etanol-segue-em-alta-mas-ainda-e-competitivo-na-media-nacional",
+      "tag": "Etanol",
+      "data": "10/11/2026",
+      "titulo_en": "Prices at stations: Ethanol remains high, but is still competitive in the national average"
+    },
+    {
+      "titulo": "[Cepea] Preços do açúcar cristal seguem firmes no mercado paulista",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/cepea-precos-do-acucar-cristal-seguem-firmes-no-mercado-paulista",
+      "tag": "Etanol",
+      "data": "10/11/2026",
+      "titulo_en": "[Cepea] Crystal sugar prices remain firm in the São Paulo market"
+    },
+    {
+      "titulo": "[Cepea] Oferta restrita sustenta valorização do etanol nas usinas de São Paulo",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/etanol-hidratado-sobe-2-36-e-anidro-avanca-5-39-nesta-semana-nas-usinas-paulistas",
+      "tag": "Etanol",
+      "data": "10/11/2026",
+      "titulo_en": "[Cepea] Restricted supply supports ethanol appreciation in São Paulo plants"
+    },
+    {
+      "titulo": "Petrobras usa influência política para impedir atuação da ANP, diz diretor da autarquia",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/petrobras-usa-influencia-politica-para-impedir-atuacao-da-anp-diz-diretor-da-autarquia",
+      "tag": "ANP",
+      "data": "10/11/2026",
+      "titulo_en": "Petrobras uses political influence to prevent ANP from acting, says director of the agency"
+    },
+    {
+      "titulo": "Governo prorroga desoneração da gasolina e do etanol até 9 de dezembro",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/governo-prorroga-desoneracao-da-gasolina-e-do-etanol-ate-9-de-dezembro",
+      "tag": "Etanol",
+      "data": "10/11/2026",
+      "titulo_en": "Government extends exemption of gasoline and ethanol until December 9"
+    },
     {
       "titulo": "Apesar de alta na alavancagem, liquidez ajuda usinas a enfrentarem ciclo de preços baixos",
       "fonte": "NovaCana",
@@ -275,54 +305,6 @@
       "tag": "Etanol",
       "data": "09/11/2026",
       "titulo_en": "Fossil fuel roadmap could be taken to COP32, says Capobianco"
-    },
-    {
-      "titulo": "Governo federal aprova 18 diretrizes para mapa sobre fim do uso de combustíveis fósseis",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/governo-federal-aprova-18-diretrizes-para-mapa-sobre-fim-do-uso-de-combustiveis-fosseis",
-      "tag": "Etanol",
-      "data": "09/11/2026",
-      "titulo_en": "Federal government approves 18 guidelines for mapa on end of fossil fuel use"
-    },
-    {
-      "titulo": "Governo prorroga imposto sobre exportação de petróleo até o fim do ano",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/governo-prorroga-imposto-sobre-exportacao-de-petroleo-ate-o-fim-do-ano",
-      "tag": "Brent",
-      "data": "09/11/2026",
-      "titulo_en": "Government extends tax on oil exports until the end of the year"
-    },
-    {
-      "titulo": "Combustíveis estariam duas vezes mais caros sem ações do governo",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/combustiveis-estariam-duas-vezes-mais-caros-sem-acoes-do-governo",
-      "tag": "Etanol",
-      "data": "06/11/2026",
-      "titulo_en": "Fuels would be twice as expensive without government action"
-    },
-    {
-      "titulo": "Comissão aprova projeto de incentivo à produção e ao uso do etanol",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/comissao-aprova-projeto-de-incentivo-a-producao-e-ao-uso-do-etanol",
-      "tag": "Etanol",
-      "data": "06/11/2026",
-      "titulo_en": "Commission approves project to encourage the production and use of ethanol"
-    },
-    {
-      "titulo": "BFA reúne Petrobras, Vale e biorrefinarias para discutir novo momento do etanol",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/biofuels-academy-reune-petrobras-vale-e-biorrefinarias-para-discutir-novo-momento-do-etanol",
-      "tag": "Etanol",
-      "data": "06/11/2026",
-      "titulo_en": "BFA brings together Petrobras, Vale and biorefineries to discuss new ethanol moment"
-    },
-    {
-      "titulo": "CNPE analisa mudança de responsabilidade sobre mistura de biocombustíveis",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/cnpe-analisa-mudanca-de-responsabilidade-sobre-mistura-de-biocombustiveis",
-      "tag": "Etanol",
-      "data": "06/11/2026",
-      "titulo_en": "CNPE analyzes change of responsibility on biofuel blending"
     }
   ]
 }
