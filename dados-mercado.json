@@ -1,17 +1,17 @@
 {
-  "atualizado": "2026-11-10T18:21:54.652298",
+  "atualizado": "2026-11-11T18:11:06.861593",
   "semana": "09/11 – 15/11/2026",
   "nacional": {
-    "paridade": 69.5,
-    "etanol_medio": 4.58,
-    "gasolina_media": 6.59,
+    "paridade": 69.7,
+    "etanol_medio": 4.63,
+    "gasolina_media": 6.64,
     "municipios_vantajosos": 11,
-    "municipios_pesquisados": 24
+    "municipios_pesquisados": 26
   },
   "brent": {
-    "valor": 91.92,
-    "variacao": -0.7,
-    "data": "10/11/2026",
+    "valor": 93.08,
+    "variacao": 1.74,
+    "data": "11/11/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
@@ -44,36 +44,36 @@
   ],
   "historico_brent": [
     {
-      "data": "21/09",
-      "valor": 99.25
+      "data": "22/09",
+      "valor": 103.08
     },
     {
-      "data": "28/09",
-      "valor": 102.59
+      "data": "29/09",
+      "valor": 103.53
     },
     {
-      "data": "05/10",
-      "valor": 100.58
+      "data": "06/10",
+      "valor": 100.2
     },
     {
-      "data": "12/10",
-      "valor": 105.69
+      "data": "13/10",
+      "valor": 106.06
     },
     {
-      "data": "19/10",
-      "valor": 108.79
+      "data": "20/10",
+      "valor": 108.82
     },
     {
-      "data": "26/10",
-      "valor": 113.88
+      "data": "27/10",
+      "valor": 115.32
     },
     {
-      "data": "03/11",
-      "valor": 103.6
+      "data": "04/11",
+      "valor": 94.62
     },
     {
-      "data": "10/11",
-      "valor": 91.92
+      "data": "11/11",
+      "valor": 93.08
     }
   ],
   "estados": [
@@ -204,6 +204,12 @@
       "gasolina": 7.51
     },
     {
+      "uf": "RR",
+      "nome": "Roraima",
+      "etanol": 5.38,
+      "gasolina": 7.57
+    },
+    {
       "uf": "SC",
       "nome": "Santa Catarina",
       "etanol": 4.62,
@@ -216,6 +222,12 @@
       "gasolina": 6.35
     },
     {
+      "uf": "SE",
+      "nome": "Sergipe",
+      "etanol": 5.17,
+      "gasolina": 6.94
+    },
+    {
       "uf": "TO",
       "nome": "Tocantins",
       "etanol": 5.01,
@@ -226,6 +238,62 @@
     "ed45": "ok, 18465 chars; sem preço: []; trecho Macapá: Macapá 6,31 | Macapá - | Macapá 7,14 | Macapá | R$ 7,14 | Macapá 127,46"
   },
   "noticias": [
+    {
+      "titulo": "Por que os motoristas não abastecem com etanol? Setor busca respostas – e soluções",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/por-que-os-motoristas-nao-abastecem-com-etanol-setor-busca-respostas-e-solucoes",
+      "tag": "Etanol",
+      "data": "11/11/2026",
+      "titulo_en": "Why don't drivers fill up with ethanol? The industry is looking for answers – and solutions"
+    },
+    {
+      "titulo": "Reforma tributária exige revisão de custos e contratos no campo, alerta Canaoeste",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/reforma-tributaria-exige-revisao-de-custos-e-contratos-no-campo-alerta-canaoeste",
+      "tag": "Etanol",
+      "data": "11/11/2026",
+      "titulo_en": "Tax reform requires a review of costs and contracts in the agricultural sector, warns Canaoeste"
+    },
+    {
+      "titulo": "Petrobras nega ter pedido para ANP adiar revisão tarifária do gás, em resposta a diretor",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/petrobras-nega-ter-pedido-para-anp-adiar-revisao-tarifaria-do-gas-em-resposta-a-diretor",
+      "tag": "ANP",
+      "data": "11/11/2026",
+      "titulo_en": "Petrobras denies asking ANP to postpone gas tariff review, in response to director"
+    },
+    {
+      "titulo": "Setor de combustíveis apoia avanço de projeto que amplia poder de fiscalização da ANP",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/setor-de-combustiveis-apoia-avanco-de-projeto-que-amplia-poder-de-fiscalizacao-da-anp",
+      "tag": "ANP",
+      "data": "11/11/2026",
+      "titulo_en": "Fuel sector supports progress of project to expand ANP's oversight powers"
+    },
+    {
+      "titulo": "Senado aprova projeto que aumenta poder da ANP para combater crimes com combustíveis",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/senado-aprova-projeto-que-aumenta-poder-da-anp-para-combater-crimes-com-combustiveis",
+      "tag": "ANP",
+      "data": "11/11/2026",
+      "titulo_en": "Senate approves bill to increase ANP's powers to combat fuel-related crimes"
+    },
+    {
+      "titulo": "Prorrogação da desoneração dos combustíveis terá impacto de R$ 2,76 bilhões",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/prorrogacao-da-desoneracao-dos-combustiveis-tera-impacto-de-r-2-76-bilhoes",
+      "tag": "Etanol",
+      "data": "11/11/2026",
+      "titulo_en": "Extension of fuel tax relief to have an impact of R$2.76 billion"
+    },
+    {
+      "titulo": "Brasil defende abandono progressivo dos combustíveis fósseis na COP31",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/brasil-defende-abandono-progressivo-dos-combustiveis-fosseis-na-cop31",
+      "tag": "Etanol",
+      "data": "11/11/2026",
+      "titulo_en": "Brazil advocates the progressive phase-out of fossil fuels at COP31"
+    },
     {
       "titulo": "Revisão de regras do RenovaBio para novos distribuidores é tema de audiência pública",
       "fonte": "NovaCana",
@@ -249,62 +317,6 @@
       "tag": "Etanol",
       "data": "10/11/2026",
       "titulo_en": "[Cepea] Crystal sugar prices remain firm in the São Paulo market"
-    },
-    {
-      "titulo": "[Cepea] Oferta restrita sustenta valorização do etanol nas usinas de São Paulo",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/etanol-hidratado-sobe-2-36-e-anidro-avanca-5-39-nesta-semana-nas-usinas-paulistas",
-      "tag": "Etanol",
-      "data": "10/11/2026",
-      "titulo_en": "[Cepea] Restricted supply supports ethanol appreciation in São Paulo plants"
-    },
-    {
-      "titulo": "Petrobras usa influência política para impedir atuação da ANP, diz diretor da autarquia",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/petrobras-usa-influencia-politica-para-impedir-atuacao-da-anp-diz-diretor-da-autarquia",
-      "tag": "ANP",
-      "data": "10/11/2026",
-      "titulo_en": "Petrobras uses political influence to prevent ANP from acting, says director of the agency"
-    },
-    {
-      "titulo": "Governo prorroga desoneração da gasolina e do etanol até 9 de dezembro",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/governo-prorroga-desoneracao-da-gasolina-e-do-etanol-ate-9-de-dezembro",
-      "tag": "Etanol",
-      "data": "10/11/2026",
-      "titulo_en": "Government extends exemption of gasoline and ethanol until December 9"
-    },
-    {
-      "titulo": "Apesar de alta na alavancagem, liquidez ajuda usinas a enfrentarem ciclo de preços baixos",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/apesar-de-alta-na-alavancagem-liquidez-ajuda-usinas-a-enfrentarem-ciclo-de-precos-baixos",
-      "tag": "Produção",
-      "data": "09/11/2026",
-      "titulo_en": "Despite high leverage, liquidity helps mills cope with low price cycles"
-    },
-    {
-      "titulo": "Queda do Brent volta a acomodar preço do diesel da Petrobras à subvenção, diz Abicom",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/queda-do-brent-volta-a-acomodar-preco-do-diesel-da-petrobras-a-subvencao-diz-abicom",
-      "tag": "Brent",
-      "data": "09/11/2026",
-      "titulo_en": "Brent's fall again accommodates Petrobras' diesel price to the subsidy, says Abicom"
-    },
-    {
-      "titulo": "Lula: Vamos à COP31 com proposta para que mundo leve a sério redução de petróleo",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/lula-vamos-a-cop31-com-proposta-para-que-mundo-leve-a-serio-reducao-de-petroleo",
-      "tag": "Brent",
-      "data": "09/11/2026",
-      "titulo_en": "Lula: We are going to COP31 with a proposal for the world to take oil reduction seriously"
-    },
-    {
-      "titulo": "Mapa do caminho sobre combustíveis fósseis poderá ser levado para a COP32, diz Capobianco",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/mapa-do-caminho-sobre-combustiveis-fosseis-podera-ser-levado-para-a-cop32-diz-capobianco",
-      "tag": "Etanol",
-      "data": "09/11/2026",
-      "titulo_en": "Fossil fuel roadmap could be taken to COP32, says Capobianco"
     }
   ]
 }
