@@ -1,1 +1,127 @@
-[]
+[
+ {
+  "nome": "Bevap",
+  "arquivo": "bevap.png",
+  "tipo": "usina"
+ },
+ {
+  "nome": "Santa Helena",
+  "arquivo": "santa-helena.png",
+  "tipo": "usina"
+ },
+ {
+  "nome": "Usina Laguna",
+  "arquivo": "usina-laguna.png",
+  "tipo": "usina"
+ },
+ {
+  "nome": "Grupo Colorado",
+  "arquivo": "grupo-colorado.png",
+  "tipo": "usina"
+ },
+ {
+  "nome": "Grupo Água Bonita",
+  "arquivo": "grupo-agua-bonita.png",
+  "tipo": "usina"
+ },
+ {
+  "nome": "Alta Mogiana",
+  "arquivo": "alta-mogiana.png",
+  "tipo": "usina"
+ },
+ {
+  "nome": "Grupo Moreno",
+  "arquivo": "grupo-moreno.png",
+  "tipo": "usina"
+ },
+ {
+  "nome": "Atena",
+  "arquivo": "atena.png",
+  "tipo": "usina"
+ },
+ {
+  "nome": "Renuka",
+  "arquivo": "renuka.png",
+  "tipo": "usina"
+ },
+ {
+  "nome": "Tereos",
+  "arquivo": "tereos.png",
+  "tipo": "usina"
+ },
+ {
+  "nome": "Inpasa",
+  "arquivo": "inpasa.png",
+  "tipo": "usina"
+ },
+ {
+  "nome": "ALE",
+  "arquivo": "ale.png",
+  "tipo": "dist"
+ },
+ {
+  "nome": "Ipiranga",
+  "arquivo": "ipiranga.png",
+  "tipo": "dist"
+ },
+ {
+  "nome": "Petrotorque",
+  "arquivo": "petrotorque.png",
+  "tipo": "dist"
+ },
+ {
+  "nome": "Montepetro",
+  "arquivo": "montepetro.png",
+  "tipo": "dist"
+ },
+ {
+  "nome": "Dislub",
+  "arquivo": "dislub.png",
+  "tipo": "dist"
+ },
+ {
+  "nome": "Grupo Potencial",
+  "arquivo": "grupo-potencial.png",
+  "tipo": "dist"
+ },
+ {
+  "nome": "Ruff",
+  "arquivo": "ruff.png",
+  "tipo": "dist"
+ },
+ {
+  "nome": "SP Combustíveis",
+  "arquivo": "sp-combustiveis.png",
+  "tipo": "dist"
+ },
+ {
+  "nome": "Atem",
+  "arquivo": "atem.png",
+  "tipo": "dist"
+ },
+ {
+  "nome": "Rio Branco",
+  "arquivo": "rio-branco.png",
+  "tipo": "dist"
+ },
+ {
+  "nome": "Setta",
+  "arquivo": "setta.png",
+  "tipo": "dist"
+ },
+ {
+  "nome": "Petroluz",
+  "arquivo": "petroluz.png",
+  "tipo": "dist"
+ },
+ {
+  "nome": "Ciapetro",
+  "arquivo": "ciapetro.png",
+  "tipo": "dist"
+ },
+ {
+  "nome": "Larco",
+  "arquivo": "larco.png",
+  "tipo": "dist"
+ }
+]
