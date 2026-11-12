@@ -13,11 +13,14 @@ jobs:
           python-version: '3.11'
       - run: pip install requests beautifulsoup4
       - run: python tools/buscar_logos.py
+        env:
+          OUT: candidatos2
+          SUBSET: "Lasa Lago Azul|Bevap|Santa Helena|Canex|Grupo Colorado|Veredas|Atena|Renuka|Vale do Verdão|COFCO|Fátima do Sul|Cargill|Vibra Energia|Ipiranga|Neomile|Dislub|Potencial Petróleo|Soll Distribuidora|Hora Combustíveis|Água Bonita"
       - name: Publicar candidatos em branch separada
         run: |
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "RV Bioenergia Bot"
-          git checkout -B logos-candidatos
-          git add -f candidatos
+          git checkout -B logos-candidatos2
+          git add -f candidatos2
           git commit -m "Candidatos a logos"
-          git push -f origin logos-candidatos
+          git push -f origin logos-candidatos2

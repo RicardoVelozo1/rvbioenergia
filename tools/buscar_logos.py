@@ -12,7 +12,9 @@ SEED = {'Tereos':['tereos.com'],'COFCO':['cofcointernational.com'],'Inpasa':['in
         'Ipiranga':['ipiranga.com.br'],'Ale Combustíveis':['ale.com.br'],'Cargill':['cargill.com.br'],'Renuka':['renukadobrasil.com.br']}
 BAD = ('facebook','instagram','linkedin','youtube','twitter','x.com','wikipedia','cnpj','econodata','reclameaqui','google','bing','duckduckgo','glassdoor',
        'indeed','jusbrasil','casadosdados','solutudo','telelistas','apontador','guiamais','pinterest','mapquest','tiktok','whatsapp','gov.br','anp.gov','scribd','issuu','yelp','tripadvisor','cnpj.biz','empresaqui','infojobs','vagas','catho','novacana','canaonline','udop','biodieselbr','linkedin')
-os.makedirs('candidatos', exist_ok=True)
+OUT=os.environ.get('OUT','candidatos')
+SUBSET=[x for x in os.environ.get('SUBSET','').split('|') if x]
+os.makedirs(OUT, exist_ok=True)
 
 def slug(s): return re.sub(r'[^a-z0-9]+','-',s.lower().encode('ascii','ignore').decode() or s.lower()).strip('-')
 
@@ -54,7 +56,9 @@ def candidates(domain):
         if 'apple-touch-icon' in rel or rel=='icon' or 'shortcut' in rel: add(l.get('href'),'icon')
     for m in soup.find_all('meta'):
         if m.get('property') in ('og:image','og:logo') or m.get('name') in ('twitter:image',): add(m.get('content'),'og')
-    return urls[:7],title
+    for m in re.finditer(r'["\'(=\s]([^"\'()\s<>]*(?:logo|marca|brand)[^"\'()\s<>]*\.(?:png|svg|webp|jpg|jpeg))',r.text,re.I):
+        add(m.group(1).replace('\\/','/'),'regex-logo')
+    return urls[:16],title
 
 NOVA={'Lasa Lago Azul':['lago-azul','linhares-agroindustral---lasa'],'Bevap':['bevap'],'Santa Helena':['santa-helena','santa-helena-2','santa-helena-3'],'Laguna':['laguna'],'Canex':['canex'],
  'Grupo Colorado':['colorado'],'Veredas':['veredas'],'Da Mata':['da-mata'],'Água Bonita':['agua-bonita'],'Alta Mogiana':['alta-mogiana'],'Grupo Moreno':['moreno'],
@@ -112,6 +116,22 @@ def guess_domains(nome):
     with ThreadPoolExecutor(40) as ex: res=[x for x in ex.map(test,cand) if x]
     return res
 
+FORCE={'Lasa Lago Azul':['lasa.com.br','lasabioenergia.com.br','usinalasa.com.br'],'Neomile':['neomille.com.br','neomille.com'],'Vale do Verdão':['valedoverdao.com.br','usinavaledoverdao.com.br','valedoverdao.com'],
+ 'Veredas':['usinaveredas.com.br','veredasbioenergia.com.br','veredas.agr.br'],'Renuka':['renukadobrasil.com.br','renukasugars.com'],'COFCO':['cofcointernational.com','cofco.com.br','cofcointernational.com.br'],
+ 'Cargill':['cargill.com.br','cargill.com'],'Ipiranga':['ipiranga.com.br','www.ipiranga.com.br','ipirangacombustiveis.com.br'],'Fátima do Sul':['fatimaagroenergetica.com.br','usinafatimadosul.com.br','fsae.com.br'],
+ 'Santa Helena':['gruposantahelena.com.br','usinasantahelena.com.br','energeticasantahelena.com.br'],'Soll Distribuidora':['solldistribuidora.com.br','soll.com.br','sollpetroleo.com.br','sollcombustiveis.com.br'],
+ 'Hora Combustíveis':['horadistribuidora.com.br'],'Vibra Energia':['vibraenergia.com.br'],'Dislub':['dislubenergia.com.br'],'Potencial Petróleo':['potencialcombustiveis.com.br'],'Bevap':['bevap.com.br'],'Canex':['canex.com.br'],
+ 'Grupo Colorado':['colorado.com.br','coloradodistribuidora.com.br'],'Atena':['usinaatena.com.br','atenaagro.com'],'Água Bonita':['aguabonita.com.br']}
+def commons(q):
+    out=[]
+    try:
+        r=requests.get('https://commons.wikimedia.org/w/api.php',params={'action':'query','generator':'search','gsrsearch':q+' logo','gsrnamespace':6,'gsrlimit':6,'prop':'imageinfo','iiprop':'url|mime','format':'json'},headers=UA,timeout=25).json()
+        for p in (r.get('query',{}).get('pages',{}) or {}).values():
+            ii=(p.get('imageinfo') or [{}])[0]; t=p.get('title','')
+            if ii.get('url') and 'logo' in t.lower() and ii.get('mime','').startswith('image/'): out.append((ii['url'],'commons:'+t))
+    except Exception as e: print('  commons falhou',e)
+    return out[:5]
+
 def wiki(q):
     out=[]
     try:
@@ -125,12 +145,14 @@ def wiki(q):
 index={}
 for grupo,lst in EMP.items():
     for nome in lst:
-        s=slug(nome); d=f'candidatos/{s}'; os.makedirs(d,exist_ok=True)
+        s=slug(nome); d=f'{OUT}/{s}'; os.makedirs(d,exist_ok=True)
         q=nome+(' usina etanol açúcar site oficial' if grupo=='usinas' else ' distribuidora combustíveis site oficial')
         nd,nc=novacana(nome) if grupo=='usinas' else ([],[])
-        gd=guess_domains(nome)
+        if SUBSET and nome not in SUBSET: continue
+        if nome in FORCE: gd=[(x,'forçado',0) for x in FORCE[nome]]
+        else: gd=guess_domains(nome)
         print('  verificados:',gd,flush=True)
-        doms=SEED.get(nome,[])+[x[0] for x in gd if x[0] not in SEED.get(nome,[])]
+        doms=[x[0] for x in gd]
         print('==',nome,doms,flush=True)
         reg={'grupo':grupo,'nome':nome,'dominios':doms[:4],'verificados':gd,'arquivos':[]}
         n=0
@@ -139,10 +161,10 @@ for grupo,lst in EMP.items():
             cs,title=candidates(dom)
             reg.setdefault('titulos',{})[dom]=title
             todos+= [(u,t,dom) for u,t in cs]
-        todos+=[(u,t,'novacana') for u,t in nc]
+        todos+=[(u,t,'commons') for u,t in commons(nome)]
         todos+=[(u,t,'wikipedia') for u,t in wiki(nome+(' usina' if grupo=='usinas' else ' distribuidora'))]
         for u,t,dom in todos:
-            if n>=12: break
+            if n>=22: break
             try:
                 r=requests.get(u,headers=UA,timeout=25)
                 ct=r.headers.get('content-type','').split(';')[0]
@@ -153,5 +175,5 @@ for grupo,lst in EMP.items():
                 reg['arquivos'].append({'arquivo':fn,'url':u,'tipo':t,'dominio':dom}); n+=1
             except Exception as e: pass
         index[s]=reg; time.sleep(1)
-json.dump(index,open('candidatos/index.json','w'),ensure_ascii=False,indent=1)
+json.dump(index,open(OUT+'/index.json','w'),ensure_ascii=False,indent=1)
 print('FIM',sum(len(v['arquivos']) for v in index.values()),'arquivos')
