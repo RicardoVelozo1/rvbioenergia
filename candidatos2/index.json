@@ -1,0 +1,1092 @@
+{
+ "lasa-lago-azul": {
+  "grupo": "usinas",
+  "nome": "Lasa Lago Azul",
+  "dominios": [
+   "lasa.com.br",
+   "lasabioenergia.com.br",
+   "usinalasa.com.br"
+  ],
+  "verificados": [
+   [
+    "lasa.com.br",
+    "forçado",
+    0
+   ],
+   [
+    "lasabioenergia.com.br",
+    "forçado",
+    0
+   ],
+   [
+    "usinalasa.com.br",
+    "forçado",
+    0
+   ]
+  ],
+  "arquivos": [],
+  "titulos": {
+   "lasa.com.br": "ERRO HTTPSConnectionPool(host='lasa.com.br', port=443): Max retries exceeded with url",
+   "lasabioenergia.com.br": "ERRO HTTPSConnectionPool(host='lasabioenergia.com.br', port=443): Max retries exceede",
+   "usinalasa.com.br": "ERRO HTTPSConnectionPool(host='usinalasa.com.br', port=443): Max retries exceeded wit"
+  }
+ },
+ "bevap": {
+  "grupo": "usinas",
+  "nome": "Bevap",
+  "dominios": [
+   "bevap.com.br"
+  ],
+  "verificados": [
+   [
+    "bevap.com.br",
+    "forçado",
+    0
+   ]
+  ],
+  "arquivos": [
+   {
+    "arquivo": "00.webp",
+    "url": "https://bevapbioenergia.com.br/wp-content/smush-webp/2021/08/Icone-1.png.webp",
+    "tipo": "icon",
+    "dominio": "bevap.com.br"
+   },
+   {
+    "arquivo": "01.png",
+    "url": "https://bevapbioenergia.com.br/wp-content/uploads/2021/09/bevap-logo.png",
+    "tipo": "regex-logo",
+    "dominio": "bevap.com.br"
+   }
+  ],
+  "titulos": {
+   "bevap.com.br": "Bevap Bioenergia – Energia que Renova"
+  }
+ },
+ "santa-helena": {
+  "grupo": "usinas",
+  "nome": "Santa Helena",
+  "dominios": [
+   "gruposantahelena.com.br",
+   "usinasantahelena.com.br",
+   "energeticasantahelena.com.br"
+  ],
+  "verificados": [
+   [
+    "gruposantahelena.com.br",
+    "forçado",
+    0
+   ],
+   [
+    "usinasantahelena.com.br",
+    "forçado",
+    0
+   ],
+   [
+    "energeticasantahelena.com.br",
+    "forçado",
+    0
+   ]
+  ],
+  "arquivos": [
+   {
+    "arquivo": "00.png",
+    "url": "https://gruposantahelena.com.br/assets/images/grupo-santa-helena.png",
+    "tipo": "icon",
+    "dominio": "gruposantahelena.com.br"
+   },
+   {
+    "arquivo": "01.jpg",
+    "url": "https://energeticasantahelena.com.br/wp-content/uploads/2023/12/cropped-Santa-Helena_QP-300x300-1-150x150.jpg",
+    "tipo": "icon",
+    "dominio": "energeticasantahelena.com.br"
+   },
+   {
+    "arquivo": "02.jpg",
+    "url": "https://energeticasantahelena.com.br/wp-content/uploads/2023/12/cropped-Santa-Helena_QP-300x300-1.jpg",
+    "tipo": "icon",
+    "dominio": "energeticasantahelena.com.br"
+   },
+   {
+    "arquivo": "03.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Centro_da_Cidade_de_Santa_Helena_de_Goi%C3%A1s%2C_Brasil.jpg?utm_source=pt.wikipedia.org&utm_campaign=api&utm_content=original",
+    "tipo": "wiki:Santa Helena de Goiás",
+    "dominio": "wikipedia"
+   }
+  ],
+  "titulos": {
+   "gruposantahelena.com.br": "Home",
+   "usinasantahelena.com.br": "ERRO HTTPSConnectionPool(host='usinasantahelena.com.br', port=443): Max retries excee",
+   "energeticasantahelena.com.br": "Energética Santa Helena"
+  }
+ },
+ "canex": {
+  "grupo": "usinas",
+  "nome": "Canex",
+  "dominios": [
+   "canex.com.br"
+  ],
+  "verificados": [
+   [
+    "canex.com.br",
+    "forçado",
+    0
+   ]
+  ],
+  "arquivos": [
+   {
+    "arquivo": "00.svg",
+    "url": "https://canex.com.br/assets/img/logo/logo_simble_white.svg",
+    "tipo": "img-logo",
+    "dominio": "canex.com.br"
+   },
+   {
+    "arquivo": "01.svg",
+    "url": "https://canex.com.br/assets/img/logo/logo_canex_white.svg",
+    "tipo": "img-logo",
+    "dominio": "canex.com.br"
+   },
+   {
+    "arquivo": "02.svg",
+    "url": "https://canex.com.br/assets/img/logo/icon_facebook.svg",
+    "tipo": "img-logo",
+    "dominio": "canex.com.br"
+   },
+   {
+    "arquivo": "03.svg",
+    "url": "https://canex.com.br/assets/img/logo/icon_instagram.svg",
+    "tipo": "img-logo",
+    "dominio": "canex.com.br"
+   },
+   {
+    "arquivo": "04.svg",
+    "url": "https://canex.com.br/assets/img/logo/icon_linkedin.svg",
+    "tipo": "img-logo",
+    "dominio": "canex.com.br"
+   },
+   {
+    "arquivo": "05.png",
+    "url": "https://canex.com.br/assets/img/favi/apple-icon-57x57.png",
+    "tipo": "icon",
+    "dominio": "canex.com.br"
+   },
+   {
+    "arquivo": "06.png",
+    "url": "https://canex.com.br/assets/img/favi/apple-icon-60x60.png",
+    "tipo": "icon",
+    "dominio": "canex.com.br"
+   },
+   {
+    "arquivo": "07.png",
+    "url": "https://canex.com.br/assets/img/favi/apple-icon-72x72.png",
+    "tipo": "icon",
+    "dominio": "canex.com.br"
+   },
+   {
+    "arquivo": "08.png",
+    "url": "https://canex.com.br/assets/img/favi/apple-icon-76x76.png",
+    "tipo": "icon",
+    "dominio": "canex.com.br"
+   },
+   {
+    "arquivo": "09.png",
+    "url": "https://canex.com.br/assets/img/favi/apple-icon-114x114.png",
+    "tipo": "icon",
+    "dominio": "canex.com.br"
+   },
+   {
+    "arquivo": "10.png",
+    "url": "https://canex.com.br/assets/img/favi/apple-icon-120x120.png",
+    "tipo": "icon",
+    "dominio": "canex.com.br"
+   },
+   {
+    "arquivo": "11.png",
+    "url": "https://canex.com.br/assets/img/favi/apple-icon-144x144.png",
+    "tipo": "icon",
+    "dominio": "canex.com.br"
+   },
+   {
+    "arquivo": "12.png",
+    "url": "https://canex.com.br/assets/img/favi/apple-icon-152x152.png",
+    "tipo": "icon",
+    "dominio": "canex.com.br"
+   },
+   {
+    "arquivo": "13.png",
+    "url": "https://canex.com.br/assets/img/favi/apple-icon-180x180.png",
+    "tipo": "icon",
+    "dominio": "canex.com.br"
+   },
+   {
+    "arquivo": "14.png",
+    "url": "https://canex.com.br/assets/img/favi/android-icon-192x192.png",
+    "tipo": "icon",
+    "dominio": "canex.com.br"
+   },
+   {
+    "arquivo": "15.png",
+    "url": "https://canex.com.br/assets/img/favi/favicon-32x32.png",
+    "tipo": "icon",
+    "dominio": "canex.com.br"
+   },
+   {
+    "arquivo": "16.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/CANEX_Logo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "tipo": "commons:File:CANEX Logo.jpg",
+    "dominio": "commons"
+   }
+  ],
+  "titulos": {
+   "canex.com.br": "Canex"
+  }
+ },
+ "grupo-colorado": {
+  "grupo": "usinas",
+  "nome": "Grupo Colorado",
+  "dominios": [
+   "colorado.com.br",
+   "coloradodistribuidora.com.br"
+  ],
+  "verificados": [
+   [
+    "colorado.com.br",
+    "forçado",
+    0
+   ],
+   [
+    "coloradodistribuidora.com.br",
+    "forçado",
+    0
+   ]
+  ],
+  "arquivos": [
+   {
+    "arquivo": "00.png",
+    "url": "https://www.colorado.com.br/wp-content/uploads/2025/01/logo-grupo-colorado.png",
+    "tipo": "img-logo",
+    "dominio": "colorado.com.br"
+   },
+   {
+    "arquivo": "01.png",
+    "url": "https://www.colorado.com.br/wp-content/uploads/2025/04/128x128-100x100.png",
+    "tipo": "icon",
+    "dominio": "colorado.com.br"
+   },
+   {
+    "arquivo": "02.png",
+    "url": "https://www.colorado.com.br/wp-content/uploads/2025/04/128x128.png",
+    "tipo": "icon",
+    "dominio": "colorado.com.br"
+   },
+   {
+    "arquivo": "03.svg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Flag_of_Colorado.svg?utm_source=pt.wikipedia.org&utm_campaign=api&utm_content=original",
+    "tipo": "wiki:Colorado",
+    "dominio": "wikipedia"
+   }
+  ],
+  "titulos": {
+   "colorado.com.br": "Grupo Colorado",
+   "coloradodistribuidora.com.br": "ERRO HTTPSConnectionPool(host='coloradodistribuidora.com.br', port=443): Max retries "
+  }
+ },
+ "veredas": {
+  "grupo": "usinas",
+  "nome": "Veredas",
+  "dominios": [
+   "usinaveredas.com.br",
+   "veredasbioenergia.com.br",
+   "veredas.agr.br"
+  ],
+  "verificados": [
+   [
+    "usinaveredas.com.br",
+    "forçado",
+    0
+   ],
+   [
+    "veredasbioenergia.com.br",
+    "forçado",
+    0
+   ],
+   [
+    "veredas.agr.br",
+    "forçado",
+    0
+   ]
+  ],
+  "arquivos": [
+   {
+    "arquivo": "00.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Grande_Sertao_Veredas_1.jpg?utm_source=pt.wikipedia.org&utm_campaign=api&utm_content=original",
+    "tipo": "wiki:Parque Nacional Grande Sertão Veredas",
+    "dominio": "wikipedia"
+   }
+  ],
+  "titulos": {
+   "usinaveredas.com.br": "ERRO HTTPSConnectionPool(host='usinaveredas.com.br', port=443): Max retries exceeded ",
+   "veredasbioenergia.com.br": "ERRO HTTPSConnectionPool(host='veredasbioenergia.com.br', port=443): Max retries exce",
+   "veredas.agr.br": "ERRO HTTPSConnectionPool(host='veredas.agr.br', port=443): Max retries exceeded with "
+  }
+ },
+ "gua-bonita": {
+  "grupo": "usinas",
+  "nome": "Água Bonita",
+  "dominios": [
+   "aguabonita.com.br"
+  ],
+  "verificados": [
+   [
+    "aguabonita.com.br",
+    "forçado",
+    0
+   ]
+  ],
+  "arquivos": [
+   {
+    "arquivo": "00.png",
+    "url": "https://www.aguabonita.com.br/wp-content/uploads/2024/02/Logo-agua-bonita-2023_logos_png-01-1-e1700509306203.png",
+    "tipo": "img-logo",
+    "dominio": "aguabonita.com.br"
+   },
+   {
+    "arquivo": "01.png",
+    "url": "https://www.aguabonita.com.br/wp-content/uploads/2026/04/SAFRA.png",
+    "tipo": "img-logo",
+    "dominio": "aguabonita.com.br"
+   },
+   {
+    "arquivo": "02.png",
+    "url": "https://www.aguabonita.com.br/wp-content/uploads/2024/03/LOGO-CONJUNTO.png",
+    "tipo": "img-logo",
+    "dominio": "aguabonita.com.br"
+   },
+   {
+    "arquivo": "03.png",
+    "url": "https://www.aguabonita.com.br/wp-content/uploads/2024/06/cropped-Logo-agua-bonita-2023_logos_png-02-branco-3.png",
+    "tipo": "img-logo",
+    "dominio": "aguabonita.com.br"
+   },
+   {
+    "arquivo": "04.svg",
+    "url": "https://www.aguabonita.com.br/wp-content/plugins/accessibility-onetap/assets/images/admin/Original_Logo_Icon.svg",
+    "tipo": "img-logo",
+    "dominio": "aguabonita.com.br"
+   },
+   {
+    "arquivo": "05.png",
+    "url": "https://www.aguabonita.com.br/wp-content/uploads/2023/11/Logo-agua-bonita-2023_logos_png-02-150x150.png",
+    "tipo": "icon",
+    "dominio": "aguabonita.com.br"
+   },
+   {
+    "arquivo": "06.png",
+    "url": "https://www.aguabonita.com.br/wp-content/uploads/2023/11/Logo-agua-bonita-2023_logos_png-02-270x270.png",
+    "tipo": "icon",
+    "dominio": "aguabonita.com.br"
+   },
+   {
+    "arquivo": "07.jpg",
+    "url": "https://www.aguabonita.com.br/wp-content/uploads/2023/11/35df042c-8b0f-487f-a7cb-e9fdb6cb2130.jpeg",
+    "tipo": "og",
+    "dominio": "aguabonita.com.br"
+   },
+   {
+    "arquivo": "08.png",
+    "url": "https://www.aguabonita.com.br/wp-content/uploads/2024/02/Logo-agua-bonita-2023_logos_png-01-1-e1700509306203-300x101.png",
+    "tipo": "regex-logo",
+    "dominio": "aguabonita.com.br"
+   },
+   {
+    "arquivo": "09.png",
+    "url": "https://www.aguabonita.com.br/wp-content/uploads/2024/02/Logo-agua-bonita-2023_logos_png-01-1-e1700509306203-768x258.png",
+    "tipo": "regex-logo",
+    "dominio": "aguabonita.com.br"
+   },
+   {
+    "arquivo": "10.png",
+    "url": "https://www.aguabonita.com.br/wp-content/uploads/2024/02/Logo-agua-bonita-2023_logos_png-01-1-e1700509306203-285x96.png",
+    "tipo": "regex-logo",
+    "dominio": "aguabonita.com.br"
+   },
+   {
+    "arquivo": "11.png",
+    "url": "https://www.aguabonita.com.br/wp-content/uploads/2024/02/Logo-agua-bonita-2023_logos_png-01-1-e1700509306203-660x222.png",
+    "tipo": "regex-logo",
+    "dominio": "aguabonita.com.br"
+   },
+   {
+    "arquivo": "12.png",
+    "url": "https://www.aguabonita.com.br/wp-content/uploads/2024/02/Logo-agua-bonita-2023_logos_png-01-1-e1700509306203-150x50.png",
+    "tipo": "regex-logo",
+    "dominio": "aguabonita.com.br"
+   },
+   {
+    "arquivo": "13.png",
+    "url": "https://www.aguabonita.com.br/wp-content/uploads/2024/03/LOGO-CONJUNTO-300x169.png",
+    "tipo": "regex-logo",
+    "dominio": "aguabonita.com.br"
+   },
+   {
+    "arquivo": "14.png",
+    "url": "https://www.aguabonita.com.br/wp-content/uploads/2024/03/LOGO-CONJUNTO-1024x576.png",
+    "tipo": "regex-logo",
+    "dominio": "aguabonita.com.br"
+   },
+   {
+    "arquivo": "15.png",
+    "url": "https://www.aguabonita.com.br/wp-content/uploads/2024/03/LOGO-CONJUNTO-768x432.png",
+    "tipo": "regex-logo",
+    "dominio": "aguabonita.com.br"
+   },
+   {
+    "arquivo": "16.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Rio_Tiet%C3%AA_Barra_Bonita_150606_REFON.jpg?utm_source=pt.wikipedia.org&utm_campaign=api&utm_content=original",
+    "tipo": "wiki:Rio Tietê",
+    "dominio": "wikipedia"
+   },
+   {
+    "arquivo": "17.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Barragem_Barra_Bonita_150606_REFON.jpg?utm_source=pt.wikipedia.org&utm_campaign=api&utm_content=original",
+    "tipo": "wiki:Usina Hidrelétrica de Barra Bonita",
+    "dominio": "wikipedia"
+   }
+  ],
+  "titulos": {
+   "aguabonita.com.br": "Grupo Água Bonita | Gerando o que o futuro pede"
+  }
+ },
+ "neomile": {
+  "grupo": "usinas",
+  "nome": "Neomile",
+  "dominios": [
+   "neomille.com.br",
+   "neomille.com"
+  ],
+  "verificados": [
+   [
+    "neomille.com.br",
+    "forçado",
+    0
+   ],
+   [
+    "neomille.com",
+    "forçado",
+    0
+   ]
+  ],
+  "arquivos": [],
+  "titulos": {
+   "neomille.com.br": "ERRO HTTPSConnectionPool(host='neomille.com.br', port=443): Max retries exceeded with",
+   "neomille.com": "ERRO HTTPSConnectionPool(host='neomille.com', port=443): Max retries exceeded with ur"
+  }
+ },
+ "atena": {
+  "grupo": "usinas",
+  "nome": "Atena",
+  "dominios": [
+   "usinaatena.com.br",
+   "atenaagro.com"
+  ],
+  "verificados": [
+   [
+    "usinaatena.com.br",
+    "forçado",
+    0
+   ],
+   [
+    "atenaagro.com",
+    "forçado",
+    0
+   ]
+  ],
+  "arquivos": [
+   {
+    "arquivo": "00.png",
+    "url": "https://www.usinaatena.com.br/wp-content/uploads/2018/09/logo_header.png",
+    "tipo": "img-logo",
+    "dominio": "usinaatena.com.br"
+   },
+   {
+    "arquivo": "01.png",
+    "url": "https://www.usinaatena.com.br/wp-content/uploads/2020/11/favicon.png",
+    "tipo": "icon",
+    "dominio": "usinaatena.com.br"
+   },
+   {
+    "arquivo": "02.png",
+    "url": "https://atenaagro.com/wp-content/uploads/2024/12/logo-horizontal-removebg-preview.png",
+    "tipo": "img-logo",
+    "dominio": "atenaagro.com"
+   },
+   {
+    "arquivo": "03.png",
+    "url": "https://atenaagro.com/wp-content/uploads/2024/12/logo_final-removebg-preview-206x300.png",
+    "tipo": "img-logo",
+    "dominio": "atenaagro.com"
+   },
+   {
+    "arquivo": "04.png",
+    "url": "https://atenaagro.com/wp-content/uploads/2024/12/logo-removebg-100x100.png",
+    "tipo": "icon",
+    "dominio": "atenaagro.com"
+   },
+   {
+    "arquivo": "05.png",
+    "url": "https://atenaagro.com/wp-content/uploads/2024/12/logo-removebg-300x300.png",
+    "tipo": "icon",
+    "dominio": "atenaagro.com"
+   },
+   {
+    "arquivo": "06.png",
+    "url": "https://atenaagro.com/wp-content/uploads/2024/12/logo-horizontal-removebg-preview-300x138.png",
+    "tipo": "regex-logo",
+    "dominio": "atenaagro.com"
+   },
+   {
+    "arquivo": "07.png",
+    "url": "https://atenaagro.com/wp-content/uploads/2024/12/logo-horizontal-removebg-preview-18x8.png",
+    "tipo": "regex-logo",
+    "dominio": "atenaagro.com"
+   },
+   {
+    "arquivo": "08.png",
+    "url": "https://atenaagro.com/wp-content/uploads/2024/12/logo-horizontal-removebg-preview-600x275.png",
+    "tipo": "regex-logo",
+    "dominio": "atenaagro.com"
+   },
+   {
+    "arquivo": "09.png",
+    "url": "https://atenaagro.com/wp-content/uploads/2024/12/logo-horizontal-removebg-preview-150x69.png",
+    "tipo": "regex-logo",
+    "dominio": "atenaagro.com"
+   },
+   {
+    "arquivo": "10.png",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Atenas_cordoba_logo.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "tipo": "commons:File:Atenas cordoba logo.png",
+    "dominio": "commons"
+   },
+   {
+    "arquivo": "11.png",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Mini_Free_Logo_Atenas.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "tipo": "commons:File:Mini Free Logo Atenas.png",
+    "dominio": "commons"
+   },
+   {
+    "arquivo": "12.svg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Flag_of_Paraguay.svg?utm_source=pt.wikipedia.org&utm_campaign=api&utm_content=original",
+    "tipo": "wiki:Paraguai",
+    "dominio": "wikipedia"
+   }
+  ],
+  "titulos": {
+   "usinaatena.com.br": "Usina Atena | Tecnologia em Energia Natural",
+   "atenaagro.com": "Home - Atena AGRO"
+  }
+ },
+ "renuka": {
+  "grupo": "usinas",
+  "nome": "Renuka",
+  "dominios": [
+   "renukadobrasil.com.br",
+   "renukasugars.com"
+  ],
+  "verificados": [
+   [
+    "renukadobrasil.com.br",
+    "forçado",
+    0
+   ],
+   [
+    "renukasugars.com",
+    "forçado",
+    0
+   ]
+  ],
+  "arquivos": [
+   {
+    "arquivo": "00.png",
+    "url": "https://renukasugars.com/wp-content/uploads/2024/01/1-1-1536x769-1.png",
+    "tipo": "img-logo",
+    "dominio": "renukasugars.com"
+   },
+   {
+    "arquivo": "01.png",
+    "url": "https://renukasugars.com/wp-content/uploads/2023/02/logo-madhur-header.png",
+    "tipo": "img-logo",
+    "dominio": "renukasugars.com"
+   },
+   {
+    "arquivo": "02.png",
+    "url": "https://renukasugars.com/wp-content/uploads/2024/04/cropped-android-chrome-512x512-1-32x32.png",
+    "tipo": "icon",
+    "dominio": "renukasugars.com"
+   },
+   {
+    "arquivo": "03.png",
+    "url": "https://renukasugars.com/wp-content/uploads/2024/04/cropped-android-chrome-512x512-1-192x192.png",
+    "tipo": "icon",
+    "dominio": "renukasugars.com"
+   },
+   {
+    "arquivo": "04.png",
+    "url": "https://renukasugars.com/wp-content/uploads/2024/04/cropped-android-chrome-512x512-1-180x180.png",
+    "tipo": "icon",
+    "dominio": "renukasugars.com"
+   },
+   {
+    "arquivo": "05.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Renuka_Chowdhury_releasing_the_logo_%E2%80%9CBell_Bajao%E2%80%9D%2C_at_the_launching_of_new_initiatives_for_welfare_of_Girl_Child_and_logo_for_National_Girl_Child_Day%2C_in_New_Delhi_on_January_19%2C_2009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "tipo": "commons:File:Renuka Chowdhury releasing the logo “Bell Bajao”, at the launching of new initiatives for welfare of Girl Child and logo for National Girl Child Day, in New Delhi on January 19, 2009.jpg",
+    "dominio": "commons"
+   }
+  ],
+  "titulos": {
+   "renukadobrasil.com.br": "ERRO HTTPSConnectionPool(host='renukadobrasil.com.br', port=443): Max retries exceede",
+   "renukasugars.com": "Renuka Sugar"
+  }
+ },
+ "vale-do-verdo": {
+  "grupo": "usinas",
+  "nome": "Vale do Verdão",
+  "dominios": [
+   "valedoverdao.com.br",
+   "usinavaledoverdao.com.br",
+   "valedoverdao.com"
+  ],
+  "verificados": [
+   [
+    "valedoverdao.com.br",
+    "forçado",
+    0
+   ],
+   [
+    "usinavaledoverdao.com.br",
+    "forçado",
+    0
+   ],
+   [
+    "valedoverdao.com",
+    "forçado",
+    0
+   ]
+  ],
+  "arquivos": [],
+  "titulos": {
+   "valedoverdao.com.br": "ERRO HTTPSConnectionPool(host='valedoverdao.com.br', port=443): Max retries exceeded ",
+   "usinavaledoverdao.com.br": "ERRO HTTPSConnectionPool(host='usinavaledoverdao.com.br', port=443): Max retries exce",
+   "valedoverdao.com": "Under construction - Awesome site in the making!"
+  }
+ },
+ "cofco": {
+  "grupo": "usinas",
+  "nome": "COFCO",
+  "dominios": [
+   "cofcointernational.com",
+   "cofco.com.br",
+   "cofcointernational.com.br"
+  ],
+  "verificados": [
+   [
+    "cofcointernational.com",
+    "forçado",
+    0
+   ],
+   [
+    "cofco.com.br",
+    "forçado",
+    0
+   ],
+   [
+    "cofcointernational.com.br",
+    "forçado",
+    0
+   ]
+  ],
+  "arquivos": [],
+  "titulos": {
+   "cofcointernational.com": "ERRO 403 Client Error: Forbidden for url: https://www.cofcointernational.com/",
+   "cofco.com.br": "ERRO HTTPSConnectionPool(host='cofco.com.br', port=443): Max retries exceeded with ur",
+   "cofcointernational.com.br": "ERRO HTTPSConnectionPool(host='cofcointernational.com.br', port=443): Max retries exc"
+  }
+ },
+ "ftima-do-sul": {
+  "grupo": "usinas",
+  "nome": "Fátima do Sul",
+  "dominios": [
+   "fatimaagroenergetica.com.br",
+   "usinafatimadosul.com.br",
+   "fsae.com.br"
+  ],
+  "verificados": [
+   [
+    "fatimaagroenergetica.com.br",
+    "forçado",
+    0
+   ],
+   [
+    "usinafatimadosul.com.br",
+    "forçado",
+    0
+   ],
+   [
+    "fsae.com.br",
+    "forçado",
+    0
+   ]
+  ],
+  "arquivos": [],
+  "titulos": {
+   "fatimaagroenergetica.com.br": "ERRO HTTPSConnectionPool(host='fatimaagroenergetica.com.br', port=443): Max retries e",
+   "usinafatimadosul.com.br": "ERRO HTTPSConnectionPool(host='usinafatimadosul.com.br', port=443): Max retries excee",
+   "fsae.com.br": "ERRO HTTPSConnectionPool(host='fsae.com.br', port=443): Max retries exceeded with url"
+  }
+ },
+ "cargill": {
+  "grupo": "usinas",
+  "nome": "Cargill",
+  "dominios": [
+   "cargill.com.br",
+   "cargill.com"
+  ],
+  "verificados": [
+   [
+    "cargill.com.br",
+    "forçado",
+    0
+   ],
+   [
+    "cargill.com",
+    "forçado",
+    0
+   ]
+  ],
+  "arquivos": [],
+  "titulos": {
+   "cargill.com.br": "ERRO 403 Client Error: Forbidden for url: https://cargill.com.br/",
+   "cargill.com": "ERRO 403 Client Error: Forbidden for url: https://cargill.com/"
+  }
+ },
+ "ipiranga": {
+  "grupo": "distribuidoras",
+  "nome": "Ipiranga",
+  "dominios": [
+   "ipiranga.com.br",
+   "www.ipiranga.com.br",
+   "ipirangacombustiveis.com.br"
+  ],
+  "verificados": [
+   [
+    "ipiranga.com.br",
+    "forçado",
+    0
+   ],
+   [
+    "www.ipiranga.com.br",
+    "forçado",
+    0
+   ],
+   [
+    "ipirangacombustiveis.com.br",
+    "forçado",
+    0
+   ]
+  ],
+  "arquivos": [
+   {
+    "arquivo": "00.svg",
+    "url": "https://www.ipiranga.com.br/wps/contenthandler/pt-br/!ut/p/digest!jrNKL_3isuc4kfF0Av0GfQ/dav/fs-type1/themes/ipiranga.institucionalv4.theme/assets/img/logo-ipiranga-azul.svg",
+    "tipo": "img-logo",
+    "dominio": "www.ipiranga.com.br"
+   },
+   {
+    "arquivo": "01.svg",
+    "url": "https://www.ipiranga.com.br/wps/contenthandler/pt-br/!ut/p/digest!jrNKL_3isuc4kfF0Av0GfQ/dav/fs-type1/themes/ipiranga.institucionalv4.theme/assets/img/icone-logo-ipiranga-azul.svg",
+    "tipo": "img-logo",
+    "dominio": "www.ipiranga.com.br"
+   },
+   {
+    "arquivo": "02.svg",
+    "url": "https://www.ipiranga.com.br/wps/wcm/connect/aa3e4170-1410-4ca3-a1ba-ef7f0f3d8fb1/logo-lubrificantes-azul.svg?MOD=AJPERES&CACHEID=ROOTWORKSPACE-aa3e4170-1410-4ca3-a1ba-ef7f0f3d8fb1-oUaDcYB",
+    "tipo": "img-logo",
+    "dominio": "www.ipiranga.com.br"
+   },
+   {
+    "arquivo": "03.png",
+    "url": "https://www.ipiranga.com.br/wps/wcm/connect/216cf15e-b3c7-47d8-9865-64cfa6326c6a/Logo+199+x+89px.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE-216cf15e-b3c7-47d8-9865-64cfa6326c6a-pm6Ehur",
+    "tipo": "img-logo",
+    "dominio": "www.ipiranga.com.br"
+   },
+   {
+    "arquivo": "04.svg",
+    "url": "https://www.ipiranga.com.br/wps/wcm/connect/857be072-f110-4a29-93d2-08fa41dc8805/logo-jetoil.svg?MOD=AJPERES&CACHEID=ROOTWORKSPACE-857be072-f110-4a29-93d2-08fa41dc8805-oVYafAz",
+    "tipo": "img-logo",
+    "dominio": "www.ipiranga.com.br"
+   },
+   {
+    "arquivo": "05.webp",
+    "url": "https://www.ipiranga.com.br/wps/wcm/connect/c7c066f5-695d-400e-91ad-69764adddabf/Logo+-+47px+%281%29.webp?MOD=AJPERES&CACHEID=ROOTWORKSPACE-c7c066f5-695d-400e-91ad-69764adddabf-oVDYFil",
+    "tipo": "img-logo",
+    "dominio": "www.ipiranga.com.br"
+   },
+   {
+    "arquivo": "06.png",
+    "url": "https://www.ipiranga.com.br/wps/wcm/connect/145918e1-8bb2-44a2-b502-1719536e609d/Logo+199+x+89px.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE-145918e1-8bb2-44a2-b502-1719536e609d-pm6Ejjy",
+    "tipo": "img-logo",
+    "dominio": "www.ipiranga.com.br"
+   },
+   {
+    "arquivo": "07.svg",
+    "url": "https://www.ipiranga.com.br/wps/wcm/connect/4411430a-49b1-401c-a1fa-d5aafc8d6c77/logo-jetoilt-carousel-card.svg?MOD=AJPERES&CACHEID=ROOTWORKSPACE-4411430a-49b1-401c-a1fa-d5aafc8d6c77-oVYal67",
+    "tipo": "img-logo",
+    "dominio": "www.ipiranga.com.br"
+   },
+   {
+    "arquivo": "08.gif",
+    "url": "https://www.ipiranga.com.br/wps/wcm/connect/c30d03a5-dcc1-430e-af41-3c3ab639c98b/logo_animada-min.gif?MOD=AJPERES&CACHEID=ROOTWORKSPACE-c30d03a5-dcc1-430e-af41-3c3ab639c98b-pzOD7NY",
+    "tipo": "img-logo",
+    "dominio": "www.ipiranga.com.br"
+   },
+   {
+    "arquivo": "09.png",
+    "url": "https://www.ipiranga.com.br/wps/contenthandler/pt-br/!ut/p/digest!jrNKL_3isuc4kfF0Av0GfQ/dav/fs-type1/themes/ipiranga.institucionalv4.theme/assets/ico/apple-touch-icon-152x152.png",
+    "tipo": "icon",
+    "dominio": "www.ipiranga.com.br"
+   },
+   {
+    "arquivo": "10.png",
+    "url": "https://www.ipiranga.com.br/wps/contenthandler/pt-br/!ut/p/digest!jrNKL_3isuc4kfF0Av0GfQ/dav/fs-type1/themes/ipiranga.institucionalv4.theme/assets/ico/apple-touch-icon-120x120.png",
+    "tipo": "icon",
+    "dominio": "www.ipiranga.com.br"
+   },
+   {
+    "arquivo": "11.png",
+    "url": "https://www.ipiranga.com.br/wps/contenthandler/pt-br/!ut/p/digest!jrNKL_3isuc4kfF0Av0GfQ/dav/fs-type1/themes/ipiranga.institucionalv4.theme/assets/ico/apple-touch-icon-114x114.png",
+    "tipo": "icon",
+    "dominio": "www.ipiranga.com.br"
+   },
+   {
+    "arquivo": "12.png",
+    "url": "https://www.ipiranga.com.br/wps/contenthandler/pt-br/!ut/p/digest!jrNKL_3isuc4kfF0Av0GfQ/dav/fs-type1/themes/ipiranga.institucionalv4.theme/assets/ico/apple-touch-icon-76x76.png",
+    "tipo": "icon",
+    "dominio": "www.ipiranga.com.br"
+   },
+   {
+    "arquivo": "13.png",
+    "url": "https://www.ipiranga.com.br/wps/contenthandler/pt-br/!ut/p/digest!jrNKL_3isuc4kfF0Av0GfQ/dav/fs-type1/themes/ipiranga.institucionalv4.theme/assets/ico/apple-touch-icon-72x72.png",
+    "tipo": "icon",
+    "dominio": "www.ipiranga.com.br"
+   },
+   {
+    "arquivo": "14.png",
+    "url": "https://www.ipiranga.com.br/wps/contenthandler/pt-br/!ut/p/digest!jrNKL_3isuc4kfF0Av0GfQ/dav/fs-type1/themes/ipiranga.institucionalv4.theme/assets/ico/apple-touch-icon-60x60.png",
+    "tipo": "icon",
+    "dominio": "www.ipiranga.com.br"
+   },
+   {
+    "arquivo": "15.png",
+    "url": "https://www.ipiranga.com.br/wps/contenthandler/pt-br/!ut/p/digest!jrNKL_3isuc4kfF0Av0GfQ/dav/fs-type1/themes/ipiranga.institucionalv4.theme/assets/ico/apple-touch-icon-57x57.png",
+    "tipo": "icon",
+    "dominio": "www.ipiranga.com.br"
+   }
+  ],
+  "titulos": {
+   "ipiranga.com.br": "ERRO HTTPSConnectionPool(host='ipiranga.com.br', port=443): Max retries exceeded with",
+   "www.ipiranga.com.br": "Ipiranga: Lá a Parada é Completa",
+   "ipirangacombustiveis.com.br": "ERRO HTTPSConnectionPool(host='ipirangacombustiveis.com.br', port=443): Max retries e"
+  }
+ },
+ "vibra-energia": {
+  "grupo": "distribuidoras",
+  "nome": "Vibra Energia",
+  "dominios": [
+   "vibraenergia.com.br"
+  ],
+  "verificados": [
+   [
+    "vibraenergia.com.br",
+    "forçado",
+    0
+   ]
+  ],
+  "arquivos": [
+   {
+    "arquivo": "00.png",
+    "url": "https://vibraenergia.com.br/sites/default/files/2021-08/logo.png",
+    "tipo": "img-logo",
+    "dominio": "vibraenergia.com.br"
+   },
+   {
+    "arquivo": "01.png",
+    "url": "https://vibraenergia.com.br/sites/default/files/2025-03/icone-lubrax-cor_nova%20marca.png",
+    "tipo": "img-logo",
+    "dominio": "vibraenergia.com.br"
+   },
+   {
+    "arquivo": "02.png",
+    "url": "https://vibraenergia.com.br/sites/default/files/2025-03/icone-lubrax-mais-cor_novo_logo.png",
+    "tipo": "img-logo",
+    "dominio": "vibraenergia.com.br"
+   },
+   {
+    "arquivo": "03.png",
+    "url": "https://vibraenergia.com.br/sites/default/files/2025-10/Nova%20marca%20BR%20Mania%202025.png",
+    "tipo": "img-logo",
+    "dominio": "vibraenergia.com.br"
+   },
+   {
+    "arquivo": "04.png",
+    "url": "https://vibraenergia.com.br/sites/default/files/2025-12/MARCA_VIBRA_SMART-CENTER_vertical_colorida.png",
+    "tipo": "img-logo",
+    "dominio": "vibraenergia.com.br"
+   },
+   {
+    "arquivo": "05.png",
+    "url": "https://vibraenergia.com.br/sites/default/files/2026-07/VIBRA-AGRITOP-DIESEL_NOVO_LOGO_VERDE_ESCURO_Vertical.png",
+    "tipo": "img-logo",
+    "dominio": "vibraenergia.com.br"
+   },
+   {
+    "arquivo": "06.png",
+    "url": "https://vibraenergia.com.br/sites/default/files/2023-05/logo_footer_new.png",
+    "tipo": "img-logo",
+    "dominio": "vibraenergia.com.br"
+   },
+   {
+    "arquivo": "07.png",
+    "url": "https://vibraenergia.com.br/sites/default/files/2025-01/logo_vibra_form_float2.png",
+    "tipo": "img-logo",
+    "dominio": "vibraenergia.com.br"
+   },
+   {
+    "arquivo": "08.png",
+    "url": "https://vibraenergia.com.br/sites/default/files/2025-01/logo_vibra_form_float2-mob.png",
+    "tipo": "img-logo",
+    "dominio": "vibraenergia.com.br"
+   },
+   {
+    "arquivo": "09.ico",
+    "url": "https://vibraenergia.com.br/sites/default/files/favicon.ico",
+    "tipo": "icon",
+    "dominio": "vibraenergia.com.br"
+   }
+  ],
+  "titulos": {
+   "vibraenergia.com.br": "Vibra: Se tem Energia, Brasil, Futuro, vibra!"
+  }
+ },
+ "dislub": {
+  "grupo": "distribuidoras",
+  "nome": "Dislub",
+  "dominios": [
+   "dislubenergia.com.br"
+  ],
+  "verificados": [
+   [
+    "dislubenergia.com.br",
+    "forçado",
+    0
+   ]
+  ],
+  "arquivos": [
+   {
+    "arquivo": "00.webp",
+    "url": "https://pages.greatpages.com.br/www.dislubenergia.com.br/1789651948/imagens/desktop/51786-f98cce939231134734ffc970867a94cd.png",
+    "tipo": "icon",
+    "dominio": "dislubenergia.com.br"
+   },
+   {
+    "arquivo": "01.jpg",
+    "url": "https://pages.greatpages.com.br/www.dislubenergia.com.br/1789651948/imagens/desktop/51786-c82059460224d74de393ea93b84e7b5d.jpg",
+    "tipo": "og",
+    "dominio": "dislubenergia.com.br"
+   }
+  ],
+  "titulos": {
+   "dislubenergia.com.br": "Dislub Energia"
+  }
+ },
+ "potencial-petrleo": {
+  "grupo": "distribuidoras",
+  "nome": "Potencial Petróleo",
+  "dominios": [
+   "potencialcombustiveis.com.br"
+  ],
+  "verificados": [
+   [
+    "potencialcombustiveis.com.br",
+    "forçado",
+    0
+   ]
+  ],
+  "arquivos": [],
+  "titulos": {
+   "potencialcombustiveis.com.br": "ERRO HTTPSConnectionPool(host='potencialcombustiveis.com.br', port=443): Max retries "
+  }
+ },
+ "soll-distribuidora": {
+  "grupo": "distribuidoras",
+  "nome": "Soll Distribuidora",
+  "dominios": [
+   "solldistribuidora.com.br",
+   "soll.com.br",
+   "sollpetroleo.com.br",
+   "sollcombustiveis.com.br"
+  ],
+  "verificados": [
+   [
+    "solldistribuidora.com.br",
+    "forçado",
+    0
+   ],
+   [
+    "soll.com.br",
+    "forçado",
+    0
+   ],
+   [
+    "sollpetroleo.com.br",
+    "forçado",
+    0
+   ],
+   [
+    "sollcombustiveis.com.br",
+    "forçado",
+    0
+   ]
+  ],
+  "arquivos": [
+   {
+    "arquivo": "00.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/pt/0/05/The_Host_Poster.jpg?utm_source=pt.wikipedia.org&utm_campaign=api&utm_content=original",
+    "tipo": "wiki:The Host (filme)",
+    "dominio": "wikipedia"
+   }
+  ],
+  "titulos": {
+   "solldistribuidora.com.br": "ERRO HTTPSConnectionPool(host='solldistribuidora.com.br', port=443): Max retries exce",
+   "soll.com.br": "ERRO HTTPSConnectionPool(host='soll.com.br', port=443): Max retries exceeded with url",
+   "sollpetroleo.com.br": "ERRO HTTPSConnectionPool(host='sollpetroleo.com.br', port=443): Max retries exceeded ",
+   "sollcombustiveis.com.br": "ERRO HTTPSConnectionPool(host='sollcombustiveis.com.br', port=443): Max retries excee"
+  }
+ },
+ "hora-combustveis": {
+  "grupo": "distribuidoras",
+  "nome": "Hora Combustíveis",
+  "dominios": [
+   "horadistribuidora.com.br"
+  ],
+  "verificados": [
+   [
+    "horadistribuidora.com.br",
+    "forçado",
+    0
+   ]
+  ],
+  "arquivos": [],
+  "titulos": {
+   "horadistribuidora.com.br": "ERRO HTTPSConnectionPool(host='horadistribuidora.com.br', port=443): Max retries exce"
+  }
+ }
+}
