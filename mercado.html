@@ -50,7 +50,7 @@ nav{background:rgba(26,61,31,0.97);backdrop-filter:blur(8px);position:sticky;top
 .fonte-tag{font-size:10px;padding:2px 8px;border-radius:10px;background:var(--vc);color:var(--vd);font-weight:600;margin-left:4px}
 
 /* METRICS TOP */
-.metrics-top{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:1.25rem}
+.metrics-top{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:1.25rem}
 .metric-card{background:var(--branco);border-radius:10px;padding:1.1rem 1.25rem;border:1px solid var(--cl)}
 .mc-label{font-size:10px;text-transform:uppercase;letter-spacing:0.1em;color:var(--ct);margin-bottom:6px;font-weight:600}
 .mc-value{font-family:'Barlow Condensed',sans-serif;font-size:1.9rem;font-weight:700;color:var(--preto);line-height:1}
@@ -159,6 +159,12 @@ tbody td{padding:6px 8px;font-size:12px}
 
   <!-- METRICS -->
   <div class="metrics-top">
+    <div class="metric-card">
+      <div class="mc-label" data-pt="Etanol Hidratado PLN" data-en="Hydrous Ethanol PLN">Etanol Hidratado PLN</div>
+      <div class="mc-value" id="m-pln">—</div>
+      <div class="mc-sub" id="m-pln-var"><span class="nt-txt">—</span></div>
+      <div class="mc-source" id="m-pln-src" data-pt="R$/litro · CEPEA/ESALQ Diário Paulínia" data-en="R$/liter · CEPEA/ESALQ Daily Paulínia">R$/litro · CEPEA/ESALQ Diário Paulínia</div>
+    </div>
     <div class="metric-card">
       <div class="mc-label" data-pt="Etanol Hidratado" data-en="Hydrated Ethanol">Etanol Hidratado</div>
       <div class="mc-value" id="m-eth">—</div>
@@ -345,6 +351,13 @@ function render(){
   const spEstado=d.estados.find(e=>e.uf==='SP');
   const gas=spEstado?spEstado.gasolina:d.nacional.gasolina_media;
 
+  (function(){
+    const p=d.pln_diario;
+    if(!p||!p.valor_litro) return;
+    document.getElementById('m-pln').textContent='R$ '+p.valor_litro.toFixed(4).replace('.',',');
+    document.getElementById('m-pln-var').innerHTML=varHtml(p.valor_litro,p.anterior_litro,'R$',4);
+    document.getElementById('m-pln-src').textContent=(currentLang==='pt'?'R$/litro · CEPEA/ESALQ Diário Paulínia · ':'R$/liter · CEPEA/ESALQ Daily Paulínia · ')+p.data.slice(0,5);
+  })();
   document.getElementById('m-eth').textContent='R$ '+eth.toFixed(2);
   document.getElementById('m-eth-var').innerHTML=varHtml(eth,ethP);
   document.getElementById('m-ani').textContent='R$ '+ani.toFixed(2);

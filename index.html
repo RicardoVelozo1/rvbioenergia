@@ -276,7 +276,7 @@ footer{background:#050505;border-top:1px solid var(--linha2);padding:3.5rem 3rem
     <div class="hc-label" data-pt="Mercado agora <span class='hc-live'>ao vivo</span>" data-en="Market now <span class='hc-live'>live</span>">Mercado agora <span class="hc-live">ao vivo</span></div>
     <div class="hc-grid">
       <div class="hc-metric">
-        <div class="hc-mlabel" data-pt="Etanol Hid. SP · CEPEA/ESALQ semanal" data-en="Hydrous Ethanol SP · CEPEA/ESALQ weekly">Etanol Hid. SP · CEPEA/ESALQ semanal</div>
+        <div class="hc-mlabel" id="h-eth-lbl" data-pt="Etanol Hid. PLN · CEPEA diário" data-en="Hydrous Ethanol PLN · CEPEA daily">Etanol Hid. PLN · CEPEA diário</div>
         <div class="hc-mval" id="h-eth">R$ —</div>
         <div class="hc-msub" id="h-eth-var">—</div>
       </div>
@@ -555,13 +555,20 @@ async function loadDados(){
     const p=d.nacional.paridade;
     const ev=((eth-ethP)/ethP*100).toFixed(2);
     document.getElementById('h-eth').textContent='R$ '+eth.toFixed(2);
+    const pln=d.pln_diario;
+    if(!(pln&&pln.valor_litro)){const l=document.getElementById('h-eth-lbl');l.setAttribute('data-pt','Etanol Hid. SP · CEPEA/ESALQ semanal');l.setAttribute('data-en','Hydrous Ethanol SP · CEPEA/ESALQ weekly');l.textContent=l.getAttribute('data-'+(typeof currentLang!=='undefined'?currentLang:'pt'));}
+    if(pln&&pln.valor_litro){
+      document.getElementById('h-eth').textContent='R$ '+pln.valor_litro.toFixed(2).replace('.',',')+'/L';
+      const pv=((pln.valor_litro-pln.anterior_litro)/pln.anterior_litro*100).toFixed(2);
+      window._plnVar='<span class="'+(pv<0?'down':'up')+'">'+(pv<0?'▼':'▲')+' '+Math.abs(pv)+'% · '+pln.data.slice(0,5)+'</span>';
+    }
     document.getElementById('mp-eth').textContent='R$ '+eth.toFixed(2);
     document.getElementById('h-brent').textContent='USD '+brent.toFixed(2);
     document.getElementById('mp-brent').textContent='USD '+brent.toFixed(2);
     document.getElementById('h-parity').textContent=p.toFixed(1)+'%';
     document.getElementById('h-parity').style.color=p<=70?'#5CB800':'#E05555';
     document.getElementById('mp-parity').textContent=p.toFixed(1)+'%';
-    document.getElementById('h-eth-var').innerHTML='<span class="'+(eth<ethP?'down':'up')+'">'+(eth<ethP?'▼':'▲')+' '+Math.abs(ev)+'%</span>';
+    document.getElementById('h-eth-var').innerHTML=window._plnVar||('<span class="'+(eth<ethP?'down':'up')+'">'+(eth<ethP?'▼':'▲')+' '+Math.abs(ev)+'%</span>');
     document.getElementById('h-brent-var').innerHTML='<span class="'+(brentVar>=0?'up':'down')+'">'+(brentVar>=0?'▲':'▼')+' '+Math.abs(brentVar).toFixed(2)+'%</span>';
     const bar=document.getElementById('h-bar');
     bar.style.width=Math.min(p,100)+'%';
