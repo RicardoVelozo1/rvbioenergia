@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1671" data-name="Rectangle 1671" width="32" height="32" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-favicon_32x32">
+      <rect width="32" height="32"/>
+    </clipPath>
+  </defs>
+  <g id="favicon_32x32" clip-path="url(#clip-favicon_32x32)">
+    <rect width="32" height="32" fill="#fff"/>
+    <g id="Group_578" data-name="Group 578">
+      <rect id="Rectangle_1670" data-name="Rectangle 1670" width="32" height="32" fill="#42ad49"/>
+      <g id="Group_577" data-name="Group 577">
+        <g id="Group_576" data-name="Group 576" clip-path="url(#clip-path)">
+          <path id="Path_854" data-name="Path 854" d="M202.845,299.434a1.394,1.394,0,1,0,1.377,1.394,1.355,1.355,0,0,0-1.377-1.394" transform="translate(-188.876 -280.719)" fill="#fff"/>
+          <path id="Path_855" data-name="Path 855" d="M84.888,145.735H82.174l-.663,1.505V143.1H80.186v2.638H69.646l-.662,1.505V143.1H67.659v2.633H64.281v12.174H84.889V145.736h0M66.139,156.574a.662.662,0,1,1,.662-.662.661.661,0,0,1-.662.662m3.406.009a2.321,2.321,0,1,1,0-4.642,2.18,2.18,0,0,1,1.968,1.138l-.821.477a1.233,1.233,0,0,0-1.156-.679,1.386,1.386,0,0,0,0,2.771,1.3,1.3,0,0,0,1.174-.68l.821.468a2.219,2.219,0,0,1-1.986,1.147m4.686,0a2.321,2.321,0,1,1,2.33-2.321,2.309,2.309,0,0,1-2.33,2.321m9.46-.115h-.953v-2.674c0-.618-.335-.962-.856-.962-.565,0-.962.362-.962,1.165v2.471h-.953v-2.674c0-.618-.309-.962-.83-.962-.538,0-.979.362-.979,1.165v2.471h-.953v-4.412h.953v.529a1.418,1.418,0,0,1,1.262-.644,1.369,1.369,0,0,1,1.253.7,1.513,1.513,0,0,1,1.35-.7,1.624,1.624,0,0,1,1.668,1.791Z" transform="translate(-60.263 -134.153)" fill="#fff"/>
+          <path id="Path_856" data-name="Path 856" d="M64.485,131.913v1.759H86.678v21.865h1.759V131.913Z" transform="translate(-60.455 -123.668)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

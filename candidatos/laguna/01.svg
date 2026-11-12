@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 190" width="100%" height="100%">
+  <defs>
+    <style>
+      .cls-blue-w { fill: #6366F1; }
+      .cls-green-w { fill: #00E676; }
+      .cls-text-white { font-family: 'Plus Jakarta Sans', 'Inter', sans-serif; font-weight: 800; font-size: 38px; fill: #FFFFFF; letter-spacing: -0.5px; }
+      .cls-text-green-w { font-family: 'Plus Jakarta Sans', 'Inter', sans-serif; font-weight: 600; font-size: 20px; fill: #00E676; letter-spacing: 2px; }
+    </style>
+  </defs>
+  <!-- Symbol -->
+  <g transform="translate(145, 10)">
+    <circle cx="55" cy="24" r="21" class="cls-blue-w" />
+    <circle cx="28" cy="62" r="21" class="cls-blue-w" />
+    <circle cx="82" cy="62" r="21" class="cls-blue-w" />
+    <path d="M-15 72 C25 64, 75 42, 105 18 C85 34, 40 54, -15 62 Z" class="cls-green-w" />
+  </g>
+  <!-- Typography -->
+  <text x="200" y="132" text-anchor="middle" class="cls-text-white">USINA LAGUNA</text>
+  <text x="200" y="162" text-anchor="middle" class="cls-text-green-w">energia renovável</text>
+</svg>

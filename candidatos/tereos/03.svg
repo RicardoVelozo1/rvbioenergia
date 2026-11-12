@@ -1,0 +1,444 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none"
+     xmlns="http://www.w3.org/2000/svg">
+    <style>
+        @media (prefers-color-scheme: light) {
+        #light {
+        display:block;
+        }
+        #dark {
+        display:none;
+        }
+        }
+        @media (prefers-color-scheme: dark) {
+        #dark {
+        display:block;
+        }
+        #light {
+        display:none;
+        }
+        }
+    </style>
+    <g id="light">
+        <g id="LOGO">
+            <g id="Group">
+                <path id="Vector"
+                      d="M45.554 8.52205C41.5665 6.21499 36.9377 4.89412 32.0003 4.89412C27.0629 4.89412 22.4334 6.21499 18.4466 8.52205C23.1984 8.52651 27.8827 9.78108 32.0003 12.1532C36.1172 9.78172 40.8022 8.52651 45.554 8.52205Z"
+                      fill="#0066B1"/>
+                <path id="Vector_2"
+                      d="M8.52335 18.4439C13.1311 18.4394 17.8014 19.6098 22.0784 22.0788C24.548 17.8019 28.007 14.4526 31.9997 12.1532C27.8821 9.78172 23.1972 8.52651 18.4459 8.52205C14.3328 10.9018 10.9031 14.3308 8.52335 18.4439Z"
+                      fill="#98ADDA"/>
+                <path id="Vector_3"
+                      d="M22.0784 22.0788C17.8014 19.6092 13.1305 18.4388 8.52335 18.4439C6.21563 22.432 4.8941 27.0614 4.8941 32.0006C9.82958 32.0006 14.4571 33.3202 18.4434 35.6254C18.4402 31.0202 19.6106 26.3532 22.0784 22.0788Z"
+                      fill="#CDD5EE"/>
+                <path id="Vector_4"
+                      d="M41.9216 22.0788C46.1985 19.6092 50.8694 18.4388 55.4766 18.4439C53.0968 14.3315 49.6671 10.9018 45.554 8.52269C40.8021 8.52715 36.1178 9.78173 32.0003 12.1538C35.9923 14.4526 39.4519 17.8019 41.9216 22.0788Z"
+                      fill="#98ADDA"/>
+                <path id="Vector_5"
+                      d="M31.9997 31.9924C34.2991 28.003 37.6466 24.5465 41.921 22.0788C39.4513 17.8019 35.9923 14.4526 31.9997 12.1532C28.0071 14.4526 24.5474 17.8019 22.0784 22.0788C26.3528 24.5465 29.7002 28.0036 31.9997 31.9924Z"
+                      fill="#CDD5EE"/>
+                <path id="Vector_6"
+                      d="M31.9996 59.1059C29.5281 54.8252 28.3577 50.1505 28.3647 45.5396C25.9836 41.4297 22.5552 38.0026 18.4427 35.6248C18.4459 40.3747 19.6992 45.0576 22.0681 49.1745C26.0652 51.4746 29.5287 54.8252 31.9996 59.1059Z"
+                      fill="#EE7100"/>
+                <path id="Vector_7"
+                      d="M45.5566 35.6254C49.5429 33.3202 54.1698 32.0006 59.1059 32.0006C59.1059 27.062 57.7844 22.432 55.4766 18.4439C50.8688 18.4394 46.1986 19.6098 41.9216 22.0788C44.3894 26.3532 45.5598 31.0202 45.5566 35.6254Z"
+                      fill="#CDD5EE"/>
+                <path id="Vector_8"
+                      d="M35.6353 45.5396C35.6283 40.7897 34.3724 36.108 32.0003 31.9924C29.6282 36.1073 28.3717 40.7897 28.3653 45.5396C30.6769 49.5296 32.0003 54.1628 32.0003 59.1059C31.9997 54.1628 33.3237 49.5296 35.6353 45.5396Z"
+                      fill="#FBB900"/>
+                <path id="Vector_9"
+                      d="M31.9997 59.1059C31.9997 54.1628 30.6756 49.5296 28.3647 45.5396C28.3583 50.1505 29.5287 54.8252 31.9997 59.1059Z"
+                      fill="#EA5602"/>
+                <path id="Vector_10"
+                      d="M31.9997 59.1059C34.4712 54.8252 37.9341 51.4746 41.9312 49.1745C44.3001 45.0576 45.5534 40.3747 45.5566 35.6248C41.4448 38.0026 38.0157 41.4291 35.6346 45.5396C35.6417 50.1505 34.4712 54.8252 31.9997 59.1059Z"
+                      fill="#EE7100"/>
+                <path id="Vector_11"
+                      d="M35.6353 45.5396C33.3237 49.5296 32.0003 54.1628 32.0003 59.1059C34.4712 54.8252 35.6416 50.1505 35.6353 45.5396Z"
+                      fill="#EA5602"/>
+            </g>
+            <path id="Vector_12"
+                  d="M31.9997 59.1059C36.9428 59.1059 41.5761 57.7818 45.5662 55.471C49.6761 53.0899 53.1032 49.6616 55.4811 45.5491C50.7311 45.5523 46.0481 46.8056 41.9312 49.1745C37.9347 51.4746 34.4712 54.8252 31.9997 59.1059Z"
+                  fill="#D10007"/>
+            <path id="Vector_13"
+                  d="M31.9997 59.1059C29.5281 54.8252 26.0653 51.4746 22.0682 49.1745C17.9513 46.8056 13.2682 45.5523 8.51828 45.5491C10.8961 49.6609 14.3227 53.0899 18.4332 55.471C22.4233 57.7818 27.0572 59.1059 31.9997 59.1059Z"
+                  fill="#D10007"/>
+        </g>
+    </g>
+    <g id="dark">
+        <g id="Group 4">
+            <g id="Group_2" opacity="0.4">
+                <g id="Clip path group">
+                    <mask id="mask0_26_885" style="mask-type:luminance"
+                          maskUnits="userSpaceOnUse" x="4" y="18" width="19"
+                          height="18">
+                        <g id="clippath">
+                            <path id="Vector_14"
+                                  d="M22.0784 18.4438H4.8941V35.6247H22.0784V18.4438Z"
+                                  fill="white"/>
+                        </g>
+                    </mask>
+                    <g mask="url(#mask0_26_885)">
+                        <g id="Group_3">
+                            <g id="Clip path group_2">
+                                <mask id="mask1_26_885"
+                                      style="mask-type:luminance"
+                                      maskUnits="userSpaceOnUse" x="4"
+                                      y="18" width="19" height="18">
+                                    <g id="clippath-1">
+                                        <path id="Vector_15"
+                                              d="M22.0784 18.4438H4.8941V35.6247H22.0784V18.4438Z"
+                                              fill="white"/>
+                                    </g>
+                                </mask>
+                                <g mask="url(#mask1_26_885)">
+                                    <g id="Group_4">
+                                        <path id="Vector_16"
+                                              d="M22.0783 22.0786C17.8009 19.6087 13.131 18.4395 8.52289 18.4429C6.21541 22.431 4.89407 27.062 4.89407 32.0007C9.82936 32.0007 14.4569 33.3197 18.4427 35.6249C18.4392 31.0203 19.6096 26.3538 22.0783 22.0786Z"
+                                              fill="white"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <path id="Vector_17"
+                  d="M45.5536 8.5218C41.5668 6.21546 36.9381 4.89412 32.0005 4.89412C27.0629 4.89412 22.4342 6.21546 18.4473 8.5218C23.1984 8.52637 27.8832 9.78136 32.0005 12.1529C36.1178 9.78136 40.8025 8.52637 45.5536 8.5218Z"
+                  fill="white"/>
+            <g id="Group_5" opacity="0.7">
+                <g id="Clip path group_3">
+                    <mask id="mask2_26_885" style="mask-type:luminance"
+                          maskUnits="userSpaceOnUse" x="8" y="8" width="25"
+                          height="15">
+                        <g id="clippath-2">
+                            <path id="Vector_18"
+                                  d="M32.0006 8.52179H8.52423V22.0784H32.0006V8.52179Z"
+                                  fill="white"/>
+                        </g>
+                    </mask>
+                    <g mask="url(#mask2_26_885)">
+                        <g id="Group_6">
+                            <g id="Clip path group_4">
+                                <mask id="mask3_26_885"
+                                      style="mask-type:luminance"
+                                      maskUnits="userSpaceOnUse" x="8" y="8"
+                                      width="25" height="15">
+                                    <g id="clippath-3">
+                                        <path id="Vector_19"
+                                              d="M32.0006 8.52179H8.52423V22.0784H32.0006V8.52179Z"
+                                              fill="white"/>
+                                    </g>
+                                </mask>
+                                <g mask="url(#mask3_26_885)">
+                                    <g id="Group_7">
+                                        <path id="Vector_20"
+                                              d="M8.52426 18.4437C13.1324 18.4391 17.8022 19.6094 22.0786 22.0793C24.5485 17.8019 28.0069 14.4533 32.0006 12.1539C27.8822 9.78231 23.1986 8.52733 18.4463 8.52275C14.3336 10.9023 10.9038 14.3309 8.52426 18.4448"
+                                              fill="white"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="Group_8" opacity="0.7">
+                <g id="Clip path group_5">
+                    <mask id="mask4_26_885" style="mask-type:luminance"
+                          maskUnits="userSpaceOnUse" x="32" y="8" width="24"
+                          height="15">
+                        <g id="clippath-4">
+                            <path id="Vector_21"
+                                  d="M55.4753 8.52179H32.0001V22.0784H55.4753V8.52179Z"
+                                  fill="white"/>
+                        </g>
+                    </mask>
+                    <g mask="url(#mask4_26_885)">
+                        <g id="Group_9">
+                            <g id="Clip path group_6">
+                                <mask id="mask5_26_885"
+                                      style="mask-type:luminance"
+                                      maskUnits="userSpaceOnUse" x="32"
+                                      y="8" width="24" height="15">
+                                    <g id="clippath-5">
+                                        <path id="Vector_22"
+                                              d="M55.4764 8.52179H32.0001V22.0784H55.4764V8.52179Z"
+                                              fill="white"/>
+                                    </g>
+                                </mask>
+                                <g mask="url(#mask5_26_885)">
+                                    <g id="Group_10">
+                                        <path id="Vector_23"
+                                              d="M41.9211 22.0786C46.1986 19.6086 50.8685 18.4394 55.4754 18.4429C53.0959 14.3301 49.6661 10.9015 45.5522 8.52083C40.8011 8.5254 36.1164 9.78039 31.9991 12.1519C35.9917 14.4514 39.4512 17.7999 41.9211 22.0774"
+                                              fill="white"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="Group_11" opacity="0.4">
+                <g id="Clip path group_7">
+                    <mask id="mask6_26_885" style="mask-type:luminance"
+                          maskUnits="userSpaceOnUse" x="22" y="12"
+                          width="20" height="20">
+                        <g id="clippath-6">
+                            <path id="Vector_24"
+                                  d="M41.9216 12.1528H22.0786V31.9923H41.9216V12.1528Z"
+                                  fill="white"/>
+                        </g>
+                    </mask>
+                    <g mask="url(#mask6_26_885)">
+                        <g id="Group_12">
+                            <g id="Clip path group_8">
+                                <mask id="mask7_26_885"
+                                      style="mask-type:luminance"
+                                      maskUnits="userSpaceOnUse" x="22"
+                                      y="12" width="20" height="20">
+                                    <g id="clippath-7">
+                                        <path id="Vector_25"
+                                              d="M41.9216 12.1528H22.0786V31.9923H41.9216V12.1528Z"
+                                              fill="white"/>
+                                    </g>
+                                </mask>
+                                <g mask="url(#mask7_26_885)">
+                                    <g id="Group_13">
+                                        <path id="Vector_26"
+                                              d="M32.0007 31.9923C34.3001 28.0032 37.6475 24.5459 41.9216 22.0783C39.4528 17.8008 35.9921 14.4523 32.0007 12.1528C28.008 14.4523 24.5485 17.8008 22.0786 22.0783C26.3527 24.5459 29.7 28.0032 32.0007 31.9923Z"
+                                              fill="white"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="Group_14" opacity="0.7">
+                <g id="Clip path group_9">
+                    <mask id="mask8_26_885" style="mask-type:luminance"
+                          maskUnits="userSpaceOnUse" x="18" y="35"
+                          width="15" height="25">
+                        <g id="clippath-8">
+                            <path id="Vector_27"
+                                  d="M32.0007 35.6246H18.4441V59.1044H32.0007V35.6246Z"
+                                  fill="white"/>
+                        </g>
+                    </mask>
+                    <g mask="url(#mask8_26_885)">
+                        <g id="Group_15">
+                            <g id="Clip path group_10">
+                                <mask id="mask9_26_885"
+                                      style="mask-type:luminance"
+                                      maskUnits="userSpaceOnUse" x="18"
+                                      y="35" width="15" height="25">
+                                    <g id="clippath-9">
+                                        <path id="Vector_28"
+                                              d="M32.0007 35.6236H18.4441V59.1046H32.0007V35.6236Z"
+                                              fill="white"/>
+                                    </g>
+                                </mask>
+                                <g mask="url(#mask9_26_885)">
+                                    <g id="Group_16">
+                                        <path id="Vector_29"
+                                              d="M32.0009 59.1043C29.5298 54.8234 28.3594 50.1489 28.3652 45.5386C25.9845 41.4293 22.5559 38.0018 18.4431 35.6245C18.4465 40.3745 19.7004 45.0581 22.0685 49.1742C26.0657 51.4737 29.5286 54.8245 31.9997 59.1054"
+                                              fill="white"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="Group_17" opacity="0.4">
+                <g id="Clip path group_11">
+                    <mask id="mask10_26_885" style="mask-type:luminance"
+                          maskUnits="userSpaceOnUse" x="41" y="18"
+                          width="19" height="18">
+                        <g id="clippath-10">
+                            <path id="Vector_30"
+                                  d="M59.1059 18.4438H41.9216V35.6247H59.1059V18.4438Z"
+                                  fill="white"/>
+                        </g>
+                    </mask>
+                    <g mask="url(#mask10_26_885)">
+                        <g id="Group_18">
+                            <g id="Clip path group_12">
+                                <mask id="mask11_26_885"
+                                      style="mask-type:luminance"
+                                      maskUnits="userSpaceOnUse" x="41"
+                                      y="18" width="19" height="18">
+                                    <g id="clippath-11">
+                                        <path id="Vector_31"
+                                              d="M59.1059 18.4438H41.9216V35.6247H59.1059V18.4438Z"
+                                              fill="white"/>
+                                    </g>
+                                </mask>
+                                <g mask="url(#mask11_26_885)">
+                                    <g id="Group_19">
+                                        <path id="Vector_32"
+                                              d="M45.5562 35.6247C49.542 33.3195 54.1695 32.0004 59.106 32.0004C59.106 27.0606 57.7846 22.4319 55.476 18.4438C50.8679 18.4393 46.198 19.6096 41.9206 22.0795C44.3882 26.3536 45.5585 31.0212 45.5562 35.6258"
+                                              fill="white"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="Group_20" opacity="0.4">
+                <g id="Clip path group_13">
+                    <mask id="mask12_26_885" style="mask-type:luminance"
+                          maskUnits="userSpaceOnUse" x="28" y="31" width="8"
+                          height="29">
+                        <g id="clippath-12">
+                            <path id="Vector_33"
+                                  d="M35.6347 31.9924H28.3645V59.1056H35.6347V31.9924Z"
+                                  fill="white"/>
+                        </g>
+                    </mask>
+                    <g mask="url(#mask12_26_885)">
+                        <g id="Group_21">
+                            <g id="Clip path group_14">
+                                <mask id="mask13_26_885"
+                                      style="mask-type:luminance"
+                                      maskUnits="userSpaceOnUse" x="28"
+                                      y="31" width="8" height="29">
+                                    <g id="clippath-13">
+                                        <path id="Vector_34"
+                                              d="M35.6347 31.9924H28.3645V59.1056H35.6347V31.9924Z"
+                                              fill="white"/>
+                                    </g>
+                                </mask>
+                                <g mask="url(#mask13_26_885)">
+                                    <g id="Group_22">
+                                        <path id="Vector_35"
+                                              d="M35.6347 45.5387C35.6279 40.7887 34.3717 36.1063 31.999 31.9924C29.6275 36.1074 28.3714 40.7899 28.3645 45.5387C30.6754 49.5279 31.999 54.1623 31.999 59.1044C31.999 54.1611 33.3238 49.5279 35.6347 45.5387Z"
+                                              fill="white"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="Group_23" opacity="0.8">
+                <g id="Clip path group_15">
+                    <mask id="mask14_26_885" style="mask-type:luminance"
+                          maskUnits="userSpaceOnUse" x="28" y="45" width="5"
+                          height="15">
+                        <g id="clippath-14">
+                            <path id="Vector_36"
+                                  d="M32.0002 45.5386H28.3645V59.1043H32.0002V45.5386Z"
+                                  fill="white"/>
+                        </g>
+                    </mask>
+                    <g mask="url(#mask14_26_885)">
+                        <g id="Group_24">
+                            <g id="Clip path group_16">
+                                <mask id="mask15_26_885"
+                                      style="mask-type:luminance"
+                                      maskUnits="userSpaceOnUse" x="28"
+                                      y="45" width="5" height="15">
+                                    <g id="clippath-15">
+                                        <path id="Vector_37"
+                                              d="M32.0002 45.5386H28.3645V59.1043H32.0002V45.5386Z"
+                                              fill="white"/>
+                                    </g>
+                                </mask>
+                                <g mask="url(#mask15_26_885)">
+                                    <g id="Group_25">
+                                        <path id="Vector_38"
+                                              d="M32 59.1044C32 54.1622 30.6764 49.5289 28.3643 45.5386C28.3586 50.1502 29.5278 54.8246 32 59.1044Z"
+                                              fill="white"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="Group_26" opacity="0.7">
+                <g id="Clip path group_17">
+                    <mask id="mask16_26_885" style="mask-type:luminance"
+                          maskUnits="userSpaceOnUse" x="32" y="35"
+                          width="14" height="25">
+                        <g id="clippath-16">
+                            <path id="Vector_39"
+                                  d="M45.5567 35.6246H32.0001V59.1044H45.5567V35.6246Z"
+                                  fill="white"/>
+                        </g>
+                    </mask>
+                    <g mask="url(#mask16_26_885)">
+                        <g id="Group_27">
+                            <g id="Clip path group_18">
+                                <mask id="mask17_26_885"
+                                      style="mask-type:luminance"
+                                      maskUnits="userSpaceOnUse" x="32"
+                                      y="35" width="14" height="25">
+                                    <g id="clippath-17">
+                                        <path id="Vector_40"
+                                              d="M45.5567 35.6236H32.0001V59.1046H45.5567V35.6236Z"
+                                              fill="white"/>
+                                    </g>
+                                </mask>
+                                <g mask="url(#mask17_26_885)">
+                                    <g id="Group_28">
+                                        <path id="Vector_41"
+                                              d="M32.0001 59.1046C34.4712 54.8237 37.9341 51.4728 41.9313 49.1734C44.3006 45.0572 45.5533 40.3736 45.5567 35.6236C41.4439 38.002 38.0165 41.4284 35.6358 45.5377C35.6415 50.1492 34.4723 54.8237 32.0001 59.1034"
+                                              fill="white"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="Group_29" opacity="0.8">
+                <g id="Clip path group_19">
+                    <mask id="mask18_26_885" style="mask-type:luminance"
+                          maskUnits="userSpaceOnUse" x="32" y="45" width="4"
+                          height="15">
+                        <g id="clippath-18">
+                            <path id="Vector_42"
+                                  d="M35.6346 45.5386H32.0001V59.1043H35.6346V45.5386Z"
+                                  fill="white"/>
+                        </g>
+                    </mask>
+                    <g mask="url(#mask18_26_885)">
+                        <g id="Group_30">
+                            <g id="Clip path group_20">
+                                <mask id="mask19_26_885"
+                                      style="mask-type:luminance"
+                                      maskUnits="userSpaceOnUse" x="32"
+                                      y="45" width="4" height="15">
+                                    <g id="clippath-19">
+                                        <path id="Vector_43"
+                                              d="M35.6358 45.5386H32.0001V59.1043H35.6358V45.5386Z"
+                                              fill="white"/>
+                                    </g>
+                                </mask>
+                                <g mask="url(#mask19_26_885)">
+                                    <g id="Group_31">
+                                        <path id="Vector_44"
+                                              d="M35.6348 45.5386C33.3239 49.5278 31.9991 54.1622 31.9991 59.1043C34.4713 54.8234 35.6416 50.149 35.6348 45.5386Z"
+                                              fill="white"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <path id="Vector_45"
+                  d="M32.0005 59.1045C29.5294 54.8236 26.0665 51.4728 22.0693 49.1733C17.9531 46.804 13.2695 45.5513 8.51956 45.5479C10.898 49.6607 14.3243 53.0881 18.4336 55.47C22.4228 57.782 27.0572 59.1057 31.9993 59.1057"
+                  fill="white"/>
+            <path id="Vector_46"
+                  d="M32.0005 59.1044C36.9426 59.1044 41.577 57.7808 45.5662 55.4687C49.6755 53.088 53.103 49.6594 55.4803 45.5467C50.7303 45.5501 46.0467 46.804 41.9305 49.1721C37.9333 51.4716 34.4704 54.8224 31.9993 59.1033"
+                  fill="white"/>
+        </g>
+    </g>
+    <defs>
+        <clipPath id="clip0_26_885">
+            <rect width="64" height="64" fill="white"/>
+        </clipPath>
+    </defs>
+</svg>
