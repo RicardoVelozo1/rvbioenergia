@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-11T18:11:06.861593",
+  "atualizado": "2026-11-12T13:21:56.825563",
   "semana": "09/11 – 15/11/2026",
   "nacional": {
     "paridade": 69.7,
@@ -9,9 +9,9 @@
     "municipios_pesquisados": 26
   },
   "brent": {
-    "valor": 93.08,
-    "variacao": 1.74,
-    "data": "11/11/2026",
+    "valor": 93.58,
+    "variacao": 0.88,
+    "data": "12/11/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
@@ -44,36 +44,36 @@
   ],
   "historico_brent": [
     {
-      "data": "22/09",
-      "valor": 103.08
+      "data": "23/09",
+      "valor": 106.6
     },
     {
-      "data": "29/09",
-      "valor": 103.53
+      "data": "30/09",
+      "valor": 102.31
     },
     {
-      "data": "06/10",
-      "valor": 100.2
+      "data": "07/10",
+      "valor": 104.28
     },
     {
-      "data": "13/10",
-      "valor": 106.06
+      "data": "14/10",
+      "valor": 105.92
     },
     {
-      "data": "20/10",
-      "valor": 108.82
+      "data": "21/10",
+      "valor": 113.17
     },
     {
-      "data": "27/10",
-      "valor": 115.32
+      "data": "28/10",
+      "valor": 114.88
     },
     {
-      "data": "04/11",
-      "valor": 94.62
+      "data": "05/11",
+      "valor": 98.29
     },
     {
-      "data": "11/11",
-      "valor": 93.08
+      "data": "12/11",
+      "valor": 93.58
     }
   ],
   "estados": [
@@ -234,10 +234,95 @@
       "gasolina": 7.03
     }
   ],
+  "pln_diario": {
+    "data": "11/11/2026",
+    "valor_m3": 3015.5,
+    "valor_litro": 3.0155,
+    "anterior_litro": 2.9885,
+    "variacao_dia": 0.9,
+    "historico": [
+      {
+        "data": "28/10/2026",
+        "valor_litro": 2.912
+      },
+      {
+        "data": "29/10/2026",
+        "valor_litro": 2.9285
+      },
+      {
+        "data": "30/10/2026",
+        "valor_litro": 2.929
+      },
+      {
+        "data": "03/11/2026",
+        "valor_litro": 2.968
+      },
+      {
+        "data": "04/11/2026",
+        "valor_litro": 2.961
+      },
+      {
+        "data": "05/11/2026",
+        "valor_litro": 2.9755
+      },
+      {
+        "data": "06/11/2026",
+        "valor_litro": 2.9915
+      },
+      {
+        "data": "09/11/2026",
+        "valor_litro": 2.985
+      },
+      {
+        "data": "10/11/2026",
+        "valor_litro": 2.9885
+      },
+      {
+        "data": "11/11/2026",
+        "valor_litro": 3.0155
+      }
+    ],
+    "fonte": "CEPEA/ESALQ/B3 — Indicador diário do etanol hidratado, posto Paulínia (SP)"
+  },
   "diagnostico_anp": {
     "ed45": "ok, 18465 chars; sem preço: []; trecho Macapá: Macapá 6,31 | Macapá - | Macapá 7,14 | Macapá | R$ 7,14 | Macapá 127,46"
   },
+  "diagnostico_pln": {
+    "status": "ok"
+  },
   "noticias": [
+    {
+      "titulo": "Multas de R$ 700 milhões da ANP por preços de combustíveis geram impasse",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/o-impasse-das-multas-de-700-milhoes-da-anp-por-precos-de-combustiveis",
+      "tag": "ANP",
+      "data": "12/11/2026",
+      "titulo_en": "ANP fines of R$700 million for fuel prices create deadlock"
+    },
+    {
+      "titulo": "Kepler Weber aposta em biocombustíveis e no exterior para recuperação em 2027",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/kepler-weber-aposta-em-biocombustiveis-e-no-exterior-para-recuperacao-em-2027",
+      "tag": "Etanol",
+      "data": "12/11/2026",
+      "titulo_en": "Kepler Weber is banking on biofuels and international markets for a recovery in 2027"
+    },
+    {
+      "titulo": "“Não há contradição” entre petróleo e transição energética, diz ministro",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/nao-ha-contradicao-entre-petroleo-e-transicao-energetica-diz-ministro",
+      "tag": "Brent",
+      "data": "12/11/2026",
+      "titulo_en": "“There is no contradiction” between oil and the energy transition, says minister"
+    },
+    {
+      "titulo": "Venezuela diz na COP31 ter direito soberano de ampliar produção de petróleo",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/venezuela-diz-na-cop31-ter-direito-soberano-de-ampliar-producao-de-petroleo",
+      "tag": "Brent",
+      "data": "12/11/2026",
+      "titulo_en": "Venezuela states at COP31 that it has the sovereign right to increase oil production"
+    },
     {
       "titulo": "Por que os motoristas não abastecem com etanol? Setor busca respostas – e soluções",
       "fonte": "NovaCana",
@@ -285,38 +370,6 @@
       "tag": "Etanol",
       "data": "11/11/2026",
       "titulo_en": "Extension of fuel tax relief to have an impact of R$2.76 billion"
-    },
-    {
-      "titulo": "Brasil defende abandono progressivo dos combustíveis fósseis na COP31",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/brasil-defende-abandono-progressivo-dos-combustiveis-fosseis-na-cop31",
-      "tag": "Etanol",
-      "data": "11/11/2026",
-      "titulo_en": "Brazil advocates the progressive phase-out of fossil fuels at COP31"
-    },
-    {
-      "titulo": "Revisão de regras do RenovaBio para novos distribuidores é tema de audiência pública",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/revisao-de-regras-do-renovabio-para-novos-distribuidores-e-tema-de-audiencia-publica",
-      "tag": "RenovaBio",
-      "data": "10/11/2026",
-      "titulo_en": "Review of RenovaBio rules for new distributors is the subject of a public hearing"
-    },
-    {
-      "titulo": "Preços nos postos: Etanol segue em alta, mas ainda é competitivo na média nacional",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/precos-nos-postos-etanol-segue-em-alta-mas-ainda-e-competitivo-na-media-nacional",
-      "tag": "Etanol",
-      "data": "10/11/2026",
-      "titulo_en": "Prices at stations: Ethanol remains high, but is still competitive in the national average"
-    },
-    {
-      "titulo": "[Cepea] Preços do açúcar cristal seguem firmes no mercado paulista",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/cepea-precos-do-acucar-cristal-seguem-firmes-no-mercado-paulista",
-      "tag": "Etanol",
-      "data": "10/11/2026",
-      "titulo_en": "[Cepea] Crystal sugar prices remain firm in the São Paulo market"
     }
   ]
 }
