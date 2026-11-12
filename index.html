@@ -112,6 +112,16 @@ h1 em{font-style:italic;color:var(--verde-txt)}
 .strip-item{font-size:13px;font-weight:400;letter-spacing:0.12em;text-transform:uppercase;color:var(--cinza1);display:flex;align-items:center;gap:8px}
 .strip-item::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--verde-vivo);flex-shrink:0}
 
+
+/* PARCEIROS */
+.parc{display:none;padding:3.5rem 3rem;background:var(--ink);text-align:center;border-bottom:1px solid var(--linha2)}
+.parc.on{display:block}
+.parc h3{font-size:14px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--verde-txt);margin-bottom:2rem}
+.parc-row{max-width:1280px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:2.5rem 3.5rem}
+.parc-row img{height:56px;width:auto;max-width:170px;object-fit:contain;filter:grayscale(1);opacity:.75;transition:all .25s}
+.parc-row img:hover{filter:none;opacity:1}
+@media(max-width:600px){.parc{padding:2.5rem 1.5rem}.parc-row{gap:1.5rem 2rem}.parc-row img{height:44px;max-width:120px}}
+
 /* SECTION BASE */
 section{padding:7rem 3rem}
 .sec-inner{max-width:1280px;margin:0 auto}
@@ -370,6 +380,8 @@ footer{background:#EAF3E2;border-top:1px solid var(--linha2);padding:3.5rem 3rem
 </div>
 
 <!-- MISSÃO VISÃO VALORES -->
+<section class="parc" id="parceiros"><h3 data-pt="Quem já fez negócios com a RV Bioenergia" data-en="Companies that have done business with RV Bioenergia">Quem já fez negócios com a RV Bioenergia</h3><div class="parc-row" id="parc-row"></div></section>
+
 <section class="mvv" id="mvv">
   <div class="sec-inner">
     <div class="reveal">
@@ -775,6 +787,13 @@ function applyTranslations(){
     if(text !== null) el.innerHTML = text;
   });
 }
+
+fetch('parceiros/parceiros.json?'+Date.now()).then(r=>r.json()).then(l=>{
+  if(!Array.isArray(l)||!l.length)return;
+  const row=document.getElementById('parc-row');
+  l.forEach(p=>{const im=document.createElement('img');im.src='parceiros/'+p.arquivo;im.alt=p.nome;im.title=p.nome;im.loading='lazy';row.appendChild(im)});
+  document.getElementById('parceiros').classList.add('on');
+}).catch(()=>{});
 </script>
 </body>
 </html>
