@@ -26,19 +26,19 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Barlow',sans-serif;background:var(--bg);color:var(--preto);font-size:15px}
 
-nav{background:rgba(26,61,31,0.97);backdrop-filter:blur(8px);position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(92,184,0,0.2)}
+nav{background:rgba(255,255,255,0.97);backdrop-filter:blur(8px);position:sticky;top:0;z-index:100;border-bottom:1px solid var(--borda)}
 .nav-inner{max-width:1320px;margin:0 auto;padding:0 1.5rem;display:flex;align-items:center;justify-content:space-between;height:84px}
 .nav-logo{display:flex;align-items:center;gap:8px;text-decoration:none}
 .nav-logo svg{width:28px;height:28px}
 .nav-logo-text strong{font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:700;color:#fff}
 .nav-logo-text span{font-size:9px;color:rgba(255,255,255,0.5);display:block;letter-spacing:0.08em;text-transform:uppercase}
-.nav-back{color:rgba(255,255,255,0.7);text-decoration:none;font-size:12px;display:flex;align-items:center;gap:5px;transition:color 0.2s}
+.nav-back{color:var(--vm);text-decoration:none;font-size:12px;display:flex;align-items:center;gap:5px;transition:color 0.2s}
 .nav-back:hover{color:var(--vl)}
 .nav-right{display:flex;align-items:center;gap:1rem}
-.update-badge{font-size:11px;color:rgba(255,255,255,0.5);display:flex;align-items:center;gap:5px}
+.update-badge{font-size:11px;color:var(--ct);display:flex;align-items:center;gap:5px}
 .live-dot{width:6px;height:6px;border-radius:50%;background:var(--vl);animation:pulse 2s infinite;flex-shrink:0}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
-.btn-refresh{background:rgba(92,184,0,0.15);border:1px solid rgba(92,184,0,0.3);color:var(--vl);padding:5px 12px;border-radius:4px;font-size:11px;font-weight:600;cursor:pointer;font-family:'Barlow',sans-serif;letter-spacing:0.04em;text-transform:uppercase;transition:all 0.2s}
+.btn-refresh{background:rgba(92,184,0,0.12);border:1px solid rgba(61,139,55,0.4);color:var(--vm);padding:5px 12px;border-radius:4px;font-size:11px;font-weight:600;cursor:pointer;font-family:'Barlow',sans-serif;letter-spacing:0.04em;text-transform:uppercase;transition:all 0.2s}
 .btn-refresh:hover{background:rgba(92,184,0,0.25)}
 
 .page{max-width:1320px;margin:0 auto;padding:1.5rem}
@@ -59,22 +59,22 @@ nav{background:rgba(26,61,31,0.97);backdrop-filter:blur(8px);position:sticky;top
 .up-txt{color:var(--up)}.dn-txt{color:var(--dn)}.nt-txt{color:var(--ct)}
 
 /* NATIONAL PARITY */
-.national-parity{background:var(--vd);border-radius:10px;padding:1.25rem 1.5rem;margin-bottom:1.25rem;display:flex;align-items:center;flex-wrap:wrap;gap:1.5rem}
+.national-parity{background:var(--vc);border:1px solid #CFE3BC;border-radius:10px;padding:1.25rem 1.5rem;margin-bottom:1.25rem;display:flex;align-items:center;flex-wrap:wrap;gap:1.5rem}
 .np-main{display:flex;flex-direction:column}
-.np-label{font-size:10px;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.5);margin-bottom:4px}
-.np-value{font-family:'Barlow Condensed',sans-serif;font-size:2.2rem;font-weight:700;color:#fff;line-height:1}
+.np-label{font-size:10px;text-transform:uppercase;letter-spacing:0.1em;color:var(--vm);margin-bottom:4px}
+.np-value{font-family:'Barlow Condensed',sans-serif;font-size:2.2rem;font-weight:700;color:var(--vd);line-height:1}
 .np-verdict{display:inline-block;margin-top:6px;font-size:12px;padding:3px 10px;border-radius:10px;font-weight:600}
-.np-good{background:rgba(92,184,0,0.2);color:#9FE1CB}
-.np-bad{background:rgba(226,75,74,0.2);color:#F0959  5}
+.np-good{background:rgba(92,184,0,0.22);color:var(--vd)}
+.np-bad{background:rgba(226,75,74,0.15);color:#A32D2D}
 .np-bar-wrap{flex:1;min-width:200px}
-.np-bar-label{display:flex;justify-content:space-between;font-size:10px;color:rgba(255,255,255,0.4);margin-bottom:6px}
-.np-bar-bg{height:8px;background:rgba(255,255,255,0.1);border-radius:4px;position:relative;overflow:hidden}
+.np-bar-label{display:flex;justify-content:space-between;font-size:10px;color:var(--ct);margin-bottom:6px}
+.np-bar-bg{height:8px;background:rgba(26,61,31,0.12);border-radius:4px;position:relative;overflow:hidden}
 .np-bar-fill{height:100%;border-radius:4px;transition:width 1s}
 .np-bar-mark{position:absolute;top:-3px;left:70%;width:2px;height:14px;background:rgba(255,100,100,0.6)}
 .np-stats{display:flex;gap:1.5rem;flex-wrap:wrap}
 .np-stat{text-align:center}
-.np-stat-val{font-family:'Barlow Condensed',sans-serif;font-size:1.4rem;font-weight:700;color:#fff}
-.np-stat-lbl{font-size:10px;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.06em}
+.np-stat-val{font-family:'Barlow Condensed',sans-serif;font-size:1.4rem;font-weight:700;color:var(--vd)}
+.np-stat-lbl{font-size:10px;color:var(--vm);text-transform:uppercase;letter-spacing:0.06em}
 
 /* MAIN GRID */
 .main-grid{display:grid;grid-template-columns:1fr 340px;gap:14px;margin-bottom:1.25rem}
@@ -138,7 +138,7 @@ tbody td{padding:6px 8px;font-size:12px}
       <div class="update-badge"><div class="live-dot"></div><span id="update-time">Carregando...</span></div>
       <button class="btn-refresh" onclick="loadAll(true)" data-pt="↻ Atualizar" data-en="↻ Refresh">↻ Atualizar</button>
       <a href="index.html" class="nav-back" data-pt="← Site" data-en="← Home">← Site</a>
-      <button id="lang-btn" onclick="toggleLang()" style="background:none;border:1px solid rgba(92,184,0,0.3);color:rgba(255,255,255,0.7);font-size:11px;font-weight:600;letter-spacing:0.1em;padding:5px 12px;cursor:pointer;font-family:'Barlow',sans-serif;border-radius:4px;transition:all 0.2s">EN</button>
+      <button id="lang-btn" onclick="toggleLang()" style="background:none;border:1px solid rgba(61,139,55,0.4);color:var(--vm);font-size:11px;font-weight:600;letter-spacing:0.1em;padding:5px 12px;cursor:pointer;font-family:'Barlow',sans-serif;border-radius:4px;transition:all 0.2s">EN</button>
     </div>
   </div>
 </nav>
