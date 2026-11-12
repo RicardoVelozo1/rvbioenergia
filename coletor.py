@@ -165,6 +165,7 @@ def _capitais_sem_preco_anp(texto):
                 break
     return sem
 
+DIAG_PLN = {}
 DIAG_ANP = {}
 
 def get_capitais_sem_preco_anp():
@@ -206,6 +207,35 @@ def get_capitais_sem_preco_anp():
         DIAG_ANP['erro'] = str(e)[:120]
         print(f"[ANP] Verificação indisponível: {e}")
     return set()
+
+def get_pln_diario(existing):
+    """Indicador diário do etanol hidratado CEPEA/ESALQ/B3 posto Paulínia (R$/m³ -> R$/L).
+    Tenta a página do CEPEA; falha segura: mantém o dado anterior e registra o motivo em DIAG_PLN."""
+    url = "https://www.cepea.org.br/br/indicador/etanol-diario-paulinia.aspx"
+    html = fetch_url(url, timeout=25)
+    if not html:
+        DIAG_PLN['status'] = 'cepea inacessível'
+        return existing.get('pln_diario')
+    txt = re.sub(r'<[^>]+>', ' ', html)
+    txt = re.sub(r'\s+', ' ', txt)
+    linhas = re.findall(r'(\d{2}/\d{2}/\d{4})\s+(\d\.\d{3},\d{2})\s+(-?\d+,\d+)\s*%', txt)
+    if len(linhas) < 2:
+        DIAG_PLN['status'] = 'tabela não encontrada'
+        DIAG_PLN['trecho'] = txt[:200]
+        return existing.get('pln_diario')
+    num = lambda v: float(v.replace('.', '').replace(',', '.'))
+    d0, v0, var0 = linhas[0]
+    v1 = num(linhas[1][1])
+    DIAG_PLN['status'] = 'ok'
+    return {
+        'data': d0,
+        'valor_m3': num(v0),
+        'valor_litro': round(num(v0) / 1000, 4),
+        'anterior_litro': round(v1 / 1000, 4),
+        'variacao_dia': num(var0),
+        'historico': [{'data': d, 'valor_litro': round(num(v) / 1000, 4)} for d, v, _ in linhas[:10]][::-1],
+        'fonte': 'CEPEA/ESALQ/B3 — Indicador diário do etanol hidratado, posto Paulínia (SP)',
+    }
 
 def get_paridade_capitais(existing):
     """Busca preço de etanol/gasolina e paridade nas 27 capitais das UFs.
@@ -484,6 +514,7 @@ def main():
     etanol, hist_eth = get_etanol_cepea(existing)
 
     # Paridade e preços por estado: automático via capitais das UFs (ANP/CombustívelBR)
+    pln_diario = get_pln_diario(existing)
     nacional, estados = get_paridade_capitais(existing)
 
     # Notícias: RSS automático com fallback
@@ -498,7 +529,9 @@ def main():
         "historico_hidratado": hist_eth,
         "historico_brent": hist_brent,
         "estados": estados,
+        "pln_diario": pln_diario,
         "diagnostico_anp": DIAG_ANP,
+        "diagnostico_pln": DIAG_PLN,
         "noticias": noticias
     }
 
