@@ -200,6 +200,14 @@ def get_capitais_sem_preco_anp():
                         import pypdf
                     txt = '\n'.join((p.extract_text() or '') for p in pypdf.PdfReader(pdf).pages)
             sem = _capitais_sem_preco_anp(txt)
+            try:
+                per = re.search(r'(\d{2}/\d{2}/\d{4})\s*(?:a|à|-|–)\s*(\d{2}/\d{2}/\d{4})', txt)
+                DIAG_ANP['periodo'] = per.group(0) if per else 'não encontrado'
+                linhas_txt = [l.strip() for l in txt.splitlines()]
+                for cap in ('São Paulo','Belo Horizonte','Rio de Janeiro','Curitiba','Porto Alegre','Salvador','Goiânia','Brasília','Florianópolis','Recife'):
+                    DIAG_ANP['linhas_'+cap] = [l[:90] for l in linhas_txt if l.startswith(cap)][:4]
+            except Exception as e:
+                DIAG_ANP['erro_linhas'] = str(e)[:80]
             DIAG_ANP[f'ed{ed}'] = f'ok, {len(txt)} chars; sem preço: {sorted(sem)}; trecho Macapá: ' + ' | '.join(l.strip()[:60] for l in txt.splitlines() if 'Macap' in l)[:200]
             print(f"[ANP] Edição {ed}: capitais sem preço na semana: {sorted(sem) or 'nenhuma'}")
             return sem
