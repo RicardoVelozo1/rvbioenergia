@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-12T13:21:56.825563",
+  "atualizado": "2026-11-12T14:09:23.347652",
   "semana": "09/11 – 15/11/2026",
   "nacional": {
     "paridade": 69.7,
@@ -9,8 +9,8 @@
     "municipios_pesquisados": 26
   },
   "brent": {
-    "valor": 93.58,
-    "variacao": 0.88,
+    "valor": 93.25,
+    "variacao": 0.53,
     "data": "12/11/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
@@ -73,7 +73,7 @@
     },
     {
       "data": "12/11",
-      "valor": 93.58
+      "valor": 93.25
     }
   ],
   "estados": [
@@ -285,6 +285,67 @@
     "fonte": "CEPEA/ESALQ/B3 — Indicador diário do etanol hidratado, posto Paulínia (SP)"
   },
   "diagnostico_anp": {
+    "periodo": "01/11/2026 a 07/11/2026",
+    "linhas_São Paulo": [
+      "São Paulo 6,35",
+      "São Paulo 4,01",
+      "São Paulo",
+      "São Paulo 7,25"
+    ],
+    "linhas_Belo Horizonte": [
+      "Belo Horizonte 6,48",
+      "Belo Horizonte 4,46",
+      "Belo Horizonte 6,88",
+      "Belo Horizonte 113,54"
+    ],
+    "linhas_Rio de Janeiro": [
+      "Rio de Janeiro 6,48",
+      "Rio de Janeiro 4,77",
+      "Rio de Janeiro 7,06",
+      "Rio de Janeiro 100,60"
+    ],
+    "linhas_Curitiba": [
+      "Curitiba 6,76",
+      "Curitiba 4,64",
+      "Curitiba 7,26",
+      "Curitiba | R$ 7,26"
+    ],
+    "linhas_Porto Alegre": [
+      "Porto Alegre 5,89",
+      "Porto Alegre 4,46",
+      "Porto Alegre",
+      "Porto Alegre 6,93"
+    ],
+    "linhas_Salvador": [
+      "Salvador 6,43",
+      "Salvador 4,44",
+      "Salvador 7,85",
+      "Salvador | R$ 7,85"
+    ],
+    "linhas_Goiânia": [
+      "Goiânia 6,15",
+      "Goiânia 3,66",
+      "Goiânia",
+      "Goiânia | R$ 3,66"
+    ],
+    "linhas_Brasília": [
+      "Brasília 6,57",
+      "Brasília | R$ 6,57",
+      "Brasília 4,51",
+      "Brasília | R$ 4,51"
+    ],
+    "linhas_Florianópolis": [
+      "Florianópolis 6,45",
+      "Florianópolis 4,62",
+      "Florianópolis | R$ 4,62",
+      "Florianópolis 7,29"
+    ],
+    "linhas_Recife": [
+      "Recife 6,85",
+      "Recife 4,82",
+      "Recife 7,07",
+      "Recife 102,86"
+    ],
     "ed45": "ok, 18465 chars; sem preço: []; trecho Macapá: Macapá 6,31 | Macapá - | Macapá 7,14 | Macapá | R$ 7,14 | Macapá 127,46"
   },
   "diagnostico_pln": {
@@ -322,6 +383,14 @@
       "tag": "Brent",
       "data": "12/11/2026",
       "titulo_en": "Venezuela states at COP31 that it has the sovereign right to increase oil production"
+    },
+    {
+      "titulo": "Petrobras assina aquisição de 100% da Logum por R$ 620 mi de olho na logística de etanol",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/petrobras-assina-aquisicao-de-100-da-logum-por-r-620-mi-de-olho-na-logistica-de-etanol",
+      "tag": "Etanol",
+      "data": "12/11/2026",
+      "titulo_en": "Petrobras signs agreement to acquire 100% of Logum for R$620 million, with an eye on ethanol logistics"
     },
     {
       "titulo": "Por que os motoristas não abastecem com etanol? Setor busca respostas – e soluções",
@@ -362,14 +431,6 @@
       "tag": "ANP",
       "data": "11/11/2026",
       "titulo_en": "Senate approves bill to increase ANP's powers to combat fuel-related crimes"
-    },
-    {
-      "titulo": "Prorrogação da desoneração dos combustíveis terá impacto de R$ 2,76 bilhões",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/prorrogacao-da-desoneracao-dos-combustiveis-tera-impacto-de-r-2-76-bilhoes",
-      "tag": "Etanol",
-      "data": "11/11/2026",
-      "titulo_en": "Extension of fuel tax relief to have an impact of R$2.76 billion"
     }
   ]
 }
