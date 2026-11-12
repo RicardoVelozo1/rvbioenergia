@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-12T14:09:23.347652",
+  "atualizado": "2026-11-12T18:38:58.420738",
   "semana": "09/11 – 15/11/2026",
   "nacional": {
     "paridade": 69.7,
@@ -9,8 +9,8 @@
     "municipios_pesquisados": 26
   },
   "brent": {
-    "valor": 93.25,
-    "variacao": 0.53,
+    "valor": 95.15,
+    "variacao": 2.58,
     "data": "12/11/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
@@ -73,7 +73,7 @@
     },
     {
       "data": "12/11",
-      "valor": 93.25
+      "valor": 95.15
     }
   ],
   "estados": [
@@ -393,6 +393,22 @@
       "titulo_en": "Petrobras signs agreement to acquire 100% of Logum for R$620 million, with an eye on ethanol logistics"
     },
     {
+      "titulo": "Alckmin sanciona lei que concede apoio a produtores de cana-de-açúcar do Nordeste",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/alckmin-sanciona-lei-que-concede-apoio-a-produtores-de-cana-de-acucar-do-nordeste",
+      "tag": "Etanol",
+      "data": "12/11/2026",
+      "titulo_en": "Alckmin signs law providing support to sugarcane producers in the Northeast"
+    },
+    {
+      "titulo": "Petrobras defende política de preços atual diante da alta volatilidade do Brent",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/petrobras-defende-politica-de-precos-atual-diante-da-alta-volatilidade-do-brent",
+      "tag": "Brent",
+      "data": "12/11/2026",
+      "titulo_en": "Petrobras defends its current pricing policy in the face of Brent's high volatility"
+    },
+    {
       "titulo": "Por que os motoristas não abastecem com etanol? Setor busca respostas – e soluções",
       "fonte": "NovaCana",
       "url": "https://www.novacana.com/noticias/por-que-os-motoristas-nao-abastecem-com-etanol-setor-busca-respostas-e-solucoes",
@@ -415,22 +431,6 @@
       "tag": "ANP",
       "data": "11/11/2026",
       "titulo_en": "Petrobras denies asking ANP to postpone gas tariff review, in response to director"
-    },
-    {
-      "titulo": "Setor de combustíveis apoia avanço de projeto que amplia poder de fiscalização da ANP",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/setor-de-combustiveis-apoia-avanco-de-projeto-que-amplia-poder-de-fiscalizacao-da-anp",
-      "tag": "ANP",
-      "data": "11/11/2026",
-      "titulo_en": "Fuel sector supports progress of project to expand ANP's oversight powers"
-    },
-    {
-      "titulo": "Senado aprova projeto que aumenta poder da ANP para combater crimes com combustíveis",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/senado-aprova-projeto-que-aumenta-poder-da-anp-para-combater-crimes-com-combustiveis",
-      "tag": "ANP",
-      "data": "11/11/2026",
-      "titulo_en": "Senate approves bill to increase ANP's powers to combat fuel-related crimes"
     }
   ]
 }
