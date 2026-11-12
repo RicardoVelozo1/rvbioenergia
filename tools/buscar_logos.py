@@ -79,6 +79,39 @@ def novacana(nome):
         except Exception as e: print('  novacana falhou',sl,e)
     return doms[:3],cands[:4]
 
+
+from concurrent.futures import ThreadPoolExecutor
+KEY={'Lasa Lago Azul':['lasa','lagoazul'],'Bevap':['bevap'],'Santa Helena':['santahelena'],'Laguna':['laguna'],'Canex':['canex'],'Grupo Colorado':['colorado'],'Veredas':['veredas'],
+ 'Da Mata':['damata'],'Água Bonita':['aguabonita'],'Alta Mogiana':['altamogiana'],'Grupo Moreno':['moreno'],'Neomile':['neomille','neomile'],'Atena':['atena'],'Renuka':['renuka'],
+ 'Tereos':['tereos'],'Vale do Verdão':['valedoverdao'],'Inpasa':['inpasa'],'COFCO':['cofco'],'Fátima do Sul':['fatimadosul','fatima'],'Cargill':['cargill'],
+ 'Ale Combustíveis':['alecombustiveis','ale'],'Ipiranga':['ipiranga'],'Vibra Energia':['vibraenergia','vibra'],'Petrotorque':['petrotorque'],'Montepetro':['montepetro'],'Dislub':['dislub'],
+ 'Potencial Petróleo':['potencial','potencialpetroleo'],'Ruff':['ruff'],'SP Combustíveis':['spcombustiveis'],'Soll Distribuidora':['soll','solldistribuidora'],'Hora Combustíveis':['hora','horacombustiveis'],
+ 'Atem Distribuidora':['atem','atems'],'Rio Branco Petróleo':['riobranco','riobrancopetroleo'],'Setta Combustíveis':['setta','settacombustiveis'],'Petroluz':['petroluz'],'Ciapetro':['ciapetro'],'Larco Petróleo':['larco','larcopetroleo']}
+WORDS=('etanol','açúcar','acucar','álcool','alcool','usina','bioenergia','combust','petróleo','petroleo','distribuidora','energia','agro','lubrific','posto')
+def guess_domains(nome):
+    ks=KEY[nome]; cand=[]
+    suf=['','bioenergia','energia','petroleo','combustiveis','distribuidora','agro','agroenergia','acucar','alcool','agroindustrial','sa']
+    pre=['','usina','grupo']
+    for k in ks:
+        for p in pre:
+            for sf in suf:
+                for tld in ('.com.br','.com'):
+                    d=p+k+sf+tld
+                    if d not in cand: cand.append(d)
+    def test(d):
+        for scheme in ('https://','http://'):
+            try:
+                r=requests.get(scheme+d,headers=UA,timeout=7,allow_redirects=True)
+                if r.status_code!=200: continue
+                t=r.text.lower()[:200000]
+                if any(k in t for k in ks) and any(w in t for w in WORDS):
+                    soup=BeautifulSoup(r.text,'html.parser'); title=(soup.title.string or '').strip()[:90] if soup.title else ''
+                    return (d,title,len(r.text))
+            except Exception: pass
+        return None
+    with ThreadPoolExecutor(40) as ex: res=[x for x in ex.map(test,cand) if x]
+    return res
+
 def wiki(q):
     out=[]
     try:
@@ -95,9 +128,11 @@ for grupo,lst in EMP.items():
         s=slug(nome); d=f'candidatos/{s}'; os.makedirs(d,exist_ok=True)
         q=nome+(' usina etanol açúcar site oficial' if grupo=='usinas' else ' distribuidora combustíveis site oficial')
         nd,nc=novacana(nome) if grupo=='usinas' else ([],[])
-        doms=SEED.get(nome,[])+nd+[x for x in search_domains(q) if x not in SEED.get(nome,[]) and x not in nd]
+        gd=guess_domains(nome)
+        print('  verificados:',gd,flush=True)
+        doms=SEED.get(nome,[])+[x[0] for x in gd if x[0] not in SEED.get(nome,[])]
         print('==',nome,doms,flush=True)
-        reg={'grupo':grupo,'nome':nome,'dominios':doms[:4],'arquivos':[]}
+        reg={'grupo':grupo,'nome':nome,'dominios':doms[:4],'verificados':gd,'arquivos':[]}
         n=0
         todos=[]
         for dom in doms[:4]:
