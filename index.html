@@ -54,9 +54,9 @@ nav.scrolled{background:rgba(255,255,255,0.97);backdrop-filter:blur(12px)}
 .nav-mobile-btn{display:none;background:none;border:none;color:var(--texto);font-size:22px;cursor:pointer}
 
 /* HERO */
-.hero{background:linear-gradient(135deg,#FFFFFF 0%,#F3F8EE 100%);min-height:100vh;padding-top:72px;display:grid;grid-template-columns:1fr 480px;gap:0;position:relative;overflow:hidden}
+.hero{background:linear-gradient(135deg,#FFFFFF 0%,#F3F8EE 100%);min-height:100vh;padding-top:72px;display:grid;grid-template-columns:1fr 540px;gap:0;position:relative;overflow:hidden}
 .hero-left{display:flex;flex-direction:column;justify-content:center;padding:5rem 3rem 5rem 3rem;position:relative;z-index:2}
-.hero-right{position:relative;background:#FFFFFF;box-shadow:-8px 0 30px rgba(23,58,27,0.06);border-left:1px solid var(--linha2);display:flex;flex-direction:column;justify-content:center;padding:3rem 2.5rem}
+.hero-right{position:relative;background:#FFFFFF;box-shadow:-8px 0 30px rgba(23,58,27,0.06);border-left:1px solid var(--linha2);display:flex;flex-direction:column;justify-content:center;padding:2.25rem 2.5rem}
 .hero-right::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:linear-gradient(to bottom,transparent,var(--verde-vivo),transparent)}
 .hero-eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--verde-txt);margin-bottom:2rem}
 .hero-eyebrow::before{content:'';width:28px;height:1px;background:var(--verde-vivo)}
@@ -93,6 +93,17 @@ h1 em{font-style:italic;color:var(--verde-txt)}
 .hc-verdict{font-size:10px;color:var(--cinza1);margin-top:6px}
 .hc-link{display:flex;align-items:center;justify-content:center;gap:6px;color:var(--verde-txt);text-decoration:none;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:12px;border:1px solid var(--verde-border);margin-top:1px;transition:all 0.2s}
 .hc-link:hover{background:var(--verde-dim)}
+
+/* MAPA NO HERO */
+.hc-map{background:var(--ink2);border:1px solid var(--linha2);padding:1rem 1.1rem .75rem;margin-top:1px}
+.hc-map-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:.5rem}
+.hc-map-title{font-size:10px;text-transform:uppercase;letter-spacing:0.12em;color:var(--cinza1);font-weight:600}
+.hc-legend{display:flex;gap:10px;flex-wrap:wrap;font-size:9px;color:var(--cinza1)}
+.hc-legend i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:4px;vertical-align:middle}
+#hero-map{max-width:330px;margin:0 auto}
+.hst{stroke:#fff;stroke-width:0.8;fill:#D9DFDB;cursor:pointer;transition:opacity .15s}
+.hst:hover{opacity:.75}
+.hstl{font-size:8px;fill:#fff;font-weight:600;text-anchor:middle;pointer-events:none;font-family:'Inter',sans-serif}
 
 /* STRIP */
 .strip{border-top:1px solid var(--linha2);border-bottom:1px solid var(--linha2);padding:14px 3rem;background:var(--ink2)}
@@ -288,6 +299,43 @@ footer{background:#EAF3E2;border-top:1px solid var(--linha2);padding:3.5rem 3rem
         <div class="hc-mval" id="h-brent">USD —</div>
         <div class="hc-msub" id="h-brent-var">—</div>
       </div>
+    </div>
+    <div class="hc-map">
+      <div class="hc-map-head">
+        <span class="hc-map-title" data-pt="Paridade por estado" data-en="Parity by state">Paridade por estado</span>
+        <span class="hc-legend"><span><i style="background:#1A3D1F"></i>&lt;65%</span><span><i style="background:#5CB800"></i>65-70%</span><span><i style="background:#EF9F27"></i>70-73%</span><span><i style="background:#E24B4A"></i>&gt;73%</span></span>
+      </div>
+      <svg viewBox="34 32 394 451" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block" id="hero-map">
+        
+        <path class="hst" id="hs-AM" d="M70,80 L160,75 L175,100 L180,150 L160,170 L140,165 L100,175 L65,160 L50,130 L55,95 Z"/><text class="hstl" x="115" y="130">AM</text>
+        <path class="hst" id="hs-PA" d="M175,75 L260,70 L275,90 L270,130 L255,150 L230,160 L200,155 L180,150 L175,100 Z"/><text class="hstl" x="222" y="115">PA</text>
+        <path class="hst" id="hs-RR" d="M100,45 L140,40 L155,55 L160,75 L100,80 L80,65 Z"/><text class="hstl" x="120" y="62">RR</text>
+        <path class="hst" id="hs-AP" d="M260,45 L295,42 L300,65 L285,80 L265,75 L260,55 Z"/><text class="hstl" x="278" y="63">AP</text>
+        <path class="hst" id="hs-MA" d="M260,70 L305,68 L318,85 L315,110 L295,125 L270,130 L255,110 L260,90 Z"/><text class="hstl" x="287" y="97">MA</text>
+        <path class="hst" id="hs-PI" d="M305,68 L335,70 L345,88 L340,115 L318,115 L315,88 Z"/><text class="hstl" x="325" y="95">PI</text>
+        <path class="hst" id="hs-CE" d="M335,60 L370,65 L378,82 L365,98 L345,98 L335,82 Z"/><text class="hstl" x="355" y="82">CE</text>
+        <path class="hst" id="hs-RN" d="M370,60 L400,62 L408,78 L390,88 L372,82 Z"/><text class="hstl" x="388" y="75">RN</text>
+        <path class="hst" id="hs-PB" d="M372,88 L405,85 L412,98 L395,108 L372,105 Z"/><text class="hstl" x="391" y="99">PB</text>
+        <path class="hst" id="hs-PE" d="M345,100 L395,110 L400,125 L360,128 L340,120 Z"/><text class="hstl" x="370" y="118">PE</text>
+        <path class="hst" id="hs-AL" d="M390,125 L415,122 L420,138 L400,142 L385,138 Z"/><text class="hstl" x="402" y="134">AL</text>
+        <path class="hst" id="hs-SE" d="M390,142 L415,140 L418,155 L398,158 L385,152 Z"/><text class="hstl" x="400" y="151">SE</text>
+        <path class="hst" id="hs-BA" d="M295,125 L360,128 L400,142 L415,175 L400,220 L370,235 L330,230 L300,210 L280,185 L278,155 L285,135 Z"/><text class="hstl" x="345" y="180">BA</text>
+        <path class="hst" id="hs-TO" d="M255,150 L295,148 L300,175 L295,215 L270,220 L250,200 L245,175 Z"/><text class="hstl" x="272" y="185">TO</text>
+        <path class="hst" id="hs-RO" d="M100,175 L140,170 L155,195 L148,225 L118,228 L95,210 L90,190 Z"/><text class="hstl" x="122" y="200">RO</text>
+        <path class="hst" id="hs-AC" d="M50,185 L95,178 L95,210 L75,220 L45,210 L42,195 Z"/><text class="hstl" x="67" y="200">AC</text>
+        <path class="hst" id="hs-MT" d="M148,170 L245,165 L250,200 L245,250 L210,265 L170,258 L148,240 L140,205 Z"/><text class="hstl" x="195" y="215">MT</text>
+        <path class="hst" id="hs-GO" d="M250,200 L295,215 L300,255 L280,275 L250,270 L240,250 Z"/><text class="hstl" x="270" y="242">GO</text>
+        <path class="hst" id="hs-DF" d="M278,255 L292,252 L293,263 L280,265 Z"/><text class="hstl" x="286" y="261" style="font-size:6px">DF</text>
+        <path class="hst" id="hs-MG" d="M280,255 L330,235 L370,240 L385,265 L375,305 L345,320 L305,315 L278,295 L270,275 Z"/><text class="hstl" x="325" y="280">MG</text>
+        <path class="hst" id="hs-ES" d="M375,265 L400,262 L408,285 L390,300 L372,295 Z"/><text class="hstl" x="388" y="282">ES</text>
+        <path class="hst" id="hs-RJ" d="M345,315 L390,305 L398,325 L368,338 L340,330 Z"/><text class="hstl" x="368" y="322">RJ</text>
+        <path class="hst" id="hs-SP" d="M280,295 L345,320 L350,360 L315,375 L278,360 L265,335 L268,310 Z"/><text class="hstl" x="308" y="338">SP</text>
+        <path class="hst" id="hs-MS" d="M180,265 L250,268 L265,305 L250,345 L218,355 L185,340 L170,308 L172,280 Z"/><text class="hstl" x="215" y="308">MS</text>
+        <path class="hst" id="hs-PR" d="M245,355 L315,355 L318,385 L290,400 L250,393 L238,375 Z"/><text class="hstl" x="278" y="378">PR</text>
+        <path class="hst" id="hs-SC" d="M248,395 L315,388 L318,408 L285,420 L248,415 Z"/><text class="hstl" x="280" y="408">SC</text>
+        <path class="hst" id="hs-RS" d="M245,415 L318,410 L322,445 L300,470 L265,475 L240,455 L238,430 Z"/><text class="hstl" x="280" y="445">RS</text>
+        <!-- tooltip -->
+      </svg>
     </div>
     <div class="hc-parity">
       <div class="hc-prow">
@@ -568,6 +616,14 @@ async function loadDados(){
     document.getElementById('mp-eth').textContent='R$ '+eth.toFixed(2);
     document.getElementById('h-brent').textContent='USD '+brent.toFixed(2);
     document.getElementById('mp-brent').textContent='USD '+brent.toFixed(2);
+    (d.estados||[]).forEach(function(e){
+      var el=document.getElementById('hs-'+e.uf); if(!el||!e.etanol||!e.gasolina) return;
+      var pp=e.etanol/e.gasolina*100;
+      el.style.fill=pp<65?'#1A3D1F':pp<=70?'#5CB800':pp<=73?'#EF9F27':'#E24B4A';
+      var t=document.createElementNS('http://www.w3.org/2000/svg','title');
+      t.textContent=e.nome+' · '+pp.toFixed(1)+'% · Etanol R$ '+e.etanol.toFixed(2)+' · Gasolina R$ '+e.gasolina.toFixed(2);
+      el.appendChild(t);
+    });
     document.getElementById('h-parity').textContent=p.toFixed(1)+'%';
     document.getElementById('h-parity').style.color=p<=70?'#2E7D2A':'#C93A3A';
     document.getElementById('mp-parity').textContent=p.toFixed(1)+'%';
