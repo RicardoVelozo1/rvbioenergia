@@ -18,9 +18,10 @@ def slug(s): return re.sub(r'[^a-z0-9]+','-',s.lower().encode('ascii','ignore').
 
 def search_domains(q):
     out=[]
-    for url in ('https://html.duckduckgo.com/html/?q=%s'%urllib.parse.quote(q), 'https://www.bing.com/search?q=%s&setlang=pt-BR'%urllib.parse.quote(q)):
+    for url in ('https://www.mojeek.com/search?q=%s'%urllib.parse.quote(q),'https://search.brave.com/search?q=%s'%urllib.parse.quote(q),'https://html.duckduckgo.com/html/?q=%s'%urllib.parse.quote(q), 'https://www.bing.com/search?q=%s&setlang=pt-BR'%urllib.parse.quote(q)):
         try:
             r=requests.get(url,headers=UA,timeout=25)
+            print('  busca',url.split('/')[2],r.status_code,len(r.text))
             soup=BeautifulSoup(r.text,'html.parser')
             for a in soup.find_all('a',href=True):
                 h=a['href']
@@ -55,6 +56,29 @@ def candidates(domain):
         if m.get('property') in ('og:image','og:logo') or m.get('name') in ('twitter:image',): add(m.get('content'),'og')
     return urls[:7],title
 
+NOVA={'Lasa Lago Azul':['lago-azul','linhares-agroindustral---lasa'],'Bevap':['bevap'],'Santa Helena':['santa-helena','santa-helena-2','santa-helena-3'],'Laguna':['laguna'],'Canex':['canex'],
+ 'Grupo Colorado':['colorado'],'Veredas':['veredas'],'Da Mata':['da-mata'],'Água Bonita':['agua-bonita'],'Alta Mogiana':['alta-mogiana'],'Grupo Moreno':['moreno'],
+ 'Neomile':['neomille','neomille-maracaju'],'Atena':['atena'],'Renuka':['madhu','revati'],'Vale do Verdão':['vale-do-verdao-matriz'],'Fátima do Sul':['fatima-do-sul']}
+def novacana(nome):
+    doms=[];cands=[]
+    for sl in NOVA.get(nome,[]):
+        try:
+            r=requests.get('https://www.novacana.com/usinas/'+sl,headers=UA,timeout=25)
+            soup=BeautifulSoup(r.text,'html.parser')
+            for a in soup.find_all('a',href=True):
+                h=a['href']
+                if h.startswith('http'):
+                    d=urllib.parse.urlparse(h).netloc.lower().replace('www.','')
+                    if d and not any(b in d for b in BAD) and 'novacana' not in d and d not in doms: doms.append(d)
+            for img in soup.find_all('img'):
+                blob=((img.get('src') or '')+(img.get('alt') or '')).lower()
+                if 'usina' in blob or 'logo' in blob:
+                    u=urllib.parse.urljoin(r.url,img.get('src') or '')
+                    if 'novacana' in u: cands.append((u,'novacana:'+sl))
+            print('  novacana',sl,r.status_code,doms[:4],len(cands),flush=True)
+        except Exception as e: print('  novacana falhou',sl,e)
+    return doms[:3],cands[:4]
+
 def wiki(q):
     out=[]
     try:
@@ -70,18 +94,20 @@ for grupo,lst in EMP.items():
     for nome in lst:
         s=slug(nome); d=f'candidatos/{s}'; os.makedirs(d,exist_ok=True)
         q=nome+(' usina etanol açúcar site oficial' if grupo=='usinas' else ' distribuidora combustíveis site oficial')
-        doms=SEED.get(nome,[])+[x for x in search_domains(q) if x not in SEED.get(nome,[])]
+        nd,nc=novacana(nome) if grupo=='usinas' else ([],[])
+        doms=SEED.get(nome,[])+nd+[x for x in search_domains(q) if x not in SEED.get(nome,[]) and x not in nd]
         print('==',nome,doms,flush=True)
         reg={'grupo':grupo,'nome':nome,'dominios':doms[:4],'arquivos':[]}
         n=0
         todos=[]
-        for dom in doms[:3]:
+        for dom in doms[:4]:
             cs,title=candidates(dom)
             reg.setdefault('titulos',{})[dom]=title
             todos+= [(u,t,dom) for u,t in cs]
+        todos+=[(u,t,'novacana') for u,t in nc]
         todos+=[(u,t,'wikipedia') for u,t in wiki(nome+(' usina' if grupo=='usinas' else ' distribuidora'))]
         for u,t,dom in todos:
-            if n>=9: break
+            if n>=12: break
             try:
                 r=requests.get(u,headers=UA,timeout=25)
                 ct=r.headers.get('content-type','').split(';')[0]
