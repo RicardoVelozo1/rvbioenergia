@@ -1,17 +1,17 @@
 {
-  "atualizado": "2026-11-12T18:38:58.420738",
+  "atualizado": "2026-11-13T18:14:57.202221",
   "semana": "09/11 – 15/11/2026",
   "nacional": {
-    "paridade": 69.7,
-    "etanol_medio": 4.63,
-    "gasolina_media": 6.64,
-    "municipios_vantajosos": 11,
-    "municipios_pesquisados": 26
+    "paridade": 69.8,
+    "etanol_medio": 4.67,
+    "gasolina_media": 6.69,
+    "municipios_vantajosos": 9,
+    "municipios_pesquisados": 23
   },
   "brent": {
-    "valor": 95.15,
-    "variacao": 2.58,
-    "data": "12/11/2026",
+    "valor": 95.8,
+    "variacao": -0.02,
+    "data": "13/11/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
@@ -44,36 +44,36 @@
   ],
   "historico_brent": [
     {
-      "data": "23/09",
-      "valor": 106.6
+      "data": "24/09",
+      "valor": 104.32
     },
     {
-      "data": "30/09",
-      "valor": 102.31
+      "data": "01/10",
+      "valor": 102.25
     },
     {
-      "data": "07/10",
-      "valor": 104.28
+      "data": "08/10",
+      "valor": 104.72
     },
     {
-      "data": "14/10",
-      "valor": 105.92
+      "data": "15/10",
+      "valor": 109.86
     },
     {
-      "data": "21/10",
-      "valor": 113.17
+      "data": "22/10",
+      "valor": 116.72
     },
     {
-      "data": "28/10",
-      "valor": 114.88
+      "data": "29/10",
+      "valor": 117.64
     },
     {
-      "data": "05/11",
-      "valor": 98.29
+      "data": "06/11",
+      "valor": 98.32
     },
     {
-      "data": "12/11",
-      "valor": 95.15
+      "data": "13/11",
+      "valor": 95.8
     }
   ],
   "estados": [
@@ -144,18 +144,6 @@
       "gasolina": 6.26
     },
     {
-      "uf": "MG",
-      "nome": "Minas Gerais",
-      "etanol": 4.46,
-      "gasolina": 6.48
-    },
-    {
-      "uf": "PA",
-      "nome": "Pará",
-      "etanol": 4.28,
-      "gasolina": 6.34
-    },
-    {
       "uf": "PB",
       "nome": "Paraíba",
       "etanol": 4.38,
@@ -190,12 +178,6 @@
       "nome": "Rio Grande do Norte",
       "etanol": 4.94,
       "gasolina": 6.5
-    },
-    {
-      "uf": "RS",
-      "nome": "Rio Grande do Sul",
-      "etanol": 4.46,
-      "gasolina": 5.89
     },
     {
       "uf": "RO",
@@ -235,16 +217,12 @@
     }
   ],
   "pln_diario": {
-    "data": "11/11/2026",
-    "valor_m3": 3015.5,
-    "valor_litro": 3.0155,
-    "anterior_litro": 2.9885,
-    "variacao_dia": 0.9,
+    "data": "12/11/2026",
+    "valor_m3": 3019.0,
+    "valor_litro": 3.019,
+    "anterior_litro": 3.0155,
+    "variacao_dia": 0.12,
     "historico": [
-      {
-        "data": "28/10/2026",
-        "valor_litro": 2.912
-      },
       {
         "data": "29/10/2026",
         "valor_litro": 2.9285
@@ -280,6 +258,10 @@
       {
         "data": "11/11/2026",
         "valor_litro": 3.0155
+      },
+      {
+        "data": "12/11/2026",
+        "valor_litro": 3.019
       }
     ],
     "fonte": "CEPEA/ESALQ/B3 — Indicador diário do etanol hidratado, posto Paulínia (SP)"
@@ -346,12 +328,52 @@
       "Recife 7,07",
       "Recife 102,86"
     ],
-    "ed45": "ok, 18465 chars; sem preço: []; trecho Macapá: Macapá 6,31 | Macapá - | Macapá 7,14 | Macapá | R$ 7,14 | Macapá 127,46"
+    "ed45": "ok, 18464 chars; sem preço: []; trecho Macapá: Macapá 6,31 | Macapá - | Macapá 7,14 | Macapá | R$ 7,14 | Macapá 127,46"
   },
   "diagnostico_pln": {
     "status": "ok"
   },
   "noticias": [
+    {
+      "titulo": "Estoques de etanol do Centro-Sul estão 13,3% mais baixos ante 2025, aponta ministério",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/estoques-de-etanol-do-centro-sul-estao-13-3-mais-baixos-ante-2025-aponta-ministerio",
+      "tag": "Etanol",
+      "data": "13/11/2026",
+      "titulo_en": "Ethanol stocks in the Center-South are 13.3% lower than in 2023, according to the ministry"
+    },
+    {
+      "titulo": "Moagem da Raízen deve cair para 55 a 57 mi t em 2026/27 por chuvas, diz CEO",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/moagem-da-raizen-deve-cair-para-55-a-57-mi-t-em-2026-27-por-chuvas-diz-ceo",
+      "tag": "Produção",
+      "data": "13/11/2026",
+      "titulo_en": "Raízen's crushing expected to drop to 55–57 million tons in 2026/27 due to rain, says CEO"
+    },
+    {
+      "titulo": "Petrobras quer subvenção para gasolina, mas enfrenta dificuldades fiscais no governo",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/petrobras-quer-subvencao-para-gasolina-mas-enfrenta-dificuldades-fiscais-no-governo",
+      "tag": "Etanol",
+      "data": "13/11/2026",
+      "titulo_en": "Petrobras seeks gasoline subsidy, but faces fiscal challenges with the government"
+    },
+    {
+      "titulo": "Ministro turco diz que é necessário oferecer alternativas a combustíveis fósseis",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/ministro-turco-diz-que-e-necessario-oferecer-alternativas-a-combustiveis-fosseis",
+      "tag": "Etanol",
+      "data": "13/11/2026",
+      "titulo_en": "Turkish minister says alternatives to fossil fuels must be offered"
+    },
+    {
+      "titulo": "Mega lucros dos combustíveis fósseis são “moralmente inaceitáveis”, diz António Guterres",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/mega-lucros-dos-combustiveis-fosseis-sao-moralmente-inaceitaveis-diz-antonio-guterres",
+      "tag": "Etanol",
+      "data": "13/11/2026",
+      "titulo_en": "Mega profits from fossil fuels are “morally unacceptable,” says António Guterres"
+    },
     {
       "titulo": "Multas de R$ 700 milhões da ANP por preços de combustíveis geram impasse",
       "fonte": "NovaCana",
@@ -391,46 +413,6 @@
       "tag": "Etanol",
       "data": "12/11/2026",
       "titulo_en": "Petrobras signs agreement to acquire 100% of Logum for R$620 million, with an eye on ethanol logistics"
-    },
-    {
-      "titulo": "Alckmin sanciona lei que concede apoio a produtores de cana-de-açúcar do Nordeste",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/alckmin-sanciona-lei-que-concede-apoio-a-produtores-de-cana-de-acucar-do-nordeste",
-      "tag": "Etanol",
-      "data": "12/11/2026",
-      "titulo_en": "Alckmin signs law providing support to sugarcane producers in the Northeast"
-    },
-    {
-      "titulo": "Petrobras defende política de preços atual diante da alta volatilidade do Brent",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/petrobras-defende-politica-de-precos-atual-diante-da-alta-volatilidade-do-brent",
-      "tag": "Brent",
-      "data": "12/11/2026",
-      "titulo_en": "Petrobras defends its current pricing policy in the face of Brent's high volatility"
-    },
-    {
-      "titulo": "Por que os motoristas não abastecem com etanol? Setor busca respostas – e soluções",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/por-que-os-motoristas-nao-abastecem-com-etanol-setor-busca-respostas-e-solucoes",
-      "tag": "Etanol",
-      "data": "11/11/2026",
-      "titulo_en": "Why don't drivers fill up with ethanol? The industry is looking for answers – and solutions"
-    },
-    {
-      "titulo": "Reforma tributária exige revisão de custos e contratos no campo, alerta Canaoeste",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/reforma-tributaria-exige-revisao-de-custos-e-contratos-no-campo-alerta-canaoeste",
-      "tag": "Etanol",
-      "data": "11/11/2026",
-      "titulo_en": "Tax reform requires a review of costs and contracts in the agricultural sector, warns Canaoeste"
-    },
-    {
-      "titulo": "Petrobras nega ter pedido para ANP adiar revisão tarifária do gás, em resposta a diretor",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/petrobras-nega-ter-pedido-para-anp-adiar-revisao-tarifaria-do-gas-em-resposta-a-diretor",
-      "tag": "ANP",
-      "data": "11/11/2026",
-      "titulo_en": "Petrobras denies asking ANP to postpone gas tariff review, in response to director"
     }
   ]
 }
