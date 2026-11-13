@@ -113,15 +113,18 @@ h1 em{font-style:italic;color:var(--verde-txt)}
 .strip-item::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--verde-vivo);flex-shrink:0}
 
 
-/* PARCEIROS */
-.parc{display:none;padding:3.5rem 3rem;background:var(--ink);text-align:center;border-bottom:1px solid var(--linha2)}
-.parc.on{display:block}
-.parc h3{font-size:14px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--verde-txt);margin-bottom:2rem}
-.parc-row{max-width:1280px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:2.5rem 3.5rem}
-.parc-row img{height:52px;width:auto;max-width:150px;object-fit:contain;opacity:.95;transition:all .25s}
-.parc-row img:hover{opacity:1;transform:scale(1.06)}
-@media(max-width:600px){.parc{padding:2.5rem 1.5rem}.parc-row{gap:1.5rem 2rem}.parc-row img{height:44px;max-width:120px}}
-
+/* PARCEIROS (janela) */
+.pm{position:fixed;inset:0;z-index:300;background:rgba(16,48,26,.55);display:none;align-items:center;justify-content:center;padding:1.5rem}
+.pm.on{display:flex}
+.pm-box{background:#fff;border-radius:14px;max-width:1040px;width:100%;max-height:88vh;overflow:auto;padding:2.5rem 2.5rem 2rem;position:relative;box-shadow:0 20px 60px rgba(0,0,0,.25)}
+.pm-box h3{font-size:15px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--verde-txt);text-align:center;margin-bottom:.4rem}
+.pm-box p.pm-sub{text-align:center;font-size:15px;color:var(--cinza1);margin-bottom:2rem}
+.pm-x{position:absolute;top:10px;right:14px;background:none;border:0;font-size:30px;line-height:1;color:var(--cinza1);cursor:pointer}
+.pm-x:hover{color:var(--verde-txt)}
+.pm-row{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:2rem 3rem}
+.pm-row img{height:52px;width:auto;max-width:150px;object-fit:contain;opacity:.95;transition:transform .25s}
+.pm-row img:hover{opacity:1;transform:scale(1.06)}
+@media(max-width:600px){.pm-box{padding:2rem 1.2rem 1.5rem}.pm-row{gap:1.4rem 1.6rem}.pm-row img{height:42px;max-width:110px}}
 /* SECTION BASE */
 section{padding:7rem 3rem}
 .sec-inner{max-width:1280px;margin:0 auto}
@@ -380,7 +383,6 @@ footer{background:#EAF3E2;border-top:1px solid var(--linha2);padding:3.5rem 3rem
 </div>
 
 <!-- MISSÃO VISÃO VALORES -->
-<section class="parc" id="parceiros"><h3 data-pt="Nossos Parceiros" data-en="Our Partners">Nossos Parceiros</h3><div class="parc-row" id="parc-row"></div></section>
 
 <section class="mvv" id="mvv">
   <div class="sec-inner">
@@ -549,6 +551,8 @@ footer{background:#EAF3E2;border-top:1px solid var(--linha2);padding:3.5rem 3rem
   </div>
 </section>
 
+<div class="pm" id="parceiros" role="dialog" aria-modal="true" aria-label="Nossos Parceiros"><div class="pm-box"><button class="pm-x" id="pm-x" aria-label="Fechar">&times;</button><h3 data-pt="Nossos Parceiros" data-en="Our Partners">Nossos Parceiros</h3><p class="pm-sub" data-pt="Usinas e distribuidoras com quem já fizemos negócios" data-en="Mills and distributors we have done business with">Usinas e distribuidoras com quem já fizemos negócios</p><div class="pm-row" id="parc-row"></div></div></div>
+
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
@@ -564,6 +568,7 @@ footer{background:#EAF3E2;border-top:1px solid var(--linha2);padding:3.5rem 3rem
           <li><a href="#sobre" data-pt="Sobre" data-en="About">Sobre</a></li>
           <li><a href="#servicos" data-pt="Serviços" data-en="Services">Serviços</a></li>
           <li><a href="mercado.html" data-pt="Painel de Mercado" data-en="Market Dashboard">Painel de Mercado</a></li>
+          <li><a href="#parceiros" id="open-parc" data-pt="Nossos Parceiros" data-en="Our Partners">Nossos Parceiros</a></li>
           <li><a href="#contato" data-pt="Contato" data-en="Contact">Contato</a></li>
         </ul>
       </div>
@@ -788,12 +793,19 @@ function applyTranslations(){
   });
 }
 
-fetch('parceiros/parceiros.json?'+Date.now()).then(r=>r.json()).then(l=>{
-  if(!Array.isArray(l)||!l.length)return;
-  const row=document.getElementById('parc-row');
-  l.forEach(p=>{const im=document.createElement('img');im.src='parceiros/'+p.arquivo;im.alt=p.nome;im.title=p.nome;im.loading='lazy';row.appendChild(im)});
-  document.getElementById('parceiros').classList.add('on');
-}).catch(()=>{});
+(function(){
+  var m=document.getElementById('parceiros'),row=document.getElementById('parc-row'),loaded=false;
+  function load(){ if(loaded)return; loaded=true;
+    fetch('parceiros/parceiros.json?'+Date.now()).then(function(r){return r.json()}).then(function(l){
+      l.forEach(function(p){var im=document.createElement('img');im.src='parceiros/'+p.arquivo;im.alt=p.nome;im.title=p.nome;im.loading='lazy';row.appendChild(im)});
+    }).catch(function(){loaded=false}); }
+  function open(e){ if(e)e.preventDefault(); load(); m.classList.add('on'); document.body.style.overflow='hidden'; }
+  function close(){ m.classList.remove('on'); document.body.style.overflow=''; }
+  document.getElementById('open-parc').addEventListener('click',open);
+  document.getElementById('pm-x').addEventListener('click',close);
+  m.addEventListener('click',function(e){ if(e.target===m)close(); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape')close(); });
+})();
 </script>
 </body>
 </html>
