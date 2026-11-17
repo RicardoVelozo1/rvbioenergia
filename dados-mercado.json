@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-16T20:47:21.510265",
+  "atualizado": "2026-11-17T19:27:59.422055",
   "semana": "16/11 – 22/11/2026",
   "nacional": {
     "paridade": 71.0,
@@ -9,9 +9,9 @@
     "municipios_pesquisados": 27
   },
   "brent": {
-    "valor": 92.4,
-    "variacao": -3.59,
-    "data": "16/11/2026",
+    "valor": 93.42,
+    "variacao": 1.06,
+    "data": "17/11/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
@@ -44,36 +44,36 @@
   ],
   "historico_brent": [
     {
-      "data": "27/09",
-      "valor": 105.28
+      "data": "28/09",
+      "valor": 102.59
     },
     {
-      "data": "04/10",
-      "valor": 100.32
+      "data": "05/10",
+      "valor": 100.58
     },
     {
-      "data": "11/10",
-      "valor": 106.65
+      "data": "12/10",
+      "valor": 105.69
     },
     {
-      "data": "18/10",
-      "valor": 109.55
+      "data": "19/10",
+      "valor": 108.79
     },
     {
-      "data": "25/10",
-      "valor": 115.81
+      "data": "26/10",
+      "valor": 113.88
     },
     {
-      "data": "02/11",
-      "valor": 104.77
+      "data": "03/11",
+      "valor": 103.6
     },
     {
-      "data": "09/11",
-      "valor": 92.57
+      "data": "10/11",
+      "valor": 91.49
     },
     {
-      "data": "16/11",
-      "valor": 92.4
+      "data": "17/11",
+      "valor": 93.42
     }
   ],
   "estados": [
@@ -241,16 +241,12 @@
     }
   ],
   "pln_diario": {
-    "data": "13/11/2026",
-    "valor_m3": 3043.5,
-    "valor_litro": 3.0435,
-    "anterior_litro": 3.019,
-    "variacao_dia": 0.81,
+    "data": "16/11/2026",
+    "valor_m3": 3058.0,
+    "valor_litro": 3.058,
+    "anterior_litro": 3.0435,
+    "variacao_dia": 0.48,
     "historico": [
-      {
-        "data": "30/10/2026",
-        "valor_litro": 2.929
-      },
       {
         "data": "03/11/2026",
         "valor_litro": 2.968
@@ -286,6 +282,10 @@
       {
         "data": "13/11/2026",
         "valor_litro": 3.0435
+      },
+      {
+        "data": "16/11/2026",
+        "valor_litro": 3.058
       }
     ],
     "fonte": "CEPEA/ESALQ/B3 — Indicador diário do etanol hidratado, posto Paulínia (SP)"
@@ -360,84 +360,84 @@
   },
   "noticias": [
     {
+      "titulo": "Ajuste fiscal pode impactar financiamento do setor de energia, incluindo biocombustíveis",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/ajuste-fiscal-pode-impactar-financiamento-do-setor-de-energia-incluindo-biocombustiveis",
+      "tag": "Etanol",
+      "data": "17/11/2026",
+      "titulo_en": "Fiscal adjustment could impact financing for the energy sector, including biofuels"
+    },
+    {
+      "titulo": "Usinas de cana devem ter a menor margem operacional em dez anos, projeta Itaú BBA",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/usinas-de-cana-devem-ter-a-menor-margem-operacional-em-dez-anos-projeta-itau-bba",
+      "tag": "Produção",
+      "data": "17/11/2026",
+      "titulo_en": "Sugarcane mills are expected to have their lowest operating margin in ten years, according to Itaú BBA projections."
+    },
+    {
+      "titulo": "O que caracteriza uma usina rentável? Executivos apontam as chaves do próximo ciclo",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/o-que-caracteriza-uma-usina-rentavel-executivos-apontam-as-chaves-do-proximo-ciclo",
+      "tag": "Produção",
+      "data": "17/11/2026",
+      "titulo_en": "What are the hallmarks of a profitable mill? Executives point to the keys to the next cycle"
+    },
+    {
+      "titulo": "Etanol de milho acirra disputa entre mercado interno e exportadores",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/etanol-de-milho-acirra-disputa-entre-mercado-interno-e-exportadores",
+      "tag": "Etanol",
+      "data": "17/11/2026",
+      "titulo_en": "Corn ethanol fuels dispute between domestic market and exporters"
+    },
+    {
+      "titulo": "Fim de subvenção ao diesel importado deve pressionar preços nos postos, diz Abicom",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/fim-de-subvencao-ao-diesel-importado-deve-pressionar-precos-nos-postos-diz-abicom",
+      "tag": "Etanol",
+      "data": "17/11/2026",
+      "titulo_en": "End of subsidy for imported diesel is expected to put pressure on prices at gas stations, says Abicom"
+    },
+    {
+      "titulo": "[Cepea] Cotações do açúcar cristal oscilam no mercado paulista e negociações seguem lentas",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/cepea-cotacoes-do-acucar-cristal-oscilam-no-mercado-paulista-e-negociacoes-seguem-lentas",
+      "tag": "Etanol",
+      "data": "17/11/2026",
+      "titulo_en": "[Cepea] Granulated sugar prices fluctuate in the São Paulo market, and trading remains slow"
+    },
+    {
+      "titulo": "[Cepea] Demanda por etanol hidratado aumenta e preços seguem em alta",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/etanol-hidratado-sobe-1-63-e-anidro-cai-3-37-na-semana-nas-usinas-paulistas",
+      "tag": "Etanol",
+      "data": "17/11/2026",
+      "titulo_en": "[Cepea] Demand for hydrous ethanol rises, and prices continue to climb"
+    },
+    {
+      "titulo": "Moretti vê imposto sobre exportação mantido com petróleo acima de US$ 80",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/moretti-ve-imposto-sobre-exportacao-mantido-com-petroleo-acima-de-us-80",
+      "tag": "Brent",
+      "data": "17/11/2026",
+      "titulo_en": "Moretti sees export tax maintained with oil above US$80"
+    },
+    {
+      "titulo": "Projeto de decisão da COP31 sugere acelerar o fim do uso dos combustíveis fósseis",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/projeto-de-decisao-da-cop31-sugere-acelerar-o-fim-do-uso-dos-combustiveis-fosseis",
+      "tag": "Etanol",
+      "data": "17/11/2026",
+      "titulo_en": "COP31 draft decision proposes accelerating the phase-out of fossil fuels"
+    },
+    {
       "titulo": "Se não ganhar eficiência, etanol de cana pode virar subproduto do açúcar, diz CFO da Jalles",
       "fonte": "NovaCana",
       "url": "https://www.novacana.com/noticias/se-nao-ganhar-eficiencia-etanol-de-cana-pode-virar-subproduto-do-acucar-diz-cfo-da-jalles",
       "tag": "Etanol",
       "data": "16/11/2026",
       "titulo_en": "If it doesn't become more efficient, sugarcane ethanol could become a byproduct of sugar, says Jalles CFO"
-    },
-    {
-      "titulo": "Preços nos postos: Etanol sobe nas bombas e nas usinas; gasolina também tem alta",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/precos-nos-postos-etanol-sobe-nas-bombas-e-nas-usinas-gasolina-tambem-tem-alta",
-      "tag": "Etanol",
-      "data": "16/11/2026",
-      "titulo_en": "Prices at the pumps: Ethanol rises at the pumps and at the mills; gasoline also up"
-    },
-    {
-      "titulo": "Setor de combustíveis aponta risco de distorção em novas regras do RenovaBio",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/setor-de-combustiveis-aponta-risco-de-distorcao-em-novas-regras-do-renovabio",
-      "tag": "RenovaBio",
-      "data": "16/11/2026",
-      "titulo_en": "Fuel sector warns of risk of distortion in new RenovaBio rules"
-    },
-    {
-      "titulo": "Bomba em usina de etanol nos EUA provoca evacuação de mais de 5 mil pessoas",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/bomba-em-usina-de-etanol-nos-eua-provoca-evacuacao-de-mais-de-5-mil-pessoas",
-      "tag": "Etanol",
-      "data": "16/11/2026",
-      "titulo_en": "Explosion at U.S. ethanol plant leads to evacuation of over 5,000 people"
-    },
-    {
-      "titulo": "Subvenção de R$ 1,40 ao diesel importado não será renovada, diz ministério",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/subvencao-de-r-1-40-ao-diesel-importado-nao-sera-renovada-diz-ministerio",
-      "tag": "Etanol",
-      "data": "16/11/2026",
-      "titulo_en": "Subsidy of R$1.40 for imported diesel will not be renewed, says ministry"
-    },
-    {
-      "titulo": "ONU pede agilidade enquanto COP31 enfrenta divisão em torno dos combustíveis fósseis",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/onu-pede-agilidade-enquanto-cop31-enfrenta-divisao-em-torno-dos-combustiveis-fosseis",
-      "tag": "Etanol",
-      "data": "16/11/2026",
-      "titulo_en": "UN calls for swift action as COP31 grapples with divisions over fossil fuels"
-    },
-    {
-      "titulo": "Negociações da COP31 enfrentam atritos sobre futuro dos combustíveis fósseis",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/negociacoes-da-cop31-enfrentam-atritos-sobre-futuro-dos-combustiveis-fosseis",
-      "tag": "Etanol",
-      "data": "16/11/2026",
-      "titulo_en": "COP31 negotiations face friction over the future of fossil fuels"
-    },
-    {
-      "titulo": "Estoques de etanol do Centro-Sul estão 13,3% mais baixos ante 2025, aponta ministério",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/estoques-de-etanol-do-centro-sul-estao-13-3-mais-baixos-ante-2025-aponta-ministerio",
-      "tag": "Etanol",
-      "data": "13/11/2026",
-      "titulo_en": "Ethanol stocks in the Center-South are 13.3% lower than in 2023, according to the ministry"
-    },
-    {
-      "titulo": "Moagem da Raízen deve cair para 55 a 57 mi t em 2026/27 por chuvas, diz CEO",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/moagem-da-raizen-deve-cair-para-55-a-57-mi-t-em-2026-27-por-chuvas-diz-ceo",
-      "tag": "Produção",
-      "data": "13/11/2026",
-      "titulo_en": "Raízen's crushing expected to drop to 55–57 million tons in 2026/27 due to rain, says CEO"
-    },
-    {
-      "titulo": "Petrobras quer subvenção para gasolina, mas enfrenta dificuldades fiscais no governo",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/petrobras-quer-subvencao-para-gasolina-mas-enfrenta-dificuldades-fiscais-no-governo",
-      "tag": "Etanol",
-      "data": "13/11/2026",
-      "titulo_en": "Petrobras seeks gasoline subsidy, but faces fiscal challenges with the government"
     }
   ]
 }
