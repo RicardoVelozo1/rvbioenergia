@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-17T19:27:59.422055",
+  "atualizado": "2026-11-18T19:10:46.353547",
   "semana": "16/11 – 22/11/2026",
   "nacional": {
     "paridade": 71.0,
@@ -9,9 +9,9 @@
     "municipios_pesquisados": 27
   },
   "brent": {
-    "valor": 93.42,
-    "variacao": 1.06,
-    "data": "17/11/2026",
+    "valor": 88.66,
+    "variacao": -4.81,
+    "data": "18/11/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
@@ -44,36 +44,36 @@
   ],
   "historico_brent": [
     {
-      "data": "28/09",
-      "valor": 102.59
+      "data": "29/09",
+      "valor": 103.53
     },
     {
-      "data": "05/10",
-      "valor": 100.58
+      "data": "06/10",
+      "valor": 100.2
     },
     {
-      "data": "12/10",
-      "valor": 105.69
+      "data": "13/10",
+      "valor": 106.06
     },
     {
-      "data": "19/10",
-      "valor": 108.79
+      "data": "20/10",
+      "valor": 108.82
     },
     {
-      "data": "26/10",
-      "valor": 113.88
+      "data": "27/10",
+      "valor": 115.32
     },
     {
-      "data": "03/11",
-      "valor": 103.6
+      "data": "04/11",
+      "valor": 94.62
     },
     {
-      "data": "10/11",
-      "valor": 91.49
+      "data": "11/11",
+      "valor": 92.76
     },
     {
-      "data": "17/11",
-      "valor": 93.42
+      "data": "18/11",
+      "valor": 88.66
     }
   ],
   "estados": [
@@ -241,16 +241,12 @@
     }
   ],
   "pln_diario": {
-    "data": "16/11/2026",
-    "valor_m3": 3058.0,
-    "valor_litro": 3.058,
-    "anterior_litro": 3.0435,
-    "variacao_dia": 0.48,
+    "data": "17/11/2026",
+    "valor_m3": 3075.0,
+    "valor_litro": 3.075,
+    "anterior_litro": 3.058,
+    "variacao_dia": 0.56,
     "historico": [
-      {
-        "data": "03/11/2026",
-        "valor_litro": 2.968
-      },
       {
         "data": "04/11/2026",
         "valor_litro": 2.961
@@ -286,6 +282,10 @@
       {
         "data": "16/11/2026",
         "valor_litro": 3.058
+      },
+      {
+        "data": "17/11/2026",
+        "valor_litro": 3.075
       }
     ],
     "fonte": "CEPEA/ESALQ/B3 — Indicador diário do etanol hidratado, posto Paulínia (SP)"
@@ -360,6 +360,54 @@
   },
   "noticias": [
     {
+      "titulo": "Produção de etanol dos EUA recua 0,35% na semana, para 1,126 milhão de barris por dia",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/producao-de-etanol-dos-eua-recua-0-35-na-semana-para-1-126-milhao-de-barris-por-dia",
+      "tag": "Etanol",
+      "data": "18/11/2026",
+      "titulo_en": "Produção de etanol dos EUA recua 0,35% na semana, para 1,126 milhão de barris por dia"
+    },
+    {
+      "titulo": "Pecege revisa moagem do Centro-Sul para 635,4 mi t, mas cana bisada deve superar 40 mi t",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/pecege-revisa-moagem-do-centro-sul-para-635-4-mi-t-mas-cana-bisada-deve-superar-40-mi-t",
+      "tag": "Produção",
+      "data": "18/11/2026",
+      "titulo_en": "Pecege revisa moagem do Centro-Sul para 635,4 mi t, mas cana bisada deve superar 40 mi t"
+    },
+    {
+      "titulo": "Subsídios para conter combustíveis chegam perto de R$ 60 bi e preços seguem pressionados",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/subsidios-para-conter-combustiveis-chegam-perto-de-r-60-bi-e-precos-seguem-pressionados",
+      "tag": "Etanol",
+      "data": "18/11/2026",
+      "titulo_en": "Subsídios para conter combustíveis chegam perto de R$ 60 bi e preços seguem pressionados"
+    },
+    {
+      "titulo": "Usinas de MT gastam R$ 2,8 bilhões com frete de etanol; setor busca ferrovia e duto",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/usinas-de-mt-gastam-r-2-8-bilhoes-com-frete-de-etanol-setor-busca-ferrovia-e-duto",
+      "tag": "Etanol",
+      "data": "18/11/2026",
+      "titulo_en": "Usinas de MT gastam R$ 2,8 bilhões com frete de etanol; setor busca ferrovia e duto"
+    },
+    {
+      "titulo": "Mercado dobra participação no setor sucroenergético, aponta Itaú BBA",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/mercado-dobra-participacao-no-setor-sucroenergetico-aponta-itau-bba",
+      "tag": "Etanol",
+      "data": "18/11/2026",
+      "titulo_en": "Mercado dobra participação no setor sucroenergético, aponta Itaú BBA"
+    },
+    {
+      "titulo": "Capobianco defende saída estratégica do uso de combustíveis fósseis",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/capobianco-defende-saida-estrategica-do-uso-de-combustiveis-fosseis",
+      "tag": "Etanol",
+      "data": "18/11/2026",
+      "titulo_en": "Capobianco defende saída estratégica do uso de combustíveis fósseis"
+    },
+    {
       "titulo": "Ajuste fiscal pode impactar financiamento do setor de energia, incluindo biocombustíveis",
       "fonte": "NovaCana",
       "url": "https://www.novacana.com/noticias/ajuste-fiscal-pode-impactar-financiamento-do-setor-de-energia-incluindo-biocombustiveis",
@@ -390,54 +438,6 @@
       "tag": "Etanol",
       "data": "17/11/2026",
       "titulo_en": "Corn ethanol fuels dispute between domestic market and exporters"
-    },
-    {
-      "titulo": "Fim de subvenção ao diesel importado deve pressionar preços nos postos, diz Abicom",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/fim-de-subvencao-ao-diesel-importado-deve-pressionar-precos-nos-postos-diz-abicom",
-      "tag": "Etanol",
-      "data": "17/11/2026",
-      "titulo_en": "End of subsidy for imported diesel is expected to put pressure on prices at gas stations, says Abicom"
-    },
-    {
-      "titulo": "[Cepea] Cotações do açúcar cristal oscilam no mercado paulista e negociações seguem lentas",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/cepea-cotacoes-do-acucar-cristal-oscilam-no-mercado-paulista-e-negociacoes-seguem-lentas",
-      "tag": "Etanol",
-      "data": "17/11/2026",
-      "titulo_en": "[Cepea] Granulated sugar prices fluctuate in the São Paulo market, and trading remains slow"
-    },
-    {
-      "titulo": "[Cepea] Demanda por etanol hidratado aumenta e preços seguem em alta",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/etanol-hidratado-sobe-1-63-e-anidro-cai-3-37-na-semana-nas-usinas-paulistas",
-      "tag": "Etanol",
-      "data": "17/11/2026",
-      "titulo_en": "[Cepea] Demand for hydrous ethanol rises, and prices continue to climb"
-    },
-    {
-      "titulo": "Moretti vê imposto sobre exportação mantido com petróleo acima de US$ 80",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/moretti-ve-imposto-sobre-exportacao-mantido-com-petroleo-acima-de-us-80",
-      "tag": "Brent",
-      "data": "17/11/2026",
-      "titulo_en": "Moretti sees export tax maintained with oil above US$80"
-    },
-    {
-      "titulo": "Projeto de decisão da COP31 sugere acelerar o fim do uso dos combustíveis fósseis",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/projeto-de-decisao-da-cop31-sugere-acelerar-o-fim-do-uso-dos-combustiveis-fosseis",
-      "tag": "Etanol",
-      "data": "17/11/2026",
-      "titulo_en": "COP31 draft decision proposes accelerating the phase-out of fossil fuels"
-    },
-    {
-      "titulo": "Se não ganhar eficiência, etanol de cana pode virar subproduto do açúcar, diz CFO da Jalles",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/se-nao-ganhar-eficiencia-etanol-de-cana-pode-virar-subproduto-do-acucar-diz-cfo-da-jalles",
-      "tag": "Etanol",
-      "data": "16/11/2026",
-      "titulo_en": "If it doesn't become more efficient, sugarcane ethanol could become a byproduct of sugar, says Jalles CFO"
     }
   ]
 }
