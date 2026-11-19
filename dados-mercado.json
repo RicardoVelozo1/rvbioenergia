@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-18T19:10:46.353547",
+  "atualizado": "2026-11-19T19:13:52.721541",
   "semana": "16/11 – 22/11/2026",
   "nacional": {
     "paridade": 71.0,
@@ -9,9 +9,9 @@
     "municipios_pesquisados": 27
   },
   "brent": {
-    "valor": 88.66,
-    "variacao": -4.81,
-    "data": "18/11/2026",
+    "valor": 89.82,
+    "variacao": -2.32,
+    "data": "19/11/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
@@ -44,36 +44,36 @@
   ],
   "historico_brent": [
     {
-      "data": "29/09",
-      "valor": 103.53
+      "data": "30/09",
+      "valor": 102.31
     },
     {
-      "data": "06/10",
-      "valor": 100.2
+      "data": "07/10",
+      "valor": 104.28
     },
     {
-      "data": "13/10",
-      "valor": 106.06
+      "data": "14/10",
+      "valor": 105.92
     },
     {
-      "data": "20/10",
-      "valor": 108.82
+      "data": "21/10",
+      "valor": 113.17
     },
     {
-      "data": "27/10",
-      "valor": 115.32
+      "data": "28/10",
+      "valor": 114.88
     },
     {
-      "data": "04/11",
-      "valor": 94.62
+      "data": "05/11",
+      "valor": 98.29
     },
     {
-      "data": "11/11",
-      "valor": 92.76
+      "data": "12/11",
+      "valor": 95.82
     },
     {
-      "data": "18/11",
-      "valor": 88.66
+      "data": "19/11",
+      "valor": 89.82
     }
   ],
   "estados": [
@@ -241,16 +241,12 @@
     }
   ],
   "pln_diario": {
-    "data": "17/11/2026",
-    "valor_m3": 3075.0,
-    "valor_litro": 3.075,
-    "anterior_litro": 3.058,
-    "variacao_dia": 0.56,
+    "data": "18/11/2026",
+    "valor_m3": 3056.5,
+    "valor_litro": 3.0565,
+    "anterior_litro": 3.075,
+    "variacao_dia": -0.6,
     "historico": [
-      {
-        "data": "04/11/2026",
-        "valor_litro": 2.961
-      },
       {
         "data": "05/11/2026",
         "valor_litro": 2.9755
@@ -286,6 +282,10 @@
       {
         "data": "17/11/2026",
         "valor_litro": 3.075
+      },
+      {
+        "data": "18/11/2026",
+        "valor_litro": 3.0565
       }
     ],
     "fonte": "CEPEA/ESALQ/B3 — Indicador diário do etanol hidratado, posto Paulínia (SP)"
@@ -360,6 +360,62 @@
   },
   "noticias": [
     {
+      "titulo": "Brasil e Índia realizam reunião sobre avanços em petróleo, gás natural e biocombustíveis",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/brasil-e-india-realizam-reuniao-sobre-avancos-em-petroleo-gas-natural-e-biocombustiveis",
+      "tag": "Brent",
+      "data": "19/11/2026",
+      "titulo_en": "Brazil and India hold meeting on advances in oil, natural gas, and biofuels"
+    },
+    {
+      "titulo": "Avanço do etanol de milho acelera confinamento bovino no Brasil",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/boom-do-etanol-de-milho-no-brasil-acelera-confinamento-bovino",
+      "tag": "Etanol",
+      "data": "19/11/2026",
+      "titulo_en": "The rise of corn ethanol is accelerating cattle feedlot operations in Brazil"
+    },
+    {
+      "titulo": "TCU retira petróleo e gás da lista de alto risco, mas mantém alerta sobre subsídios de energia",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/tcu-retira-petroleo-e-gas-da-lista-de-alto-risco-mas-mantem-alerta-sobre-subsidios-de-energia",
+      "tag": "Brent",
+      "data": "19/11/2026",
+      "titulo_en": "TCU removes oil and gas from the high-risk list, but remains vigilant regarding energy subsidies"
+    },
+    {
+      "titulo": "Expansão do etanol de milho fortalece preços no Brasil, diz Rabobank",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/expansao-do-etanol-de-milho-fortalece-precos-no-brasil-diz-rabobank",
+      "tag": "Etanol",
+      "data": "19/11/2026",
+      "titulo_en": "Expansion of corn ethanol strengthens prices in Brazil, says Rabobank"
+    },
+    {
+      "titulo": "Suspeita de esquema de fraude fiscal de R$ 1,3 bi no setor de combustíveis é presa em SP",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/suspeita-de-esquema-de-fraude-fiscal-de-r-1-3-bi-no-setor-de-combustiveis-e-presa-em-sp",
+      "tag": "Etanol",
+      "data": "19/11/2026",
+      "titulo_en": "Suspect in R$1.3 billion tax fraud scheme in the fuel sector arrested in São Paulo"
+    },
+    {
+      "titulo": "Câmara aprova crédito de R$ 6,6 bilhões para pagar subvenção aos combustíveis",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/camara-aprova-credito-de-r-6-6-bilhoes-para-pagar-subvencao-aos-combustiveis",
+      "tag": "Etanol",
+      "data": "19/11/2026",
+      "titulo_en": "House of Representatives approves R$6.6 billion in funding to subsidize fuel prices"
+    },
+    {
+      "titulo": "Petróleo fecha em queda com perspectiva de excesso de oferta",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/petroleo-fecha-em-queda-com-perspectiva-de-excesso-de-oferta",
+      "tag": "Brent",
+      "data": "19/11/2026",
+      "titulo_en": "Oil closes down amid prospects of oversupply"
+    },
+    {
       "titulo": "Produção de etanol dos EUA recua 0,35% na semana, para 1,126 milhão de barris por dia",
       "fonte": "NovaCana",
       "url": "https://www.novacana.com/noticias/producao-de-etanol-dos-eua-recua-0-35-na-semana-para-1-126-milhao-de-barris-por-dia",
@@ -382,62 +438,6 @@
       "tag": "Etanol",
       "data": "18/11/2026",
       "titulo_en": "Subsídios para conter combustíveis chegam perto de R$ 60 bi e preços seguem pressionados"
-    },
-    {
-      "titulo": "Usinas de MT gastam R$ 2,8 bilhões com frete de etanol; setor busca ferrovia e duto",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/usinas-de-mt-gastam-r-2-8-bilhoes-com-frete-de-etanol-setor-busca-ferrovia-e-duto",
-      "tag": "Etanol",
-      "data": "18/11/2026",
-      "titulo_en": "Usinas de MT gastam R$ 2,8 bilhões com frete de etanol; setor busca ferrovia e duto"
-    },
-    {
-      "titulo": "Mercado dobra participação no setor sucroenergético, aponta Itaú BBA",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/mercado-dobra-participacao-no-setor-sucroenergetico-aponta-itau-bba",
-      "tag": "Etanol",
-      "data": "18/11/2026",
-      "titulo_en": "Mercado dobra participação no setor sucroenergético, aponta Itaú BBA"
-    },
-    {
-      "titulo": "Capobianco defende saída estratégica do uso de combustíveis fósseis",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/capobianco-defende-saida-estrategica-do-uso-de-combustiveis-fosseis",
-      "tag": "Etanol",
-      "data": "18/11/2026",
-      "titulo_en": "Capobianco defende saída estratégica do uso de combustíveis fósseis"
-    },
-    {
-      "titulo": "Ajuste fiscal pode impactar financiamento do setor de energia, incluindo biocombustíveis",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/ajuste-fiscal-pode-impactar-financiamento-do-setor-de-energia-incluindo-biocombustiveis",
-      "tag": "Etanol",
-      "data": "17/11/2026",
-      "titulo_en": "Fiscal adjustment could impact financing for the energy sector, including biofuels"
-    },
-    {
-      "titulo": "Usinas de cana devem ter a menor margem operacional em dez anos, projeta Itaú BBA",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/usinas-de-cana-devem-ter-a-menor-margem-operacional-em-dez-anos-projeta-itau-bba",
-      "tag": "Produção",
-      "data": "17/11/2026",
-      "titulo_en": "Sugarcane mills are expected to have their lowest operating margin in ten years, according to Itaú BBA projections."
-    },
-    {
-      "titulo": "O que caracteriza uma usina rentável? Executivos apontam as chaves do próximo ciclo",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/o-que-caracteriza-uma-usina-rentavel-executivos-apontam-as-chaves-do-proximo-ciclo",
-      "tag": "Produção",
-      "data": "17/11/2026",
-      "titulo_en": "What are the hallmarks of a profitable mill? Executives point to the keys to the next cycle"
-    },
-    {
-      "titulo": "Etanol de milho acirra disputa entre mercado interno e exportadores",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/etanol-de-milho-acirra-disputa-entre-mercado-interno-e-exportadores",
-      "tag": "Etanol",
-      "data": "17/11/2026",
-      "titulo_en": "Corn ethanol fuels dispute between domestic market and exporters"
     }
   ]
 }
