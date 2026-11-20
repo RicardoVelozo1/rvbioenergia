@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-19T19:13:52.721541",
+  "atualizado": "2026-11-20T18:53:32.540492",
   "semana": "16/11 – 22/11/2026",
   "nacional": {
     "paridade": 71.0,
@@ -9,9 +9,9 @@
     "municipios_pesquisados": 27
   },
   "brent": {
-    "valor": 89.82,
-    "variacao": -2.32,
-    "data": "19/11/2026",
+    "valor": 89.3,
+    "variacao": -2.91,
+    "data": "20/11/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
@@ -44,36 +44,36 @@
   ],
   "historico_brent": [
     {
-      "data": "30/09",
-      "valor": 102.31
+      "data": "01/10",
+      "valor": 102.25
     },
     {
-      "data": "07/10",
-      "valor": 104.28
+      "data": "08/10",
+      "valor": 104.72
     },
     {
-      "data": "14/10",
-      "valor": 105.92
+      "data": "15/10",
+      "valor": 109.86
     },
     {
-      "data": "21/10",
-      "valor": 113.17
+      "data": "22/10",
+      "valor": 116.72
     },
     {
-      "data": "28/10",
-      "valor": 114.88
+      "data": "29/10",
+      "valor": 117.64
     },
     {
-      "data": "05/11",
-      "valor": 98.29
+      "data": "06/11",
+      "valor": 98.32
     },
     {
-      "data": "12/11",
-      "valor": 95.82
+      "data": "13/11",
+      "valor": 95.84
     },
     {
-      "data": "19/11",
-      "valor": 89.82
+      "data": "20/11",
+      "valor": 89.3
     }
   ],
   "estados": [
@@ -241,16 +241,12 @@
     }
   ],
   "pln_diario": {
-    "data": "18/11/2026",
-    "valor_m3": 3056.5,
-    "valor_litro": 3.0565,
-    "anterior_litro": 3.075,
-    "variacao_dia": -0.6,
+    "data": "19/11/2026",
+    "valor_m3": 3083.0,
+    "valor_litro": 3.083,
+    "anterior_litro": 3.0565,
+    "variacao_dia": 0.87,
     "historico": [
-      {
-        "data": "05/11/2026",
-        "valor_litro": 2.9755
-      },
       {
         "data": "06/11/2026",
         "valor_litro": 2.9915
@@ -286,6 +282,10 @@
       {
         "data": "18/11/2026",
         "valor_litro": 3.0565
+      },
+      {
+        "data": "19/11/2026",
+        "valor_litro": 3.083
       }
     ],
     "fonte": "CEPEA/ESALQ/B3 — Indicador diário do etanol hidratado, posto Paulínia (SP)"
