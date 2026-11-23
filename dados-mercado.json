@@ -1,6 +1,6 @@
 {
-  "atualizado": "2026-11-20T18:53:32.540492",
-  "semana": "16/11 – 22/11/2026",
+  "atualizado": "2026-11-23T22:17:30.740742",
+  "semana": "23/11 – 29/11/2026",
   "nacional": {
     "paridade": 71.0,
     "etanol_medio": 4.72,
@@ -9,9 +9,9 @@
     "municipios_pesquisados": 27
   },
   "brent": {
-    "valor": 89.3,
-    "variacao": -2.91,
-    "data": "20/11/2026",
+    "valor": 86.72,
+    "variacao": -6.32,
+    "data": "23/11/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
@@ -44,36 +44,36 @@
   ],
   "historico_brent": [
     {
-      "data": "01/10",
-      "valor": 102.25
+      "data": "04/10",
+      "valor": 100.32
     },
     {
-      "data": "08/10",
-      "valor": 104.72
+      "data": "11/10",
+      "valor": 106.65
     },
     {
-      "data": "15/10",
-      "valor": 109.86
+      "data": "18/10",
+      "valor": 109.55
     },
     {
-      "data": "22/10",
-      "valor": 116.72
+      "data": "25/10",
+      "valor": 115.81
     },
     {
-      "data": "29/10",
-      "valor": 117.64
+      "data": "02/11",
+      "valor": 104.77
     },
     {
-      "data": "06/11",
-      "valor": 98.32
+      "data": "09/11",
+      "valor": 92.57
     },
     {
-      "data": "13/11",
-      "valor": 95.84
+      "data": "16/11",
+      "valor": 92.44
     },
     {
-      "data": "20/11",
-      "valor": 89.3
+      "data": "23/11",
+      "valor": 86.72
     }
   ],
   "estados": [
@@ -241,16 +241,12 @@
     }
   ],
   "pln_diario": {
-    "data": "19/11/2026",
-    "valor_m3": 3083.0,
-    "valor_litro": 3.083,
-    "anterior_litro": 3.0565,
-    "variacao_dia": 0.87,
+    "data": "23/11/2026",
+    "valor_m3": 3087.5,
+    "valor_litro": 3.0875,
+    "anterior_litro": 3.083,
+    "variacao_dia": 0.15,
     "historico": [
-      {
-        "data": "06/11/2026",
-        "valor_litro": 2.9915
-      },
       {
         "data": "09/11/2026",
         "valor_litro": 2.985
@@ -286,79 +282,95 @@
       {
         "data": "19/11/2026",
         "valor_litro": 3.083
+      },
+      {
+        "data": "23/11/2026",
+        "valor_litro": 3.0875
       }
     ],
     "fonte": "CEPEA/ESALQ/B3 — Indicador diário do etanol hidratado, posto Paulínia (SP)"
   },
   "diagnostico_anp": {
-    "ed46": "download falhou: HTTP Error 404: Not Found",
-    "periodo": "01/11/2026 a 07/11/2026",
-    "linhas_São Paulo": [
-      "São Paulo 6,35",
-      "São Paulo 4,01",
-      "São Paulo",
-      "São Paulo 7,25"
-    ],
-    "linhas_Belo Horizonte": [
-      "Belo Horizonte 6,48",
-      "Belo Horizonte 4,46",
-      "Belo Horizonte 6,88",
-      "Belo Horizonte 113,54"
-    ],
-    "linhas_Rio de Janeiro": [
-      "Rio de Janeiro 6,48",
-      "Rio de Janeiro 4,77",
-      "Rio de Janeiro 7,06",
-      "Rio de Janeiro 100,60"
-    ],
-    "linhas_Curitiba": [
-      "Curitiba 6,76",
-      "Curitiba 4,64",
-      "Curitiba 7,26",
-      "Curitiba | R$ 7,26"
-    ],
-    "linhas_Porto Alegre": [
-      "Porto Alegre 5,89",
-      "Porto Alegre 4,46",
-      "Porto Alegre",
-      "Porto Alegre 6,93"
-    ],
-    "linhas_Salvador": [
-      "Salvador 6,43",
-      "Salvador 4,44",
-      "Salvador 7,85",
-      "Salvador | R$ 7,85"
-    ],
-    "linhas_Goiânia": [
-      "Goiânia 6,15",
-      "Goiânia 3,66",
-      "Goiânia",
-      "Goiânia | R$ 3,66"
-    ],
-    "linhas_Brasília": [
-      "Brasília 6,57",
-      "Brasília | R$ 6,57",
-      "Brasília 4,51",
-      "Brasília | R$ 4,51"
-    ],
-    "linhas_Florianópolis": [
-      "Florianópolis 6,45",
-      "Florianópolis 4,62",
-      "Florianópolis | R$ 4,62",
-      "Florianópolis 7,29"
-    ],
-    "linhas_Recife": [
-      "Recife 6,85",
-      "Recife 4,82",
-      "Recife 7,07",
-      "Recife 102,86"
-    ],
-    "ed45": "ok, 18464 chars; sem preço: []; trecho Macapá: Macapá 6,31 | Macapá - | Macapá 7,14 | Macapá | R$ 7,14 | Macapá 127,46"
+    "ed47": "download falhou: <urlopen error [Errno 104] Connection reset by peer>",
+    "ed46": "download falhou: <urlopen error [Errno 104] Connection reset by peer>",
+    "ed45": "download falhou: <urlopen error [Errno 104] Connection reset by peer>"
   },
   "diagnostico_pln": {
     "status": "ok"
   },
   "noticias": [
+    {
+      "titulo": "Etanol hidratado sobe pela sétima semana consecutiva nas usinas de São Paulo",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/etanol-hidratado-sobe-pela-setima-semana-consecutiva-nas-usinas-de-sao-paulo",
+      "tag": "Etanol",
+      "data": "23/11/2026",
+      "titulo_en": "Hydrated ethanol prices rise for the seventh consecutive week at São Paulo mills"
+    },
+    {
+      "titulo": "Governo pretende iniciar “desmame” de subsídio de combustíveis em dezembro",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/governo-pretende-iniciar-desmame-de-subsidio-de-combustiveis-em-dezembro",
+      "tag": "Etanol",
+      "data": "23/11/2026",
+      "titulo_en": "Government plans to start phasing out fuel subsidies in December"
+    },
+    {
+      "titulo": "COP31 termina em impasse: O que fazer com o petróleo?",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/cop31-termina-em-impasse-o-que-fazer-com-o-petroleo",
+      "tag": "Brent",
+      "data": "23/11/2026",
+      "titulo_en": "COP31 ends in deadlock: What to do about oil?"
+    },
+    {
+      "titulo": "Batatais e Cevasa ampliam moagem em 5,4%, mas receita cai 30,5% no 1º semestre da safra",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/batatais-e-cevasa-ampliam-moagem-em-5-4-mas-receita-cai-30-5-no-1-semestre-da-safra",
+      "tag": "Produção",
+      "data": "23/11/2026",
+      "titulo_en": "Batatais and Cevasa increase milling by 5.4%, but revenue falls by 30.5% in the first half of the harvest"
+    },
+    {
+      "titulo": "Usina Itajobi foi vendida para Beto Louco e Primo por apenas R$ 100",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/usina-itajobi-foi-vendida-para-beto-louco-e-primo-por-apenas-r-100",
+      "tag": "Produção",
+      "data": "23/11/2026",
+      "titulo_en": "Itajobi Mill was sold to Beto Louco and Primo for just R$100"
+    },
+    {
+      "titulo": "Brasil exporta 216,44 mi L de etanol em outubro, melhor resultado para o mês desde 2023",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/brasil-exporta-216-44-mi-l-de-etanol-em-outubro-melhor-resultado-para-o-mes-desde-2023",
+      "tag": "Etanol",
+      "data": "23/11/2026",
+      "titulo_en": "Brazil exports 216.44 million liters of ethanol in October, the best result for the month since 2023"
+    },
+    {
+      "titulo": "Mais de cem pessoas denunciam condições de trabalho em usina de Goiás",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/mais-de-cem-pessoas-denunciam-condicoes-de-trabalho-analogo-a-escravidao-em-usina-de-go",
+      "tag": "Produção",
+      "data": "23/11/2026",
+      "titulo_en": "Over 100 people report working conditions at a plant in Goiás"
+    },
+    {
+      "titulo": "Importações de etanol anidro devem crescer 59% no início de 2027, aponta StoneX",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/importacoes-de-etanol-anidro-devem-crescer-59-no-inicio-de-2027-aponta-stonex",
+      "tag": "Etanol",
+      "data": "23/11/2026",
+      "titulo_en": "Anhydrous ethanol imports are expected to grow by 59% by early 2027, according to StoneX."
+    },
+    {
+      "titulo": "Subvenção dos combustíveis pode deixar herança de R$ 45 bilhões para 2027",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/subvencao-dos-combustiveis-pode-deixar-heranca-de-r-45-bilhoes-para-2027",
+      "tag": "Etanol",
+      "data": "23/11/2026",
+      "titulo_en": "Fuel subsidies could leave a legacy of R$45 billion by 2027"
+    },
     {
       "titulo": "Brasil e Índia realizam reunião sobre avanços em petróleo, gás natural e biocombustíveis",
       "fonte": "NovaCana",
@@ -366,78 +378,6 @@
       "tag": "Brent",
       "data": "19/11/2026",
       "titulo_en": "Brazil and India hold meeting on advances in oil, natural gas, and biofuels"
-    },
-    {
-      "titulo": "Avanço do etanol de milho acelera confinamento bovino no Brasil",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/boom-do-etanol-de-milho-no-brasil-acelera-confinamento-bovino",
-      "tag": "Etanol",
-      "data": "19/11/2026",
-      "titulo_en": "The rise of corn ethanol is accelerating cattle feedlot operations in Brazil"
-    },
-    {
-      "titulo": "TCU retira petróleo e gás da lista de alto risco, mas mantém alerta sobre subsídios de energia",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/tcu-retira-petroleo-e-gas-da-lista-de-alto-risco-mas-mantem-alerta-sobre-subsidios-de-energia",
-      "tag": "Brent",
-      "data": "19/11/2026",
-      "titulo_en": "TCU removes oil and gas from the high-risk list, but remains vigilant regarding energy subsidies"
-    },
-    {
-      "titulo": "Expansão do etanol de milho fortalece preços no Brasil, diz Rabobank",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/expansao-do-etanol-de-milho-fortalece-precos-no-brasil-diz-rabobank",
-      "tag": "Etanol",
-      "data": "19/11/2026",
-      "titulo_en": "Expansion of corn ethanol strengthens prices in Brazil, says Rabobank"
-    },
-    {
-      "titulo": "Suspeita de esquema de fraude fiscal de R$ 1,3 bi no setor de combustíveis é presa em SP",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/suspeita-de-esquema-de-fraude-fiscal-de-r-1-3-bi-no-setor-de-combustiveis-e-presa-em-sp",
-      "tag": "Etanol",
-      "data": "19/11/2026",
-      "titulo_en": "Suspect in R$1.3 billion tax fraud scheme in the fuel sector arrested in São Paulo"
-    },
-    {
-      "titulo": "Câmara aprova crédito de R$ 6,6 bilhões para pagar subvenção aos combustíveis",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/camara-aprova-credito-de-r-6-6-bilhoes-para-pagar-subvencao-aos-combustiveis",
-      "tag": "Etanol",
-      "data": "19/11/2026",
-      "titulo_en": "House of Representatives approves R$6.6 billion in funding to subsidize fuel prices"
-    },
-    {
-      "titulo": "Petróleo fecha em queda com perspectiva de excesso de oferta",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/petroleo-fecha-em-queda-com-perspectiva-de-excesso-de-oferta",
-      "tag": "Brent",
-      "data": "19/11/2026",
-      "titulo_en": "Oil closes down amid prospects of oversupply"
-    },
-    {
-      "titulo": "Produção de etanol dos EUA recua 0,35% na semana, para 1,126 milhão de barris por dia",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/producao-de-etanol-dos-eua-recua-0-35-na-semana-para-1-126-milhao-de-barris-por-dia",
-      "tag": "Etanol",
-      "data": "18/11/2026",
-      "titulo_en": "Produção de etanol dos EUA recua 0,35% na semana, para 1,126 milhão de barris por dia"
-    },
-    {
-      "titulo": "Pecege revisa moagem do Centro-Sul para 635,4 mi t, mas cana bisada deve superar 40 mi t",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/pecege-revisa-moagem-do-centro-sul-para-635-4-mi-t-mas-cana-bisada-deve-superar-40-mi-t",
-      "tag": "Produção",
-      "data": "18/11/2026",
-      "titulo_en": "Pecege revisa moagem do Centro-Sul para 635,4 mi t, mas cana bisada deve superar 40 mi t"
-    },
-    {
-      "titulo": "Subsídios para conter combustíveis chegam perto de R$ 60 bi e preços seguem pressionados",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/subsidios-para-conter-combustiveis-chegam-perto-de-r-60-bi-e-precos-seguem-pressionados",
-      "tag": "Etanol",
-      "data": "18/11/2026",
-      "titulo_en": "Subsídios para conter combustíveis chegam perto de R$ 60 bi e preços seguem pressionados"
     }
   ]
 }
