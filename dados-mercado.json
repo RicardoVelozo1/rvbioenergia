@@ -1,17 +1,17 @@
 {
-  "atualizado": "2026-11-24T20:56:59.726017",
+  "atualizado": "2026-11-25T20:16:50.938031",
   "semana": "23/11 – 29/11/2026",
   "nacional": {
-    "paridade": 71.5,
+    "paridade": 71.3,
     "etanol_medio": 4.71,
-    "gasolina_media": 6.59,
-    "municipios_vantajosos": 10,
-    "municipios_pesquisados": 26
+    "gasolina_media": 6.61,
+    "municipios_vantajosos": 11,
+    "municipios_pesquisados": 27
   },
   "brent": {
-    "valor": 88.13,
-    "variacao": -1.39,
-    "data": "24/11/2026",
+    "valor": 90.44,
+    "variacao": -1.05,
+    "data": "25/11/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
@@ -44,39 +44,45 @@
   ],
   "historico_brent": [
     {
-      "data": "05/10",
-      "valor": 100.58
+      "data": "06/10",
+      "valor": 100.2
     },
     {
-      "data": "12/10",
-      "valor": 105.69
+      "data": "13/10",
+      "valor": 106.06
     },
     {
-      "data": "19/10",
-      "valor": 108.79
+      "data": "20/10",
+      "valor": 108.82
     },
     {
-      "data": "26/10",
-      "valor": 113.88
+      "data": "27/10",
+      "valor": 115.32
     },
     {
-      "data": "03/11",
-      "valor": 103.6
+      "data": "04/11",
+      "valor": 94.62
     },
     {
-      "data": "10/11",
-      "valor": 91.49
+      "data": "11/11",
+      "valor": 92.76
     },
     {
-      "data": "17/11",
-      "valor": 93.14
+      "data": "18/11",
+      "valor": 91.95
     },
     {
-      "data": "24/11",
-      "valor": 88.13
+      "data": "25/11",
+      "valor": 90.44
     }
   ],
   "estados": [
+    {
+      "uf": "AC",
+      "nome": "Acre",
+      "etanol": 4.8,
+      "gasolina": 7.23
+    },
     {
       "uf": "AL",
       "nome": "Alagoas",
@@ -235,16 +241,12 @@
     }
   ],
   "pln_diario": {
-    "data": "23/11/2026",
-    "valor_m3": 3087.5,
-    "valor_litro": 3.0875,
-    "anterior_litro": 3.083,
-    "variacao_dia": 0.15,
+    "data": "24/11/2026",
+    "valor_m3": 3084.5,
+    "valor_litro": 3.0845,
+    "anterior_litro": 3.0875,
+    "variacao_dia": -0.1,
     "historico": [
-      {
-        "data": "09/11/2026",
-        "valor_litro": 2.985
-      },
       {
         "data": "10/11/2026",
         "valor_litro": 2.9885
@@ -280,6 +282,10 @@
       {
         "data": "23/11/2026",
         "valor_litro": 3.0875
+      },
+      {
+        "data": "24/11/2026",
+        "valor_litro": 3.0845
       }
     ],
     "fonte": "CEPEA/ESALQ/B3 — Indicador diário do etanol hidratado, posto Paulínia (SP)"
@@ -293,6 +299,70 @@
     "status": "ok"
   },
   "noticias": [
+    {
+      "titulo": "Entressafra da cana desafia expansão do biometano e metas do Combustível do Futuro",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/entressafra-da-cana-desafia-expansao-do-biometano-e-metas-do-combustivel-do-futuro",
+      "tag": "Produção",
+      "data": "25/11/2026",
+      "titulo_en": "Sugarcane off-season challenges the expansion of biomethane and Fuel of the Future targets"
+    },
+    {
+      "titulo": "Consumo mensal de hidratado atinge recorde histórico em setembro, com 2,2 bi L",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/consumo-mensal-de-hidratado-atinge-recorde-historico-em-setembro-com-2-2-bi-l",
+      "tag": "Etanol",
+      "data": "25/11/2026",
+      "titulo_en": "Monthly hydrated ethanol consumption reached an all-time high in September, at 2.2 billion liters"
+    },
+    {
+      "titulo": "Moagem da safra de cana 2026/27 do Norte-Nordeste se aproxima de 40% do previsto",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/moagem-da-safra-de-cana-2026-27-do-norte-nordeste-se-aproxima-de-40-do-previsto",
+      "tag": "Produção",
+      "data": "25/11/2026",
+      "titulo_en": "Sugarcane crushing for the 2026/27 harvest in the North and Northeast regions is approaching 40% of the forecast"
+    },
+    {
+      "titulo": "Usina São Luiz, de Ourinhos (SP), ganha prêmio de modernidade e produtividade do IAC",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/usina-sao-luiz-de-ourinhos-sp-ganha-premio-de-modernidade-e-produtividade-do-iac",
+      "tag": "Produção",
+      "data": "25/11/2026",
+      "titulo_en": "São Luiz Mill, in Ourinhos (SP), wins IAC award for modernity and productivity"
+    },
+    {
+      "titulo": "Uisa pede autorização para ampliar moagem de cana em 1 milhão de toneladas",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/uisa-pede-autorizacao-para-ampliar-moagem-de-cana-em-1-milhao-de-toneladas",
+      "tag": "Produção",
+      "data": "25/11/2026",
+      "titulo_en": "Uisa requests authorization to increase sugarcane crushing by 1 million tons"
+    },
+    {
+      "titulo": "Petrobras mira em aviação e diesel renovável com retorno ao etanol",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/petrobras-mira-em-aviacao-e-diesel-renovavel-com-retorno-ao-etanol",
+      "tag": "Etanol",
+      "data": "25/11/2026",
+      "titulo_en": "Petrobras targets aviation and renewable diesel with return to ethanol"
+    },
+    {
+      "titulo": "Texto de ajuste fiscal exclui da meta até R$ 10,5 bilhões em subvenção ao diesel",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/texto-de-ajuste-fiscal-exclui-da-meta-ate-r-10-5-bilhoes-em-subvencao-ao-diesel",
+      "tag": "Etanol",
+      "data": "25/11/2026",
+      "titulo_en": "Fiscal adjustment bill excludes up to R$10.5 billion in diesel subsidies from the target"
+    },
+    {
+      "titulo": "Diretor-geral da OMS pede que EUA suspendam bloqueio de petróleo a Cuba",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/diretor-geral-da-oms-pede-que-eua-suspendam-bloqueio-de-petroleo-a-cuba",
+      "tag": "Brent",
+      "data": "25/11/2026",
+      "titulo_en": "WHO Director-General calls on the U.S. to lift the oil embargo on Cuba"
+    },
     {
       "titulo": "Petrobras buscará outras empresas de etanol de milho após compra de fatia na Neomille",
       "fonte": "NovaCana",
@@ -308,70 +378,6 @@
       "tag": "Etanol",
       "data": "24/11/2026",
       "titulo_en": "Ethanol continues to rise at gas stations, but it is still competitive at the national average"
-    },
-    {
-      "titulo": "[Cepea] Oferta limitada de açúcar cristal de melhor qualidade sustenta alta dos preços",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/cepea-oferta-limitada-de-acucar-cristal-de-melhor-qualidade-sustenta-alta-dos-precos",
-      "tag": "Etanol",
-      "data": "24/11/2026",
-      "titulo_en": "[Cepea] Limited supply of top-quality granulated sugar sustains high prices"
-    },
-    {
-      "titulo": "Com Petrobras como sócia, Cerradinho quer ampliar etanol de milho em cerca de 80%",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/com-petrobras-como-socia-cerradinho-quer-ampliar-etanol-de-milho-em-cerca-de-80",
-      "tag": "Etanol",
-      "data": "24/11/2026",
-      "titulo_en": "With Petrobras as a partner, Cerradinho aims to increase corn ethanol production by about 80%"
-    },
-    {
-      "titulo": "Petrobras volta ao mercado de etanol com aquisição de fatia da Neomille por R$ 2,8 bilhões",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/petrobras-volta-ao-mercado-de-etanol-com-aquisicao-de-fatia-da-neomille-por-r-2-8-bilhoes",
-      "tag": "Etanol",
-      "data": "24/11/2026",
-      "titulo_en": "Petrobras returns to the ethanol market with the acquisition of a stake in Neomille for R$2.8 billion"
-    },
-    {
-      "titulo": "Etanol hidratado sobe pela sétima semana consecutiva nas usinas de São Paulo",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/etanol-hidratado-sobe-pela-setima-semana-consecutiva-nas-usinas-de-sao-paulo",
-      "tag": "Etanol",
-      "data": "23/11/2026",
-      "titulo_en": "Hydrated ethanol prices rise for the seventh consecutive week at São Paulo mills"
-    },
-    {
-      "titulo": "Governo pretende iniciar “desmame” de subsídio de combustíveis em dezembro",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/governo-pretende-iniciar-desmame-de-subsidio-de-combustiveis-em-dezembro",
-      "tag": "Etanol",
-      "data": "23/11/2026",
-      "titulo_en": "Government plans to start phasing out fuel subsidies in December"
-    },
-    {
-      "titulo": "COP31 termina em impasse: O que fazer com o petróleo?",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/cop31-termina-em-impasse-o-que-fazer-com-o-petroleo",
-      "tag": "Brent",
-      "data": "23/11/2026",
-      "titulo_en": "COP31 ends in deadlock: What to do about oil?"
-    },
-    {
-      "titulo": "Batatais e Cevasa ampliam moagem em 5,4%, mas receita cai 30,5% no 1º semestre da safra",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/batatais-e-cevasa-ampliam-moagem-em-5-4-mas-receita-cai-30-5-no-1-semestre-da-safra",
-      "tag": "Produção",
-      "data": "23/11/2026",
-      "titulo_en": "Batatais and Cevasa increase milling by 5.4%, but revenue falls by 30.5% in the first half of the harvest"
-    },
-    {
-      "titulo": "Usina Itajobi foi vendida para Beto Louco e Primo por apenas R$ 100",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/usina-itajobi-foi-vendida-para-beto-louco-e-primo-por-apenas-r-100",
-      "tag": "Produção",
-      "data": "23/11/2026",
-      "titulo_en": "Itajobi Mill was sold to Beto Louco and Primo for just R$100"
     }
   ]
 }
