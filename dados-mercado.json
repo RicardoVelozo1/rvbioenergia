@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-25T20:16:50.938031",
+  "atualizado": "2026-11-26T19:55:20.689517",
   "semana": "23/11 – 29/11/2026",
   "nacional": {
     "paridade": 71.3,
@@ -9,9 +9,9 @@
     "municipios_pesquisados": 27
   },
   "brent": {
-    "valor": 90.44,
-    "variacao": -1.05,
-    "data": "25/11/2026",
+    "valor": 91.73,
+    "variacao": -3.04,
+    "data": "26/11/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
@@ -44,36 +44,36 @@
   ],
   "historico_brent": [
     {
-      "data": "06/10",
-      "valor": 100.2
+      "data": "07/10",
+      "valor": 104.28
     },
     {
-      "data": "13/10",
-      "valor": 106.06
+      "data": "14/10",
+      "valor": 105.92
     },
     {
-      "data": "20/10",
-      "valor": 108.82
+      "data": "21/10",
+      "valor": 113.17
     },
     {
-      "data": "27/10",
-      "valor": 115.32
+      "data": "28/10",
+      "valor": 114.88
     },
     {
-      "data": "04/11",
-      "valor": 94.62
+      "data": "05/11",
+      "valor": 98.29
     },
     {
-      "data": "11/11",
-      "valor": 92.76
+      "data": "12/11",
+      "valor": 95.82
     },
     {
-      "data": "18/11",
-      "valor": 91.95
+      "data": "19/11",
+      "valor": 91.98
     },
     {
-      "data": "25/11",
-      "valor": 90.44
+      "data": "26/11",
+      "valor": 91.73
     }
   ],
   "estados": [
@@ -241,16 +241,12 @@
     }
   ],
   "pln_diario": {
-    "data": "24/11/2026",
-    "valor_m3": 3084.5,
-    "valor_litro": 3.0845,
-    "anterior_litro": 3.0875,
-    "variacao_dia": -0.1,
+    "data": "25/11/2026",
+    "valor_m3": 3083.5,
+    "valor_litro": 3.0835,
+    "anterior_litro": 3.0845,
+    "variacao_dia": -0.03,
     "historico": [
-      {
-        "data": "10/11/2026",
-        "valor_litro": 2.9885
-      },
       {
         "data": "11/11/2026",
         "valor_litro": 3.0155
@@ -286,6 +282,10 @@
       {
         "data": "24/11/2026",
         "valor_litro": 3.0845
+      },
+      {
+        "data": "25/11/2026",
+        "valor_litro": 3.0835
       }
     ],
     "fonte": "CEPEA/ESALQ/B3 — Indicador diário do etanol hidratado, posto Paulínia (SP)"
@@ -299,6 +299,22 @@
     "status": "ok"
   },
   "noticias": [
+    {
+      "titulo": "MME reforça que não há risco de desabastecimento de etanol anidro durante entressafra",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/mme-reforca-que-nao-ha-risco-de-desabastecimento-de-etanol-anidro-durante-entressafra",
+      "tag": "Etanol",
+      "data": "26/11/2026",
+      "titulo_en": "MME emphasizes that there is no risk of a shortage of anhydrous ethanol during the off-season"
+    },
+    {
+      "titulo": "Subsídios aos combustíveis já somam R$ 75 bilhões; valor deve subir até o fim do ano",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/subsidios-aos-combustiveis-ja-somam-r-75-bilhoes-valor-deve-subir-ate-o-fim-do-ano",
+      "tag": "Etanol",
+      "data": "26/11/2026",
+      "titulo_en": "Fuel subsidies already total R$75 billion; the amount is expected to rise by the end of the year"
+    },
     {
       "titulo": "Entressafra da cana desafia expansão do biometano e metas do Combustível do Futuro",
       "fonte": "NovaCana",
@@ -362,22 +378,6 @@
       "tag": "Brent",
       "data": "25/11/2026",
       "titulo_en": "WHO Director-General calls on the U.S. to lift the oil embargo on Cuba"
-    },
-    {
-      "titulo": "Petrobras buscará outras empresas de etanol de milho após compra de fatia na Neomille",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/petrobras-buscara-outras-empresas-de-etanol-de-milho-apos-compra-de-fatia-na-neomille",
-      "tag": "Etanol",
-      "data": "24/11/2026",
-      "titulo_en": "Petrobras to seek other corn ethanol companies after acquiring stake in Neomille"
-    },
-    {
-      "titulo": "Etanol segue subindo nos postos, mas ainda é competitivo na média nacional",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/etanol-segue-subindo-nos-postos-mas-ainda-e-competitivo-na-media-nacional",
-      "tag": "Etanol",
-      "data": "24/11/2026",
-      "titulo_en": "Ethanol continues to rise at gas stations, but it is still competitive at the national average"
     }
   ]
 }
