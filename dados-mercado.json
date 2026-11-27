@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-26T19:55:20.689517",
+  "atualizado": "2026-11-27T19:44:00.284811",
   "semana": "23/11 – 29/11/2026",
   "nacional": {
     "paridade": 71.3,
@@ -9,9 +9,9 @@
     "municipios_pesquisados": 27
   },
   "brent": {
-    "valor": 91.73,
-    "variacao": -3.04,
-    "data": "26/11/2026",
+    "valor": 90.84,
+    "variacao": -3.98,
+    "data": "27/11/2026",
     "fonte": "Yahoo Finance (ICE Brent)"
   },
   "etanol_paulinia": {
@@ -72,8 +72,8 @@
       "valor": 91.98
     },
     {
-      "data": "26/11",
-      "valor": 91.73
+      "data": "27/11",
+      "valor": 90.84
     }
   ],
   "estados": [
@@ -241,16 +241,12 @@
     }
   ],
   "pln_diario": {
-    "data": "25/11/2026",
-    "valor_m3": 3083.5,
-    "valor_litro": 3.0835,
-    "anterior_litro": 3.0845,
-    "variacao_dia": -0.03,
+    "data": "26/11/2026",
+    "valor_m3": 3091.0,
+    "valor_litro": 3.091,
+    "anterior_litro": 3.0835,
+    "variacao_dia": 0.24,
     "historico": [
-      {
-        "data": "11/11/2026",
-        "valor_litro": 3.0155
-      },
       {
         "data": "12/11/2026",
         "valor_litro": 3.019
@@ -286,6 +282,10 @@
       {
         "data": "25/11/2026",
         "valor_litro": 3.0835
+      },
+      {
+        "data": "26/11/2026",
+        "valor_litro": 3.091
       }
     ],
     "fonte": "CEPEA/ESALQ/B3 — Indicador diário do etanol hidratado, posto Paulínia (SP)"
@@ -299,6 +299,62 @@
     "status": "ok"
   },
   "noticias": [
+    {
+      "titulo": "Roraima deve receber usina de etanol de R$ 2 bilhões, afirma secretário",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/roraima-deve-receber-usina-de-etanol-de-r-2-bilhoes-afirma-secretario",
+      "tag": "Etanol",
+      "data": "27/11/2026",
+      "titulo_en": "Roraima set to receive R$2 billion ethanol plant, says secretary"
+    },
+    {
+      "titulo": "Usina Caeté conquista certificação Bonsucro em São Miguel dos Campos (AL)",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/usina-caete-conquista-certificacao-bonsucro-em-sao-miguel-dos-campos-al",
+      "tag": "Produção",
+      "data": "27/11/2026",
+      "titulo_en": "Usina Caeté earns Bonsucro certification in São Miguel dos Campos (AL)"
+    },
+    {
+      "titulo": "Entidades defendem renovação da mistura de 32% de etanol anidro à gasolina",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/entidades-defendem-renovacao-da-mistura-de-32-de-etanol-anidro-a-gasolina",
+      "tag": "Etanol",
+      "data": "27/11/2026",
+      "titulo_en": "Organizations advocate renewing the 32% anhydrous ethanol-gasoline blend"
+    },
+    {
+      "titulo": "Raízen avalia venda de sua divisão de distribuição de combustíveis, diz Ometto",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/raizen-avalia-venda-de-sua-divisao-de-distribuicao-de-combustiveis-diz-ometto",
+      "tag": "Etanol",
+      "data": "27/11/2026",
+      "titulo_en": "Raízen is considering the sale of its fuel distribution division, says Ometto"
+    },
+    {
+      "titulo": "Apesar de bonificação, CBios não “pagam” investimentos em captura de CO2",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/apesar-de-bonificacao-cbios-nao-pagam-investimentos-em-captura-de-co2",
+      "tag": "RenovaBio",
+      "data": "27/11/2026",
+      "titulo_en": "Despite the bonus, CBios do not “pay” for investments in CO2 capture"
+    },
+    {
+      "titulo": "Governo prorroga subsídio de R$ 2,12 ao diesel por mais 30 dias",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/governo-prorroga-subsidio-de-r-2-12-ao-diesel-por-mais-30-dias",
+      "tag": "Etanol",
+      "data": "27/11/2026",
+      "titulo_en": "Government extends R$2.12 diesel subsidy for another 30 days"
+    },
+    {
+      "titulo": "Ambientalistas pedem auditoria em subsídios a combustíveis fósseis no Brasil",
+      "fonte": "NovaCana",
+      "url": "https://www.novacana.com/noticias/ambientalistas-pedem-auditoria-em-subsidios-a-combustiveis-fosseis-no-brasil",
+      "tag": "Etanol",
+      "data": "27/11/2026",
+      "titulo_en": "Environmentalists call for an audit of fossil fuel subsidies in Brazil"
+    },
     {
       "titulo": "MME reforça que não há risco de desabastecimento de etanol anidro durante entressafra",
       "fonte": "NovaCana",
@@ -322,62 +378,6 @@
       "tag": "Produção",
       "data": "25/11/2026",
       "titulo_en": "Sugarcane off-season challenges the expansion of biomethane and Fuel of the Future targets"
-    },
-    {
-      "titulo": "Consumo mensal de hidratado atinge recorde histórico em setembro, com 2,2 bi L",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/consumo-mensal-de-hidratado-atinge-recorde-historico-em-setembro-com-2-2-bi-l",
-      "tag": "Etanol",
-      "data": "25/11/2026",
-      "titulo_en": "Monthly hydrated ethanol consumption reached an all-time high in September, at 2.2 billion liters"
-    },
-    {
-      "titulo": "Moagem da safra de cana 2026/27 do Norte-Nordeste se aproxima de 40% do previsto",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/moagem-da-safra-de-cana-2026-27-do-norte-nordeste-se-aproxima-de-40-do-previsto",
-      "tag": "Produção",
-      "data": "25/11/2026",
-      "titulo_en": "Sugarcane crushing for the 2026/27 harvest in the North and Northeast regions is approaching 40% of the forecast"
-    },
-    {
-      "titulo": "Usina São Luiz, de Ourinhos (SP), ganha prêmio de modernidade e produtividade do IAC",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/usina-sao-luiz-de-ourinhos-sp-ganha-premio-de-modernidade-e-produtividade-do-iac",
-      "tag": "Produção",
-      "data": "25/11/2026",
-      "titulo_en": "São Luiz Mill, in Ourinhos (SP), wins IAC award for modernity and productivity"
-    },
-    {
-      "titulo": "Uisa pede autorização para ampliar moagem de cana em 1 milhão de toneladas",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/uisa-pede-autorizacao-para-ampliar-moagem-de-cana-em-1-milhao-de-toneladas",
-      "tag": "Produção",
-      "data": "25/11/2026",
-      "titulo_en": "Uisa requests authorization to increase sugarcane crushing by 1 million tons"
-    },
-    {
-      "titulo": "Petrobras mira em aviação e diesel renovável com retorno ao etanol",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/petrobras-mira-em-aviacao-e-diesel-renovavel-com-retorno-ao-etanol",
-      "tag": "Etanol",
-      "data": "25/11/2026",
-      "titulo_en": "Petrobras targets aviation and renewable diesel with return to ethanol"
-    },
-    {
-      "titulo": "Texto de ajuste fiscal exclui da meta até R$ 10,5 bilhões em subvenção ao diesel",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/texto-de-ajuste-fiscal-exclui-da-meta-ate-r-10-5-bilhoes-em-subvencao-ao-diesel",
-      "tag": "Etanol",
-      "data": "25/11/2026",
-      "titulo_en": "Fiscal adjustment bill excludes up to R$10.5 billion in diesel subsidies from the target"
-    },
-    {
-      "titulo": "Diretor-geral da OMS pede que EUA suspendam bloqueio de petróleo a Cuba",
-      "fonte": "NovaCana",
-      "url": "https://www.novacana.com/noticias/diretor-geral-da-oms-pede-que-eua-suspendam-bloqueio-de-petroleo-a-cuba",
-      "tag": "Brent",
-      "data": "25/11/2026",
-      "titulo_en": "WHO Director-General calls on the U.S. to lift the oil embargo on Cuba"
     }
   ]
 }
